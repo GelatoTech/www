@@ -1,0 +1,42 @@
+/* social icons */
+#twitter {
+    color:#1da1f2;
+    font-size: 2rem;
+  }
+  #twitter:hover{color:#87caf3}
+  
+  #yelp {
+    color:red;
+    font-size: 2rem;
+  }
+  #yelp:hover{color:rgba(255, 0, 0, 0.514);}
+  #google {
+    color:#4285F4;
+    font-size: 2rem;
+  }
+  #google:hover{color:rgb(122, 153, 194);}
+  #instagram{
+    color:#3f729b;
+    font-size: 2rem;
+  }
+  #instagram:hover{color:rgb(122, 153, 194);}
+  #linkedin{
+    color:#0e76a8;
+    font-size: 2rem;
+  }
+  
+  #linkedin:hover{color: #798ea0;}
+  #facebook{
+    color:#3b5998;
+    font-size: 2rem;
+  }
+  #facebook:hover{color:#798ea0;}
+  .btn-action {
+    
+    background: var(--action-color);
+    color: white;
+  }
+  .btn-action:hover {
+    background: #0a7c0a;
+    color: white;
+  }

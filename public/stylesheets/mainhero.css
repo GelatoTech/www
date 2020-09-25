@@ -1,0 +1,28 @@
+#hero {
+    padding: 1rem 0;
+  }
+  #hero .title {
+    font-size: 3rem;
+    margin-top: 3rem;
+    font-weight: 900;
+  }
+  #hero .subtitle {
+    font-size: 1.3rem;
+    font-weight: 900;
+  }
+  #hero {
+    background: url("../images/whats-icracked.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    padding: 3rem 0;
+  }
+  #hero h1 {
+    margin: 2vh;
+    padding: 3vh;
+    color: rgb(255, 255, 255);
+  
+  }
+  #hero h2 {
+    color: rgb(255, 255, 255);
+  }

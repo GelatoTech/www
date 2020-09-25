@@ -1,0 +1,39 @@
+.navbar {
+    padding: 8px !important;
+  }
+  #nav-menu {
+    margin-left: 21vw;
+    cursor: pointer;
+  }
+  /* DROPDOWNS */
+  #iphones, #ipads{display: none;}
+  #nav-items a {
+    margin: 0.5rem;
+  }
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+  
+  }
+  nav ul li:hover ul {
+    display: block;
+    
+  }
+  nav ul li ul li {
+    width: 450px;
+    border-radius: 4px;
+  }
+  
+  nav ul li ul li a {
+    padding: 12px 14px;
+  }
+  nav ul li ul li a:hover {
+    background-color: #f3f3f3;
+  }

@@ -1,0 +1,51 @@
+#total-price-text {
+    color: #32b611;
+    display: inline-block;
+    margin: 0;
+    font-weight: 700;
+  }
+  #our-price-text {
+    color: #000000;
+    font-weight: 700;
+  }
+  #our-warranty-text {
+    color: #000000;
+    font-size: 1rem;
+  }
+  #our-repairtime-text {
+    color: #000000;
+    font-size: 1rem;
+  }
+  .why-container {
+    background: rgb(244, 244, 244);
+    padding: 3rem;
+    border-radius: 5px;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-container {
+    background: rgb(228, 228, 228);
+    padding: 3rem;
+    border-radius: 5px;
+  }
+  .work-section {
+    background: #000000;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+  .work-section a {
+    color: white;
+  }
+  .icon-item {
+    font-size: 2rem;
+  }
+  .icon-item:hover {
+    color: #b3b1b1;
+    transition: 0.5s ease;
+  }
+  #companies {
+    font-size: 3rem;
+  }

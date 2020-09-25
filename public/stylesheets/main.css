@@ -1,0 +1,161 @@
+@import 'mainhero.css';
+@import 'nav.css';
+@import 'social.css';
+@import 'booking.css';
+
+:root {
+  --action-color: #21bd21;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.date li{
+  padding: 1rem;
+}
+
+
+.btn {
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  transition: 0.5s ease;
+  border: none;
+}
+.grid{
+  display: grid;
+  margin: 3rem 2rem;
+  justify-items: center;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+header{
+  position:fixed;
+  z-index: 9999;
+  top:0;
+  left:0;
+  width:100%;
+}
+
+.notification {
+  border-radius: none !important;
+}
+.alert{
+  background:#e8e8e8;
+  text-align:center;
+  display:grid;
+  grid-template-columns: 100fr 2fr; 
+  padding: 20px 10px;
+  color:black;
+}
+
+
+#services {
+  background: rgb(244, 244, 244);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 5px;
+}
+#get-started {
+  background-image: url("../images/iphones-bg.jpeg");
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment:fixed; */
+  padding: 5rem;
+}
+
+#get-started h1 {
+  color: white;
+}
+#why-us ul li {
+  padding: 0.5rem;
+}
+#why-us ul {
+  list-style-type: circle;
+}
+
+
+/* media queries */
+/* [iphone6](phones, 600px and down) */
+@media only screen and (max-width: 500px) {
+  #hero .title {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+  }
+  
+  #get-started {
+    background-image: url("../images/Bitmap.jpg");
+    background-size: cover;
+    background-attachment: none;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #services header {
+  font-size: 1.8rem;
+  }
+  #get-started .title {
+    font-size: 2rem;
+  }
+  #get-started .subtitle {
+    font-size: 1rem;
+  }
+  #repair h1 {
+    font-size: 1.5rem;
+  }
+  #repair header {
+    font-size: 1.8rem;
+  }
+  #repair .subtitle {
+    font-size: 1rem;
+  }
+  
+  #works h2 {
+    font-size: 2rem;
+  }
+  .why-container {
+    text-align: center;
+  }
+  #why-us ul {
+    list-style-type: none;
+    padding: 0
+  }
+  #why-us p {
+    font-size: 18px;
+  }
+  }
+  #why-us h2 {
+    font-size: 1.8rem;
+  }
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 600px) {
+  #get-started{
+    background-attachment: fixed;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+.snapAppointments-link {
+  font-size: 2rem;
+}
+.is-dangers {
+  background: #d32323 !important;
+  color: white;
+}
+
+
+

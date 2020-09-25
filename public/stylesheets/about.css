@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.is-danger {
+  background: #d32323 !important;
+}
+#hero {
+  background: url("../images/imageonline-co-darkenimage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 8rem;
+}
+#hero h1 {
+  color: white;
+}
+#hero h2 {
+  color: white;
+}
+.grid{
+  display: grid;
+  margin: 3rem 2rem;
+  justify-items: center;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+/* social icons */
+#twitter {
+  color:#1da1f2;
+  font-size: 2rem;
+}
+#twitter:hover{color:#87caf3}
+
+#yelp {
+  color:red;
+  font-size: 2rem;
+}
+#yelp:hover{color:rgba(255, 0, 0, 0.514);}
+#google {
+  color:#4285F4;
+  font-size: 2rem;
+}
+#google:hover{color:rgb(122, 153, 194);}
+#instagram{
+  color:#3f729b;
+  font-size: 2rem;
+}
+#instagram:hover{color:rgb(122, 153, 194);}
+#linkedin{
+  color:#0e76a8;
+  font-size: 2rem;
+}
+
+#linkedin:hover{color: #798ea0;}
+#facebook{
+  color:#3b5998;
+  font-size: 2rem;
+}
+#facebook:hover{color:#798ea0;}
+.btn-action {
+  
+  background: var(--action-color);
+  color: white;
+}
+
+.work-section {
+  background: #000000;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+.work-section a {
+  color: white;
+}
+.icon-item {
+  font-size: 2rem;
+}
+.icon-item:hover {
+  color: #b3b1b1;
+  transition: 0.5s ease;
+}
+#companies {
+  font-size: 3rem;
+}
+
+/* about */
+.about-container {
+  background-color: #636363;
+  padding: 3rem;
+  margin: 5rem auto;
+  border-radius: 8px;
+}
+
+.about-container p {
+  color: white;
+}
+
+/* technicians */
+#technician {
+  padding: 3rem;
+}
+/* get started */
+#get-started {
+  background-image: url("../images/macbook-iphone.png");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  padding: 5rem;
+}
+#get-started h2 {
+  color: white;
+  
+}
+#why-us ul li {
+  padding: 0.5rem;
+}
+.date li{
+  padding: 1rem;
+}
+/* media queries */
+/* [iphone6](phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+  .about-container p {
+    color: white;
+    font-size: 25px !important;
+  }
+  .about-container h1{
+    color: white;
+    font-size: 45px !important;
+  }
+  #hero h1 {
+    font-size: 2.5rem !important;
+  }
+  #hero h2 {
+    font-size: 1.5rem !important;
+  }
+  #technician h1 {
+    font-size: 2rem !important;
+  }
+  #technician p {
+    font-size: 0.8rem !important;
+  }
+  #get-started .title {
+    font-size: 2rem;
+  }
+  #get-started .subtitle {
+    font-size: 1rem;
+  }
+
+  }
+  #get-started .title {
+    font-size: 2rem;
+  }
+  #get-started .subtitle {
+    font-size: 1rem;
+  }
+  #repair h1 {
+    font-size: 1.8rem;
+  }
+  #repair .subtitle {
+    font-size: 1rem;
+  }
+  #hero {
+    padding: 4rem 0;
+  }
+  #hero .title {
+    font-size: 3rem;
+  }
+  #hero .subtitle {
+    font-size: 1.5rem;
+  }
+  #works h1 {
+    font-size: 2rem;
+  }
+  .why-container {
+    text-align: center;
+  }
+  #why-us ul {
+    list-style-type: none;
+  }
+  #why-us h2 {
+    font-size: 1.2rem;
+  }
+  #why-us h3 {
+    font-size: 1rem;
+  }
+.navbar {
+  padding: 8px !important;
+}
+#nav-menu {
+  margin-left: 21vw;
+  cursor: pointer;
+}
+
+#nav-items a {
+  margin: 0.5rem;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #get-started{
+    background-attachment: fixed;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
