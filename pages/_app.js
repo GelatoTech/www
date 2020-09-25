@@ -14,6 +14,18 @@ import '../public/stylesheets/phone-repair.css';
 import '../public/stylesheets/screenrepairblog.css';
 import '../public/stylesheets/social.css';
 
+import dynamic from 'next/dynamic';
+
+import '../public/javascripts/jquery.min';
+import '../public/javascripts/all';
+import '../public/javascripts/aos';
+import '../public/javascripts/font-awesome-all';
+dynamic(import ('../public/javascripts/fbevents'), { ssr:false });
+dynamic(import ('../public/javascripts/googletagmanager'), { ssr:false });
+dynamic(import ('../public/javascripts/xfbml.customerchat'), { ssr:false });
+dynamic(import ('../public/javascripts/owl.carousel.min'), { ssr:false });
+
+
 import Nav from '../components/Nav';
 
 export default function App({ Component, pageProps }) {

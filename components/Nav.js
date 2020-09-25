@@ -24,7 +24,7 @@ export default function Nav() {
                   <div className="navbar-dropdown">
                     <a className="navbar-item" href='/batterytips' id="blog" target='_blank'>3 iOS Battery Saving Tips</a> <a className="navbar-item" href='/screenrepairblog' id="blog2" target='_blank'>How much will an iPhone screen repair cost you in San Francisco?</a>
                   </div>
-                </div><a className="navbar-item" href="/faq" target="_blank">FAQ</a> <a className="navbar-item" href="/legal" target="_blank">Lifetime Warranty</a> <a className="navbar-item" href="#business">Hours <i className="fa fa-clock-o" style={{marginLeft: "5px"}}></i></a> <a className="button is-info" href="tel:4155177897"><i className="fa fa-phone" style={{ marginRight: "0.3em" }}></i> (415) 517-7897</a>
+                </div><a className="navbar-item" href="/faq" target="_blank">FAQ</a> <a className="navbar-item" href="/legal" target="_blank">Lifetime Warranty</a> <a className="navbar-item" href="#business">Hours <i className="fab fa-clock-o" style={{marginLeft: "5px"}}></i></a> <a className="button is-info" href="tel:4155177897">(415) 517-7897 <i className="fa fa-phone" style={{ marginLeft: "0.3em" }}></i></a>
               </div>
             </div>
           </div>
