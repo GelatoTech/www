@@ -1,11 +1,16 @@
+import { useRouter } from 'next/router';
+
 export default function Nav() {
+  const router = useRouter();
   return(
     <div>
       <header className="is-fixed-top">
         <nav aria-label="main navigation" className="navbar testttt" id='nav' role="navigation">
           <div className="navbar-brand">
             <span>
-              <a className="navbar-item" href="/">
+              <a className="navbar-item"
+              onClick={() => { router.push('/') }}
+              >
                 <img alt="iphone screen repair" height="30" src="images/nav-logo-gtech.png" width="150" />
               </a>
             </span> 
@@ -18,7 +23,9 @@ export default function Nav() {
           <div className="navbar-menu has-dropdown" id="navbarBasicExample">
             <div className="navbar-end" id="nav-items">
               <div className="navbar-item">
-                <a className="navbar-item" href="#works">How it Works</a> <a className="navbar-item" href="#repair">Repair my iPhone <i className="fa fa-mobile" style={{marginLeft: "1vh"}}></i></a> <a className="navbar-item" href="/about" target="_blank">About Us</a>
+                <a className="navbar-item" href="#works">How it Works</a> <a className="navbar-item" href="#repair">Repair my iPhone <i className="fa fa-mobile" style={{marginLeft: "1vh"}}></i></a> <a className="navbar-item" 
+                  onClick={() => { router.push('/about') } } 
+                  target="_blank">About Us</a>
                 <div className="navbar-item has-dropdown is-hoverable">
                   <a className="navbar-link">Blog</a>
                   <div className="navbar-dropdown">

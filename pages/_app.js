@@ -3,7 +3,6 @@ import ReactGA from 'react-ga';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 import '../public/stylesheets/about.css';
-import '../public/stylesheets/aos.css';
 import '../public/stylesheets/battery.css';
 import '../public/stylesheets/booking.css';
 import '../public/stylesheets/bulma.min.css';
