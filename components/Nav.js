@@ -2,7 +2,7 @@ export default function Nav() {
   return(
     <div>
       <header className="is-fixed-top">
-        <nav aria-label="main navigation" className="navbar" id='nav' role="navigation">
+        <nav aria-label="main navigation" className="navbar testttt" id='nav' role="navigation">
           <div className="navbar-brand">
             <span>
               <a className="navbar-item" href="/">
@@ -18,13 +18,13 @@ export default function Nav() {
           <div className="navbar-menu has-dropdown" id="navbarBasicExample">
             <div className="navbar-end" id="nav-items">
               <div className="navbar-item">
-                <a className="navbar-item" href="#works">How it Works</a> <a className="navbar-item" href="#repair">Repair my iPhone <i className="fas fa-mobile" style={{marginLeft: "1vh"}}></i></a> <a className="navbar-item" href="/about" target="_blank">About Us</a>
+                <a className="navbar-item" href="#works">How it Works</a> <a className="navbar-item" href="#repair">Repair my iPhone <i className="fa fa-mobile" style={{marginLeft: "1vh"}}></i></a> <a className="navbar-item" href="/about" target="_blank">About Us</a>
                 <div className="navbar-item has-dropdown is-hoverable">
                   <a className="navbar-link">Blog</a>
                   <div className="navbar-dropdown">
                     <a className="navbar-item" href='/batterytips' id="blog" target='_blank'>3 iOS Battery Saving Tips</a> <a className="navbar-item" href='/screenrepairblog' id="blog2" target='_blank'>How much will an iPhone screen repair cost you in San Francisco?</a>
                   </div>
-                </div><a className="navbar-item" href="/faq" target="_blank">FAQ</a> <a className="navbar-item" href="/legal" target="_blank">Lifetime Warranty</a> <a className="navbar-item" href="#business">Hours <i className="fas fa-clock" style={{marginLeft: "5px"}}></i></a> <a className="button is-info" href="tel:4155177897">(415) 517-7897 <i className="fas fa-phone"></i></a>
+                </div><a className="navbar-item" href="/faq" target="_blank">FAQ</a> <a className="navbar-item" href="/legal" target="_blank">Lifetime Warranty</a> <a className="navbar-item" href="#business">Hours <i className="fa fa-clock-o" style={{marginLeft: "5px"}}></i></a> <a className="button is-info" href="tel:4155177897"><i className="fa fa-phone" style={{ marginRight: "0.3em" }}></i> (415) 517-7897</a>
               </div>
             </div>
           </div>
