@@ -1,6 +1,4 @@
-import Head from 'next/head'
-import '../public/stylesheets/about.css';
-
+import Head from 'next/head';
 
 export default function About() {
   return(

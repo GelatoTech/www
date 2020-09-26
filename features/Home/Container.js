@@ -1,6 +1,30 @@
+import Head from 'next/head';
+
 export default function Home() {
   return(
   <div>
+    <Head>
+      <meta charset="UTF-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+      <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+      <link href="images/logo-square.png" rel="shortcut icon" type="image/png" />
+      <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." name="description" />
+      <meta content="index" name="robots" />
+      <meta content="Mobile iPhone Repair in San Francisco | Gelatotech" itemprop="name" />
+      <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." itemprop="description" />
+      <meta content="images/iphone-repair.png" itemprop="image" />
+      <meta content="https://www.gelatotech.com" property="og:url" />
+      <meta content="website" property="og:type" />
+      <meta content="Mobile iPhone Repair in San Francisco | Gelatotech" property="og:title" />
+      <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." property="og:description" />
+      <meta content="images/iphone-repair.png" property="og:image" />
+      <meta content="summary_large_image" name="twitter:card" />
+      <meta content="Mobile iPhone Repair in San Francisco | Gelatotech" name="twitter:title" />
+      <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." name="twitter:description" />
+      <meta content="images/iphone-repair.png" name="twitter:image" />
+      <meta content=" iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, demand" name="keywords" />
+      <meta content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" name="google-site-verification" />
+    </Head>
     <section className="hero" id="hero">
       <div id="hero-body">
         <div className="container has-text-centered">
