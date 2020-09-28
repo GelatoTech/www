@@ -2,12 +2,12 @@ import { useEffect, useRef } from 'react';
 import ReactGA from 'react-ga';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 
+
 import '../public/stylesheets/about.css';
 import '../public/stylesheets/battery.css';
 import '../public/stylesheets/booking.css';
 import '../public/stylesheets/bulma.min.css';
 import '../public/stylesheets/faq.css';
-import '../public/stylesheets/font-awesome.min.css';
 import '../public/stylesheets/legal.css';
 import '../public/stylesheets/main.css';
 import '../public/stylesheets/mainhero.css';
