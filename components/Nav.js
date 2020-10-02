@@ -25,7 +25,11 @@ export default function Nav() {
           <div className="navbar-menu has-dropdown" id="navbarBasicExample">
             <div className="navbar-end" id="nav-items">
               <div className="navbar-item">
-                <a className="navbar-item" href="#works">How it Works</a> <a className="navbar-item" href="#repair">Repair my iPhone <FontAwesomeIcon icon={faMobile} style={{marginLeft: "1vh"}} /></a> <a className="navbar-item" 
+                <a className="navbar-item" 
+                  onClick={() => { router.push('/#works') } } 
+                >How it Works</a> <a className="navbar-item"
+                  onClick={() => { router.push('/#repair') } } 
+                >Repair my iPhone <FontAwesomeIcon icon={faMobile} style={{marginLeft: "1vh"}} /></a> <a className="navbar-item" 
                   onClick={() => { router.push('/about') } } 
                   target="_blank">About Us</a>
                 <div className="navbar-item has-dropdown is-hoverable">
