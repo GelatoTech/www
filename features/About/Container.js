@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMobile } from '@fortawesome/free-solid-svg-icons';
 
 export default function About() {
   return(
@@ -29,7 +31,19 @@ export default function About() {
       <meta name="keywords" content=" iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement on-demand, on demand" />
     </Head>
     <section className="hero" id="hero">
-      ABOUT PAGE
+      <div className="hero-body">
+        <div className="container has-text-centered">
+          <h1 className="title is-1">
+            Phone Repair at your location
+          </h1>
+        </div>
+        <div className="container has-text-centered">
+          <h2 className="subtitle is-6">
+            Providing You The Quality Service &amp; Parts
+          </h2>
+          <a href="#repair" target="_blank" className="button is-info is-large" style={{ marginLeft: '1rem' }}>Book iPhone Repair<FontAwesomeIcon icon={faMobile} style={{ margin: '.5rem' }} /></a>
+        </div>
+      </div>
     </section>
   </div>
   )
