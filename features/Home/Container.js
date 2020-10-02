@@ -1,8 +1,8 @@
 import Head from 'next/head';
 // import 'all.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobile } from '@fortawesome/free-solid-svg-icons';
-import { faYelp } from '@fortawesome/free-brands-svg-icons';
+import { faMobile, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faYelp, faGoogle, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 
 export default function Home() {
   return(
@@ -87,22 +87,22 @@ export default function Home() {
           </div>
           <div className="level-item has-text-centered">
             <div>
-              <a href="https://www.google.com/search?q=gelatotech.&oq=gelatotech.+&aqs=chrome..69i57j69i60l5.1879j0j4&sourceid=chrome&ie=UTF-8#lrd=0x808f7fd0f5b28c95:0x7f621c4f11f36a76,1,,," target="_blank"><i className="fab fa-google icon-item" /></a>
+              <a href="https://www.google.com/search?q=gelatotech.&oq=gelatotech.+&aqs=chrome..69i57j69i60l5.1879j0j4&sourceid=chrome&ie=UTF-8#lrd=0x808f7fd0f5b28c95:0x7f621c4f11f36a76,1,,," target="_blank"><FontAwesomeIcon icon={faGoogle} style={{ height: '2em' }} /></a>
             </div>
           </div>
           <div className="level-item has-text-centered">
             <div>
-              <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?osq=gelatotech" target="_blank"><i className="fab fa-yelp icon-item" /></a>
+              <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?osq=gelatotech" target="_blank"><FontAwesomeIcon icon={faYelp} style={{ height: '2em' }} /></a>
             </div>
           </div>
           <div className="level-item has-text-centered">
             <div>
-              <a href="https://www.facebook.com/Gelatotech/" target="_blank" /> <i><i className="fab fa-facebook icon-item" /></i>
+              <a href="https://www.facebook.com/Gelatotech/" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} style={{ height: '2em' }} /></a>
             </div>
           </div>
         </nav>
       </div>
-    </section>{/* how it works */}
+    </section>
     <section className="section" id="works">
       <div className="container">
         <h1 className="title is-1">How it Works</h1>
@@ -136,7 +136,7 @@ export default function Home() {
         <h1 className="title is-1 has-text-centered">Why us?</h1>
         <div className="columns">
           <div className="column">
-            <div className="why-container">
+            <div className="why-container" style={{ textAlign: 'left' }}>
               <ul style={{listStyle: 'none'}}>
                 <li>
                   <h2 className="title is-3">Save Your Time</h2>
@@ -166,7 +166,7 @@ export default function Home() {
     </section>
     <section className="section" id="repair">
       <div className=" form-container container has-text-centered">
-        <h1 className="title is-1" data-aos="fade-up">Schedule Repair</h1>
+        <i><h1 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">Schedule Repair</h1></i>
         <h2 className="subtitle" data-aos="fade-up">Pick your device model and problem.</h2>
         <figure>
           <img alt="iPhone Screen Repair" src="images/iphonex.png" style={{maxWidth: '80px'}} />
@@ -248,7 +248,7 @@ export default function Home() {
             </div>
             <div className="field" id="ipads">
               <div className="select is-info is-rounded">
-                <select id="select-ipad-model" name="chooseDeviceModel" onchange="myFunction()">
+                <select id="select-ipad-model" name="chooseDeviceModel" onChange="myFunction()">
                   <option disabled selected value>
                     Select Model
                   </option>
@@ -393,20 +393,20 @@ export default function Home() {
         <h1 className="subtitle is-2">Service Includes</h1>
         <div className="columns">
           <div className="column">
-            <h2>Same-Day iPhone Repair <i className="fas fa-check" style={{marginLeft: '0.5rem', color: '#1ED760'}} /></h2>
+            <h2>Same-Day iPhone Repair <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
           </div>
           <div className="column">
-            <h2>Device Diagnostic <i className="fas fa-check" style={{marginLeft: '0.5rem', color: '#1ED760'}} /></h2>
+            <h2>Device Diagnostic <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
           </div>
           <div className="column">
-            <h2>Lifetime Warranty <i className="fas fa-check" style={{marginLeft: '0.5rem', color: '#1ED760'}} /></h2>
+            <h2>Lifetime Warranty <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
           </div>
           <div className="column">
-            <h2>Quality Parts<i className="fas fa-check" style={{marginLeft: '0.5rem', color: '#1ED760'}} /></h2>
+            <h2>Quality Parts <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
           </div>
         </div>
       </div>
-    </section>{/* get started banner */}
+    </section>
     <div className="section" id="get-started">
       <div className="container">
         <h3 className="title is-1" data-aos="fade-right" style={{color: 'white'}}>Ready to get started?</h3>
