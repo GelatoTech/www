@@ -46,14 +46,7 @@ export default function Home() {
           </div>
           <div className="container" id="reviews">
             <div className="columns owl-carousel owl-theme" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '80px' }}>
-            <OwlCarousel items={3} margin={8} autoplay ={true} loop dots={false} >  
-              <div className="column">
-                <div className="notification">
-                  <img alt="customer brooke iphone repair review" src="images/testimonials/Brooke.png" style={{ maxWidth: '200px' }} />
-                  <p>"Elbert showed up literally 15 minutes from the time he first texted me back after my request, and repaired my iPhone in less than 15 minutes. He was professional, kind, patient (I kept him waiting a few more minutes while finishing a meeting), and the work was superb! I will absolutely call him again.”</p><br />
-                  <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
-                </div>
-              </div>
+            <OwlCarousel items={4} margin={8} autoplay={true} loop dots={false} >  
               <div className="column">
                 <div className="notification">
                   <img alt="customer iphone repair review" src="images/testimonials/Daniel-A.png" style={{ maxWidth: '200px' }} />
@@ -79,6 +72,13 @@ export default function Home() {
                 <div className="notification">
                   <img alt="customer lilly iphone repair review" src="images/testimonials/Lilly-H.png" style={{ maxWidth: '200px' }} />
                   <p>"Elbert is excellent! He is quick and responsive. And did a great job in repairing two of my iPhones. I contacted him Friday night and he came over Saturday. I highly recommend him to anyone.”</p><br />
+                  <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+                </div>
+              </div>
+              <div className="column">
+                <div className="notification">
+                  <img alt="customer brooke iphone repair review" src="images/testimonials/Brooke.png" style={{ maxWidth: '200px' }} />
+                  <p>"Elbert showed up literally 15 minutes from the time he first texted me back after my request, and repaired my iPhone in less than 15 minutes. He was professional, kind, patient (I kept him waiting a few more minutes while finishing a meeting), and the work was superb! I will absolutely call him again.”</p><br />
                   <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
                 </div>
               </div>
