@@ -1,419 +1,429 @@
 import Head from 'next/head';
-// import 'all.css';
+import dynamic from "next/dynamic";
+const OwlCarousel = dynamic(import("react-owl-carousel"), {
+  ssr: false,
+});
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile, faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faYelp, faGoogle, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 
+const myFunction = () => { alert('myFunction TODO!') }
+
 export default function Home() {
   return(
-  <div>
-    <Head>
-      <title>Mobile iPhone Repair in San Francisco | Gelatotech</title>
-      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-      <meta content="ie=edge" httpEquiv="X-UA-Compatible" />
-      <link href="images/logo-square.png" rel="shortcut icon" type="image/png" />
-      <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." name="description" />
-      <meta content="index" name="robots" />
-      <meta content="Mobile iPhone Repair in San Francisco | Gelatotech" itemprop="name" />
-      <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." itemprop="description" />
-      <meta content="images/iphone-repair.png" itemprop="image" />
-      <meta content="https://www.gelatotech.com" property="og:url" />
-      <meta content="website" property="og:type" />
-      <meta content="Mobile iPhone Repair in San Francisco | Gelatotech" property="og:title" />
-      <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." property="og:description" />
-      <meta content="images/iphone-repair.png" property="og:image" />
-      <meta content="summary_large_image" name="twitter:card" />
-      <meta content="Mobile iPhone Repair in San Francisco | Gelatotech" name="twitter:title" />
-      <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." name="twitter:description" />
-      <meta content="images/iphone-repair.png" name="twitter:image" />
-      <meta content=" iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, demand" name="keywords" />
-      <meta content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" name="google-site-verification" />
-    </Head>
-    <section className="hero" id="hero">
-      <div id="hero-body">
-        <div className="container has-text-centered">
-          <h1 className="title is-1">Mobile iPhone Repair<br />at your location</h1>
-          <p className="subtitle is-3" style={{ color: 'white' }}>San Francisco, CA</p><br />
-          <a className="button is-info is-large" href="#repair">Book iPhone Repair <FontAwesomeIcon icon={faMobile} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
-        </div>
-        <div className="container" id="reviews">
-          <div className="columns owl-carousel owl-theme" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '80px' }}>
-            <div className="column">
-              <div className="notification">
-                <img alt="customer brooke iphone repair review" src="images/testimonials/Brooke.png" style={{ maxWidth: '200px' }} />
-                <p>"Elbert showed up literally 15 minutes from the time he first texted me back after my request, and repaired my iPhone in less than 15 minutes. He was professional, kind, patient (I kept him waiting a few more minutes while finishing a meeting), and the work was superb! I will absolutely call him again.”</p><br />
-                <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+    <div>
+      <Head>
+        <title>Mobile iPhone Repair in San Francisco | Gelatotech</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="ie=edge" httpEquiv="X-UA-Compatible" />
+        <link href="images/logo-square.png" rel="shortcut icon" type="image/png" />
+        <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." name="description" />
+        <meta content="index" name="robots" />
+        <meta content="Mobile iPhone Repair in San Francisco | Gelatotech" itemProp="name" />
+        <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." itemProp="description" />
+        <meta content="images/iphone-repair.png" itemProp="image" />
+        <meta content="https://www.gelatotech.com" property="og:url" />
+        <meta content="website" property="og:type" />
+        <meta content="Mobile iPhone Repair in San Francisco | Gelatotech" property="og:title" />
+        <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." property="og:description" />
+        <meta content="images/iphone-repair.png" property="og:image" />
+        <meta content="summary_large_image" name="twitter:card" />
+        <meta content="Mobile iPhone Repair in San Francisco | Gelatotech" name="twitter:title" />
+        <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." name="twitter:description" />
+        <meta content="images/iphone-repair.png" name="twitter:image" />
+        <meta content=" iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, demand" name="keywords" />
+        <meta content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" name="google-site-verification" />
+        {/* <link rel="stylesheet" href="stylesheets/main.css" /> */}
+        {/* <link rel="stylesheet" href="stylesheets/owl.theme.default.min.css" /> */}
+        {/* <script src="javascripts/jquery.min.js"></script> */}
+      </Head>
+      <section className="hero" id="hero">
+        <div id="hero-body">
+          <div className="container has-text-centered">
+            <h1 className="title is-1">Mobile iPhone Repair<br />at Your Location</h1>
+            <p className="subtitle is-3" style={{ color: 'white' }}>San Francisco, CA</p><br />
+            <a className="button is-info is-large" href="#repair">Book iPhone Repair <FontAwesomeIcon icon={faMobile} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+          </div>
+          <div className="container" id="reviews">
+            <div className="columns owl-carousel owl-theme" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '80px' }}>
+            <OwlCarousel items={3} margin={8} autoplay ={true} loop dots={false} >  
+              <div className="column">
+                <div className="notification">
+                  <img alt="customer brooke iphone repair review" src="images/testimonials/Brooke.png" style={{ maxWidth: '200px' }} />
+                  <p>"Elbert showed up literally 15 minutes from the time he first texted me back after my request, and repaired my iPhone in less than 15 minutes. He was professional, kind, patient (I kept him waiting a few more minutes while finishing a meeting), and the work was superb! I will absolutely call him again.”</p><br />
+                  <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+                </div>
               </div>
-            </div>
-            <div className="column">
-              <div className="notification">
-                <img alt="customer iphone repair review" src="images/testimonials/Daniel-A.png" style={{ maxWidth: '200px' }} />
-                <p>"This is a truly unique and fantastic idea, well marketed and well executed. I put in a request on their extremely user friendly website and received a call right away and he was at my door just 30min later. He was super friendly and he fixed my iPhone in 20min. cant ask for more.”</p><br />
-                <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+              <div className="column">
+                <div className="notification">
+                  <img alt="customer iphone repair review" src="images/testimonials/Daniel-A.png" style={{ maxWidth: '200px' }} />
+                  <p>"This is a truly unique and fantastic idea, well marketed and well executed. I put in a request on their extremely user friendly website and received a call right away and he was at my door just 30min later. He was super friendly and he fixed my iPhone in 20min. cant ask for more.”</p><br />
+                  <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+                </div>
               </div>
-            </div>
-            <div className="column">
-              <div className="notification">
-                <img alt="customer lukas iphone repair review" src="images/testimonials/Lukas-B.png" style={{ maxWidth: '200px' }} />
-                <p>"These guys do great work, are friendly, and have super reasonable prices. I'd recommend them to anyone needing iPhone repair.”</p><br />
-                <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+              <div className="column">
+                <div className="notification">
+                  <img alt="customer lukas iphone repair review" src="images/testimonials/Lukas-B.png" style={{ maxWidth: '200px' }} />
+                  <p>"These guys do great work, are friendly, and have super reasonable prices. I'd recommend them to anyone needing iPhone repair.”</p><br />
+                  <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+                </div>
               </div>
-            </div>
-            <div className="column">
-              <div className="notification">
-                <img alt="customer brendan iphone repair review" src="images/testimonials/Brendan-D.png" style={{ maxWidth: '200px' }} />
-                <p>"If you are reading this just send him a message. Way better than apple store/support for less $$. He even comes to your house!”</p><br />
-                <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+              <div className="column">
+                <div className="notification">
+                  <img alt="customer brendan iphone repair review" src="images/testimonials/Brendan-D.png" style={{ maxWidth: '200px' }} />
+                  <p>"If you are reading this just send him a message. Way better than apple store/support for less $$. He even comes to your house!”</p><br />
+                  <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+                </div>
               </div>
-            </div>
-            <div className="column">
-              <div className="notification">
-                <img alt="customer lilly iphone repair review" src="images/testimonials/Lilly-H.png" style={{ maxWidth: '200px' }} />
-                <p>"Elbert is excellent! He is quick and responsive. And did a great job in repairing two of my iPhones. I contacted him Friday night and he came over Saturday. I highly recommend him to anyone.”</p><br />
-                <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+              <div className="column">
+                <div className="notification">
+                  <img alt="customer lilly iphone repair review" src="images/testimonials/Lilly-H.png" style={{ maxWidth: '200px' }} />
+                  <p>"Elbert is excellent! He is quick and responsive. And did a great job in repairing two of my iPhones. I contacted him Friday night and he came over Saturday. I highly recommend him to anyone.”</p><br />
+                  <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+                </div>
               </div>
+            </OwlCarousel>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section className="section work-section">
-      <div className="container">
-        <nav className="level is-mobile">
-          <div className="level-item has-text-centered">
-            <div>
-              <h3 className="title is-3 icon-item" style={{color: 'white'}}>Trusted By:</h3>
-            </div>
-          </div>
-          <div className="level-item has-text-centered">
-            <div>
-              <a href="https://www.google.com/search?q=gelatotech.&oq=gelatotech.+&aqs=chrome..69i57j69i60l5.1879j0j4&sourceid=chrome&ie=UTF-8#lrd=0x808f7fd0f5b28c95:0x7f621c4f11f36a76,1,,," target="_blank"><FontAwesomeIcon icon={faGoogle} style={{ height: '2em' }} /></a>
-            </div>
-          </div>
-          <div className="level-item has-text-centered">
-            <div>
-              <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?osq=gelatotech" target="_blank"><FontAwesomeIcon icon={faYelp} style={{ height: '2em' }} /></a>
-            </div>
-          </div>
-          <div className="level-item has-text-centered">
-            <div>
-              <a href="https://www.facebook.com/Gelatotech/" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} style={{ height: '2em' }} /></a>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </section>
-    <section className="section" id="works">
-      <div className="container">
-        <h1 className="title is-1">How it Works</h1>
-        <div className="columns">
-          <div className="column">
-            <figure className="image">
-              <img alt="Book your iphone repair" src="images/undraw-calendar-dutt.png" style={{width: '40%', marginLeft: 'auto', marginRight: 'auto'}} />
-              <h2 className="title is-3center" data-aos="zoom-out" style={{textAlign: 'center'}}>Book Your Repair</h2>
-              <p className="subtitle is-5" data-aos="zoom-out" style={{margin: 'auto', textAlign: 'center'}}>Once you schedule your appointment, we will cofirm your preffered time and location for us to repair your device.</p>
-            </figure>
-          </div>
-          <div className="column">
-            <figure className="image">
-              <img alt="We repair your phone screen on-spot" src="images/undraw-order-a-car-3tww.png" style={{width: '40%', marginLeft: 'auto', marginRight: 'auto'}} />
-              <h2 className="title is-3 center" data-aos="zoom-out" style={{textAlign: 'center'}}>We Come To You</h2>
-              <p className="subtitle is-5" data-aos="zoom-out" style={{margin: 'auto', textAlign: 'center'}}>We Repair your iPhone On-Spot, usually inside our car or your preffered location.</p>
-            </figure>
-          </div>
-          <div className="column">
-            <figure className="image">
-              <img alt="iPhone screen repair on-spot" src="images/undraw-Credit-card-3ed6.png" style={{width: '40%', marginRight: 'auto', marginLeft: 'auto'}} />
-              <h2 className="title is-3 center" data-aos="zoom-out" style={{textAlign: 'center'}}>Pay After The Repair</h2>
-              <p className="subtitle is-5" data-aos="zoom-out" style={{margin: 'auto', textAlign: 'center'}}>Once the repair is done , we make sure to test everyhting before leaving. After the test you can pay with cash, venmo, or any credit card.</p>
-            </figure>
           </div>
         </div>
-      </div>
-    </section>{/* why us */}
-    <section className="section" id="why-us">
-      <div className="container">
-        <h1 className="title is-1 has-text-centered">Why us?</h1>
-        <div className="columns">
-          <div className="column">
-            <div className="why-container" style={{ textAlign: 'left' }}>
-              <ul style={{listStyle: 'none'}}>
-                <li>
-                  <h2 className="title is-3">Save Your Time</h2>
-                  <p className="subtitle is-5">Our technician comes to you preffered location. We ensure you quality parts. </p>
-                </li>
-                <li style={{listStyle: 'none'}}><br /></li>
-                <li>
-                  <h2 className="title is-3">Fast &amp; Reliable Service</h2>
-                  <p className="subtitle is-5">iPhone Screen Repairs take 15 minutes or less. Read our Customer Reviews on <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Yelp</a> or <a href="https://g.page/GelatotechiPhoneRepair?share" target="_blank">Google</a></p>
-                </li>
-                <li style={{listStyle: 'none'}}><br /></li>
-                <li>
-                  <h2 className="title is-3">Risk Free</h2>
-                  <p className="subtitle is-5">You only pay after the repair is done and fully tested. Lifetime warranty is included on Any iPhone Screen Repair.</p>
-                </li>
-                <li style={{listStyle: 'none'}}><br /></li>
-              </ul>
+      </section>
+      <section className="section work-section">
+        <div className="container">
+          <nav className="level is-mobile">
+            <div className="level-item has-text-centered">
+              <div>
+                <h3 className="title is-3 icon-item" style={{color: 'white'}}>Trusted By:</h3>
+              </div>
+            </div>
+            <div className="level-item has-text-centered">
+              <div>
+                <a href="https://www.google.com/search?q=gelatotech.&oq=gelatotech.+&aqs=chrome..69i57j69i60l5.1879j0j4&sourceid=chrome&ie=UTF-8#lrd=0x808f7fd0f5b28c95:0x7f621c4f11f36a76,1,,," target="_blank"><FontAwesomeIcon icon={faGoogle} style={{ height: '2em' }} /></a>
+              </div>
+            </div>
+            <div className="level-item has-text-centered">
+              <div>
+                <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?osq=gelatotech" target="_blank"><FontAwesomeIcon icon={faYelp} style={{ height: '2em' }} /></a>
+              </div>
+            </div>
+            <div className="level-item has-text-centered">
+              <div>
+                <a href="https://www.facebook.com/Gelatotech/" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} style={{ height: '2em' }} /></a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section className="section" id="works">
+        <div className="container">
+          <h1 className="title is-1">How it Works</h1>
+          <div className="columns">
+            <div className="column">
+              <figure className="image">
+                <img alt="Book your iphone repair" src="images/undraw-calendar-dutt.png" style={{width: '40%', marginLeft: 'auto', marginRight: 'auto'}} />
+                <h2 className="title is-3center" data-aos="zoom-out" style={{textAlign: 'center'}}>Book Your Repair</h2>
+                <p className="subtitle is-5" data-aos="zoom-out" style={{margin: 'auto', textAlign: 'center'}}>Once you schedule your appointment, we will cofirm your preffered time and location for us to repair your device.</p>
+              </figure>
+            </div>
+            <div className="column">
+              <figure className="image">
+                <img alt="We repair your phone screen on-spot" src="images/undraw-order-a-car-3tww.png" style={{width: '40%', marginLeft: 'auto', marginRight: 'auto'}} />
+                <h2 className="title is-3 center" data-aos="zoom-out" style={{textAlign: 'center'}}>We Come To You</h2>
+                <p className="subtitle is-5" data-aos="zoom-out" style={{margin: 'auto', textAlign: 'center'}}>We Repair your iPhone On-Spot, usually inside our car or your preffered location.</p>
+              </figure>
+            </div>
+            <div className="column">
+              <figure className="image">
+                <img alt="iPhone screen repair on-spot" src="images/undraw-Credit-card-3ed6.png" style={{width: '40%', marginRight: 'auto', marginLeft: 'auto'}} />
+                <h2 className="title is-3 center" data-aos="zoom-out" style={{textAlign: 'center'}}>Pay After The Repair</h2>
+                <p className="subtitle is-5" data-aos="zoom-out" style={{margin: 'auto', textAlign: 'center'}}>Once the repair is done , we make sure to test everyhting before leaving. After the test you can pay with cash, venmo, or any credit card.</p>
+              </figure>
             </div>
           </div>
-          <div className="column">
-            <figure className="image">
-              <img alt="On-Demand iPhone Screen Repair" src="images/technician-fixing.jpg" style={{borderRadius: '5px', height: '30%'}} />
-            </figure>
+        </div>
+      </section>{/* why us */}
+      <section className="section" id="why-us">
+        <div className="container">
+          <h1 className="title is-1 has-text-centered">Why us?</h1>
+          <div className="columns">
+            <div className="column">
+              <div className="why-container" style={{ textAlign: 'left' }}>
+                <ul style={{listStyle: 'none'}}>
+                  <li>
+                    <h2 className="title is-3">Save Your Time</h2>
+                    <p className="subtitle is-5">Our technician comes to you preffered location. We ensure you quality parts. </p>
+                  </li>
+                  <li style={{listStyle: 'none'}}><br /></li>
+                  <li>
+                    <h2 className="title is-3">Fast &amp; Reliable Service</h2>
+                    <p className="subtitle is-5">iPhone Screen Repairs take 15 minutes or less. Read our Customer Reviews on <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Yelp</a> or <a href="https://g.page/GelatotechiPhoneRepair?share" target="_blank">Google</a></p>
+                  </li>
+                  <li style={{listStyle: 'none'}}><br /></li>
+                  <li>
+                    <h2 className="title is-3">Risk Free</h2>
+                    <p className="subtitle is-5">You only pay after the repair is done and fully tested. Lifetime warranty is included on Any iPhone Screen Repair.</p>
+                  </li>
+                  <li style={{listStyle: 'none'}}><br /></li>
+                </ul>
+              </div>
+            </div>
+            <div className="column">
+              <figure className="image">
+                <img alt="On-Demand iPhone Screen Repair" src="images/technician-fixing.jpg" style={{borderRadius: '5px', height: '30%'}} />
+              </figure>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section className="section" id="repair">
-      <div className=" form-container container has-text-centered">
-        <i><h1 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">Schedule Repair</h1></i>
-        <h2 className="subtitle" data-aos="fade-up">Pick your device model and problem.</h2>
-        <figure>
-          <img alt="iPhone Screen Repair" src="images/iphonex.png" style={{maxWidth: '80px'}} />
-        </figure>
-        <h3 className="title is-4" id="our-price-text" />
-        <p id="total-price-text" />
-        <h3 className="title is-4" />
-        <p id="warranty-text" />
-        <h3 className="title is-4" />
-        <p id="repairtime-text" />
-        <form autoComplete="on" id="repair-form" method="post" name="repair-form">
-          <input name="form-name" type="hidden" defaultValue="repair-form" />
-          <div className="field">
+      </section>
+      <section className="section" id="repair">
+        <div className=" form-container container has-text-centered">
+          <i><h1 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">Schedule Repair</h1></i>
+          <h2 className="subtitle" data-aos="fade-up">Pick your device model and problem.</h2>
+          <figure>
+            <img alt="iPhone Screen Repair" src="images/iphonex.png" style={{maxWidth: '80px'}} />
+          </figure>
+          <h3 className="title is-4" id="our-price-text" />
+          <p id="total-price-text" />
+          <h3 className="title is-4" />
+          <p id="warranty-text" />
+          <h3 className="title is-4" />
+          <p id="repairtime-text" />
+          <form autoComplete="on" id="repair-form" method="post" name="repair-form">
+            <input name="form-name" type="hidden" defaultValue="repair-form" />
             <div className="field">
-              <div className="select is-info is-rounded">
-                <select id="select-device" name="selectDevices" onChange="myFunction()" required>
-                  <option disabled selected value>
-                    Select Device
-                  </option>
-                  <option value="iphone">
-                    iPhone
-                  </option>
-                  <option value="ipad">
-                    iPad
-                  </option>{/* <option value="samsung">Samsung</option> */}
-                </select>
+              <div className="field">
+                <div className="select is-info is-rounded">
+                  <select id="select-device" name="selectDevices" onChange={myFunction} required>
+                    <option disabled defaultValue value>
+                      Select Device
+                    </option>
+                    <option value="iphone">
+                      iPhone
+                    </option>
+                    <option value="ipad">
+                      iPad
+                    </option>{/* <option value="samsung">Samsung</option> */}
+                  </select>
+                </div>
+              </div>
+              <div className="field" id="iphones">
+                <div className="select is-info is-rounded">
+                  <select id="select-device-model" name="chooseDeviceModel" onChange={myFunction}>
+                    <option disabled defaultValue value>
+                      Select Model
+                    </option>
+                    <option value="11pro">
+                      iPhone 11 Pro
+                    </option>
+                    <option value={11}>
+                      iPhone 11
+                    </option>
+                    <option value="xsmax">
+                      iPhone Xs Max
+                    </option>
+                    <option value="xs">
+                      iPhone Xs
+                    </option>
+                    <option value="xr">
+                      iPhone XR
+                    </option>
+                    <option value="x">
+                      iPhone X
+                    </option>
+                    <option value="8plus">
+                      iPhone 8 Plus
+                    </option>
+                    <option value={8}>
+                      iPhone 8
+                    </option>
+                    <option value="7plus">
+                      iPhone 7 Plus
+                    </option>
+                    <option value={7}>
+                      iPhone 7
+                    </option>
+                    <option value="6splus">
+                      iPhone 6s Plus
+                    </option>
+                    <option value="6s">
+                      iPhone 6s
+                    </option>
+                    <option value="6plus">
+                      iPhone 6 Plus
+                    </option>
+                    <option value={6}>
+                      iPhone 6
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div className="field" id="ipads">
+                <div className="select is-info is-rounded">
+                  <select id="select-ipad-model" name="chooseDeviceModel" onChange={myFunction}>
+                    <option disabled defaultValue value>
+                      Select Model
+                    </option>
+                    <option value="ipadmini">
+                      iPadmini (A1432, A1454 ,A1455)
+                    </option>
+                    <option value="ipadmini2">
+                      iPad mini 2 (A1489, A1490, A1491)
+                    </option>
+                    <option value="ipadmini3">
+                      iPad mini 3 (A1599, A1600)
+                    </option>
+                    <option value="ipadmini4">
+                      iPad mini 4 (A1538, A1550)
+                    </option>
+                    <option value="ipadmini5">
+                      iPad mini 5 (A2133, A2124, A2126, A2125)
+                    </option>
+                    <option value="ipad2">
+                      iPad 2 (A1395, A1396)
+                    </option>
+                    <option value="ipad3">
+                      iPad 3 (A1416, A1430, A1403)
+                    </option>
+                    <option value="ipad4">
+                      iPad 4 (A1458, A1459, A1460)
+                    </option>
+                    <option value="ipad5">
+                      iPad 5 (A1822, A1823)
+                    </option>
+                    <option value="ipad6">
+                      iPad 6 (A1893, A1954)
+                    </option>
+                    <option value="ipad7">
+                      iPad 7 (A2197, A2198, A2200)
+                    </option>
+                    <option value="ipadair">
+                      iPad Air (A1474, A1475)
+                    </option>
+                    <option value="ipadair2">
+                      iPad Air 2 (A1566, A1567)
+                    </option>
+                    <option value="ipadair3">
+                      iPad Air 3 (A2152, A2123, A2153)
+                    </option>
+                    <option value="ipadpro9">
+                      iPad Pro 9.7 inch (A1673, A1674)
+                    </option>
+                    <option value="ipadpro10">
+                      iPad Pro (10.5-inch)(A1701, A1709)
+                    </option>
+                    <option value="ipadpro3">
+                      iPad Pro 11-inch (A1980, A2013, A1934)
+                    </option>
+                    <option value="ipadpro121">
+                      iPad Pro 12.9-inch (A1584, A1652)
+                    </option>
+                    <option value="ipadpro122">
+                      iPad Pro 12.9-inch (2nd generation)(A1670, A1671)
+                    </option>
+                    <option value="ipadpro123">
+                      iPad Pro 12.9-inch (3rd generation) (A1876, A2014, A1895)
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div className="field">
+                <div className="select is-danger is-rounded">
+                  <select id="select-issue" name="issue" onChange={myFunction} required>
+                    <option disabled defaultValue value>
+                      Select Problem
+                    </option>
+                    <option value="screen">
+                      Screen replacement
+                    </option>
+                    <option value="battery">
+                      Battery replacement
+                    </option>
+                    <option value="charging">
+                      Charging port replacement
+                    </option>
+                    <option value="water">
+                      Water Damage
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div className="field" id="homeButton" style={{display: 'none'}}>
+                <div className="select is-rounded">
+                  <select id="select-color" name="color" onChange={myFunction}>
+                    <option disabled defaultValue value>
+                      Home Button Color
+                    </option>
+                    <option value="black">
+                      Black
+                    </option>
+                    <option value="white">
+                      White
+                    </option>
+                  </select>
+                </div>
               </div>
             </div>
-            <div className="field" id="iphones">
-              <div className="select is-info is-rounded">
-                <select id="select-device-model" name="chooseDeviceModel" onchange="myFunction()">
-                  <option disabled selected value>
-                    Select Model
-                  </option>
-                  <option value="11pro">
-                    iPhone 11 Pro
-                  </option>
-                  <option value={11}>
-                    iPhone 11
-                  </option>
-                  <option value="xsmax">
-                    iPhone Xs Max
-                  </option>
-                  <option value="xs">
-                    iPhone Xs
-                  </option>
-                  <option value="xr">
-                    iPhone XR
-                  </option>
-                  <option value="x">
-                    iPhone X
-                  </option>
-                  <option value="8plus">
-                    iPhone 8 Plus
-                  </option>
-                  <option value={8}>
-                    iPhone 8
-                  </option>
-                  <option value="7plus">
-                    iPhone 7 Plus
-                  </option>
-                  <option value={7}>
-                    iPhone 7
-                  </option>
-                  <option value="6splus">
-                    iPhone 6s Plus
-                  </option>
-                  <option value="6s">
-                    iPhone 6s
-                  </option>
-                  <option value="6plus">
-                    iPhone 6 Plus
-                  </option>
-                  <option value={6}>
-                    iPhone 6
-                  </option>
-                </select>
-              </div>
-            </div>
-            <div className="field" id="ipads">
-              <div className="select is-info is-rounded">
-                <select id="select-ipad-model" name="chooseDeviceModel" onChange="myFunction()">
-                  <option disabled selected value>
-                    Select Model
-                  </option>
-                  <option value="ipadmini">
-                    iPadmini (A1432, A1454 ,A1455)
-                  </option>
-                  <option value="ipadmini2">
-                    iPad mini 2 (A1489, A1490, A1491)
-                  </option>
-                  <option value="ipadmini3">
-                    iPad mini 3 (A1599, A1600)
-                  </option>
-                  <option value="ipadmini4">
-                    iPad mini 4 (A1538, A1550)
-                  </option>
-                  <option value="ipadmini5">
-                    iPad mini 5 (A2133, A2124, A2126, A2125)
-                  </option>
-                  <option value="ipad2">
-                    iPad 2 (A1395, A1396)
-                  </option>
-                  <option value="ipad3">
-                    iPad 3 (A1416, A1430, A1403)
-                  </option>
-                  <option value="ipad4">
-                    iPad 4 (A1458, A1459, A1460)
-                  </option>
-                  <option value="ipad5">
-                    iPad 5 (A1822, A1823)
-                  </option>
-                  <option value="ipad6">
-                    iPad 6 (A1893, A1954)
-                  </option>
-                  <option value="ipad7">
-                    iPad 7 (A2197, A2198, A2200)
-                  </option>
-                  <option value="ipadair">
-                    iPad Air (A1474, A1475)
-                  </option>
-                  <option value="ipadair2">
-                    iPad Air 2 (A1566, A1567)
-                  </option>
-                  <option value="ipadair3">
-                    iPad Air 3 (A2152, A2123, A2153)
-                  </option>
-                  <option value="ipadpro9">
-                    iPad Pro 9.7 inch (A1673, A1674)
-                  </option>
-                  <option value="ipadpro10">
-                    iPad Pro (10.5-inch)(A1701, A1709)
-                  </option>
-                  <option value="ipadpro3">
-                    iPad Pro 11-inch (A1980, A2013, A1934)
-                  </option>
-                  <option value="ipadpro121">
-                    iPad Pro 12.9-inch (A1584, A1652)
-                  </option>
-                  <option value="ipadpro122">
-                    iPad Pro 12.9-inch (2nd generation)(A1670, A1671)
-                  </option>
-                  <option value="ipadpro123">
-                    iPad Pro 12.9-inch (3rd generation) (A1876, A2014, A1895)
-                  </option>
-                </select>
-              </div>
-            </div>
+            <hr />
+            <h2 className="title is-5 has-text-weight-light">Contact info <i className="fas fa-users" /></h2>
             <div className="field">
-              <div className="select is-danger is-rounded">
-                <select id="select-issue" name="issue" onchange="myFunction()" required>
-                  <option disabled selected value>
-                    Select Problem
-                  </option>
-                  <option value="screen">
-                    Screen replacement
-                  </option>
-                  <option value="battery">
-                    Battery replacement
-                  </option>
-                  <option value="charging">
-                    Charging port replacement
-                  </option>
-                  <option value="water">
-                    Water Damage
-                  </option>
-                </select>
+              <div className="field is-horizontal">
+                <div className="field-body">
+                  <div className="field">
+                    <p className="control is-expanded has-icons-left"><input className="input" name="name" placeholder="Name" required type="text" /> <span className="icon is-small is-left"><i className="fas fa-user" /></span></p>
+                  </div>
+                  <div className="field">
+                    <p className="control is-expanded has-icons-left has-icons-right"><input className="input" name="address" placeholder="Address" required type="text" /> <span className="icon is-small is-left"><i className="fas fa-home" /></span></p>
+                  </div>
+                  <div className="field">
+                    <p className="control is-expanded has-icons-left has-icons-right"><input className="input" name="cell" placeholder="Cell #" required type="tel" /> <span className="icon is-small is-left"><i className="fas fa-phone" /></span></p>
+                  </div>
+                  <div className="field">
+                    <p className="control is-expanded has-icons-left has-icons-right"><input className="input" name="email" placeholder="Email" required type="email" /> <span className="icon is-small is-left"><i className="fas fa-envelope" /></span></p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="field" id="homeButton" style={{display: 'none'}}>
-              <div className="select is-rounded">
-                <select id="select-color" name="color" onchange="myFunction()">
-                  <option disabled selected value>
-                    Home Button Color
-                  </option>
-                  <option value="black">
-                    Black
-                  </option>
-                  <option value="white">
-                    White
-                  </option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <hr />
-          <h2 className="title is-5 has-text-weight-light">Contact info <i className="fas fa-users" /></h2>
-          <div className="field">
+            <hr />
+            <h2 className="title is-5 has-text-weight-light">Time &amp; Date <i className="fas fa-clock" /></h2>
             <div className="field is-horizontal">
               <div className="field-body">
                 <div className="field">
-                  <p className="control is-expanded has-icons-left"><input className="input" name="name" placeholder="Name" required type="text" /> <span className="icon is-small is-left"><i className="fas fa-user" /></span></p>
+                  <input className="input" max="22:00" min="09:00" name="time" type="time" defaultValue="time" />
                 </div>
                 <div className="field">
-                  <p className="control is-expanded has-icons-left has-icons-right"><input className="input" name="address" placeholder="Address" required type="text" /> <span className="icon is-small is-left"><i className="fas fa-home" /></span></p>
-                </div>
-                <div className="field">
-                  <p className="control is-expanded has-icons-left has-icons-right"><input className="input" name="cell" placeholder="Cell #" required type="tel" /> <span className="icon is-small is-left"><i className="fas fa-phone" /></span></p>
-                </div>
-                <div className="field">
-                  <p className="control is-expanded has-icons-left has-icons-right"><input className="input" name="email" placeholder="Email" required type="email" /> <span className="icon is-small is-left"><i className="fas fa-envelope" /></span></p>
+                  <input className="input" name="date" required type="date" defaultValue="date" />
                 </div>
               </div>
+            </div><br />
+            <button className="btn btn-action" type="submit">Book Repair Now</button>
+          </form>
+        </div>
+      </section>{/* service include */}
+      <section className="section" id="services">
+        <div className="container has-text-centered">
+          <h1 className="subtitle is-2">Service Includes</h1>
+          <div className="columns">
+            <div className="column">
+              <h2>Same-Day iPhone Repair <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
             </div>
-          </div>
-          <hr />
-          <h2 className="title is-5 has-text-weight-light">Time &amp; Date <i className="fas fa-clock" /></h2>
-          <div className="field is-horizontal">
-            <div className="field-body">
-              <div className="field">
-                <input className="input" max="22:00" min="09:00" name="time" type="time" defaultValue="time" />
-              </div>
-              <div className="field">
-                <input className="input" name="date" required type="date" defaultValue="date" />
-              </div>
+            <div className="column">
+              <h2>Device Diagnostic <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
             </div>
-          </div><br />
-          <button className="btn btn-action" type="submit">Book Repair Now</button>
-        </form>
-      </div>
-    </section>{/* service include */}
-    <section className="section" id="services">
-      <div className="container has-text-centered">
-        <h1 className="subtitle is-2">Service Includes</h1>
-        <div className="columns">
-          <div className="column">
-            <h2>Same-Day iPhone Repair <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
-          </div>
-          <div className="column">
-            <h2>Device Diagnostic <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
-          </div>
-          <div className="column">
-            <h2>Lifetime Warranty <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
-          </div>
-          <div className="column">
-            <h2>Quality Parts <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
+            <div className="column">
+              <h2>Lifetime Warranty <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
+            </div>
+            <div className="column">
+              <h2>Quality Parts <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <div className="section" id="get-started">
-      <div className="container">
-        <h3 className="title is-1" data-aos="fade-right" style={{color: 'white'}}>Ready to get started?</h3>
-        <h3 className="subtitle is-4" data-aos="fade-right" style={{color: 'white'}}>iPhone Screeen Repair only takes 15 minutes!</h3><br />
-        <a className="button is-info is-large" href="#repair">Book iPhone Repair<i className="fas fa-mobile" style={{marginLeft: '1vh'}} /></a>
+      </section>
+      <div className="section" id="get-started">
+        <div className="container">
+          <h3 className="title is-1" data-aos="fade-right" style={{color: 'white'}}>Ready to get started?</h3>
+          <h3 className="subtitle is-4" data-aos="fade-right" style={{color: 'white'}}>iPhone Screeen Repair only takes 15 minutes!</h3><br />
+          <a className="button is-info is-large" href="#repair">Book iPhone Repair<i className="fas fa-mobile" style={{marginLeft: '1vh'}} /></a>
+        </div>
       </div>
     </div>
-  </div>
   )
 }

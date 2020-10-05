@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock, faMobile } from '@fortawesome/free-solid-svg-icons'
 
 export default function Nav() {
   const router = useRouter();
+  const  [burgerOpen, setBurger] = useState(false);
   return(
     <div>
       <header className="is-fixed-top">
@@ -16,7 +18,9 @@ export default function Nav() {
                 <img alt="iphone screen repair" height="30" src="images/nav-logo-gtech.png" width="150" />
               </a>
             </span> 
-            <a aria-expanded="false" aria-label="menu" className="navbar-burger burger" data-target="navbarBasicExample" role="button">
+            <a aria-expanded="false" aria-label="menu" className={`navbar-burger burger ${burgerOpen ? 'is-active' : ''}`} data-target="navbarBasicExample" role="button"
+              onClick={() => { setBurger(!burgerOpen) }}
+            >
               <span aria-hidden="true"></span> 
               <span aria-hidden="true"></span> 
               <span aria-hidden="true"></span>

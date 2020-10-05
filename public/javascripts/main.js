@@ -18,42 +18,42 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 //owl carousel
-jQuery(document).ready(function($) {
-  // smooth scrolling
-  $("a").click(function() {
-      $("html, body").animate({
-              scrollTop: $($.attr(this, "href")).offset().top
-          },
-          500
-      );
-      return false;
-  });
+// jQuery(document).ready(function($) {
+//   // smooth scrolling
+//   $("a").click(function() {
+//       $("html, body").animate({
+//               scrollTop: $($.attr(this, "href")).offset().top
+//           },
+//           500
+//       );
+//       return false;
+//   });
 
 
-  ("use strict");
-  //  TESTIMONIALS CAROUSEL HOOK
-  $(".owl-carousel").owlCarousel({
-      loop: true,
-      center: true,
-      items: 3,
-      margin: 0,
-      autoplay: true,
-      dots: false,
-      autoplayTimeout: 4000,
-      smartSpeed: 950,
-      responsive: {
-          0: {
-              items: 1
-          },
-          768: {
-              items: 2
-          },
-          1170: {
-              items: 3
-          }
-      }
-  });
-});
+//   ("use strict");
+//   //  TESTIMONIALS CAROUSEL HOOK
+//   $(".owl-carousel").owlCarousel({
+//       loop: true,
+//       center: true,
+//       items: 3,
+//       margin: 0,
+//       autoplay: true,
+//       dots: false,
+//       autoplayTimeout: 4000,
+//       smartSpeed: 950,
+//       responsive: {
+//           0: {
+//               items: 1
+//           },
+//           768: {
+//               items: 2
+//           },
+//           1170: {
+//               items: 3
+//           }
+//       }
+//   });
+// });
 
 //pricing js
 

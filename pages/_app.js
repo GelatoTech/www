@@ -1,17 +1,17 @@
 import { useEffect, useRef } from 'react';
 import ReactGA from 'react-ga';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
-
+import '../public/stylesheets/bulma.min.css';
+import '../public/stylesheets/main.css';
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 // import '../public/stylesheets/battery.css';
 // import '../public/stylesheets/booking.css';
-import '../public/stylesheets/bulma.min.css';
 // import '../public/stylesheets/faq.css';
 // import '../public/stylesheets/legal.css';
-import '../public/stylesheets/main.css';
-import '../public/stylesheets/mainhero.css';
-import '../public/stylesheets/nav.css';
-import '../public/stylesheets/owl.carousel.min.css';
+// import '../public/stylesheets/mainhero.css';
+// import '../public/stylesheets/nav.css';
 // import '../public/stylesheets/phone-repair.css';
 // import '../public/stylesheets/screenrepairblog.css';
 // import '../public/stylesheets/social.css';
@@ -27,7 +27,6 @@ import Nav from '../components/Nav';
 //         - jquery
 //         - all.js
 //         - aos.js?
-//         - font awesome
 //         - owl carousel
 
 
@@ -35,7 +34,7 @@ import Nav from '../components/Nav';
 // import '../public/javascripts/all';
 // import '../public/javascripts/aos';
 // import '../public/javascripts/font-awesome-all';
-// import '../public/javascripts/owl.carousel.min';
+// import '../public/javascripts/main.js'
 
 
 export default function App({ Component, pageProps }) {
