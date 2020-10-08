@@ -1,71 +1,24 @@
-//responsive nav
-$(document).ready(function() {
-  // Check for click events on the navbar burger icon
-  $(".navbar-burger").click(function() {
-      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-      $(".navbar-burger").toggleClass("is-active");
-      $(".navbar-menu").toggleClass("is-active");
-  });
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//   (document.querySelectorAll('.alert .delete') || []).forEach(($delete) => {
+//       $notification = $delete.parentNode;
 
-document.addEventListener('DOMContentLoaded', () => {
-  (document.querySelectorAll('.alert .delete') || []).forEach(($delete) => {
-      $notification = $delete.parentNode;
-
-      $delete.addEventListener('click', () => {
-          $notification.parentNode.removeChild($notification);
-      });
-  });
-});
-//owl carousel
-// jQuery(document).ready(function($) {
-//   // smooth scrolling
-//   $("a").click(function() {
-//       $("html, body").animate({
-//               scrollTop: $($.attr(this, "href")).offset().top
-//           },
-//           500
-//       );
-//       return false;
-//   });
-
-
-//   ("use strict");
-//   //  TESTIMONIALS CAROUSEL HOOK
-//   $(".owl-carousel").owlCarousel({
-//       loop: true,
-//       center: true,
-//       items: 3,
-//       margin: 0,
-//       autoplay: true,
-//       dots: false,
-//       autoplayTimeout: 4000,
-//       smartSpeed: 950,
-//       responsive: {
-//           0: {
-//               items: 1
-//           },
-//           768: {
-//               items: 2
-//           },
-//           1170: {
-//               items: 3
-//           }
-//       }
+//       $delete.addEventListener('click', () => {
+//           $notification.parentNode.removeChild($notification);
+//       });
 //   });
 // });
 
 //pricing js
 
-function myFunction() {
-  var chooseIssue = document.getElementById("select-issue").value;
-  var chooseDeviceModel = document.getElementById("select-device-model").value;
-  var priceTitle = document.getElementById("total-price-text");
-  var warrantyText = document.getElementById("warranty-text");
-  var repairtimeText = document.getElementById("repairtime-text");
+const updateForm = () => {
+  const chooseIssue = document.getElementById("select-issue").value;
+  const chooseDeviceModel = document.getElementById("select-device-model").value;
+  const priceTitle = document.getElementById("total-price-text");
+  const warrantyText = document.getElementById("warranty-text");
+  const repairtimeText = document.getElementById("repairtime-text");
 
 
-  var deviceDictionary = {
+  const deviceDictionary = {
       iphones: {
           iphone6: {
               screen: {
@@ -403,11 +356,11 @@ function myFunction() {
 
 
 
-  var selectDevices = document.getElementById('select-device').value;
-  var iphoneDropdown = document.getElementById('iphones');
-  var ipadDropdown = document.getElementById('ipads');
-  var selectIpadDevice = document.getElementById('select-ipad-model').value;
-  var selectColor = document.getElementById('homeButton');
+  const selectDevices = document.getElementById('select-device').value;
+  const iphoneDropdown = document.getElementById('iphones');
+  const ipadDropdown = document.getElementById('ipads');
+  const selectIpadDevice = document.getElementById('select-ipad-model').value;
+  const selectColor = document.getElementById('homeButton');
   //DEVICE MODELS RESPONSIVE
 
   if (selectDevices === "iphone") {
@@ -663,7 +616,7 @@ function myFunction() {
 
 
 
-  var ipadprices = {
+  const ipadprices = {
       ipads: {
           ipadmini: {
               screen: {
@@ -1473,18 +1426,18 @@ function myFunction() {
 
 }
 
-$(function() {
-  var d = new Date(),
-      h = d.getHours(),
-      m = d.getMinutes();
-  if (h < 10) h = "0" + h;
-  if (m < 10) m = "0" + m;
-  $('input[type="time"][value="now"]').each(function() {
-      $(this).attr({
-          value: h + ":" + m
-      });
-  });
-});
+// $(function() {
+//   var d = new Date(),
+//       h = d.getHours(),
+//       m = d.getMinutes();
+//   if (h < 10) h = "0" + h;
+//   if (m < 10) m = "0" + m;
+//   $('input[type="time"][value="now"]').each(function() {
+//       $(this).attr({
+//           value: h + ":" + m
+//       });
+//   });
+// });
 
 // if (hours < 10) hours = "0" + hours;
 
@@ -1503,3 +1456,7 @@ $(function() {
 //   if (parseInt(_something) < 10) return "0" + _something;
 //   return _something; //else
 //}
+
+
+
+export default updateForm;

@@ -23,18 +23,6 @@ import Nav from '../components/Nav';
 // TODO:
 //    - uncomment fb customer chat
 //    - add google tag manager (Google Analytics)
-//    - find npm modules for:
-//         - jquery
-//         - all.js
-//         - aos.js?
-//         - owl carousel
-
-
-// import '../public/javascripts/jquery.min';
-// import '../public/javascripts/all';
-// import '../public/javascripts/aos';
-// import '../public/javascripts/font-awesome-all';
-// import '../public/javascripts/main.js'
 
 
 export default function App({ Component, pageProps }) {
