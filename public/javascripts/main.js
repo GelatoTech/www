@@ -384,7 +384,7 @@ const updateForm = () => {
   if (chooseIssue == "battery" && chooseDeviceModel == "11pro") {
       priceTitle.innerText = deviceDictionary["iphones"]["iphone11pro"]["battery"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphone11pro"]["battery"]["warranty"]
-      repairtimeText.innerText = deviceDictionary["iphones"]["iphonepro"]["battery"]["duration"]
+      repairtimeText.innerText = deviceDictionary["iphones"]["iphone11pro"]["battery"]["duration"]
   } else if (chooseIssue == "charging" && chooseDeviceModel == "11pro") {
       priceTitle.innerText = deviceDictionary["iphones"]["iphone11pro"]["charging"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphone11pro"]["charging"]["warranty"]
