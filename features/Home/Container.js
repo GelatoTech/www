@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
 import { useState } from 'react';
@@ -10,26 +11,31 @@ import { faYelp, faGoogle, faFacebookSquare } from '@fortawesome/free-brands-svg
 
 export default function Home() {
 
-const [repairFormValues, setRepairFormValues] = useState({
-  selectDevices: '',
-  chooseDeviceModel: '',
-  issue: ''
-})
+  const router = useRouter();
 
-// Handle repair form state
-const handleChange = (e) => {
-  updateForm();
-  setRepairFormValues({ ...repairFormValues, [e.target.name]: e.target.value });
-  console.log(repairFormValues);
-}
+  const [repairFormValues, setRepairFormValues] = useState({
+    selectDevices: '',
+    chooseDeviceModel: '',
+    issue: '',
+    color: '',
+    name: '',
+  });
 
-// When repair form is submitted...
-const postSubmit = () => {
-  alert("")
-}
+  // Handle repair form state
+  const handleChange = (e) => {
+    updateForm();
+    setRepairFormValues({ ...repairFormValues, [e.target.name]: e.target.value });
+  }
 
-//TODO:
-//  - use google places for address dropdown!
+  // When repair form is submitted...
+  const postSubmit = () => {
+    console.log(repairFormValues);
+    const { name } = repairFormValues;
+    router.push({
+      pathname: '/thank-you',
+      query: { n: name.includes(' ') ? name.split(' ')[0] : name }
+    });
+  }
 
 
   return(
@@ -390,16 +396,16 @@ const postSubmit = () => {
               <div className="field is-horizontal">
                 <div className="field-body">
                   <div className="field">
-                    <p className="control is-expanded has-icons-left"><input className="input" name="name" placeholder="Name" required type="text" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faUser} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
+                    <p className="control is-expanded has-icons-left"><input value={repairFormValues.name} className="input" name="name" placeholder="Name" required type="text" onChange={handleChange} /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faUser} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
                   </div>
                   <div className="field">
-                    <p className="control is-expanded has-icons-left has-icons-right"><input className="input" name="address" placeholder="Address" required type="text" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faHome} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
+                    <p className="control is-expanded has-icons-left has-icons-right"><input value={repairFormValues.address} onChange={handleChange} className="input" name="address" placeholder="Address" required type="text" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faHome} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
                   </div>
                   <div className="field">
-                    <p className="control is-expanded has-icons-left has-icons-right"><input className="input" name="cell" placeholder="Cell #" required type="tel" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faPhone} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
+                    <p className="control is-expanded has-icons-left has-icons-right"><input value={repairFormValues.cell} onChange={handleChange} className="input" name="cell" placeholder="Cell #" required type="tel" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faPhone} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
                   </div>
                   <div className="field">
-                    <p className="control is-expanded has-icons-left has-icons-right"><input className="input" name="email" placeholder="Email" required type="email" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faEnvelope} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
+                    <p className="control is-expanded has-icons-left has-icons-right"><input value={repairFormValues.email} onChange={handleChange} className="input" name="email" placeholder="Email" required type="email" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faEnvelope} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
                   </div>
                 </div>
               </div>
@@ -409,10 +415,10 @@ const postSubmit = () => {
             <div className="field is-horizontal">
               <div className="field-body">
                 <div className="field">
-                  <input className="input" max="22:00" min="09:00" name="time" type="time" defaultValue="time" />
+                  <input value={repairFormValues.time} onChange={handleChange} className="input" max="22:00" min="09:00" name="time" type="time" defaultValue="time" />
                 </div>
                 <div className="field">
-                  <input className="input" name="date" required type="date" defaultValue="date" />
+                  <input value={repairFormValues.date} onChange={handleChange} className="input" name="date" required type="date" defaultValue="date" />
                 </div>
               </div>
             </div><br />
