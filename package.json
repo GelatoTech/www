@@ -22,7 +22,8 @@
     "react-facebook-pixel": "^1.0.3",
     "react-ga": "^3.1.2",
     "react-messenger-customer-chat": "^0.8.0",
-    "react-owl-carousel": "^2.3.1"
+    "react-owl-carousel": "^2.3.1",
+    "react-ssg-netlify-forms": "^1.0.2"
   },
   "devDependencies": {
     "expose-loader": "^1.0.0"

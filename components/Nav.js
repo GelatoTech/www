@@ -9,7 +9,7 @@ export default function Nav() {
   return(
     <div>
       <header className="is-fixed-top">
-        <nav aria-label="main navigation" className="navbar testttt" id='nav' role="navigation">
+        <nav aria-label="main navigation" className="navbar" id='nav' role="navigation">
           <div className="navbar-brand" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <span>
               <a className="navbar-item"

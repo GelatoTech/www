@@ -1,12 +1,37 @@
 import Head from 'next/head';
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
+import { useState } from 'react';
 import updateForm from '../../public/javascripts/main';
+import NetlifyForm from 'react-ssg-netlify-forms';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobile, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faMobile, faCheck, faUsers, faEnvelope, faHome, faUser, faPhone, faClock } from '@fortawesome/free-solid-svg-icons';
 import { faYelp, faGoogle, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
 
 export default function Home() {
+
+const [repairFormValues, setRepairFormValues] = useState({
+  selectDevices: '',
+  chooseDeviceModel: '',
+  issue: ''
+})
+
+// Handle repair form state
+const handleChange = (e) => {
+  updateForm();
+  setRepairFormValues({ ...repairFormValues, [e.target.name]: e.target.value });
+  console.log(repairFormValues);
+}
+
+// When repair form is submitted...
+const postSubmit = () => {
+  alert("")
+}
+
+//TODO:
+//  - use google places for address dropdown!
+
+
   return(
     <div>
       <Head>
@@ -184,13 +209,13 @@ export default function Home() {
           <p id="warranty-text" />
           <h3 className="title is-4" />
           <p id="repairtime-text" />
-          <form autoComplete="on" id="repair-form" method="post" name="repair-form">
-            <input name="form-name" type="hidden" defaultValue="repair-form" />
+          <NetlifyForm formValues={repairFormValues} postSubmit={postSubmit} formName="repair-form" id="repair-form" name="repair-form">
+            {/* <input name="form-name" type="hidden" defaultValue="repair-form" /> */}
             <div className="field">
               <div className="field">
                 <div className="select is-info is-rounded">
-                  <select id="select-device" name="selectDevices" onChange={updateForm} required>
-                    <option disabled defaultValue value>
+                  <select id="select-device" value={repairFormValues.selectDevices} name="selectDevices" onChange={handleChange} required>
+                    <option selected>
                       Select Device
                     </option>
                     <option value="iphone">
@@ -204,8 +229,8 @@ export default function Home() {
               </div>
               <div className="field" id="iphones">
                 <div className="select is-info is-rounded">
-                  <select id="select-device-model" name="chooseDeviceModel" onChange={updateForm}>
-                    <option disabled defaultValue value>
+                  <select value={repairFormValues.chooseDeviceModel} id="select-device-model" name="chooseDeviceModel" onChange={handleChange}>
+                    <option selected disabled>
                       Select Model
                     </option>
                     <option value="11pro">
@@ -255,8 +280,8 @@ export default function Home() {
               </div>
               <div className="field" id="ipads">
                 <div className="select is-info is-rounded">
-                  <select id="select-ipad-model" name="chooseDeviceModel" onChange={updateForm}>
-                    <option disabled defaultValue value>
+                  <select value={repairFormValues.chooseDeviceModel} id="select-ipad-model" name="chooseDeviceModel" onChange={handleChange}>
+                    <option selected disabled>
                       Select Model
                     </option>
                     <option value="ipadmini">
@@ -324,8 +349,8 @@ export default function Home() {
               </div>
               <div className="field">
                 <div className="select is-danger is-rounded">
-                  <select id="select-issue" name="issue" onChange={updateForm} required>
-                    <option disabled defaultValue value>
+                  <select value={repairFormValues.issue} id="select-issue" name="issue" onChange={handleChange} required>
+                    <option selected disabled>
                       Select Problem
                     </option>
                     <option value="screen">
@@ -345,8 +370,8 @@ export default function Home() {
               </div>
               <div className="field" id="homeButton" style={{display: 'none'}}>
                 <div className="select is-rounded">
-                  <select id="select-color" name="color" onChange={updateForm}>
-                    <option disabled defaultValue value>
+                  <select value={repairFormValues.color} id="select-color" name="color" onChange={handleChange}>
+                    <option selected disabled>
                       Home Button Color
                     </option>
                     <option value="black">
@@ -360,27 +385,27 @@ export default function Home() {
               </div>
             </div>
             <hr />
-            <h2 className="title is-5 has-text-weight-light">Contact info <i className="fas fa-users" /></h2>
+            <h2 className="title is-5 has-text-weight-light">Contact info <FontAwesomeIcon icon={faUsers} style={{ height: '1em', marginLeft: '0.3em' }} /></h2>
             <div className="field">
               <div className="field is-horizontal">
                 <div className="field-body">
                   <div className="field">
-                    <p className="control is-expanded has-icons-left"><input className="input" name="name" placeholder="Name" required type="text" /> <span className="icon is-small is-left"><i className="fas fa-user" /></span></p>
+                    <p className="control is-expanded has-icons-left"><input className="input" name="name" placeholder="Name" required type="text" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faUser} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
                   </div>
                   <div className="field">
-                    <p className="control is-expanded has-icons-left has-icons-right"><input className="input" name="address" placeholder="Address" required type="text" /> <span className="icon is-small is-left"><i className="fas fa-home" /></span></p>
+                    <p className="control is-expanded has-icons-left has-icons-right"><input className="input" name="address" placeholder="Address" required type="text" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faHome} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
                   </div>
                   <div className="field">
-                    <p className="control is-expanded has-icons-left has-icons-right"><input className="input" name="cell" placeholder="Cell #" required type="tel" /> <span className="icon is-small is-left"><i className="fas fa-phone" /></span></p>
+                    <p className="control is-expanded has-icons-left has-icons-right"><input className="input" name="cell" placeholder="Cell #" required type="tel" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faPhone} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
                   </div>
                   <div className="field">
-                    <p className="control is-expanded has-icons-left has-icons-right"><input className="input" name="email" placeholder="Email" required type="email" /> <span className="icon is-small is-left"><i className="fas fa-envelope" /></span></p>
+                    <p className="control is-expanded has-icons-left has-icons-right"><input className="input" name="email" placeholder="Email" required type="email" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faEnvelope} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
                   </div>
                 </div>
               </div>
             </div>
             <hr />
-            <h2 className="title is-5 has-text-weight-light">Time &amp; Date <i className="fas fa-clock" /></h2>
+            <h2 className="title is-5 has-text-weight-light">Time &amp; Date <FontAwesomeIcon icon={faClock} style={{ height: '1em', marginLeft: '0.3em' }} /></h2>
             <div className="field is-horizontal">
               <div className="field-body">
                 <div className="field">
@@ -392,7 +417,7 @@ export default function Home() {
               </div>
             </div><br />
             <button className="btn btn-action" type="submit">Book Repair Now</button>
-          </form>
+          </NetlifyForm>
         </div>
       </section>{/* service include */}
       <section className="section" id="services">
@@ -418,7 +443,7 @@ export default function Home() {
         <div className="container">
           <h3 className="title is-1" data-aos="fade-right" style={{color: 'white'}}>Ready to get started?</h3>
           <h3 className="subtitle is-4" data-aos="fade-right" style={{color: 'white'}}>iPhone Screeen Repair only takes 15 minutes!</h3><br />
-          <a className="button is-info is-large" href="#repair">Book iPhone Repair<i className="fas fa-mobile" style={{marginLeft: '1vh'}} /></a>
+          <a className="button is-info is-large" href="#repair">Book iPhone Repair <FontAwesomeIcon icon={faMobile} style={{ height: '1em', marginLeft: '0.3em' }} /></a>
         </div>
       </div>
     </div>

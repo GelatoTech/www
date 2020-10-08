@@ -3,6 +3,8 @@ import ReactGA from 'react-ga';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import '../public/stylesheets/bulma.min.css';
 import '../public/stylesheets/main.css';
+import '../public/stylesheets/phone-repair.css'
+import '../public/stylesheets/booking.css'
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 

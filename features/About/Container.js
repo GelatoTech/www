@@ -12,9 +12,9 @@ export default function About() {
       <meta name="description" content="Your Phone is Important To Us, Thats why we come to you and Repair your phone same-day! " />
 
       {/* Google / Search Engine Tags */}
-      <meta itemprop="name" content="Mobile iPhone Repair | About Us | Gelatotech" />
-      <meta itemprop="description" content="Your Phone is Important To Us, Thats why we come to you and Repair your phone same-day!" />
-      <meta itemprop="image" content="images/iphone-repair.png" />
+      <meta itemProp="name" content="Mobile iPhone Repair | About Us | Gelatotech" />
+      <meta itemProp="description" content="Your Phone is Important To Us, Thats why we come to you and Repair your phone same-day!" />
+      <meta itemProp="image" content="images/iphone-repair.png" />
 
       {/* Facebook Meta Tags */}
       <meta property="og:url" content="https://www.gelatotech.com" />
