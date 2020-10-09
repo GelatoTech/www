@@ -19,6 +19,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 // import '../public/stylesheets/social.css';
 
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 
 
@@ -45,6 +46,7 @@ export default function App({ Component, pageProps }) {
         appId="gelato"
         htmlRef="customer-chat"
       />
+      <Footer />
     </div>
   )
 }

@@ -460,7 +460,7 @@ export default function Home() {
       <div className="section" id="get-started">
         <div className="container">
           <h3 className="title is-1" data-aos="fade-right" style={{color: 'white'}}>Ready to get started?</h3>
-          <h3 className="subtitle is-4" data-aos="fade-right" style={{color: 'white'}}>iPhone Screeen Repair only takes 15 minutes!</h3><br />
+          <h3 className="subtitle is-4" data-aos="fade-right" style={{color: 'white'}}>iPhone Screen Repair only takes 15 minutes!</h3><br />
           <a className="button is-info is-large" href="#repair">Book iPhone Repair <FontAwesomeIcon icon={faMobile} style={{ height: '1em', marginLeft: '0.3em' }} /></a>
         </div>
       </div>
