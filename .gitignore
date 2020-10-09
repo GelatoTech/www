@@ -26,3 +26,7 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# netlify dev build
+/out_publish/
+/out_functions/
