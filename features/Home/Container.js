@@ -5,6 +5,7 @@ const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
 import { useState } from 'react';
 import updateForm from '../../public/javascripts/main';
 import NetlifyForm from 'react-ssg-netlify-forms';
+// import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile, faCheck, faUsers, faEnvelope, faHome, faUser, faPhone, faClock } from '@fortawesome/free-solid-svg-icons';
 import { faYelp, faGoogle, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
@@ -215,7 +216,7 @@ export default function Home() {
           <p id="warranty-text" />
           <h3 className="title is-4" />
           <p id="repairtime-text" />
-          <NetlifyForm formValues={repairFormValues} postSubmit={postSubmit} formName="repair-form" id="repair-form" name="repair-form">
+          <NetlifyForm formName="repair-form" formValues={repairFormValues} postSubmit={postSubmit} id="repair-form" name="repair-form">
             {/* <input name="form-name" type="hidden" defaultValue="repair-form" /> */}
             <div className="field">
               <div className="field">
@@ -399,7 +400,18 @@ export default function Home() {
                     <p className="control is-expanded has-icons-left"><input value={repairFormValues.name} className="input" name="name" placeholder="Name" required type="text" onChange={handleChange} /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faUser} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
                   </div>
                   <div className="field">
-                    <p className="control is-expanded has-icons-left has-icons-right"><input value={repairFormValues.address} onChange={handleChange} className="input" name="address" placeholder="Address" required type="text" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faHome} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
+                    <p className="control is-expanded has-icons-left has-icons-right">
+                      <div>
+                        {/* <GooglePlacesAutocomplete 
+                          apiKey={process.env.GOOGLE_PLACES_API_KEY} 
+                          value={repairFormValues.address} 
+                          onChange={handleChange} 
+                          className="input" name="address" 
+                          required 
+                        /><span className="icon is-small is-left"><FontAwesomeIcon icon={faHome} style={{ height: '1em', marginLeft: '0.3em' }} /></span> */}
+                        <input value={repairFormValues.address} onChange={handleChange} className="input" name="address" placeholder="Address" required type="text" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faHome} style={{ height: '1em', marginLeft: '0.3em' }} /></span>
+                      </div>
+                    </p>
                   </div>
                   <div className="field">
                     <p className="control is-expanded has-icons-left has-icons-right"><input value={repairFormValues.cell} onChange={handleChange} className="input" name="cell" placeholder="Cell #" required type="tel" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faPhone} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
