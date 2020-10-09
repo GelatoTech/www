@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
 import { useState } from 'react';
+import { scroller } from "react-scroll";
 import updateForm from '../../public/javascripts/main';
 import NetlifyForm from 'react-ssg-netlify-forms';
 // import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
@@ -13,6 +14,14 @@ import { faYelp, faGoogle, faFacebookSquare } from '@fortawesome/free-brands-svg
 export default function Home() {
 
   const router = useRouter();
+  
+  const scrollToSection = (elementID) => {
+    scroller.scrollTo(elementID, {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+  };
 
   const [repairFormValues, setRepairFormValues] = useState({
     selectDevices: '',
@@ -71,7 +80,7 @@ export default function Home() {
           <div className="container has-text-centered">
             <h1 className="title is-1">Mobile iPhone Repair<br />at Your Location</h1>
             <p className="subtitle is-3" style={{ color: 'white' }}>San Francisco, CA</p><br />
-            <a className="button is-info is-large" href="#repair">Book iPhone Repair <FontAwesomeIcon icon={faMobile} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+            <a className="button is-info is-large" onClick={()=>scrollToSection("repair")}>Book iPhone Repair <FontAwesomeIcon icon={faMobile} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
           </div>
           <div className="container" id="reviews">
             <div className="columns owl-carousel owl-theme" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '80px' }}>
@@ -126,17 +135,17 @@ export default function Home() {
             </div>
             <div className="level-item has-text-centered">
               <div>
-                <a href="https://www.google.com/search?q=gelatotech.&oq=gelatotech.+&aqs=chrome..69i57j69i60l5.1879j0j4&sourceid=chrome&ie=UTF-8#lrd=0x808f7fd0f5b28c95:0x7f621c4f11f36a76,1,,," target="_blank"><FontAwesomeIcon icon={faGoogle} style={{ height: '2em' }} /></a>
+                <a href="https://www.google.com/search?q=gelatotech.&oq=gelatotech.+&aqs=chrome..69i57j69i60l5.1879j0j4&sourceid=chrome&ie=UTF-8#lrd=0x808f7fd0f5b28c95:0x7f621c4f11f36a76,1,,," target="_blank"><FontAwesomeIcon icon={faGoogle} style={{ width: '2em' }} /></a>
               </div>
             </div>
             <div className="level-item has-text-centered">
               <div>
-                <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?osq=gelatotech" target="_blank"><FontAwesomeIcon icon={faYelp} style={{ height: '2em' }} /></a>
+                <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?osq=gelatotech" target="_blank"><FontAwesomeIcon icon={faYelp} style={{ width: '2em' }} /></a>
               </div>
             </div>
             <div className="level-item has-text-centered">
               <div>
-                <a href="https://www.facebook.com/Gelatotech/" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} style={{ height: '2em' }} /></a>
+                <a href="https://www.facebook.com/Gelatotech/" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} style={{ width: '2em' }} /></a>
               </div>
             </div>
           </nav>
@@ -461,7 +470,7 @@ export default function Home() {
         <div className="container">
           <h3 className="title is-1" data-aos="fade-right" style={{color: 'white'}}>Ready to get started?</h3>
           <h3 className="subtitle is-4" data-aos="fade-right" style={{color: 'white'}}>iPhone Screen Repair only takes 15 minutes!</h3><br />
-          <a className="button is-info is-large" href="#repair">Book iPhone Repair <FontAwesomeIcon icon={faMobile} style={{ height: '1em', marginLeft: '0.3em' }} /></a>
+          <a className="button is-info is-large" onClick={()=>scrollToSection("repair")}>Book iPhone Repair <FontAwesomeIcon icon={faMobile} style={{ height: '1em', marginLeft: '0.3em' }} /></a>
         </div>
       </div>
     </div>

@@ -15,7 +15,6 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@zeit/next-css": "^1.0.1",
-    "framer-motion": "^2.8.0",
     "next": "9.5.3",
     "next-compose-plugins": "^2.2.0",
     "next-images": "^1.6.0",
@@ -26,6 +25,7 @@
     "react-ga": "^3.1.2",
     "react-messenger-customer-chat": "^0.8.0",
     "react-owl-carousel": "^2.3.1",
+    "react-scroll": "^1.8.1",
     "react-ssg-netlify-forms": "^1.0.2"
   },
   "devDependencies": {

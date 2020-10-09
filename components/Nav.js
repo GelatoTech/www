@@ -1,11 +1,23 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import { scroller } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock, faMobile, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 export default function Nav() {
+
   const router = useRouter();
+  
   const  [burgerOpen, setBurger] = useState(false);
+
+  const scrollToSection = (elementID) => {
+    scroller.scrollTo(elementID, {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+  };
+
   return(
     <div>
       <header className="is-fixed-top">
@@ -13,7 +25,7 @@ export default function Nav() {
           <div className="navbar-brand" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <span>
               <a className="navbar-item"
-              onClick={() => { router.push('/') }}
+              onClick={() => { router.push('/'); scrollToSection("hero") }}
               >
                 <img alt="iphone screen repair" height="30" src="images/nav-logo-gtech.png" width="150" />
               </a>
@@ -30,11 +42,19 @@ export default function Nav() {
             <div className="navbar-end" id="nav-items">
               <div className="navbar-item">
                 <a className="navbar-item" 
-                  onClick={() => { router.push('/#works') } } 
-                >How it Works</a> <a className="navbar-item"
-                  onClick={() => { router.push('/#repair') } } 
+                  onClick={()=>{ 
+                    router.pathname == '/' ? scrollToSection("works") : router.push('/#works');
+                  }}
+                >How it Works</a> 
+                <a className="navbar-item"
+                  onClick={()=>{ 
+                    router.pathname == '/' ? scrollToSection("repair") : router.push('/#repair')
+                  }}
                 >Repair my iPhone <FontAwesomeIcon icon={faMobile} style={{ width: '0.7em', marginLeft: "1vh" }} /></a> <a className="navbar-item" 
-                  onClick={() => { router.push('/about') } } 
+                  onClick={()=>{
+                    scrollToSection("hero");
+                    router.push('/about');
+                  }}
                   target="_blank">About Us</a>
                 <div className="navbar-item has-dropdown is-hoverable">
                   <a className="navbar-link">Blog</a>
