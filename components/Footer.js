@@ -61,11 +61,11 @@ export default function Footer() {
               </ul>
               <hr />
               <h5 id="contact">Contact Us</h5>
-              <p> <FontAwesomeIcon className="fas fa-phone" aria-hidden="true" icon={faPhone} />  <a href="tel:4155177897">(415) 517-7897</a></p>
+              <p> <FontAwesomeIcon style={{ width: '1em' }} className="fas fa-phone" aria-hidden="true" icon={faPhone} />  <a href="tel:4155177897">(415) 517-7897</a></p>
               <br />
-              <p> <FontAwesomeIcon className="fa fa-envelope" aria-hidden="true" icon={faEnvelope} /> <a href="mailto:support@gelatotech.com" target="_blank"> support@gelatotech.com</a></p>
+              <p> <FontAwesomeIcon style={{ width: '1em' }} className="fa fa-envelope" aria-hidden="true" icon={faEnvelope} /> <a href="mailto:support@gelatotech.com" target="_blank"> support@gelatotech.com</a></p>
               <br />
-              <p><FontAwesomeIcon className="fa fa-location-arrow" style={{marginRight: '5px'}} aria-hidden="true" icon={faLocationArrow} /><a href="https://g.page/GelatotechiPhoneRepair?we">1180 4th St
+              <p><FontAwesomeIcon style={{ width: '1em', marginRight: '0.2em' }} className="fa fa-location-arrow" aria-hidden="true" icon={faLocationArrow} /><a href="https://g.page/GelatotechiPhoneRepair?we">1180 4th St
                   San Francisco, CA 94158</a></p>
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12614.767559056148!2d-122.3917718!3d37.7738221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f621c4f11f36a76!2sMobile%20iPhone%20Repair%20SF%20%7C%20Gelatotech!5e0!3m2!1sen!2sus!4v1583816693352!5m2!1sen!2sus" width={600} height={450} frameBorder={0} style={{border: 0}} allowFullScreen />
             </div> 

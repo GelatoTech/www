@@ -25,8 +25,6 @@ import Footer from '../components/Footer';
 
 // TODO:
 //    - uncomment fb customer chat
-//    - add google tag manager (Google Analytics)
-
 
 export default function App({ Component, pageProps }) {
 

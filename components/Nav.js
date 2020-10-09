@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClock, faMobile } from '@fortawesome/free-solid-svg-icons'
+import { faClock, faMobile, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 export default function Nav() {
   const router = useRouter();
@@ -33,7 +33,7 @@ export default function Nav() {
                   onClick={() => { router.push('/#works') } } 
                 >How it Works</a> <a className="navbar-item"
                   onClick={() => { router.push('/#repair') } } 
-                >Repair my iPhone <FontAwesomeIcon icon={faMobile} style={{marginLeft: "1vh"}} /></a> <a className="navbar-item" 
+                >Repair my iPhone <FontAwesomeIcon icon={faMobile} style={{ width: '0.7em', marginLeft: "1vh" }} /></a> <a className="navbar-item" 
                   onClick={() => { router.push('/about') } } 
                   target="_blank">About Us</a>
                 <div className="navbar-item has-dropdown is-hoverable">
@@ -51,7 +51,7 @@ export default function Nav() {
                   onClick={() => { router.push('/about') } } 
                 >FAQ</a> <a className="navbar-item" 
                   onClick={() => { router.push('/legal') } } 
-                  target="_blank">Lifetime Warranty</a> <a className="navbar-item" href="#business">Hours <FontAwesomeIcon icon={faClock} style={{ marginLeft:'0.3em' }} /></a> <a className="button is-info" href="tel:4155177897">(415) 517-7897 <FontAwesomeIcon icon={faMobile} style={{ marginLeft: "0.3em" }} /></a>
+                  target="_blank">Lifetime Warranty</a> <a className="navbar-item" href="#business">Hours <FontAwesomeIcon icon={faClock} style={{ width: '1em', marginLeft:'0.3em' }} /></a> <a className="button is-info" href="tel:4155177897">(415) 517-7897 <FontAwesomeIcon icon={faPhone} style={{ marginLeft: "0.3em", width: '1em' }} /></a>
               </div>
             </div>
           </div>
