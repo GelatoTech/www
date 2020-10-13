@@ -9,7 +9,10 @@ import NetlifyForm from 'react-ssg-netlify-forms';
 // import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile, faCheck, faUsers, faEnvelope, faHome, faUser, faPhone, faClock } from '@fortawesome/free-solid-svg-icons';
-import { faYelp, faGoogle, faFacebookSquare } from '@fortawesome/free-brands-svg-icons';
+import { faYelp } from '@fortawesome/free-brands-svg-icons';
+
+import BookRepairButton from '../../components/BookRepairButton';
+import TrustedBy from '../../components/TrustedBy';
 
 export default function Home() {
 
@@ -80,7 +83,7 @@ export default function Home() {
           <div className="container has-text-centered">
             <h1 className="title is-1">Mobile iPhone Repair<br />at Your Location</h1>
             <p className="subtitle is-3" style={{ color: 'white' }}>San Francisco, CA</p><br />
-            <a className="button is-info is-large" onClick={()=>scrollToSection("repair")}>Book iPhone Repair <FontAwesomeIcon icon={faMobile} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+            <BookRepairButton />
           </div>
           <div className="container" id="reviews">
             <div className="columns owl-carousel owl-theme" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '80px' }}>
@@ -125,32 +128,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section work-section">
-        <div className="container">
-          <nav className="level is-mobile">
-            <div className="level-item has-text-centered">
-              <div>
-                <h3 className="title is-3 icon-item" style={{color: 'white'}}>Trusted By:</h3>
-              </div>
-            </div>
-            <div className="level-item has-text-centered">
-              <div>
-                <a href="https://www.google.com/search?q=gelatotech.&oq=gelatotech.+&aqs=chrome..69i57j69i60l5.1879j0j4&sourceid=chrome&ie=UTF-8#lrd=0x808f7fd0f5b28c95:0x7f621c4f11f36a76,1,,," target="_blank"><FontAwesomeIcon icon={faGoogle} style={{ width: '2em' }} /></a>
-              </div>
-            </div>
-            <div className="level-item has-text-centered">
-              <div>
-                <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?osq=gelatotech" target="_blank"><FontAwesomeIcon icon={faYelp} style={{ width: '2em' }} /></a>
-              </div>
-            </div>
-            <div className="level-item has-text-centered">
-              <div>
-                <a href="https://www.facebook.com/Gelatotech/" target="_blank"><FontAwesomeIcon icon={faFacebookSquare} style={{ width: '2em' }} /></a>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </section>
+      <TrustedBy />
       <section className="section" id="works">
         <div className="container">
           <h1 className="title is-1">How it Works</h1>

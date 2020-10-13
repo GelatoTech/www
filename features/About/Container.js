@@ -2,6 +2,9 @@ import Head from 'next/head';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile } from '@fortawesome/free-solid-svg-icons';
 
+import TrustedBy from '../../components/TrustedBy';
+import BookRepairButton from '../../components/BookRepairButton';
+
 export default function About() {
   return(
   <div>
@@ -42,10 +45,11 @@ export default function About() {
           <h2 className="subtitle is-6">
             Providing You The Quality Service &amp; Parts
           </h2>
-          <a href="#repair" target="_blank" className="button is-info is-large" style={{ marginLeft: '1rem' }}>Book iPhone Repair<FontAwesomeIcon icon={faMobile} style={{ margin: '.5rem' }} /></a>
+          <BookRepairButton />
         </div>
       </div>
     </section>
+    <TrustedBy />
   </div>
   )
 }

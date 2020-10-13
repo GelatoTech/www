@@ -1,22 +1,15 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import { scroller } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock, faMobile, faPhone } from '@fortawesome/free-solid-svg-icons'
+
+import scrollToSection from '../helpers/scrollToSection';
 
 export default function Nav() {
 
   const router = useRouter();
   
   const  [burgerOpen, setBurger] = useState(false);
-
-  const scrollToSection = (elementID) => {
-    scroller.scrollTo(elementID, {
-      duration: 800,
-      delay: 0,
-      smooth: "easeInOutQuart",
-    });
-  };
 
   return(
     <div>
@@ -25,7 +18,7 @@ export default function Nav() {
           <div className="navbar-brand" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <span>
               <a className="navbar-item"
-              onClick={() => { router.push('/'); scrollToSection("hero") }}
+              onClick={() => { router.pathname == '/' ? scrollToSection("hero") : router.push('/'); }}
               >
                 <img alt="iphone screen repair" height="30" src="images/nav-logo-gtech.png" width="150" />
               </a>
