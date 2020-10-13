@@ -71,7 +71,7 @@ export default function About() {
               <img src="../images/Anna-b.png" style={{maxWidth: '200px'}} alt="customer anna iphone repair" />
               <p>"Junior came to my location in just 20 minutes. Super friendly and he fixed my iPhone in 15 mininutes.” </p>
               <br />
-              <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?start=20" target="_blank" className="button is-danger is-rounded">Read on Yelp <FontAwesomeIcon style={{marginLeft: '10px'}} icon={faYelp} /></a>
+              <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?start=20" target="_blank" className="button is-danger is-rounded">Read on Yelp <FontAwesomeIcon style={{marginLeft: '10px', width: '1em'}} icon={faYelp} /></a>
             </div>
           </div>
           <div className="column">
@@ -83,7 +83,7 @@ export default function About() {
               <img src="../images/Rishabh-P.png" style={{maxWidth: '200px'}} alt="" />
               <p>"Very quick and convenient. They came to me Same-Day, they fixed my iPhone in 15 minutes. Thanks to Elbert! ” </p>
               <br />
-              <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?start=20" target="_blank" className="button is-danger is-rounded">Read on Yelp <FontAwesomeIcon style={{marginLeft: '5px'}} icon={faYelp} /></a>
+              <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?start=20" target="_blank" className="button is-danger is-rounded">Read on Yelp <FontAwesomeIcon style={{marginLeft: '5px', width: '1em'}} icon={faYelp} /></a>
             </div>
           </div>
         </div>
