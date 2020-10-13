@@ -14,17 +14,11 @@ import { faYelp } from '@fortawesome/free-brands-svg-icons';
 import BookRepairButton from '../../components/BookRepairButton';
 import TrustedBy from '../../components/TrustedBy';
 
+import scrollToSection from '../../helpers/scrollToSection';
+
 export default function Home() {
 
   const router = useRouter();
-  
-  const scrollToSection = (elementID) => {
-    scroller.scrollTo(elementID, {
-      duration: 800,
-      delay: 0,
-      smooth: "easeInOutQuart",
-    });
-  };
 
   const [repairFormValues, setRepairFormValues] = useState({
     selectDevices: 'iphone',

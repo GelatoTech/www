@@ -1,8 +1,12 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 import pexelsPhoto607812 from '../../public/images/pexels-photo-607812.jpeg'
 
 export default function BatteryTips() {
+
+  const router = useRouter();
+
   return (
     <div>
       <Head>
@@ -29,7 +33,7 @@ export default function BatteryTips() {
         <meta name="twitter:description" content="Learn how to save your iPhone battery health with our top 3 tips" />
         <meta name="twitter:image" content={pexelsPhoto607812} />
         <meta name="keywords" content=" iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, demand" />
-        <link rel="shortcut icon" type="image/png" href="https://s33.postimg.cc/lgt6sk0tb/gelatotech_white-text.png" />
+        <link rel="shortcut icon" type="image/png" href="/images/android-chrome-192x192.png" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         {/* Global site tag (gtag.js) - Google Analytics */}
         <meta property="og:image" content={pexelsPhoto607812} />
@@ -45,7 +49,7 @@ export default function BatteryTips() {
             favorite
             battery saving tips. Regardless, of the iOS version, they all apply.
             If you believe none of these tips helped you. Your battery healthy may be in very poor condition. Our
-            service provides iPhone Repair services at your door including battery replacement <a href="https://gelatotech.com/#repair" target="_blank">starting
+            service provides iPhone Repair services at your door including battery replacement <a onClick={()=> router.push('/#repair')} target="_blank">starting
               at $45</a> . If
             battery is 70% or lower, it's in poor condition. To check your battery health do the following steps
           </p>
