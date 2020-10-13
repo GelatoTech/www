@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock, faMobile, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 import scrollToSection from '../helpers/scrollToSection';
+import logo from '../public/images/nav-logo-gtech.png';
 
 export default function Nav() {
 
@@ -20,7 +21,7 @@ export default function Nav() {
               <a className="navbar-item"
               onClick={() => { router.pathname == '/' ? scrollToSection("hero") : router.push('/'); }}
               >
-                <img alt="iphone screen repair" height="30" src="images/nav-logo-gtech.png" width="150" />
+                <img alt="iphone screen repair" height="30" src={logo} width="150" />
               </a>
             </span> 
             <a aria-expanded="false" aria-label="menu" className={`navbar-burger burger ${burgerOpen ? 'is-active' : ''}`} data-target="navbarBasicExample" role="button"
@@ -53,10 +54,10 @@ export default function Nav() {
                   <a className="navbar-link">Blog</a>
                   <div className="navbar-dropdown">
                     <a className="navbar-item" 
-                      onClick={() => { router.push('/blog') } } 
+                      onClick={() => { scrollToSection("hero"); router.push('/blog/battery-tips'); } } 
                       id="blog">3 iOS Battery Saving Tips</a> 
                     <a className="navbar-item" 
-                      onClick={() => { router.push('/blog') } } 
+                      onClick={() => { scrollToSection("hero"); router.push('/blog/screen-repair'); } } 
                       id="blog2">How much will an iPhone screen repair cost you in San Francisco?</a>
                   </div>
                 </div>
