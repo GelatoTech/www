@@ -73,22 +73,22 @@ export default function Footer() {
           <hr />
           <div className="grid">
             <div>
-              <a href="https://twitter.com/gelatotech?lang=en" target="_blank"><FontAwesomeIcon className="fab fa-twitter-square" id="twitter" icon={faTwitterSquare} /></a>
+              <a href="https://twitter.com/gelatotech?lang=en" target="_blank"><FontAwesomeIcon style={{ height: '34px' }} className="fab fa-twitter-square" id="twitter" icon={faTwitterSquare} /></a>
             </div>
             <div>
-              <a href="https://www.google.com/search?sxsrf=ACYBGNRW0soodNIzft09KFwpePu3ebj1AQ:1569811253188&q=gelato+tech&spell=1&sa=X&ved=0ahUKEwiZgfHQwvfkAhVMnJ4KHROKB1AQBQgvKAA&biw=840&bih=367&dpr=2" target="_blank"><FontAwesomeIcon id="google" className="fab fa-google" icon={faGoogle} /></a>
+              <a href="https://www.google.com/search?sxsrf=ACYBGNRW0soodNIzft09KFwpePu3ebj1AQ:1569811253188&q=gelato+tech&spell=1&sa=X&ved=0ahUKEwiZgfHQwvfkAhVMnJ4KHROKB1AQBQgvKAA&biw=840&bih=367&dpr=2" target="_blank"><FontAwesomeIcon style={{ height: '34px' }} id="google" icon={faGoogle} /></a>
             </div>
             <div>
-              <a href="https://yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?start=20" target="_blank"><FontAwesomeIcon className="fab fa-yelp" id="yelp" icon={faYelp} /></a>
+              <a href="https://yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?start=20" target="_blank"><FontAwesomeIcon style={{ height: '34px' }} className="fab fa-yelp" id="yelp" icon={faYelp} /></a>
             </div>
             <div>
-              <a href="https://facebook.com/gelatotech" target="_blank"><FontAwesomeIcon id="facebook" className="fab fa-facebook-f" icon={faFacebookF} /></a>
+              <a href="https://facebook.com/gelatotech" target="_blank"><FontAwesomeIcon id="facebook" style={{ height: '34px' }} icon={faFacebookF} /></a>
             </div>
             <div>
-              <a href="https://instagram.com/gelatotech" target="_blank"><FontAwesomeIcon id="instagram" className="fab fa-instagram" icon={faInstagram} /></a>
+              <a href="https://instagram.com/gelatotech" target="_blank"><FontAwesomeIcon id="instagram" className="fab fa-instagram" style={{ height: '34px' }} icon={faInstagram} /></a>
             </div>
             <div>
-              <a href="https://www.linkedin.com/company/gelatotech-on-demand-iphone-repair/?viewAsMember=true" target="_blank"><FontAwesomeIcon id="linkedin" className="fab fa-linkedin" icon={faLinkedin} /></a>
+              <a href="https://www.linkedin.com/company/gelatotech-on-demand-iphone-repair/?viewAsMember=true" target="_blank"><FontAwesomeIcon style={{ height: '34px' }} id="linkedin" className="fab fa-linkedin" icon={faLinkedin} /></a>
             </div>
           </div>
           <p className="has-text-centered copyright has-text-grey">Copyright © 2020 gelatotech.com. All rights reserved</p>
