@@ -32,9 +32,14 @@ export default function About() {
       <meta name="twitter:description" content="Your Phone is Important To Us, Thats why we come to you and Repair your phone same-day!" />
       <meta name="twitter:image" content="images/iphone-repair.png" />
       <meta name="keywords" content=" iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement on-demand, on demand" />
-      <link rel="stylesheet" href="stylesheets/about.css" />
     </Head>
-    <section className="hero" id="hero">
+    <section className="hero" id="hero" style={{
+      backgroundImage: "url(../images/imageonline-co-darkenimage.png)",
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '100%',
+      padding: '3rem 0'
+    }} >
       <div className="hero-body">
         <div className="container has-text-centered">
           <h1 className="title is-1">

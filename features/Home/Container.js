@@ -78,7 +78,13 @@ export default function Home() {
         {/* <link rel="stylesheet" href="stylesheets/owl.theme.default.min.css" /> */}
         {/* <script src="javascripts/jquery.min.js"></script> */}
       </Head>
-      <section className="hero" id="hero">
+      <section className="hero" id="hero" style={{
+        backgroundImage: "url(../images/whats-icracked.jpg)",
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: '100%',
+        padding: '3rem 0'
+      }}>
         <div id="hero-body">
           <div className="container has-text-centered">
             <h1 className="title is-1">Mobile iPhone Repair<br />at Your Location</h1>

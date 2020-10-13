@@ -73,13 +73,6 @@
     left:0;
     width:100%;
   }
-  #hero {
-    background: url("../images/whats-icracked.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 100%;
-    padding: 10rem 0;
-  }
   .notification {
     border-radius: none !important;
   }
