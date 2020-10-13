@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { useRouter } from 'next/router';
 import ReactGA from 'react-ga';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import '../public/stylesheets/bulma.min.css';
@@ -28,10 +29,20 @@ import Footer from '../components/Footer';
 
 export default function App({ Component, pageProps }) {
 
+  const router = useRouter();
+
   useEffect(() => {
     // Google Analytics
     ReactGA.initialize('UA-121085071-1'); // GA ID
     ReactGA.pageview(window.location.pathname + window.location.search);
+
+    router.events.on('routeChangeComplete', () => {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    });
   });
 
   return (

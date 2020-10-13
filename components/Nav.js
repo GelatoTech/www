@@ -46,7 +46,6 @@ export default function Nav() {
                   }}
                 >Schedule Repair <FontAwesomeIcon icon={faMobile} style={{ width: '0.7em', marginLeft: "1vh" }} /></a> <a className="navbar-item" 
                   onClick={()=>{
-                    scrollToSection("hero");
                     router.push('/about');
                   }}
                   target="_blank">About Us</a>
@@ -62,7 +61,7 @@ export default function Nav() {
                   </div>
                 </div>
                 <a className="navbar-item"
-                  onClick={() => { router.push('/about') } } 
+                  onClick={() => { router.push('/FAQ') } } 
                 >FAQ</a> <a className="navbar-item" 
                   onClick={() => { router.push('/legal') } } 
                   target="_blank">Lifetime Warranty</a> <a className="navbar-item" href="#business">Hours <FontAwesomeIcon icon={faClock} style={{ width: '1em', marginLeft:'0.3em' }} /></a> <a className="button is-info" href="tel:4155177897">(415) 517-7897 <FontAwesomeIcon icon={faPhone} style={{ marginLeft: "0.3em", width: '1em' }} /></a>
