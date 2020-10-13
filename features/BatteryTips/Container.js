@@ -33,7 +33,7 @@ export default function BatteryTips() {
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         {/* Global site tag (gtag.js) - Google Analytics */}
         <meta property="og:image" content={pexelsPhoto607812} />
-        <link rel="stylesheet" href="../../public/stylesheets/battery.css" />
+        <link rel="stylesheet" href="/stylesheets/battery.css" />
       </Head>
       <section id="blog">
         <div className="container blog-container">

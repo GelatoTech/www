@@ -55,9 +55,9 @@ export default function Footer() {
             <div className="column footer-menu">
               <h5 style={{color: '#212121'}}>Blog</h5>
               <ul>
-                <li><a onClick={() => { router.push('/batterytips') }}>Top 3 Battery Tips</a></li>
+                <li><a onClick={() => { router.push('/blog/battery-tips') }}>Top 3 Battery Tips</a></li>
                 <br />
-                <li><a onClick={() => { router.push('/screenrepairblog') }}>How much will an iPhone screen repair cost you in San Francisco?</a></li>
+                <li><a onClick={() => { router.push('/blog/screen-repair') }}>How much will an iPhone screen repair cost you in San Francisco?</a></li>
               </ul>
               <hr />
               <h5 id="contact">Contact Us</h5>
