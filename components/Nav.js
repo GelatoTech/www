@@ -38,7 +38,7 @@ export default function Nav() {
               <span aria-hidden="true"></span>
             </a>
           </div>
-          <div className="navbar-menu has-dropdown" id="navbarBasicExample">
+          <div className={`navbar-menu has-dropdown ${burgerOpen ? 'is-active' : ''}`} id="navbarBasicExample">
             <div className="navbar-end" id="nav-items">
               <div className="navbar-item">
                 <a className="navbar-item" 
