@@ -43,7 +43,7 @@ export default function Nav() {
                   onClick={()=>{ 
                     router.pathname == '/' ? scrollToSection("repair") : router.push('/#repair')
                   }}
-                >Repair my iPhone <FontAwesomeIcon icon={faMobile} style={{ width: '0.7em', marginLeft: "1vh" }} /></a> <a className="navbar-item" 
+                >Schedule Repair <FontAwesomeIcon icon={faMobile} style={{ width: '0.7em', marginLeft: "1vh" }} /></a> <a className="navbar-item" 
                   onClick={()=>{
                     scrollToSection("hero");
                     router.push('/about');

@@ -177,7 +177,6 @@
   /* [iphone6](phones, 600px and down) */
   @media only screen and (max-width: 500px) {
     #get-started {
-      background-image: url("../images/Bitmap.jpg");
       background-size: cover;
       background-attachment: none;
       background-position: center;

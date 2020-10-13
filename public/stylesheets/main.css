@@ -58,9 +58,7 @@ header{
   margin-right: 2rem;
   border-radius: 5px;
 }
-#get-started {
-  background-image: url("../images/iphones-bg.jpeg");
-  
+#get-started {  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
