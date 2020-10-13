@@ -95,7 +95,7 @@ export default function About() {
         <div className="columns is-vcentered is-center">
           <div className="column">
             <figure className="card-image is-large">
-              <img src="https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="iphone" />
+              <img src="../images/pexels-photo-699122.jpeg" alt="iphone" />
             </figure>
           </div>
           <div className="column">
