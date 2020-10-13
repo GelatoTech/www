@@ -24,10 +24,10 @@ export default function Home() {
   };
 
   const [repairFormValues, setRepairFormValues] = useState({
-    selectDevices: '',
-    chooseDeviceModel: '',
-    issue: '',
-    color: '',
+    selectDevices: 'iphone',
+    chooseDeviceModel: '11pro',
+    issue: 'screen',
+    color: 'black',
     name: '',
   });
 
