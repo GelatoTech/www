@@ -226,6 +226,9 @@ export default function Home() {
                     <option value="default" disabled>
                       Select Model
                     </option>
+                    <option value="11proMax">
+                      iPhone 11 Pro Max
+                    </option>
                     <option value="11pro">
                       iPhone 11 Pro
                     </option>

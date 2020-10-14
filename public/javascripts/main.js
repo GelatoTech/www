@@ -328,9 +328,9 @@ const updateForm = () => {
                   duration: "Repair takes 2-3 business days",
               },
           },
-          iphone11pro: {
+          iphone11proMax: {
               screen: {
-                  price: "Up-front Price $280",
+                  price: "Up-front Price $330",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
@@ -345,7 +345,7 @@ const updateForm = () => {
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
               water: {
-                  price: "Price-range $300-$450",
+                  price: "Price-range $300-$350",
                   warranty: "90 day warranty",
                   duration: "Repair takes 2-3 business days",
               },
@@ -381,6 +381,23 @@ const updateForm = () => {
   } else {
       selectColor.style.display = "block"
   }
+  if (chooseIssue == "battery" && chooseDeviceModel == "11proMax") {
+      priceTitle.innerText = deviceDictionary["iphones"]["iphone11proMax"]["battery"]["price"]
+      warrantyText.innerText = deviceDictionary["iphones"]["iphone11proMax"]["battery"]["warranty"]
+      repairtimeText.innerText = deviceDictionary["iphones"]["iphone11proMax"]["battery"]["duration"]
+  } else if (chooseIssue == "charging" && chooseDeviceModel == "11proMax") {
+      priceTitle.innerText = deviceDictionary["iphones"]["iphone11proMax"]["charging"]["price"]
+      warrantyText.innerText = deviceDictionary["iphones"]["iphone11proMax"]["charging"]["warranty"]
+      repairtimeText.innerText = deviceDictionary["iphones"]["iphone11proMax"]["charging"]["duration"]
+  } else if (chooseIssue == "water" && chooseDeviceModel == "11proMax") {
+      priceTitle.innerText = deviceDictionary["iphones"]["iphone11proMax"]["water"]["price"]
+      warrantyText.innerText = deviceDictionary["iphones"]["iphone11proMax"]["water"]["warranty"]
+      repairtimeText.innerText = deviceDictionary["iphones"]["iphone11proMax"]["water"]["duration"]
+  } else if (chooseIssue == "screen" && chooseDeviceModel == "11proMax") {
+      priceTitle.innerText = deviceDictionary["iphones"]["iphone11proMax"]["screen"]["price"]
+      warrantyText.innerText = deviceDictionary["iphones"]["iphone11proMax"]["screen"]["warranty"]
+      repairtimeText.innerText = deviceDictionary["iphones"]["iphone11proMax"]["screen"]["duration"]
+  }
   if (chooseIssue == "battery" && chooseDeviceModel == "11pro") {
       priceTitle.innerText = deviceDictionary["iphones"]["iphone11pro"]["battery"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphone11pro"]["battery"]["warranty"]
@@ -397,7 +414,6 @@ const updateForm = () => {
       priceTitle.innerText = deviceDictionary["iphones"]["iphone11pro"]["screen"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphone11pro"]["screen"]["warranty"]
       repairtimeText.innerText = deviceDictionary["iphones"]["iphone11pro"]["screen"]["duration"]
-
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "11") {
       priceTitle.innerText = deviceDictionary["iphones"]["iphone11"]["battery"]["price"]
