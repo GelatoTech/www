@@ -69,6 +69,7 @@ export default function Home() {
         <meta content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" name="google-site-verification" />
         {/* <link rel="stylesheet" href="stylesheets/main.css" /> */}
         {/* <link rel="stylesheet" href="stylesheets/owl.theme.default.min.css" /> */}
+        <link rel="stylesheet" href="stylesheets/carousel-mobile.css" />
         {/* <script src="javascripts/jquery.min.js"></script> */}
       </Head>
       <section className="hero" id="hero" style={{
@@ -85,8 +86,26 @@ export default function Home() {
             <BookRepairButton />
           </div>
           <div className="container" id="reviews">
-            <div className="columns owl-carousel owl-theme" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '80px' }}>
-            <OwlCarousel items={3} margin={8} autoplay={true} loop dots={false} >  
+            {/* <div className="columns owl-carousel owl-theme" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '80px' }}> */}
+            <OwlCarousel 
+              items={3} 
+              margin={8} 
+              autoplay={true} 
+              loop 
+              dots={false} 
+              style={{ marginTop: '80px' }} 
+              responsive={{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:4
+                }
+            }}
+            >  
             <div className="column">
                 <div className="notification">
                   <img alt="customer lilly iphone repair review" src="images/testimonials/Lilly-H.png" style={{ maxWidth: '200px' }} />
@@ -123,7 +142,7 @@ export default function Home() {
                 </div>
               </div>
             </OwlCarousel>
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </section>
