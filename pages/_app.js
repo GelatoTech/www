@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 import ReactGA from 'react-ga';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import '../public/stylesheets/bulma.min.css';
@@ -47,6 +48,9 @@ export default function App({ Component, pageProps }) {
 
   return (
     <div>
+      <Head>
+        <link href="/images/logo-square.png" rel="shortcut icon" type="image/png" />
+      </Head>
       <Nav />
       <div ref={useRef("customer-chat")}></div>
       <Component {...pageProps} />

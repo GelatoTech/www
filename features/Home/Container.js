@@ -51,7 +51,6 @@ export default function Home() {
         <title>Mobile iPhone Repair in San Francisco | Gelatotech</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="ie=edge" httpEquiv="X-UA-Compatible" />
-        <link href="images/logo-square.png" rel="shortcut icon" type="image/png" />
         <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." name="description" />
         <meta content="index" name="robots" />
         <meta content="Mobile iPhone Repair in San Francisco | Gelatotech" itemProp="name" />

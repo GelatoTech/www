@@ -33,7 +33,6 @@ export default function BatteryTips() {
         <meta name="twitter:description" content="Learn how to save your iPhone battery health with our top 3 tips" />
         <meta name="twitter:image" content={pexelsPhoto607812} />
         <meta name="keywords" content=" iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, demand" />
-        <link rel="shortcut icon" type="image/png" href="/images/android-chrome-192x192.png" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         {/* Global site tag (gtag.js) - Google Analytics */}
         <meta property="og:image" content={pexelsPhoto607812} />
