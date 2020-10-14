@@ -22,17 +22,17 @@ const updateForm = () => {
       iphones: {
           iphone6: {
               screen: {
-                  price: "Up-front Price $75",
+                  price: "Estimated Price:  $75",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Up-front Price $50",
+                  price: "Estimated Price:  $50",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Up-front Price $50",
+                  price: "Estimated Price:  $50",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
@@ -44,17 +44,17 @@ const updateForm = () => {
           },
           iphone6s: {
               screen: {
-                  price: "Up-front Price $85",
+                  price: "Estimated Price:  $85",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Up-front Price $50",
+                  price: "Estimated Price:  $50",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Up-front Price $50",
+                  price: "Estimated Price:  $50",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
@@ -66,17 +66,17 @@ const updateForm = () => {
           },
           iphone6plus: {
               screen: {
-                  price: "Up-front Price $85",
+                  price: "Estimated Price:  $85",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Up-front Price $50",
+                  price: "Estimated Price:  $50",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Up-front Price $50",
+                  price: "Estimated Price:  $50",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
@@ -88,17 +88,17 @@ const updateForm = () => {
           },
           iphone6splus: {
               screen: {
-                  price: "Up-front Price $90",
+                  price: "Estimated Price:  $90",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Up-front Price $55",
+                  price: "Estimated Price:  $55",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Up-front Price $55",
+                  price: "Estimated Price:  $55",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
@@ -110,17 +110,17 @@ const updateForm = () => {
           },
           iphone7: {
               screen: {
-                  price: "Up-front Price $90",
+                  price: "Estimated Price:  $90",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Up-front Price $55",
+                  price: "Estimated Price:  $55",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Up-front Price $55",
+                  price: "Estimated Price:  $55",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
@@ -132,17 +132,17 @@ const updateForm = () => {
           },
           iphone7plus: {
               screen: {
-                  price: "Up-front Price $109",
+                  price: "Estimated Price:  $109",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Up-front Price $55",
+                  price: "Estimated Price:  $55",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Up-front Price $55",
+                  price: "Estimated Price:  $55",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
@@ -154,17 +154,17 @@ const updateForm = () => {
           },
           iphone8: {
               screen: {
-                  price: "Up-front Price $109",
+                  price: "Estimated Price:  $109",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Up-front Price $55",
+                  price: "Estimated Price:  $55",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Up-front Price $55",
+                  price: "Estimated Price:  $55",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
@@ -176,17 +176,17 @@ const updateForm = () => {
           },
           iphone8plus: {
               screen: {
-                  price: "Up-front Price $120",
+                  price: "Estimated Price:  $120",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Up-front Price $55",
+                  price: "Estimated Price:  $55",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Up-front Price $55",
+                  price: "Estimated Price:  $55",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
@@ -198,17 +198,17 @@ const updateForm = () => {
           },
           iphonex: {
               screen: {
-                  price: "Up-front Price $200",
+                  price: "Estimated Price:  $200",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Up-front Price $65",
+                  price: "Estimated Price:  $65",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Up-front Price $65",
+                  price: "Estimated Price:  $65",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
@@ -220,17 +220,17 @@ const updateForm = () => {
           },
           iphonexs: {
               screen: {
-                  price: "Up-front Price $250",
+                  price: "Estimated Price:  $250",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Up-front Price $65",
+                  price: "Estimated Price:  $65",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Up-front Price $65",
+                  price: "Estimated Price:  $65",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
@@ -242,17 +242,17 @@ const updateForm = () => {
           },
           iphonexr: {
               screen: {
-                  price: "Up-front Price $150",
+                  price: "Estimated Price:  $150",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Up-front Price $65",
+                  price: "Estimated Price:  $65",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Up-front Price $65",
+                  price: "Estimated Price:  $65",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
@@ -264,17 +264,17 @@ const updateForm = () => {
           },
           iphonexsmax: {
               screen: {
-                  price: "Up-front Price $280",
+                  price: "Estimated Price:  $280",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Up-front Price $75",
+                  price: "Estimated Price:  $75",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Up-front Price $75",
+                  price: "Estimated Price:  $75",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
@@ -286,17 +286,17 @@ const updateForm = () => {
           },
           iphone11: {
               screen: {
-                  price: "Up-front Price $180",
+                  price: "Estimated Price:  $180",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Up-front Price $100",
+                  price: "Estimated Price:  $100",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Up-front Price $100",
+                  price: "Estimated Price:  $100",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
@@ -308,17 +308,17 @@ const updateForm = () => {
           },
           iphone11pro: {
               screen: {
-                  price: "Up-front Price $280",
+                  price: "Estimated Price:  $280",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Up-front Price $100",
+                  price: "Estimated Price:  $100",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Up-front Price $100",
+                  price: "Estimated Price:  $100",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },
@@ -330,17 +330,17 @@ const updateForm = () => {
           },
           iphone11proMax: {
               screen: {
-                  price: "Up-front Price $330",
+                  price: "Estimated Price:  $330",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
-                  price: "Up-front Price $100",
+                  price: "Estimated Price:  $100",
                   warranty: "90 day warranty",
                   duration: "Battery Replacement takes 15 minutes",
               },
               charging: {
-                  price: "Up-front Price $100",
+                  price: "Estimated Price:  $100",
                   warranty: "90 day warranty",
                   duration: "Charging-Port Replacement takes 30 minutes",
               },

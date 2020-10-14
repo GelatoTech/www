@@ -216,11 +216,9 @@ export default function Home() {
             <img alt="iPhone Screen Repair" src="images/iphonex.png" style={{maxWidth: '80px'}} />
           </figure>
           <h3 className="title is-4" id="our-price-text" />
-          <p id="total-price-text" />
-          <h3 className="title is-4" />
-          <p id="warranty-text" />
-          <h3 className="title is-4" />
-          <p id="repairtime-text" />
+          <p id="total-price-text" style={{ fontSize: '1.9em' }} />
+          <p id="warranty-text" style={{ fontSize: '1.5em' }} />
+          <p id="repairtime-text" style={{ fontSize: '1.2em', marginBottom: '0.5em' }} />
           <NetlifyForm formName="repair-form" formValues={repairFormValues} postSubmit={postSubmit} id="repair-form" name="repair-form">
             {/* <input name="form-name" type="hidden" defaultValue="repair-form" /> */}
             <div className="field">
