@@ -220,7 +220,7 @@ const updateForm = () => {
           },
           iphonexs: {
               screen: {
-                  price: "Estimated Price:  $250",
+                  price: "Estimated Price:  $200",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
@@ -286,7 +286,7 @@ const updateForm = () => {
           },
           iphone11: {
               screen: {
-                  price: "Estimated Price:  $180",
+                  price: "Estimated Price:  $150",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
@@ -708,7 +708,7 @@ const updateForm = () => {
           },
           ipadmini4: {
               screen: {
-                  price: "Upfront Price $280",
+                  price: "Upfront Price $250",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
@@ -730,7 +730,7 @@ const updateForm = () => {
           },
           ipadmini5: {
               screen: {
-                  price: "Upfront Price $290",
+                  price: "Upfront Price $250",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
@@ -862,7 +862,7 @@ const updateForm = () => {
           },
           ipad7: {
               screen: {
-                  price: "Upfront Price $200",
+                  price: "Upfront Price $180",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
@@ -906,7 +906,7 @@ const updateForm = () => {
           },
           ipadair2: {
               screen: {
-                  price: "Upfront Price $300",
+                  price: "Upfront Price $260",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
@@ -928,7 +928,7 @@ const updateForm = () => {
           },
           ipadair3: {
               screen: {
-                  price: "Upfront Price $300",
+                  price: "Upfront Price $280",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
@@ -950,7 +950,7 @@ const updateForm = () => {
           },
           ipadpro9: {
               screen: {
-                  price: "Upfront Price $250",
+                  price: "Upfront Price $260",
                   warranty: "Lifetime Warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
