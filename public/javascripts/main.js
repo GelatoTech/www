@@ -378,6 +378,12 @@ const updateForm = () => {
       selectColor.style.display = "none"
   } else if (chooseDeviceModel == "xsmax") {
       selectColor.style.display = "none"
+  } else if (chooseDeviceModel == "11proMax") {
+      selectColor.style.display = "none"
+  } else if (chooseDeviceModel == "11pro") {
+      selectColor.style.display = "none"
+  } else if (chooseDeviceModel == "11") {
+      selectColor.style.display = "none"
   } else {
       selectColor.style.display = "block"
   }
