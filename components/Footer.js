@@ -49,7 +49,7 @@ export default function Footer() {
                 <li>Thursday: 10:00 am - 6:00pm </li>
                 <li>Friday: 10:00 am - 6:00pm </li>
                 <li>Saturday: 10:00 am - 6:00pm </li>
-                <li>Sunday: 10:00 am - 6:00pm </li>
+                <li>Sunday: Closed </li>
               </ul>
             </div>
             <div className="column footer-menu">
