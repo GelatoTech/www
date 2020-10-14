@@ -19,7 +19,10 @@ export default function Nav() {
           <div className="navbar-brand" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <span>
               <a className="navbar-item"
-              onClick={() => { router.pathname == '/' ? scrollToSection("hero") : router.push('/'); }}
+              onClick={() => { 
+                setBurger(false);
+                router.pathname == '/' ? scrollToSection("hero") : router.push('/'); 
+              }}
               >
                 <img alt="iphone screen repair" height="30" src={logo} width="150" />
               </a>
@@ -37,15 +40,18 @@ export default function Nav() {
               <div className="navbar-item">
                 <a className="navbar-item" 
                   onClick={()=>{ 
+                    setBurger(false);
                     router.pathname == '/' ? scrollToSection("works") : router.push('/#works');
                   }}
                 >How it Works</a> 
                 <a className="navbar-item"
                   onClick={()=>{ 
+                    setBurger(false);
                     router.pathname == '/' ? scrollToSection("repair") : router.push('/#repair')
                   }}
                 >Schedule Repair <FontAwesomeIcon icon={faMobile} style={{ width: '0.7em', marginLeft: "1vh" }} /></a> <a className="navbar-item" 
                   onClick={()=>{
+                    setBurger(false);
                     router.push('/about');
                   }}
                   target="_blank">About Us</a>
@@ -53,18 +59,33 @@ export default function Nav() {
                   <a className="navbar-link">Blog</a>
                   <div className="navbar-dropdown">
                     <a className="navbar-item" 
-                      onClick={() => { scrollToSection("hero"); router.push('/blog/battery-tips'); } } 
+                      onClick={() => { 
+                        setBurger(false);
+                        scrollToSection("hero"); router.push('/blog/battery-tips'); 
+                      }} 
                       id="blog">3 iOS Battery Saving Tips</a> 
                     <a className="navbar-item" 
-                      onClick={() => { scrollToSection("hero"); router.push('/blog/screen-repair'); } } 
+                      onClick={() => { 
+                        setBurger(false);
+                        scrollToSection("hero"); router.push('/blog/screen-repair'); 
+                      }} 
                       id="blog2">How much will an iPhone screen repair cost you in San Francisco?</a>
                   </div>
                 </div>
                 <a className="navbar-item"
-                  onClick={() => { router.push('/FAQ') } } 
+                  onClick={() => { 
+                    setBurger(false);
+                    router.push('/FAQ') 
+                  }} 
                 >FAQ</a> <a className="navbar-item" 
-                  onClick={() => { router.push('/legal') } } 
-                  target="_blank">Lifetime Warranty</a> <a className="navbar-item" onClick={()=>scrollToSection("business")}>Hours <FontAwesomeIcon icon={faClock} style={{ width: '1em', marginLeft:'0.3em' }} /></a> <a className="button is-info" href="tel:4155177897">(415) 517-7897 <FontAwesomeIcon icon={faPhone} style={{ marginLeft: "0.3em", width: '1em' }} /></a>
+                  onClick={() => { 
+                    setBurger(false);
+                    router.push('/legal') }} 
+                  target="_blank">Lifetime Warranty</a>
+                <a className="navbar-item" onClick={()=>{
+                  setBurger(false);
+                  scrollToSection("business")
+                  }}>Hours <FontAwesomeIcon icon={faClock} style={{ width: '1em', marginLeft:'0.3em' }} /></a> <a className="button is-info" href="tel:4155177897">(415) 517-7897 <FontAwesomeIcon icon={faPhone} style={{ marginLeft: "0.3em", width: '1em' }} /></a>
               </div>
             </div>
           </div>
