@@ -21,10 +21,10 @@ export default function Home() {
   const router = useRouter();
 
   const [repairFormValues, setRepairFormValues] = useState({
-    selectDevices: 'iphone',
-    chooseDeviceModel: '11pro',
-    issue: 'screen',
-    color: 'black',
+    selectDevices: '',
+    chooseDeviceModel: '',
+    issue: '',
+    color: '',
     name: '',
   });
 
@@ -207,8 +207,8 @@ export default function Home() {
             <div className="field">
               <div className="field">
                 <div className="select is-info is-rounded">
-                  <select id="select-device" value={repairFormValues.selectDevices} name="selectDevices" onChange={handleChange} required>
-                    <option selected>
+                  <select id="select-device" defaultValue={'default'} name="selectDevices" onChange={handleChange} required>
+                    <option value="default" disabled>
                       Select Device
                     </option>
                     <option value="iphone">
@@ -222,8 +222,8 @@ export default function Home() {
               </div>
               <div className="field" id="iphones">
                 <div className="select is-info is-rounded">
-                  <select value={repairFormValues.chooseDeviceModel} id="select-device-model" name="chooseDeviceModel" onChange={handleChange}>
-                    <option selected disabled>
+                  <select defaultValue={'default'} id="select-device-model" name="chooseDeviceModel" onChange={handleChange}>
+                    <option value="default" disabled>
                       Select Model
                     </option>
                     <option value="11pro">
@@ -273,8 +273,8 @@ export default function Home() {
               </div>
               <div className="field" id="ipads">
                 <div className="select is-info is-rounded">
-                  <select value={repairFormValues.chooseDeviceModel} id="select-ipad-model" name="chooseDeviceModel" onChange={handleChange}>
-                    <option selected disabled>
+                  <select defaultValue={'default'} id="select-ipad-model" name="chooseDeviceModel" onChange={handleChange}>
+                    <option value="default" disabled>
                       Select Model
                     </option>
                     <option value="ipadmini">
@@ -342,8 +342,8 @@ export default function Home() {
               </div>
               <div className="field">
                 <div className="select is-danger is-rounded">
-                  <select value={repairFormValues.issue} id="select-issue" name="issue" onChange={handleChange} required>
-                    <option selected disabled>
+                  <select defaultValue={'default'} id="select-issue" name="issue" onChange={handleChange} required>
+                    <option value="default" disabled>
                       Select Problem
                     </option>
                     <option value="screen">
@@ -363,8 +363,8 @@ export default function Home() {
               </div>
               <div className="field" id="homeButton" style={{display: 'none'}}>
                 <div className="select is-rounded">
-                  <select value={repairFormValues.color} id="select-color" name="color" onChange={handleChange}>
-                    <option selected disabled>
+                  <select defaultValue={'default'} id="select-color" name="color" onChange={handleChange}>
+                    <option value="default" disabled>
                       Home Button Color
                     </option>
                     <option value="black">
