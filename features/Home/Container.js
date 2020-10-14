@@ -88,12 +88,12 @@ export default function Home() {
           <div className="container" id="reviews">
             {/* <div className="columns owl-carousel owl-theme" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '80px' }}> */}
             <OwlCarousel 
-              items={3} 
               margin={8} 
               autoplay={true} 
               loop 
               dots={false} 
               style={{ marginTop: '80px' }} 
+              autoplayTimeout={8000}
               responsive={{
                 0:{
                     items:1
@@ -102,7 +102,7 @@ export default function Home() {
                     items:2
                 },
                 1000:{
-                    items:4
+                    items:3
                 }
             }}
             >  
