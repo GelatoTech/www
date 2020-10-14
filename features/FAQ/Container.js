@@ -1,7 +1,16 @@
 import Head from 'next/head';
-import gelatotechLogo from '../../public/images/nav-logo-gtech.png';
+import $ from 'jquery';
+import { useEffect } from 'react';
 
 export default function FAQ() {
+
+  useEffect(() => {
+    $('body').delegate('.c-faq', 'click', function () {
+      $('.c-faq').removeClass('c-faq--active');
+      $(this).addClass('c-faq--active');
+    });
+  });
+
   return (
     <div>
       <Head>
