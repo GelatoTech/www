@@ -1,1 +1,1 @@
-export { default } from '../features/legal';
+export { default } from '../features/Legal';
