@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { scroller } from "react-scroll";
 import updateForm from '../../public/javascripts/main';
 import NetlifyForm from 'react-ssg-netlify-forms';
@@ -10,10 +10,10 @@ import NetlifyForm from 'react-ssg-netlify-forms';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile, faCheck, faUsers, faEnvelope, faHome, faUser, faPhone, faClock } from '@fortawesome/free-solid-svg-icons';
 import { faYelp } from '@fortawesome/free-brands-svg-icons';
+import AOS from 'aos';
 
 import BookRepairButton from '../../components/BookRepairButton';
 import TrustedBy from '../../components/TrustedBy';
-
 import scrollToSection from '../../helpers/scrollToSection';
 
 export default function Home() {
@@ -43,6 +43,11 @@ export default function Home() {
     });
     scrollToSection("hero");
   }
+
+
+  useEffect(() => {
+    AOS.init();
+  });
 
 
   return(
