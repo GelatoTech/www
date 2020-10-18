@@ -28,17 +28,45 @@ export default function Home() {
     name: '',
   });
 
-  const devicesWithBackGlass = [
-    "11proMax",
-    "11pro",
-    "11",
-    "xsmax",
-    "xs",
-    "xr",
-    "x",
-    "8plus",
-    "8"
-  ];
+  const devicesWithBackGlass = {
+    "11proMax": {
+      duration: "Back glass repair takes 3 hours",
+      price: "Estimated Price:  $180"
+    },
+    "11pro": {
+      duration: "Back glass repair takes 3 hours",
+      price: "Estimated Price:  $180"
+    },
+    "11": {
+      duration: "Back glass repair takes 3 hours",
+      price: "Estimated Price:  $180"
+    },
+    "xsmax": {
+      duration: "Back glass repair takes 3 hours",
+      price: "Estimated Price:  $150"
+    },
+    "xs": {
+      duration: "Back glass repair takes 3 hours",
+      price: "Estimated Price:  $150"
+    },
+    "xr": {
+      duration: "Back glass repair takes 3 hours",
+      price: "Estimated Price:  $150"
+    },
+    "x": {
+      duration: "Back glass repair takes 3 hours",
+      price: "Estimated Price:  $150"
+    },
+    "8plus": {
+      duration: "Back glass repair takes 3 hours",
+      price: "Estimated Price:  $140"
+    },
+    "8": {
+      duration: "Back glass repair takes 3 hours",
+      price: "Estimated Price:  $140"
+    }
+  };
+
 
   // Handle repair form state
   const handleChange = (e) => {
@@ -232,10 +260,32 @@ export default function Home() {
           <figure>
             <img alt="iPhone Screen Repair" src="images/iphonex.png" style={{maxWidth: '80px'}} />
           </figure>
-          <h3 className="title is-4" id="our-price-text" />
-          <p id="total-price-text" style={{ fontSize: '1.9em' }} />
-          <p id="warranty-text" style={{ fontSize: '1.5em' }} />
-          <p id="repairtime-text" style={{ fontSize: '1.2em', marginBottom: '0.5em' }} />
+          <h3 className="title is-4" id="our-price-text"></h3>
+          <p id="total-price-text" style={{ fontSize: '1.9em' }}>
+            {
+              (
+                devicesWithBackGlass[repairFormValues.chooseDeviceModel] &&
+                repairFormValues.issue == "backglass"
+                ) 
+              ? (
+                devicesWithBackGlass[repairFormValues.chooseDeviceModel].price
+              )
+              : null
+            }
+          </p>
+          <p id="warranty-text" style={{ fontSize: '1.5em' }}></p>
+          <p id="repairtime-text" style={{ fontSize: '1.2em', marginBottom: '0.5em' }}>
+            {
+              (
+                devicesWithBackGlass[repairFormValues.chooseDeviceModel] &&
+                repairFormValues.issue == "backglass"
+                ) 
+              ? (
+                devicesWithBackGlass[repairFormValues.chooseDeviceModel].duration
+              )
+              : null
+            }
+          </p>
           <NetlifyForm formName="repair-form" formValues={repairFormValues} postSubmit={postSubmit} id="repair-form" name="repair-form">
             {/* <input name="form-name" type="hidden" defaultValue="repair-form" /> */}
             <div className="field">
@@ -387,7 +437,7 @@ export default function Home() {
                       Screen replacement
                     </option>
                     {
-                      devicesWithBackGlass.includes(repairFormValues.chooseDeviceModel) 
+                      devicesWithBackGlass[repairFormValues.chooseDeviceModel]
                       ? (
                         <option value="backglass">Back glass replacement</option>
                       )

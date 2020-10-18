@@ -173,10 +173,6 @@ const updateForm = () => {
                   warranty: "90 day warranty",
                   duration: "Repair takes 2-3 business days",
               },
-              backglass: {
-                  price: "Price-range $140",
-                  duration: "Repair takes 3 hours",
-              },
           },
           iphone8plus: {
               screen: {
@@ -199,10 +195,6 @@ const updateForm = () => {
                   warranty: "90 day warranty",
                   duration: "Repair takes 2-3 business days",
               },
-              backglass: {
-                price: "Price-range $140",
-                duration: "Repair takes 3 hours",
-            },
           },
           iphonex: {
               screen: {
@@ -225,10 +217,6 @@ const updateForm = () => {
                   warranty: "90 day warranty",
                   duration: "Repair takes 2-3 business days",
               },
-              backglass: {
-                price: "Price-range $150",
-                duration: "Repair takes 3 hours",
-            },
           },
           iphonexs: {
               screen: {
@@ -251,10 +239,6 @@ const updateForm = () => {
                   warranty: "90 day warranty",
                   duration: "Repair takes 2-3 business days",
               },
-                backglass: {
-                price: "Price-range $150",
-                duration: "Repair takes 3 hours",
-            },
           },
           iphonexr: {
               screen: {
@@ -277,10 +261,6 @@ const updateForm = () => {
                   warranty: "90 day warranty",
                   duration: "Repair takes 2-3 business days",
               },
-                backglass: {
-                price: "Price-range $150",
-                duration: "Repair takes 3 hours",
-            },
           },
           iphonexsmax: {
               screen: {
@@ -303,10 +283,6 @@ const updateForm = () => {
                   warranty: "90 day warranty",
                   duration: "Repair takes 2-3 business days",
               },
-                backglass: {
-                price: "Price-range $150",
-                duration: "Repair takes 3 hours",
-            },
           },
           iphone11: {
               screen: {
@@ -329,10 +305,6 @@ const updateForm = () => {
                   warranty: "90 day warranty",
                   duration: "Repair takes 2-3 business days",
               },
-                backglass: {
-                price: "Price-range $180",
-                duration: "Repair takes 3 hours",
-            },
           },
           iphone11pro: {
               screen: {
@@ -355,10 +327,6 @@ const updateForm = () => {
                   warranty: "90 day warranty",
                   duration: "Repair takes 2-3 business days",
               },
-                backglass: {
-                price: "Price-range $180",
-                duration: "Repair takes 3 hours",
-            },
           },
           iphone11proMax: {
               screen: {
@@ -381,10 +349,6 @@ const updateForm = () => {
                   warranty: "90 day warranty",
                   duration: "Repair takes 2-3 business days",
               },
-              backglass: {
-                price: "Price-range $180",
-                duration: "Repair takes 3 hours",
-            },
           },
         }
     }
@@ -439,9 +403,6 @@ const updateForm = () => {
       priceTitle.innerText = deviceDictionary["iphones"]["iphone11proMax"]["screen"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphone11proMax"]["screen"]["warranty"]
       repairtimeText.innerText = deviceDictionary["iphones"]["iphone11proMax"]["screen"]["duration"]
-  } else if (chooseIssue == "backglass" && chooseDeviceModel == "11proMax") {
-      priceTitle.innerText = deviceDictionary["iphones"]["iphone11proMax"]["backglass"]["price"]
-      repairtimeText.innerText = deviceDictionary["iphones"]["iphone11proMax"]["backglass"]["duration"]
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "11pro") {
       priceTitle.innerText = deviceDictionary["iphones"]["iphone11pro"]["battery"]["price"]
@@ -459,9 +420,6 @@ const updateForm = () => {
       priceTitle.innerText = deviceDictionary["iphones"]["iphone11pro"]["screen"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphone11pro"]["screen"]["warranty"]
       repairtimeText.innerText = deviceDictionary["iphones"]["iphone11pro"]["screen"]["duration"]
-  } else if (chooseIssue == "backglass" && chooseDeviceModel == "11pro") {
-      priceTitle.innerText = deviceDictionary["iphones"]["iphone11pro"]["backglass"]["price"]
-      repairtimeText.innerText = deviceDictionary["iphones"]["iphone11pro"]["backglass"]["duration"]
   }
   if (chooseIssue == "battery" && chooseDeviceModel == "11") {
       priceTitle.innerText = deviceDictionary["iphones"]["iphone11"]["battery"]["price"]
@@ -479,11 +437,9 @@ const updateForm = () => {
       priceTitle.innerText = deviceDictionary["iphones"]["iphone11"]["screen"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphone11"]["screen"]["warranty"]
       repairtimeText.innerText = deviceDictionary["iphones"]["iphone11"]["screen"]["duration"]
-  } else if (chooseIssue == "screen" && chooseDeviceModel == "11") {
-      priceTitle.innerText = deviceDictionary["iphones"]["iphone11"]["backglass"]["price"]
-      repairtimeText.innerText = deviceDictionary["iphones"]["iphone11"]["backglass"]["duration"]
+
   }
-  
+
   if (chooseIssue == "battery" && chooseDeviceModel == "x") {
       priceTitle.innerText = deviceDictionary["iphones"]["iphonex"]["battery"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphonex"]["battery"]["warranty"]
@@ -500,9 +456,7 @@ const updateForm = () => {
       priceTitle.innerText = deviceDictionary["iphones"]["iphonex"]["screen"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphonex"]["screen"]["warranty"]
       repairtimeText.innerText = deviceDictionary["iphones"]["iphonex"]["screen"]["duration"]
-  } else if (chooseIssue == "backglass" && chooseDeviceModel == "x") {
-      priceTitle.innerText = deviceDictionary["iphones"]["iphonex"]["backglass"]["price"]
-      repairtimeText.innerText = deviceDictionary["iphones"]["iphonex"]["backglass"]["duration"]
+
   } else if (chooseIssue == "screen" && chooseDeviceModel == "xs") {
       priceTitle.innerText = deviceDictionary["iphones"]["iphonexs"]["screen"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphonexs"]["screen"]["warranty"]
@@ -519,9 +473,6 @@ const updateForm = () => {
       priceTitle.innerText = deviceDictionary["iphones"]["iphonexs"]["water"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphonexs"]["water"]["warranty"]
       repairtimeText.innerText = deviceDictionary["iphones"]["iphonexs"]["water"]["duration"]
-  } else if (chooseIssue == "backglass" && chooseDeviceModel == "xs") {
-      priceTitle.innerText = deviceDictionary["iphones"]["iphonexs"]["backglass"]["price"]
-      repairtimeText.innerText = deviceDictionary["iphones"]["iphonexs"]["backglass"]["duration"]
   } else if (chooseIssue == "screen" && chooseDeviceModel == "xr") {
       priceTitle.innerText = deviceDictionary["iphones"]["iphonexr"]["screen"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphonexr"]["screen"]["warranty"]
@@ -538,9 +489,6 @@ const updateForm = () => {
       priceTitle.innerText = deviceDictionary["iphones"]["iphonexs"]["water"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphonexs"]["water"]["warranty"]
       repairtimeText.innerText = deviceDictionary["iphones"]["iphonexs"]["water"]["duration"]
-  } else if (chooseIssue == "backglass" && chooseDeviceModel == "xr") {
-      priceTitle.innerText = deviceDictionary["iphones"]["iphonexs"]["backglass"]["price"]
-      repairtimeText.innerText = deviceDictionary["iphones"]["iphonexs"]["backglass"]["duration"]
   } else if (chooseIssue == "screen" && chooseDeviceModel == "xsmax") {
       priceTitle.innerText = deviceDictionary["iphones"]["iphonexsmax"]["screen"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphonexsmax"]["screen"]["warranty"]
@@ -558,16 +506,10 @@ const updateForm = () => {
       priceTitle.innerText = deviceDictionary["iphones"]["iphonexsmax"]["water"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphonexsmax"]["water"]["warranty"]
       repairtimeText.innerText = deviceDictionary["iphones"]["iphonexsmax"]["water"]["duration"]
-  } else if (chooseIssue == "backglass" && chooseDeviceModel == "xsmax") {
-      priceTitle.innerText = deviceDictionary["iphones"]["iphonexsmax"]["backglass"]["price"]
-      repairtimeText.innerText = deviceDictionary["iphones"]["iphonexsmax"]["backglass"]["duration"]
   } else if (chooseIssue === "screen" && chooseDeviceModel === "8plus") {
       priceTitle.innerText = deviceDictionary["iphones"]["iphone8plus"]["screen"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphone8plus"]["screen"]["warranty"]
       repairtimeText.innerText = deviceDictionary["iphones"]["iphone8plus"]["screen"]["duration"]
-  } else if (chooseIssue === "backglass" && chooseDeviceModel === "8plus") {
-      priceTitle.innerText = deviceDictionary["iphones"]["iphone8plus"]["backglass"]["price"]
-      repairtimeText.innerText = deviceDictionary["iphones"]["iphone8plus"]["backglass"]["duration"]
   } else if (chooseIssue == "battery" && chooseDeviceModel == "8plus") {
       priceTitle.innerText = deviceDictionary["iphones"]["iphone8plus"]["battery"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphone8plus"]["battery"]["warranty"]
@@ -584,9 +526,6 @@ const updateForm = () => {
       priceTitle.innerText = deviceDictionary["iphones"]["iphone8"]["screen"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphone8"]["screen"]["warranty"]
       repairtimeText.innerText = deviceDictionary["iphones"]["iphone8"]["screen"]["duration"]
-  } else if (chooseIssue == "backglass" && chooseDeviceModel == "8") {
-      priceTitle.innerText = deviceDictionary["iphones"]["iphone8"]["backglass"]["price"]
-      repairtimeText.innerText = deviceDictionary["iphones"]["iphone8"]["backglass"]["duration"]
   } else if (chooseIssue == "battery" && chooseDeviceModel == "8") {
       priceTitle.innerText = deviceDictionary["iphones"]["iphone8"]["battery"]["price"]
       warrantyText.innerText = deviceDictionary["iphones"]["iphone8"]["battery"]["warranty"]
