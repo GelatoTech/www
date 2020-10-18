@@ -643,7 +643,7 @@ const updateForm = () => {
           ipadmini: {
               screen: {
                   price: "Upfront Price $100",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -665,7 +665,7 @@ const updateForm = () => {
           ipadmini2: {
               screen: {
                   price: "Upfront Price $100",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -687,7 +687,7 @@ const updateForm = () => {
           ipadmini3: {
               screen: {
                   price: "Upfront Price $150",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -709,7 +709,7 @@ const updateForm = () => {
           ipadmini4: {
               screen: {
                   price: "Upfront Price $250",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -731,7 +731,7 @@ const updateForm = () => {
           ipadmini5: {
               screen: {
                   price: "Upfront Price $250",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -753,7 +753,7 @@ const updateForm = () => {
           ipad2: {
               screen: {
                   price: "Upfront Price $140",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -775,7 +775,7 @@ const updateForm = () => {
           ipad3: {
               screen: {
                   price: "Upfront Price $140",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -797,7 +797,7 @@ const updateForm = () => {
           ipad4: {
               screen: {
                   price: "Upfront Price $140",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -819,7 +819,7 @@ const updateForm = () => {
           ipad5: {
               screen: {
                   price: "Upfront Price $150",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -841,7 +841,7 @@ const updateForm = () => {
           ipad6: {
               screen: {
                   price: "Upfront Price $150",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -863,7 +863,7 @@ const updateForm = () => {
           ipad7: {
               screen: {
                   price: "Upfront Price $180",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -885,7 +885,7 @@ const updateForm = () => {
           ipadair: {
               screen: {
                   price: "Upfront Price $150",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -907,7 +907,7 @@ const updateForm = () => {
           ipadair2: {
               screen: {
                   price: "Upfront Price $260",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -929,7 +929,7 @@ const updateForm = () => {
           ipadair3: {
               screen: {
                   price: "Upfront Price $280",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -951,7 +951,7 @@ const updateForm = () => {
           ipadpro9: {
               screen: {
                   price: "Upfront Price $260",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -973,7 +973,7 @@ const updateForm = () => {
           ipadpro2: {
               screen: {
                   price: "Upfront Price $350",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -995,7 +995,7 @@ const updateForm = () => {
           ipadpro3: {
               screen: {
                   price: "Upfront Price $350",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -1017,7 +1017,7 @@ const updateForm = () => {
           ipadpro10: {
               screen: {
                   price: "Upfront Price $280",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -1039,7 +1039,7 @@ const updateForm = () => {
           ipadpro121: {
               screen: {
                   price: "Upfront Price $450",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -1061,7 +1061,7 @@ const updateForm = () => {
           ipadpro122: {
               screen: {
                   price: "Upfront Price $450",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
@@ -1083,7 +1083,7 @@ const updateForm = () => {
           ipadpro123: {
               screen: {
                   price: "Upfront Price $550",
-                  warranty: "Lifetime Warranty",
+                  warranty: "90 day warranty",
                   duration: "Screen Repair takes 15 minutes",
               },
               battery: {
