@@ -28,6 +28,18 @@ export default function Home() {
     name: '',
   });
 
+  const devicesWithBackGlass = [
+    "11proMax",
+    "11pro",
+    "11",
+    "xsmax",
+    "xs",
+    "xr",
+    "x",
+    "8plus",
+    "8"
+  ];
+
   // Handle repair form state
   const handleChange = (e) => {
     updateForm();
@@ -374,6 +386,13 @@ export default function Home() {
                     <option value="screen">
                       Screen replacement
                     </option>
+                    {
+                      devicesWithBackGlass.includes(repairFormValues.chooseDeviceModel) 
+                      ? (
+                        <option value="backglass">Back glass replacement</option>
+                      )
+                      : null
+                    }
                     <option value="battery">
                       Battery replacement
                     </option>
