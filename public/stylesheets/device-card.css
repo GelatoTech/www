@@ -1,0 +1,17 @@
+.card-device {
+  padding: 2em;
+  border-radius: 8px;
+  margin: 2em;
+}
+
+.card-device img {
+  margin-right: 1em;
+}
+
+.card-device h1 {
+  font-size: 1.5em;
+}
+
+.card-device button:hover {
+  cursor: pointer;
+}

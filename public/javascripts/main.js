@@ -350,6 +350,114 @@ const updateForm = () => {
                   duration: "Repair takes 2-3 business days",
               },
           },
+          googlePixel: {
+              screen: {
+                  price: "Estimated Price:  $100",
+                  warranty: "90 day warranty",
+                  duration: "Screen Repair takes 1 hour",
+              },
+              battery: {
+                  price: "Estimated Price:  $55",
+                  warranty: "90 day warranty",
+                  duration: "Battery Replacement takes 1 hour",
+              },
+          },
+          googlePixelXL: {
+              screen: {
+                  price: "Estimated Price:  $140",
+                  warranty: "90 day warranty",
+                  duration: "Screen Repair takes 1 hour",
+              },
+              battery: {
+                  price: "Estimated Price:  $55",
+                  warranty: "90 day warranty",
+                  duration: "Battery Replacement takes 1 hour",
+              },
+          },
+          googlePixel2: {
+              screen: {
+                  price: "Estimated Price:  $130",
+                  warranty: "90 day warranty",
+                  duration: "Screen Repair takes 1 hour",
+              },
+              battery: {
+                  price: "Estimated Price:  $55",
+                  warranty: "90 day warranty",
+                  duration: "Battery Replacement takes 1 hour",
+              },
+          },
+          googlePixel2XL: {
+              screen: {
+                  price: "Estimated Price:  $220",
+                  warranty: "90 day warranty",
+                  duration: "Screen Repair takes 1 hour",
+              },
+              battery: {
+                  price: "Estimated Price:  $55",
+                  warranty: "90 day warranty",
+                  duration: "Battery Replacement takes 1 hour",
+              },
+          },
+          googlePixel3: {
+              screen: {
+                  price: "Estimated Price:  $250",
+                  warranty: "90 day warranty",
+                  duration: "Screen Repair takes 1 hour",
+              },
+              battery: {
+                  price: "Estimated Price:  $55",
+                  warranty: "90 day warranty",
+                  duration: "Battery Replacement takes 1 hour",
+              },
+          },
+          googlePixel3XL: {
+              screen: {
+                  price: "Estimated Price:  $280",
+                  warranty: "90 day warranty",
+                  duration: "Screen Repair takes 1 hour",
+              },
+              battery: {
+                  price: "Estimated Price:  $55",
+                  warranty: "90 day warranty",
+                  duration: "Battery Replacement takes 1 hour",
+              },
+          },
+          googlePixel3A: {
+              screen: {
+                  price: "Estimated Price:  $200",
+                  warranty: "90 day warranty",
+                  duration: "Screen Repair takes 1 hour",
+              },
+              battery: {
+                  price: "Estimated Price:  $55",
+                  warranty: "90 day warranty",
+                  duration: "Battery Replacement takes 1 hour",
+              },
+          },
+          googlePixel4: {
+              screen: {
+                  price: "Estimated Price:  $200",
+                  warranty: "90 day warranty",
+                  duration: "Screen Repair takes 1 hour",
+              },
+              battery: {
+                  price: "Estimated Price:  $65",
+                  warranty: "90 day warranty",
+                  duration: "Battery Replacement takes 1 hour",
+              },
+          },
+          googlePixel4XL: {
+              screen: {
+                  price: "Estimated Price:  $280",
+                  warranty: "90 day warranty",
+                  duration: "Screen Repair takes 1 hour",
+              },
+              battery: {
+                  price: "Estimated Price:  $75",
+                  warranty: "90 day warranty",
+                  duration: "Battery Replacement takes 1 hour",
+              },
+          },
         }
     }
 
@@ -359,16 +467,24 @@ const updateForm = () => {
   const selectDevices = document.getElementById('select-device').value;
   const iphoneDropdown = document.getElementById('iphones');
   const ipadDropdown = document.getElementById('ipads');
+  const pixelsDropdown = document.getElementById('pixels');
   const selectIpadDevice = document.getElementById('select-ipad-model').value;
+  const selectPixelDevice = document.getElementById('select-pixel-model').value;
   const selectColor = document.getElementById('homeButton');
   //DEVICE MODELS RESPONSIVE
 
   if (selectDevices === "iphone") {
-      iphoneDropdown.style.display = "block"
-      ipadDropdown.style.display = "none"
+    iphoneDropdown.style.display = "block"
+    ipadDropdown.style.display = "none"
+    pixelsDropdown.style.display = "none"
   } else if (selectDevices === "ipad") {
-      ipadDropdown.style.display = "block"
-      iphoneDropdown.style.display = "none"
+    ipadDropdown.style.display = "block"
+    iphoneDropdown.style.display = "none"
+    pixelsDropdown.style.display = "none"
+  } else if (selectDevices === "google") {
+    pixelsDropdown.style.display = "block"
+    iphoneDropdown.style.display = "none"
+    ipadDropdown.style.display = "none"
   }
   if (chooseDeviceModel == "x") {
       selectColor.style.display = "none"
