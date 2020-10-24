@@ -49,7 +49,10 @@ export default function Nav() {
                   <div className="navbar-dropdown">
                     <a className="navbar-item" href="/?make=iphone#repair">iPhones</a> 
                     <a className="navbar-item" href="/?make=ipad#repair">iPads</a> 
-                    <a className="navbar-item" onClick={() => router.push('/google-pixel')}>Google Pixels</a>
+                    <a className="navbar-item" onClick={() => {
+                      setBurger(false);
+                      router.push('/google-pixel');
+                      }}>Google Pixels</a>
                   </div>
                 </div>
                 <a className="navbar-item" 
