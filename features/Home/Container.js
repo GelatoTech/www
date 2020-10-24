@@ -371,7 +371,7 @@ export default function Home() {
                           <option value="googlePixel3XL">
                             Google Pixel 3 XL
                           </option>
-                          <option value="googlePixel3a">
+                          <option value="googlePixel3A">
                             Google Pixel 3A
                           </option>
                           <option value="googlePixel4">

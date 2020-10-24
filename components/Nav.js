@@ -44,12 +44,15 @@ export default function Nav() {
                     router.pathname == '/' ? scrollToSection("works") : router.push('/#works');
                   }}
                 >How it Works</a> 
-                <a className="navbar-item"
-                  onClick={()=>{ 
-                    setBurger(false);
-                    router.pathname == '/' ? scrollToSection("repair") : router.push('/#repair')
-                  }}
-                >Schedule Repair <FontAwesomeIcon icon={faMobile} style={{ width: '0.7em', marginLeft: "1vh" }} /></a> <a className="navbar-item" 
+                <div className="navbar-item has-dropdown is-hoverable">
+                  <a className="navbar-link">Our Services</a>
+                  <div className="navbar-dropdown">
+                    <a className="navbar-item" href="/?make=iphone#repair">iPhones</a> 
+                    <a className="navbar-item" href="/?make=ipad#repair">iPads</a> 
+                    <a className="navbar-item" onClick={() => router.push('/google-pixel')}>Google Pixels</a>
+                  </div>
+                </div>
+                <a className="navbar-item" 
                   onClick={()=>{
                     setBurger(false);
                     router.push('/about');
