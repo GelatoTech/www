@@ -11,6 +11,8 @@ export default function Nav() {
   const router = useRouter();
   
   const  [burgerOpen, setBurger] = useState(false);
+  const  [ourServicesDropdownActive, setOurServicesDropdownActive] = useState(false);
+  const  [blogDropdownActive, setBlogDropdownActive] = useState(false);
 
   return(
     <div>
@@ -37,7 +39,6 @@ export default function Nav() {
           </div>
           <div className={`navbar-menu has-dropdown ${burgerOpen ? 'is-active' : ''}`} id="navbarBasicExample">
             <div className="navbar-end" id="nav-items">
-              <div className="navbar-item">
                 <a className="navbar-item" 
                   onClick={()=>{ 
                     setBurger(false);
@@ -45,8 +46,14 @@ export default function Nav() {
                   }}
                 >How it Works</a> 
                 <div className="navbar-item has-dropdown is-hoverable">
-                  <a className="navbar-link">Our Services</a>
-                  <div className="navbar-dropdown">
+                  <a className="navbar-link" onClick={()=>{
+                    setOurServicesDropdownActive(!ourServicesDropdownActive);
+                  }}>Our Services</a>
+                  <div className={`navbar-dropdown ${
+                    ourServicesDropdownActive
+                    ? ''
+                    : 'is-hidden-touch'
+                  }`}>
                     <a className="navbar-item" href="/?make=iphone#repair">iPhones</a> 
                     <a className="navbar-item" href="/?make=ipad#repair">iPads</a> 
                     <a className="navbar-item" onClick={() => {
@@ -62,8 +69,14 @@ export default function Nav() {
                   }}
                   target="_blank">About Us</a>
                 <div className="navbar-item has-dropdown is-hoverable">
-                  <a className="navbar-link">Blog</a>
-                  <div className="navbar-dropdown">
+                  <a className="navbar-link" onClick={()=>{
+                    setBlogDropdownActive(!blogDropdownActive);
+                  }}>Blog</a>
+                  <div className={`navbar-dropdown ${
+                    blogDropdownActive
+                    ? ''
+                    : 'is-hidden-touch'
+                  }`}>
                     <a className="navbar-item" 
                       onClick={() => { 
                         setBurger(false);
@@ -92,7 +105,6 @@ export default function Nav() {
                   setBurger(false);
                   scrollToSection("business")
                   }}>Hours <FontAwesomeIcon icon={faClock} style={{ width: '1em', marginLeft:'0.3em' }} /></a> <a className="button is-info" href="tel:4155177897">(415) 517-7897 <FontAwesomeIcon icon={faPhone} style={{ marginLeft: "0.3em", width: '1em' }} /></a>
-              </div>
             </div>
           </div>
         </nav>
