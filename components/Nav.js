@@ -54,12 +54,12 @@ export default function Nav() {
                     ? ''
                     : 'is-hidden-touch'
                   }`}>
-                    <a className="navbar-item" href="/?make=iphone#repair">iPhones</a> 
-                    <a className="navbar-item" href="/?make=ipad#repair">iPads</a> 
+                    <a className="navbar-item" href="/?make=iphone#repair">iPhone Repair</a> 
+                    <a className="navbar-item" href="/?make=ipad#repair">iPad Repair</a> 
                     <a className="navbar-item" onClick={() => {
                       setBurger(false);
                       router.push('/google-pixel');
-                      }}>Google Pixels</a>
+                      }}>Google Pixel Repair</a>
                   </div>
                 </div>
                 <a className="navbar-item" 
