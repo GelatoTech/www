@@ -478,21 +478,21 @@ const devices = {
           warranty: "90 day",
           duration: "1 hour",
       },
-    //   battery: {
-    //       price: "$330",
-    //       warranty: "90 day",
-    //       duration: "1 hour",
-    //   },
-    //   charging: {
-    //       price: "$330",
-    //       warranty: "90 day",
-    //       duration: "3 hour",
-    //   },
-    //   water: {
-    //       price: "$600-$680",
-    //       warranty: "90 day",
-    //       duration: "2-3 business days",
-    //   },
+      battery: {
+          price: "$330",
+          warranty: "90 day",
+          duration: "1 hour",
+      },
+      charging: {
+          price: "$330",
+          warranty: "90 day",
+          duration: "3 hour",
+      },
+      water: {
+          price: "$600-$680",
+          warranty: "90 day",
+          duration: "2-3 business days",
+      },
   },
   "6": {
     screen: {
