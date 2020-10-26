@@ -24,7 +24,7 @@ const devices = {
       charging: {
           price: "$100",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$300-$450",
@@ -46,7 +46,7 @@ const devices = {
       charging: {
           price: "$100",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$300-$450",
@@ -68,7 +68,7 @@ const devices = {
       charging: {
           price: "$130",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$300-$450",
@@ -90,7 +90,7 @@ const devices = {
       charging: {
           price: "$180",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$300-$450",
@@ -112,7 +112,7 @@ const devices = {
       charging: {
           price: "$190",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$300-$450",
@@ -134,7 +134,7 @@ const devices = {
       charging: {
           price: "$130",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$300-$450",
@@ -156,7 +156,7 @@ const devices = {
       charging: {
           price: "$130",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$300-$450",
@@ -178,7 +178,7 @@ const devices = {
       charging: {
           price: "$130",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$300-$450",
@@ -200,7 +200,7 @@ const devices = {
       charging: {
           price: "$130",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$300-$450",
@@ -222,7 +222,7 @@ const devices = {
       charging: {
           price: "$130",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$300-$450",
@@ -244,7 +244,7 @@ const devices = {
       charging: {
           price: "$130",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$300-$450",
@@ -266,7 +266,7 @@ const devices = {
       charging: {
           price: "$130",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$300-$450",
@@ -288,7 +288,7 @@ const devices = {
       charging: {
           price: "$130",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$300-$450",
@@ -310,7 +310,7 @@ const devices = {
       charging: {
           price: "$230",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$300-$450",
@@ -332,7 +332,7 @@ const devices = {
       charging: {
           price: "$150",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$300-$450",
@@ -354,7 +354,7 @@ const devices = {
       charging: {
           price: "$230",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$500-$550",
@@ -376,7 +376,7 @@ const devices = {
       charging: {
           price: "$230",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$500-$550",
@@ -398,7 +398,7 @@ const devices = {
       charging: {
           price: "$150",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$200-$400",
@@ -408,7 +408,7 @@ const devices = {
   },
   "ipadpro121": {
       screen: {
-          price: "$450",
+          price: "$320",
           warranty: "90 day",
           duration: "1 hour",
       },
@@ -420,7 +420,7 @@ const devices = {
       charging: {
           price: "$230",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$600-$650",
@@ -430,7 +430,7 @@ const devices = {
   },
   "ipadpro122": {
       screen: {
-          price: "$450",
+          price: "$500",
           warranty: "90 day",
           duration: "1 hour",
       },
@@ -442,7 +442,7 @@ const devices = {
       charging: {
           price: "$230",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$600-$680",
@@ -452,7 +452,7 @@ const devices = {
   },
   "ipadpro123": {
       screen: {
-          price: "$550",
+          price: "$400",
           warranty: "90 day",
           duration: "1 hour",
       },
@@ -464,13 +464,35 @@ const devices = {
       charging: {
           price: "$330",
           warranty: "90 day",
-          duration: "3 hours",
+          duration: "3 hour",
       },
       water: {
           price: "$600-$680",
           warranty: "90 day",
           duration: "2-3 business days",
       },
+  },
+  "ipadpro124": {
+      screen: {
+          price: "$400",
+          warranty: "90 day",
+          duration: "1 hour",
+      },
+    //   battery: {
+    //       price: "$330",
+    //       warranty: "90 day",
+    //       duration: "1 hour",
+    //   },
+    //   charging: {
+    //       price: "$330",
+    //       warranty: "90 day",
+    //       duration: "3 hour",
+    //   },
+    //   water: {
+    //       price: "$600-$680",
+    //       warranty: "90 day",
+    //       duration: "2-3 business days",
+    //   },
   },
   "6": {
     screen: {
@@ -626,7 +648,7 @@ const devices = {
         duration: "2-3 business days",
     },
     backglass: {
-      duration: "3 hours",
+      duration: "3 hour",
       price: "$140"
     }
 },
@@ -652,7 +674,7 @@ const devices = {
         duration: "2-3 business days",
     },
     backglass: {
-      duration: "3 hours",
+      duration: "3 hour",
       price: "$140"
     }
 },
@@ -678,7 +700,7 @@ const devices = {
         duration: "2-3 business days",
     },
     backglass: {
-      duration: "3 hours",
+      duration: "3 hour",
       price: "$150"
     }
 },
@@ -704,7 +726,7 @@ const devices = {
         duration: "2-3 business days",
     },
     backglass: {
-      duration: "3 hours",
+      duration: "3 hour",
       price: "$150"
     }
 },
@@ -730,7 +752,7 @@ const devices = {
         duration: "2-3 business days",
     },
     backglass: {
-      duration: "3 hours",
+      duration: "3 hour",
       price: "$150"
     }
 },
@@ -756,7 +778,7 @@ const devices = {
         duration: "2-3 business days",
     },
     backglass: {
-      duration: "3 hours",
+      duration: "3 hour",
       price: "$150"
     }
 },
@@ -782,7 +804,7 @@ const devices = {
         duration: "2-3 business days",
     },
     backglass: {
-      duration: "3 hours",
+      duration: "3 hour",
       price: "$180"
     }
 },
@@ -808,7 +830,7 @@ const devices = {
         duration: "2-3 business days",
     },
     backglass: {
-      duration: "3 hours",
+      duration: "3 hour",
       price: "$180"
     }
 },
@@ -834,7 +856,7 @@ const devices = {
         duration: "2-3 business days",
     },
     backglass: {
-      duration: "3 hours",
+      duration: "3 hour",
       price: "$180"
     }
 },

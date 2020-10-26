@@ -459,6 +459,9 @@ export default function Home() {
                           <option value="ipadpro123">
                             iPad Pro 12.9-inch (3rd generation) (A1876, A2014, A1895)
                           </option>
+                          <option value="ipadpro124">
+                            iPad Pro 12.9-inch (4th generation) (A2229)
+                          </option>
                         </select>
                       </div>
                     </div>
