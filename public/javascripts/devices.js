@@ -849,6 +849,11 @@ const devices = {
         warranty: "90 day",
         duration: " 1 hour",
     },
+    charging: {
+        price: "$55",
+        warranty: "90 day",
+        duration: " 1 hour",
+    },
 },
 "googlePixelXL": {
     screen: {
@@ -857,6 +862,11 @@ const devices = {
         duration: "1 hour",
     },
     battery: {
+        price: "$55",
+        warranty: "90 day",
+        duration: " 1 hour",
+    },
+    charging: {
         price: "$55",
         warranty: "90 day",
         duration: " 1 hour",
@@ -873,6 +883,11 @@ const devices = {
         warranty: "90 day",
         duration: " 1 hour",
     },
+    charging: {
+        price: "$55",
+        warranty: "90 day",
+        duration: " 1 hour",
+    },
 },
 "googlePixel2XL": {
     screen: {
@@ -881,6 +896,11 @@ const devices = {
         duration: "1 hour",
     },
     battery: {
+        price: "$55",
+        warranty: "90 day",
+        duration: " 1 hour",
+    },
+    charging: {
         price: "$55",
         warranty: "90 day",
         duration: " 1 hour",
@@ -897,6 +917,11 @@ const devices = {
         warranty: "90 day",
         duration: " 1 hour",
     },
+    charging: {
+        price: "$55",
+        warranty: "90 day",
+        duration: " 1 hour",
+    },
 },
 "googlePixel3XL": {
     screen: {
@@ -905,6 +930,11 @@ const devices = {
         duration: "1 hour",
     },
     battery: {
+        price: "$55",
+        warranty: "90 day",
+        duration: " 1 hour",
+    },
+    charging: {
         price: "$55",
         warranty: "90 day",
         duration: " 1 hour",
@@ -921,6 +951,11 @@ const devices = {
         warranty: "90 day",
         duration: " 1 hour",
     },
+    charging: {
+        price: "$55",
+        warranty: "90 day",
+        duration: " 1 hour",
+    },
 },
 "googlePixel4": {
     screen: {
@@ -929,6 +964,11 @@ const devices = {
         duration: "1 hour",
     },
     battery: {
+        price: "$65",
+        warranty: "90 day",
+        duration: " 1 hour",
+    },
+    charging: {
         price: "$65",
         warranty: "90 day",
         duration: " 1 hour",
@@ -942,6 +982,11 @@ const devices = {
     },
     battery: {
         price: "$75",
+        warranty: "90 day",
+        duration: " 1 hour",
+    },
+    charging: {
+        price: "$65",
         warranty: "90 day",
         duration: " 1 hour",
     },
