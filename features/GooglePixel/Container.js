@@ -1,19 +1,22 @@
+import { useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import dynamic from "next/dynamic";
-const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
 import BookRepairButton from '../../components/BookRepairButton';
 import TrustedBy from '../../components/TrustedBy';
+import AOS from 'aos';
 
 export default function GooglePixel() {
 
   const router = useRouter();
 
+  useEffect(() => {
+    AOS.init();
+  });
+
   return(
   <div>
     <Head>
-      <title>Google Pixel Repair San Francisco - Screen & Battery Replacement | Gelatotech </title>
+      <title>Mobile Google Pixel Repair San Francisco - Screen, Battery & Charging port replacement | Gelatotech</title>
 
       {/* HTML Meta Tags */}
       <meta name="description" content="Our technicians drive to your preferred location on-demand to repair your Google Pixel device." />
@@ -31,153 +34,96 @@ export default function GooglePixel() {
       <div className="hero-body">
         <div className="container has-text-centered">
           <h1 className="title is-1">
-            Google Pixel Repair
+            Mobile Google Pixel Repair
           </h1>
         </div>
         <div className="container has-text-centered">
           <h2 className="subtitle is-6">
-            On-demand repair at your location!
+            At your location
           </h2>
           <BookRepairButton text="Repair My Pixel" make="google" />
         </div>
       </div>
     </section>
+    <TrustedBy />
+    <section className="section" id="works">
+      <div className="container">
+        <h1 className="title is-1">How it Works</h1>
+        <div className="columns">
+          <div className="column">
+            <figure className="image">
+              <img alt="Book your Google Pixel repair" src="images/undraw-calendar-dutt.png" style={{width: '40%', marginLeft: 'auto', marginRight: 'auto'}} />
+              <h2 className="title is-3center" data-aos="zoom-out" style={{textAlign: 'center'}}>Book Your Repair</h2>
+              <p className="subtitle is-5" data-aos="zoom-out" style={{margin: 'auto', textAlign: 'center'}}>Once you schedule your appointment, we will confirm your preferred time and location for us to repair your device.</p>
+            </figure>
+          </div>
+          <div className="column">
+            <figure className="image">
+              <img alt="We repair your phone screen on-spot" src="images/undraw-order-a-car-3tww.png" style={{width: '40%', marginLeft: 'auto', marginRight: 'auto'}} />
+              <h2 className="title is-3 center" data-aos="zoom-out" style={{textAlign: 'center'}}>We Come To You</h2>
+              <p className="subtitle is-5" data-aos="zoom-out" style={{margin: 'auto', textAlign: 'center'}}>We Repair your Google Pixel On-Spot, usually inside our car or your preferred location.</p>
+            </figure>
+          </div>
+          <div className="column">
+            <figure className="image">
+              <img alt="Google Pixel screen repair on-spot" src="images/undraw-Credit-card-3ed6.png" style={{width: '40%', marginRight: 'auto', marginLeft: 'auto'}} />
+              <h2 className="title is-3 center" data-aos="zoom-out" style={{textAlign: 'center'}}>Pay After The Repair</h2>
+              <p className="subtitle is-5" data-aos="zoom-out" style={{margin: 'auto', textAlign: 'center'}}>Once the repair is done , we make sure to test everything before leaving. After the test you can pay with Cash, Venmo, Bitcoin or any credit card.</p>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
     <section>
-      <h1 style={{ fontSize: '2em', paddingTop: '1em', paddingLeft: '1em' }}>
-        Choose your device
-      </h1>
-      <OwlCarousel 
-        style={{ marginBottom: '2em' }}
-        autoplay={true} 
-        loop 
-        dots={false} 
-        autoplayTimeout={3000}
-        responsive={{
-          0:{
-              items: 1
-          },
-          600:{
-              items: 2
-          },
-          1000:{
-              items: 3
-          }
-      }}
-      >  
-        <div className="card card-device">
-          <div style={{ display: 'flex' }}>
-            <img src="images/pixel.png" style={{ width: "3em", height: '6em' }} />
-            <div class="row">
-              <h1>Google Pixel</h1>
-              <button 
-                style={buttonStyles}
-                onClick={()=> {router.push('/?make=google&model=googlePixel#repair')}}
-              >Repair Now</button>
+      <section className="section" id="why-us">
+        <div className="container">
+          <h1 className="title is-1 has-text-centered">Why us?</h1>
+          <div className="columns">
+            <div className="column">
+              <div className="why-container" style={{ textAlign: 'left' }}>
+                <ul style={{listStyle: 'none'}}>
+                  <li>
+                    <h2 className="title is-3">Save Your Time</h2>
+                    <p className="subtitle is-5">Our technician comes to you preferred location. We ensure you quality parts. </p>
+                  </li>
+                  <li style={{listStyle: 'none'}}><br /></li>
+                  <li>
+                    <h2 className="title is-3">Fast &amp; Reliable Service</h2>
+                    <p className="subtitle is-5">Google Pixel Screen Repairs take 15 minutes or less. Read our Customer Reviews on <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Yelp</a> or <a href="https://g.page/GelatotechiPhoneRepair?share" target="_blank">Google</a></p>
+                  </li>
+                  <li style={{listStyle: 'none'}}><br /></li>
+                  <li>
+                    <h2 className="title is-3">Risk Free</h2>
+                    <p className="subtitle is-5">You only pay after the repair is done and fully tested. Lifetime warranty is included on Any Google Pixel Screen Repair.</p>
+                  </li>
+                  <li style={{listStyle: 'none'}}><br /></li>
+                </ul>
+              </div>
+            </div>
+            <div className="column">
+              <figure className="image">
+                <img alt="On-Demand Google Pixel Screen Repair" src="images/technician-fixing.jpg" style={{borderRadius: '5px', height: '30%'}} />
+              </figure>
             </div>
           </div>
         </div>
-        <div className="card card-device">
-          <div style={{ display: 'flex' }}>
-            <img src="images/pixelXL.png" style={{ width: "3em", height: '6em' }} />
-            <div class="row">
-              <h1>Google Pixel XL</h1>
-              <button 
-                style={buttonStyles}
-                onClick={()=> router.push('/?make=google&model=googlePixelXL#repair')}
-              >Repair Now</button>
-            </div>
-          </div>
+      </section>
+      <div className="section" id="get-started"
+        style={{
+          backgroundImage: `url('images/cracked-pixel-bg.jpg')`
+        }}
+      >
+        <div className="container">
+          <h3 className="title is-1" data-aos="fade-right" style={{color: 'white'}}>Ready to get started?</h3>
+          <h3 className="subtitle is-4" data-aos="fade-right" style={{color: 'white'}}>Google Pixel Screen Repair only takes 15 minutes!</h3><br />
+          <BookRepairButton text="Book Pixel Repair" make="google" />
         </div>
-        <div className="card card-device">
-          <div style={{ display: 'flex' }}>
-            <img src="images/pixel2.png" style={{ width: "3em", height: '6em' }} />
-            <div class="row">
-              <h1>Google Pixel 2</h1>
-              <button 
-                style={buttonStyles}
-                onClick={()=> router.push('/?make=google&model=googlePixel2#repair')}
-              >Repair Now</button>
-            </div>
-          </div>
-        </div>
-        <div className="card card-device">
-          <div style={{ display: 'flex' }}>
-            <img src="images/pixel2XL.png" style={{ width: "3em", height: '6em' }} />
-            <div class="row">
-              <h1>Google Pixel 2 XL</h1>
-              <button 
-                style={buttonStyles}
-                onClick={()=> router.push('/?make=google&model=googlePixel2XL#repair')}
-              >Repair Now</button>
-            </div>
-          </div>
-        </div>
-        <div className="card card-device">
-          <div style={{ display: 'flex' }}>
-            <img src="images/pixel3.png" style={{ width: "3em", height: '6em' }} />
-            <div class="row">
-              <h1>Google Pixel 3</h1>
-              <button 
-                style={buttonStyles}
-                onClick={()=> router.push('/?make=google&model=googlePixel3#repair')}
-              >Repair Now</button>
-            </div>
-          </div>
-        </div>
-        <div className="card card-device">
-          <div style={{ display: 'flex' }}>
-            <img src="images/pixel3XL.png" style={{ width: "3em", height: '6em' }} />
-            <div class="row">
-              <h1>Google Pixel 3 XL</h1>
-              <button 
-                style={buttonStyles}
-                onClick={()=> router.push('/?make=google&model=googlePixel3XL#repair')}
-              >Repair Now</button>
-            </div>
-          </div>
-        </div>
-        <div className="card card-device">
-          <div style={{ display: 'flex' }}>
-            <img src="images/pixel3.png" style={{ width: "3em", height: '6em' }} />
-            <div class="row">
-              <h1>Google Pixel 3A</h1>
-              <button 
-                style={buttonStyles}
-                onClick={()=> router.push('/?make=google&model=googlePixel3a#repair')}
-              >Repair Now</button>
-            </div>
-          </div>
-        </div>
-        <div className="card card-device">
-          <div style={{ display: 'flex' }}>
-            <img src="images/pixel4.png" style={{ width: "3em", height: '6em' }} />
-            <div class="row">
-              <h1>Google Pixel 4</h1>
-              <button 
-                style={buttonStyles}
-                onClick={()=> router.push('/?make=google&model=googlePixel4#repair')}
-              >Repair Now</button>
-            </div>
-          </div>
-        </div>
-        <div className="card card-device">
-          <div style={{ display: 'flex' }}>
-            <img src="images/pixel4XL.png" style={{ width: "3em", height: '6em' }} />
-            <div class="row">
-              <h1>Google Pixel 4 XL</h1>
-              <button 
-                style={buttonStyles}
-                onClick={()=> router.push('/?make=google&model=googlePixel4XL#repair')}
-              >Repair Now</button>
-            </div>
-          </div>
-        </div>
-      </OwlCarousel>
+      </div>
       <section style={{ textAlign: 'center', margin: '2em' }}>
-        <a onClick={()=> router.push('/?make=iphone#repair')}>Repair my iPhone</a>
+        <a onClick={()=> router.push('/?make=google#repair')}>have an iPhone?</a>
+        <hr />
       </section>
     </section>
-    <TrustedBy />
   </div>
   )
 }

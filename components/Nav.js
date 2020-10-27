@@ -54,8 +54,8 @@ export default function Nav() {
                     ? ''
                     : 'is-hidden-touch'
                   }`}>
-                    <a className="navbar-item" href="/?make=iphone#repair">iPhone Repair</a> 
-                    <a className="navbar-item" href="/?make=ipad#repair">iPad Repair</a> 
+                    <a className="navbar-item" onClick={()=>router.push('/?make=iphone#repair')}>iPhone Repair</a> 
+                    <a className="navbar-item" onClick={()=>router.push('/?make=ipad#repair')}>iPad Repair</a> 
                     <a className="navbar-item" onClick={() => {
                       setBurger(false);
                       router.push('/google-pixel');

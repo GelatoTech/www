@@ -33,7 +33,8 @@ export default function Footer() {
             <div className="column footer-menu">
               <h5>Service</h5>
               <ul className="list-unstyled">
-                <li><a className="footer-item" onClick={() => { router.push('/#repair') }} style={{color: '#A9A9A9'}}>Repair my iPhone</a></li>
+                <li><a className="footer-item" onClick={() => { router.push('/?make=iphone#repair') }} style={{color: '#A9A9A9'}}>iPhone Repair</a></li>
+                <li><a className="footer-item" onClick={() => { router.push('/?make=google#repair') }} style={{color: '#A9A9A9'}}>Google Pixel Repair</a></li>
                 <li><a className="footer-item" onClick={() => { router.push('/faq') }} style={{color: '#A9A9A9'}}>FAQ</a></li>
                 <li><a className="footer-item" onClick={() => { router.push('/about') }} style={{color: '#A9A9A9'}}>About us</a></li>
                 <li><a className="footer-item" onClick={() => { router.push('/legal') }} style={{color: '#A9A9A9'}}>Lifetime Warranty</a></li>

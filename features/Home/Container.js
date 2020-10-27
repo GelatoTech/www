@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
 import { useState, useEffect } from 'react';
-import { scroller } from "react-scroll";
 import NetlifyForm from 'react-ssg-netlify-forms';
 // import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
