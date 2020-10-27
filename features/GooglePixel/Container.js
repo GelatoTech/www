@@ -68,7 +68,7 @@ export default function GooglePixel() {
             <figure className="image">
               <img alt="Google Pixel screen repair on-spot" src="images/undraw-Credit-card-3ed6.png" style={{width: '40%', marginRight: 'auto', marginLeft: 'auto'}} />
               <h2 className="title is-3 center" data-aos="zoom-out" style={{textAlign: 'center'}}>Pay After The Repair</h2>
-              <p className="subtitle is-5" data-aos="zoom-out" style={{margin: 'auto', textAlign: 'center'}}>Once the repair is done , we make sure to test everything before leaving. After the test you can pay with Cash, Venmo, Bitcoin or any credit card.</p>
+              <p className="subtitle is-5" data-aos="zoom-out" style={{margin: 'auto', textAlign: 'center'}}>Once the repair is done, we make sure to test everything before leaving. After the test you can pay with Cash, Venmo, Bitcoin or any credit card.</p>
             </figure>
           </div>
         </div>
@@ -120,7 +120,7 @@ export default function GooglePixel() {
         </div>
       </div>
       <section style={{ textAlign: 'center', margin: '2em' }}>
-        <a onClick={()=> router.push('/?make=google#repair')}>have an iPhone?</a>
+        <a onClick={()=> router.push('/?make=iphone#repair')}>have an iPhone?</a>
         <hr />
       </section>
     </section>
