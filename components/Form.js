@@ -52,7 +52,7 @@ export default function Form({ make }) {
         <i><h1 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">Schedule Repair</h1></i>
         <h2 className="subtitle" data-aos="fade-up">Pick your device model and problem.</h2>
         <figure>
-          <img alt="iPhone Screen Repair" src="images/iphonex.png" style={{maxWidth: '80px'}} />
+          {/* <img alt="iPhone Screen Repair" src="images/iphonex.png" style={{maxWidth: '80px'}} /> */}
         </figure>
         {
           (
