@@ -51,9 +51,16 @@ export default function Form({ make }) {
       <div className=" form-container container has-text-centered">
         <i><h1 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">Schedule Repair</h1></i>
         <h2 className="subtitle" data-aos="fade-up">Pick your device model and problem.</h2>
-        <figure>
-          {/* <img alt="iPhone Screen Repair" src="images/iphonex.png" style={{maxWidth: '80px'}} /> */}
-        </figure>
+        {
+          repairFormValues.selectDevices ||
+          make
+          ? (
+            <figure>
+              <img alt="iPhone Screen Repair" src={`images/devices/${repairFormValues.selectDevices || make}.png`} style={{ width: '500px' }} />
+            </figure>
+          )
+          : null
+        }
         {
           (
             (repairFormValues.selectDevices || make) &&
@@ -87,24 +94,31 @@ export default function Form({ make }) {
         <NetlifyForm formName="repair-form" formValues={repairFormValues} postSubmit={postSubmit} id="repair-form" name="repair-form">
           {/* <input name="form-name" type="hidden" defaultValue="repair-form" /> */}
           <div className="field">
-            <div className="field">
-              <div className="select is-info is-rounded">
-                <select id="select-device" defaultValue={ (router.query.make || make) ? (router.query.make || make) : 'default' } name="selectDevices" onChange={handleChange} required>
-                  <option value="default" disabled>
-                    Select Device
-                  </option>
-                  <option value="iphone">
-                    iPhone
-                  </option>
-                  <option value="ipad">
-                    iPad
-                  </option>
-                  <option value="google">
-                    Google
-                  </option>
-                </select>
-              </div>
-            </div>
+            {
+              repairFormValues.selectDevices ||
+              make
+              ? null
+              : (
+                <div className="field">
+                  <div className="select is-info is-rounded">
+                    <select id="select-device" defaultValue={ (router.query.make || make) ? (router.query.make || make) : 'default' } name="selectDevices" onChange={handleChange} required>
+                      <option value="default" disabled>
+                        Select Device
+                      </option>
+                      <option value="iphone">
+                        iPhone
+                      </option>
+                      <option value="ipad">
+                        iPad
+                      </option>
+                      <option value="google">
+                        Google
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              )
+            }
             {
               ((repairFormValues.selectDevices == "iphone") || 
                 (make == "iphone") ||
