@@ -107,6 +107,7 @@ export default function Form({ make }) {
             </div>
             {
               ((repairFormValues.selectDevices == "iphone") || 
+                (make == "iphone") ||
                 (router.query.make == "iphone")) && !(
                   (repairFormValues.selectDevices == "google") ||
                   (repairFormValues.selectDevices == "ipad")
@@ -218,6 +219,7 @@ export default function Form({ make }) {
             }
             {
               ((repairFormValues.selectDevices == "ipad") || 
+              (make == "ipad") ||
               (router.query.make == "ipad")) && !(
                 (repairFormValues.selectDevices == "iphone") ||
                 (repairFormValues.selectDevices == "google")

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import dynamic from "next/dynamic";
+import { useRouter } from 'next/router';
 const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
 import { useEffect } from 'react';
 // import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
@@ -15,6 +16,7 @@ import Form from '../../components/Form';
 
 export default function Home() {
 
+  const router = useRouter();
 
   useEffect(() => {
     AOS.init(); // animations
@@ -180,7 +182,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Form />
+      <Form make={router.query.make} />
       {/* service include */}
       <section className="section" id="services">
         <div className="container has-text-centered">
