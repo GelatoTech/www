@@ -132,7 +132,18 @@ export default function GooglePixel() {
         <div className="container">
           <h3 className="title is-1" data-aos="fade-right" style={{color: 'white'}}>Ready to get started?</h3>
           <h3 className="subtitle is-4" data-aos="fade-right" style={{color: 'white'}}>Google Pixel Screen Repair only takes 15 minutes!</h3><br />
-          <BookRepairButton text="Book Pixel Repair" make="google" />
+          <a 
+            className="button is-info is-large" 
+            onClick={()=>{
+              scrollToSection("repair");
+            }}
+          >
+            Book Pixel Repair
+            <FontAwesomeIcon 
+              icon={faMobile} 
+              style={{ height: '60%', marginLeft: '0.3em' }} 
+            />
+          </a>
         </div>
       </div>
       <section style={{ textAlign: 'center', margin: '2em' }}>
