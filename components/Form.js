@@ -304,7 +304,7 @@ export default function Form({ make }) {
               (router.query.model || repairFormValues.chooseDeviceModel)
               ? (
                 <div className="field">
-                  <div className="select is-danger is-rounded">
+                  <div className="select is-danger is-rounded" style={{ borderRadius: '3em' }}>
                     <select defaultValue={ router.query.issue ? router.query.issue : 'default' } id="issue" name="issue" onChange={handleChange} required>
                       <option value="default" disabled>
                         Select Problem
