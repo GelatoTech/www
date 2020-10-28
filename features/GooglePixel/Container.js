@@ -1,8 +1,12 @@
 import { useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMobile } from '@fortawesome/free-solid-svg-icons';
 import BookRepairButton from '../../components/BookRepairButton';
 import TrustedBy from '../../components/TrustedBy';
+import Form from '../../components/Form';
+import scrollToSection from '../../helpers/scrollToSection';
 import AOS from 'aos';
 
 export default function GooglePixel() {
@@ -41,7 +45,18 @@ export default function GooglePixel() {
           <h2 className="subtitle is-6">
             At your location
           </h2>
-          <BookRepairButton text="Repair My Pixel" make="google" />
+          <a 
+            className="button is-info is-large" 
+            onClick={()=>{
+              scrollToSection("repair");
+            }}
+          >
+            Repair my Pixel
+            <FontAwesomeIcon 
+              icon={faMobile} 
+              style={{ height: '60%', marginLeft: '0.3em' }} 
+            />
+          </a>
         </div>
       </div>
     </section>
@@ -108,6 +123,7 @@ export default function GooglePixel() {
           </div>
         </div>
       </section>
+      <Form make="google" />
       <div className="section" id="get-started"
         style={{
           backgroundImage: `url('images/cracked-pixel-bg.jpg')`
