@@ -54,9 +54,24 @@ export default function Nav() {
                     ? ''
                     : 'is-hidden-touch'
                   }`}>
-                    <a className="navbar-item" onClick={()=>router.push('/?make=iphone#repair')}>iPhone Repair</a> 
-                    <a className="navbar-item" onClick={()=>router.push('/ipad')}>iPad Repair</a> 
                     <a className="navbar-item" onClick={() => {
+                      setOurServicesDropdownActive(false);
+                      setBurger(false);
+                      router.push('/mail-in');
+                      }}>Mail-In Repair</a>
+                    <hr />
+                    <a className="navbar-item" onClick={()=> {
+                      setOurServicesDropdownActive(false);
+                      setBurger(false);
+                      router.push('/?make=iphone#repair');
+                      }}>iPhone Repair</a> 
+                    <a className="navbar-item" onClick={() => {
+                      setOurServicesDropdownActive(false);
+                      setBurger(false);
+                      router.push('/ipad');
+                      }}>iPad Repair</a> 
+                    <a className="navbar-item" onClick={() => {
+                      setOurServicesDropdownActive(false);
                       setBurger(false);
                       router.push('/google-pixel');
                       }}>Google Pixel Repair</a>
@@ -78,15 +93,19 @@ export default function Nav() {
                     : 'is-hidden-touch'
                   }`}>
                     <a className="navbar-item" 
-                      onClick={() => { 
+                      onClick={() => {
+                        setBlogDropdownActive(false);
                         setBurger(false);
-                        scrollToSection("hero"); router.push('/blog/battery-tips'); 
+                        scrollToSection("hero"); 
+                        router.push('/blog/battery-tips'); 
                       }} 
                       id="blog">3 iOS Battery Saving Tips</a> 
                     <a className="navbar-item" 
-                      onClick={() => { 
+                      onClick={() => {
+                        setBlogDropdownActive(false);
                         setBurger(false);
-                        scrollToSection("hero"); router.push('/blog/screen-repair'); 
+                        scrollToSection("hero"); 
+                        router.push('/blog/screen-repair'); 
                       }} 
                       id="blog2">How much will an iPhone screen repair cost you in San Francisco?</a>
                   </div>
