@@ -13,7 +13,9 @@ import {
   faMobile, 
   faFingerprint, 
   faLock, 
-  faCheckCircle
+  faCheckCircle,
+  faLocationArrow,
+  faSearchLocation
 } from '@fortawesome/free-solid-svg-icons';
 
 import scrollToSection from '../helpers/scrollToSection';
@@ -25,6 +27,7 @@ export default function MailInForm() {
   const router = useRouter();
 
   const [repairFormValues, setRepairFormValues] = useState({});
+  const [accept, setAccept] = useState(false);
   
   
   // Handle repair form state
@@ -34,6 +37,9 @@ export default function MailInForm() {
 
   // When repair form is submitted...
   const postSubmit = () => {
+    if(!accept) {
+      return alert('You must accept the terms and conditions before submitting.')
+    }
     const { name } = repairFormValues;
     router.push({
       pathname: '/thank-you',
@@ -63,6 +69,12 @@ export default function MailInForm() {
                   <p className="control is-expanded has-icons-left"><input value={repairFormValues.name} className="input" name="name" placeholder="Name" required type="text" onChange={handleChange} /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faUser} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
                 </div>
                 <div className="field">
+                  <p className="control is-expanded has-icons-left has-icons-right"><input value={repairFormValues.email} onChange={handleChange} className="input" name="email" placeholder="Email" required type="email" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faEnvelope} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
+                </div>
+                <div className="field">
+                  <p className="control is-expanded has-icons-left has-icons-right"><input value={repairFormValues.cell} onChange={handleChange} className="input" name="phone" placeholder="Cell #" required type="tel" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faPhone} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
+                </div>
+                <div className="field">
                   <p className="control is-expanded has-icons-left has-icons-right">
                     <div>
                       {/* <GooglePlacesAutocomplete 
@@ -77,10 +89,18 @@ export default function MailInForm() {
                   </p>
                 </div>
                 <div className="field">
-                  <p className="control is-expanded has-icons-left has-icons-right"><input value={repairFormValues.cell} onChange={handleChange} className="input" name="cell" placeholder="Cell #" required type="tel" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faPhone} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
+                  <p className="control is-expanded has-icons-left has-icons-right">
+                    <div>
+                      <input value={repairFormValues.city} onChange={handleChange} className="input" name="city" placeholder="City" required type="text" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faLocationArrow} style={{ height: '1em', marginLeft: '0.3em' }} /></span>
+                    </div>
+                  </p>
                 </div>
                 <div className="field">
-                  <p className="control is-expanded has-icons-left has-icons-right"><input value={repairFormValues.email} onChange={handleChange} className="input" name="email" placeholder="Email" required type="email" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faEnvelope} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
+                  <p className="control is-expanded has-icons-left has-icons-right">
+                    <div>
+                      <input value={repairFormValues.state} onChange={handleChange} className="input" name="state" placeholder="State" required type="text" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faLocationArrow} style={{ height: '1em', marginLeft: '0.3em' }} /></span>
+                    </div>
+                  </p>
                 </div>
               </div>
             </div>
@@ -126,11 +146,18 @@ export default function MailInForm() {
           <div className="field">
             <MailInTerms />
             <label>
-            <input type="checkbox" name="acceptTerms" style={{ marginTop: '2rem' }} /> I Accept Terms and Conditions
+            <input 
+              type="checkbox" 
+              checked={accept} 
+              onChange={() => setAccept(!accept)}
+              name="acceptTerms" 
+              style={{ marginTop: '2rem' }} /> I Accept Terms and Conditions
             </label>
           </div>
           <br />
-          <button className="btn btn-action" type="submit">Get Free Quote</button>
+          <button 
+            className="btn btn-action" 
+            type="submit">Get Free Quote</button>
         </NetlifyForm>
       </div>
     </section>
