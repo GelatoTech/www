@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCar } from '@fortawesome/free-solid-svg-icons';
+import { faCar, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import TrustedBy from '../../components/TrustedBy';
 import Form from '../../components/Form';
 import scrollToSection from '../../helpers/scrollToSection';
@@ -39,27 +39,47 @@ export default function MailIn() {
     </Head>
     <section className="hero" id="hero">
       <div className="hero-body">
-        <div className="container has-text-centered">
-          <h1 className="title is-1">
-            {/* Mail-In Repair */}
-          </h1>
-        </div>
-        <div className="container has-text-centered">
-          {/* <h2 className="subtitle is-6">
-            At your location
-          </h2> */}
-          {/* <a 
+        <div className="container">
+          <div className="is-hidden-desktop">
+            <h1 
+              className="header-title is-1" 
+              style={{ 
+                color: 'black', 
+                fontSize: '2em',
+                fontWeight: 'bold', 
+                marginLeft: 0, 
+                paddingLeft: 0,
+                marginTop: '-3em',
+                paddingTop: '1em'
+              }}>
+              Mail-In Repair
+            </h1>
+          </div>
+          <div className="is-hidden-mobile">
+            <h1 
+            className="header-title is-1" 
+            style={{ 
+              color: 'black', 
+              fontWeight: 'bold', 
+              fontSize: '3em',
+              marginLeft: 0, 
+              paddingLeft: 0 
+            }}>
+              Mail-In Repair
+            </h1>
+          </div>
+          <a 
             className="button is-info is-large" 
             onClick={()=>{
               scrollToSection("repair");
             }}
           >
-            Repair my iPad
+            Get FREE Quote
             <FontAwesomeIcon 
-              icon={faMobile} 
+              icon={faEnvelope} 
               style={{ height: '60%', marginLeft: '0.3em' }} 
             />
-          </a> */}
+          </a>
         </div>
       </div>
     </section>
@@ -77,7 +97,28 @@ export default function MailIn() {
       </div>
     </section>
     <section>
-      <MailInForm />
+      <div className="container">
+        <div className="columns">
+          <hr className="is-hidden-desktop-only" />
+          <div className="column">
+            <h1 style={{ fontSize: '2em', fontWeight: 'bold', marginLeft: '1em' }}>We service</h1>
+            <ul style={{ listStyle: 'revert', marginLeft: '4em' }}>
+              <li>Samsung</li>
+              <li>iPhone</li>
+              <li>iPad</li>
+              <li>MacBook</li>
+              <li>Google Pixel</li>
+              <li>Apple Watch</li>
+            </ul>
+          </div>
+          <hr className="is-hidden-desktop-only" />
+          <div className="column is-three-quarters">
+            <MailInForm />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
       <div className="section" id="get-started"
         style={{
           backgroundImage: `url('images/elbert-with-phones-dark.jpg')`

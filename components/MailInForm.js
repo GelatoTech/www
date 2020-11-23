@@ -14,8 +14,7 @@ import {
   faFingerprint, 
   faLock, 
   faCheckCircle,
-  faLocationArrow,
-  faSearchLocation
+  faLocationArrow
 } from '@fortawesome/free-solid-svg-icons';
 
 import scrollToSection from '../helpers/scrollToSection';
@@ -62,46 +61,48 @@ export default function MailInForm() {
           {/* <input name="form-name" type="hidden" defaultValue="repair-form" /> */}
           <hr />
           <h2 className="title is-5 has-text-weight-light">Contact info <FontAwesomeIcon icon={faUsers} style={{ height: '1em', marginLeft: '0.3em' }} /></h2>
-          <div className="field">
-            <div className="field is-horizontal">
-              <div className="field-body">
-                <div className="field">
-                  <p className="control is-expanded has-icons-left"><input value={repairFormValues.name} className="input" name="name" placeholder="Name" required type="text" onChange={handleChange} /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faUser} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
-                </div>
-                <div className="field">
-                  <p className="control is-expanded has-icons-left has-icons-right"><input value={repairFormValues.email} onChange={handleChange} className="input" name="email" placeholder="Email" required type="email" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faEnvelope} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
-                </div>
-                <div className="field">
-                  <p className="control is-expanded has-icons-left has-icons-right"><input value={repairFormValues.cell} onChange={handleChange} className="input" name="phone" placeholder="Cell #" required type="tel" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faPhone} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
-                </div>
-                <div className="field">
-                  <p className="control is-expanded has-icons-left has-icons-right">
-                    <div>
-                      {/* <GooglePlacesAutocomplete 
-                        apiKey={process.env.GOOGLE_PLACES_API_KEY} 
-                        value={repairFormValues.address} 
-                        onChange={handleChange} 
-                        className="input" name="address" 
-                        required 
-                      /><span className="icon is-small is-left"><FontAwesomeIcon icon={faHome} style={{ height: '1em', marginLeft: '0.3em' }} /></span> */}
-                      <input value={repairFormValues.address} onChange={handleChange} className="input" name="address" placeholder="Address" required type="address" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faHome} style={{ height: '1em', marginLeft: '0.3em' }} /></span>
-                    </div>
-                  </p>
-                </div>
-                <div className="field">
-                  <p className="control is-expanded has-icons-left has-icons-right">
-                    <div>
-                      <input value={repairFormValues.city} onChange={handleChange} className="input" name="city" placeholder="City" required type="text" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faLocationArrow} style={{ height: '1em', marginLeft: '0.3em' }} /></span>
-                    </div>
-                  </p>
-                </div>
-                <div className="field">
-                  <p className="control is-expanded has-icons-left has-icons-right">
-                    <div>
-                      <input value={repairFormValues.state} onChange={handleChange} className="input" name="state" placeholder="State" required type="text" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faLocationArrow} style={{ height: '1em', marginLeft: '0.3em' }} /></span>
-                    </div>
-                  </p>
-                </div>
+          <div className="field is-horizontal">
+            <div className="field-body">
+              <div className="field">
+                <p className="control is-expanded has-icons-left"><input value={repairFormValues.name} className="input" name="name" placeholder="Name" required type="text" onChange={handleChange} /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faUser} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
+              </div>
+              <div className="field">
+                <p className="control is-expanded has-icons-left has-icons-right"><input value={repairFormValues.email} onChange={handleChange} className="input" name="email" placeholder="Email" required type="email" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faEnvelope} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
+              </div>
+              <div className="field">
+                <p className="control is-expanded has-icons-left has-icons-right"><input value={repairFormValues.cell} onChange={handleChange} className="input" name="phone" placeholder="Cell #" required type="tel" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faPhone} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
+              </div>
+            </div>
+          </div>
+          <div className="field is-horizontal">
+            <div className="field-body">
+              <div className="field">
+                <p className="control is-expanded has-icons-left has-icons-right">
+                  <div>
+                    {/* <GooglePlacesAutocomplete 
+                      apiKey={process.env.GOOGLE_PLACES_API_KEY} 
+                      value={repairFormValues.address} 
+                      onChange={handleChange} 
+                      className="input" name="address" 
+                      required 
+                    /><span className="icon is-small is-left"><FontAwesomeIcon icon={faHome} style={{ height: '1em', marginLeft: '0.3em' }} /></span> */}
+                    <input value={repairFormValues.address} onChange={handleChange} className="input" name="address" placeholder="Address" required type="address" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faHome} style={{ height: '1em', marginLeft: '0.3em' }} /></span>
+                  </div>
+                </p>
+              </div>
+              <div className="field">
+                <p className="control is-expanded has-icons-left has-icons-right">
+                  <div>
+                    <input value={repairFormValues.city} onChange={handleChange} className="input" name="city" placeholder="City" required type="text" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faLocationArrow} style={{ height: '1em', marginLeft: '0.3em' }} /></span>
+                  </div>
+                </p>
+              </div>
+              <div className="field">
+                <p className="control is-expanded has-icons-left has-icons-right">
+                  <div>
+                    <input value={repairFormValues.state} onChange={handleChange} className="input" name="state" placeholder="State" required type="text" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faLocationArrow} style={{ height: '1em', marginLeft: '0.3em' }} /></span>
+                  </div>
+                </p>
               </div>
             </div>
           </div>
@@ -135,7 +136,7 @@ export default function MailInForm() {
             <div className="field is-horizontal">
                 <div className="field-body">
                   <div className="field">
-                    <label for="photoOrVideo">or Upload Photo/Video of Issue</label><br />
+                    <label htmlFor="photoOrVideo">or Upload Photo/Video of Issue</label><br />
                     <input id="photoOrVideo" name="photoOrVideo" type="file" />
                   </div>
                 </div>
