@@ -39,7 +39,7 @@ export default function MailIn() {
     </Head>
     <section className="hero" id="hero">
       <div className="hero-body">
-        <div className="container">
+        {/* <div className="container"> */}
           <div className="is-hidden-desktop">
             <h1 
               className="header-title is-1" 
@@ -54,8 +54,19 @@ export default function MailIn() {
               }}>
               Mail-In Repair
             </h1>
+            <h2
+              style={{
+                fontSize: '1.5em',
+                color: '#FB2956',
+                marginTop: '-1.8em',
+                marginBottom: '2em',
+                fontWeight: 'bold'
+              }}
+              >
+              Cellphone &amp; Tablet
+            </h2>
           </div>
-          <div className="is-hidden-mobile">
+          <div className="is-hidden-mobile is-hidden-tablet-only">
             <h1 
             className="header-title is-1" 
             style={{ 
@@ -67,6 +78,17 @@ export default function MailIn() {
             }}>
               Mail-In Repair
             </h1>
+            <h2
+              style={{
+                fontSize: '1.5em',
+                color: 'grey',
+                marginTop: '-1.5em',
+                marginBottom: '2em',
+                fontWeight: 'bold'
+              }}
+              >
+              Cellphone &amp; Tablet
+            </h2>
           </div>
           <a 
             className="button is-info is-large" 
@@ -80,7 +102,7 @@ export default function MailIn() {
               style={{ height: '60%', marginLeft: '0.3em' }} 
             />
           </a>
-        </div>
+        {/* </div> */}
       </div>
     </section>
     <TrustedBy />
