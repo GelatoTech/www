@@ -17,11 +17,11 @@ import {
   faLocationArrow
 } from '@fortawesome/free-solid-svg-icons';
 
-import scrollToSection from '../helpers/scrollToSection';
-import MailInTerms from '../components/MailInTerms';
+import scrollToSection from '../../helpers/scrollToSection';
+import MailInTerms from './MailInTerms';
 
 
-export default function MailInForm() {
+export default function MailIn() {
 
   const router = useRouter();
 
@@ -41,10 +41,8 @@ export default function MailInForm() {
     }
     const { name } = repairFormValues;
     router.push({
-      pathname: '/thank-you',
-      query: { n: name.includes(' ') ? name.split(' ')[0] : name }
+      pathname: '/mail-in/diagnostic-fee'
     });
-    scrollToSection("hero");
   }
 
   useEffect(() => {
@@ -158,7 +156,7 @@ export default function MailInForm() {
           <br />
           <button 
             className="btn btn-action" 
-            type="submit">Get Free Quote</button>
+            type="submit">Get A Quote</button>
         </NetlifyForm>
       </div>
     </section>

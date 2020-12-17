@@ -25,10 +25,6 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
 
-
-// TODO:
-//    - uncomment fb customer chat
-
 export default function App({ Component, pageProps }) {
 
   const router = useRouter();
