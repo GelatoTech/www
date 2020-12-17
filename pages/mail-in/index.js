@@ -1,1 +1,1 @@
-export { default } from '../../features/mail-in';
+export { default } from '../../features/Mail-In';
