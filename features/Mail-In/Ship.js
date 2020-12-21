@@ -175,9 +175,10 @@ export default function Ship() {
                           <input 
                             required
                             className="input is-primary" 
-                            name="tracking-number" 
+                            name="trackingNumber" 
                             type="text" 
                             placeholder="Tracking #"
+                            value={shipFormValues.trackingNumber}
                             onChange={handleChange}
                           />
                           <span className="icon is-small is-left">
@@ -193,6 +194,7 @@ export default function Ship() {
                             name="email" 
                             type="email" 
                             placeholder="Email"
+                            value={shipFormValues.email}
                             onChange={handleChange}
                           />
                           <span className="icon is-small is-left">
