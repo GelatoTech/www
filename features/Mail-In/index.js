@@ -48,7 +48,7 @@ export default function MailIn() {
         <link rel="stylesheet" href="../stylesheets/mail-in.css" />
       </Head>
       <section className="hero" id="hero">
-        <div className="hero-body">
+        <div className="hero-body container" style={{ display: 'flex' }}>
           {/* <div className="container"> */}
             <div className="is-hidden-mobile">
               <h1 
@@ -67,15 +67,13 @@ export default function MailIn() {
                 />
               </h1>
             </div>
-            <div className="is-hidden-desktop is-hidden-tablet">
+            <div className="is-hidden-desktop is-hidden-tablet has-text-centered">
               <h1 
-                className="header-title" 
+                className="header-title has-text-centered" 
                 style={{ 
                   fontWeight: 'bold', 
                   fontSize: '2em',
                   marginTop: '-2.5em', 
-                  marginLeft: 0,
-                  paddingLeft: 0,
                   color: 'white',
                 }}>
                   Mail-In Repair
@@ -84,7 +82,6 @@ export default function MailIn() {
                 style={{
                   fontSize: '1.5em',
                   marginTop: '-1.5em',
-                  marginBottom: '2em',
                   fontWeight: 'bold',
                 }}
                 >
@@ -94,7 +91,10 @@ export default function MailIn() {
                 />
               </h2>
             </div>
-            <a 
+          {/* </div> */}
+        </div>
+        <div className="is-3 has-text-centered" style={{ marginBottom: '1em' }}>
+          <a 
               className="button is-info is-large" 
               onClick={()=>{
                 scrollToSection("repair");
@@ -106,7 +106,6 @@ export default function MailIn() {
                 style={{ height: '60%', marginLeft: '0.3em' }} 
               />
             </a>
-          {/* </div> */}
         </div>
       </section>
       <TrustedBy />
