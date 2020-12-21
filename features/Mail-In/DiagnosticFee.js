@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import spinner from '../../public/images/spinner.gif';
 
-const stripePromise = loadStripe('pk_test_2Cjx3du4k79QEq53UnOjVsNJ00iGsDQY8O'); // KEY
+const stripePromise = loadStripe('pk_live_lpxMrRsh0fd6Lu9mIH7X2Wxb005L2828aV'); // KEY
 
 export default function DiagnosticFee() {
 
