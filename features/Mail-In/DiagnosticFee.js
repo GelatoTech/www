@@ -12,7 +12,7 @@ export default function DiagnosticFee() {
     const stripe = await stripePromise;
     const { error } = await stripe.redirectToCheckout({
       lineItems: [{
-        price: 'price_1HzFXEKzes2Vr1ZLDgUnjWdF', // KEY
+        price: 'price_1HzDwFKzes2Vr1ZLkCvzWdMH', // KEY
         quantity: 1,
       }],
       mode: 'payment',
