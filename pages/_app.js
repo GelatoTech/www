@@ -10,6 +10,7 @@ import '../public/stylesheets/booking.css'
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import 'aos/dist/aos.css';
+import '../public/stylesheets/stepper.scss';
 
 // import '../public/stylesheets/battery.css';
 // import '../public/stylesheets/booking.css';

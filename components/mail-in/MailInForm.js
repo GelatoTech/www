@@ -36,13 +36,12 @@ export default function MailIn() {
 
   // When repair form is submitted...
   const postSubmit = () => {
+    document.cookie = `mail-in-repair-form=${JSON.stringify(repairFormValues)}`;
     if(!accept) {
       return alert('You must accept the terms and conditions before submitting.')
     }
-    const { name } = repairFormValues;
-    router.push({
-      pathname: '/mail-in/diagnostic-fee'
-    });
+    
+    router.push('/mail-in/diagnostic-fee');
   }
 
   useEffect(() => {
@@ -53,7 +52,7 @@ export default function MailIn() {
   return(
     <section className="section" id="repair">
       <div className=" form-container container has-text-centered">
-        <i><h1 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">Mail-In Repair</h1></i>
+        <i><h1 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">Mail-In Form</h1></i>
         {/* <h2 className="subtitle" data-aos="fade-up">Pick your device model and problem.</h2> */}
         <NetlifyForm formName="mail-in-form" formValues={repairFormValues} postSubmit={postSubmit} id="mail-in-form" name="mail-in-form">
           {/* <input name="form-name" type="hidden" defaultValue="repair-form" /> */}
@@ -156,7 +155,7 @@ export default function MailIn() {
           <br />
           <button 
             className="btn btn-action" 
-            type="submit">Get A Quote</button>
+            type="submit">Submit</button>
         </NetlifyForm>
       </div>
     </section>

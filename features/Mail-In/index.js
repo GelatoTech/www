@@ -6,19 +6,30 @@ import { faCar, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import TrustedBy from '../../components/TrustedBy';
 import scrollToSection from '../../helpers/scrollToSection';
 import AOS from 'aos';
-import step1Img from '../../public/images/mail-1.png';
-import step2Img from '../../public/images/mail-2.png';
-import step3Img from '../../public/images/mail-3.png';
-import step4Img from '../../public/images/mail-4.png';
+const ReactRotatingText = require('react-rotating-text');
+// import step1Img from '../../public/images/mail-1.png';
+// import step2Img from '../../public/images/mail-2.png';
+// import step3Img from '../../public/images/mail-3.png';
+// import step4Img from '../../public/images/mail-4.png';
 import MailInForm from '../../components/mail-in/MailInForm';
+import MailInSteps from '../../components/mail-in/MailInSteps';
+
+const itemsWeService = [
+  "iPhone",
+  "Samsung",
+  "iPad",
+  "MacBook",
+  "Google Pixel",
+  "Apple Watch",
+];
 
 export default function MailIn() {
 
   const router = useRouter();
 
-  useEffect(() => {
+ useEffect(() => {
     AOS.init();
-  });
+  })
 
   return(
     <div>
@@ -39,54 +50,48 @@ export default function MailIn() {
       <section className="hero" id="hero">
         <div className="hero-body">
           {/* <div className="container"> */}
-            <div className="is-hidden-desktop">
+            <div className="is-hidden-mobile">
               <h1 
-                className="header-title is-1" 
-                style={{ 
-                  color: 'black', 
-                  fontSize: '2em',
-                  fontWeight: 'bold', 
-                  marginLeft: 0, 
-                  paddingLeft: 0,
-                  marginTop: '-3em',
-                  paddingTop: '1em'
-                }}>
-                Mail-In Repair
-              </h1>
-              <h2
-                style={{
-                  fontSize: '1.5em',
-                  color: '#FB2956',
-                  marginTop: '-1.8em',
-                  marginBottom: '2em',
-                  fontWeight: 'bold'
-                }}
-                >
-                Cellphone &amp; Tablet
-              </h2>
-            </div>
-            <div className="is-hidden-mobile is-hidden-tablet-only">
-              <h1 
-              className="header-title is-1" 
+              className="header-title" 
               style={{ 
-                color: 'black', 
                 fontWeight: 'bold', 
                 fontSize: '3em',
                 marginLeft: 0, 
                 paddingLeft: 0 
               }}>
-                Mail-In Repair
+                Mail-In Repair for  
+                <ReactRotatingText
+                  style={{ marginLeft: '0.2em' }}
+                  items={itemsWeService}
+                  color="#FA2A51"
+                />
               </h1>
-              <h2
+            </div>
+            <div className="is-hidden-desktop is-hidden-tablet">
+              <h1 
+                className="header-title" 
+                style={{ 
+                  fontWeight: 'bold', 
+                  fontSize: '2em',
+                  marginTop: '-2.5em', 
+                  marginLeft: 0,
+                  paddingLeft: 0,
+                  color: 'white',
+                }}>
+                  Mail-In Repair
+                </h1>
+                <h2
                 style={{
                   fontSize: '1.5em',
-                  color: 'grey',
                   marginTop: '-1.5em',
                   marginBottom: '2em',
-                  fontWeight: 'bold'
+                  fontWeight: 'bold',
                 }}
                 >
-                Cellphone &amp; Tablet
+                <ReactRotatingText
+                  items={itemsWeService}
+                  color="#FA2A51"
+                />
               </h2>
             </div>
             <a 
@@ -95,7 +100,7 @@ export default function MailIn() {
                 scrollToSection("repair");
               }}
             >
-              Get A Quote
+              Get Started
               <FontAwesomeIcon 
                 icon={faEnvelope} 
                 style={{ height: '60%', marginLeft: '0.3em' }} 
@@ -105,7 +110,10 @@ export default function MailIn() {
         </div>
       </section>
       <TrustedBy />
-      <section className="section" id="works">
+      <div style={{marginTop: '3em', overflow: 'scroll'}}>
+        <MailInSteps step={0} />
+      </div>
+      {/* <section className="section" id="works">
         <div className="container">
           <center>
             <div className="columns">
@@ -116,8 +124,8 @@ export default function MailIn() {
             </div>
           </center>
         </div>
-      </section>
-      <section>
+      </section> */}
+      {/* <section>
         <div className="container">
           <div className="columns">
             <hr className="is-hidden-desktop-only" />
@@ -138,7 +146,8 @@ export default function MailIn() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <MailInForm />
       <section>
         <div className="section" id="get-started"
           style={{
