@@ -14,13 +14,7 @@ export default function Form({ make }) {
 
   const router = useRouter();
 
-  const [repairFormValues, setRepairFormValues] = useState({
-    selectDevices: '',
-    chooseDeviceModel: '',
-    issue: '',
-    homeButtonColor: '',
-    name: '',
-  });
+  const [repairFormValues, setRepairFormValues] = useState({});
   
   
   // Handle repair form state
@@ -314,7 +308,7 @@ export default function Form({ make }) {
               ? (
                 <div className="field">
                   <div className="select is-danger is-rounded" style={{ borderRadius: '3em' }}>
-                    <select defaultValue={ router.query.issue ? router.query.issue : 'default' } id="select-issue" name="issue" onChange={handleChange} required>
+                    <select defaultValue={ router.query.issue ? router.query.issue : 'default' } id="issue" name="issue" onChange={(e) => setRepairFormValues({ ...repairFormValues, issue: e.target.value })} required>
                       <option value="default" disabled>
                         Select Problem
                       </option>
