@@ -34,13 +34,13 @@ export default function Form({ make }) {
 
   // When repair form is submitted...
   const postSubmit = () => {
-    console.log(repairFormValues)
-    // const { name } = repairFormValues;
-    // router.push({
-    //   pathname: '/thank-you',
-    //   query: { n: name.includes(' ') ? name.split(' ')[0] : name }
-    // });
-    // scrollToSection("hero");
+    // console.log(repairFormValues)
+    const { name } = repairFormValues;
+    router.push({
+      pathname: '/thank-you',
+      query: { n: name.includes(' ') ? name.split(' ')[0] : name }
+    });
+    scrollToSection("hero");
   }
 
   useEffect(() => {
