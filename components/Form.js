@@ -88,7 +88,7 @@ export default function Form({ make }) {
           : ''
         }
         <NetlifyForm formName="repair-form" formValues={repairFormValues} postSubmit={postSubmit} id="repair-form" name="repair-form">
-          {/* <input name="form-name" type="hidden" defaultValue="repair-form" /> */}
+          <input name="form-name" type="hidden" defaultValue="repair-form" />
           <div className="field">
             <div className="field">
               <div className="select is-info is-rounded">
