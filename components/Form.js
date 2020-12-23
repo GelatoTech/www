@@ -308,7 +308,8 @@ export default function Form({ make }) {
               ? (
                 <div className="field">
                   <div className="select is-danger is-rounded" style={{ borderRadius: '3em' }}>
-                    <select defaultValue={ router.query.issue ? router.query.issue : 'default' } id="issue" name="issue" onChange={(e) => setRepairFormValues({ ...repairFormValues, issue: e.target.value })} required>
+                    <input style={{ display: 'none' }} type="text" name="issue" id="issue" value={repairFormValues.issue} />
+                    <select defaultValue={ router.query.issue ? router.query.issue : 'default' } onChange={(e)=>setRepairFormValues({ ...repairFormValues, issue: e.target.value })} required>
                       <option value="default" disabled>
                         Select Problem
                       </option>
