@@ -18,27 +18,29 @@ export default function Form({ make }) {
     selectDevices: '',
     chooseDeviceModel: '',
     issue: '',
-    color: '',
+    homeButtonColor: '',
     name: '',
   });
   
   
   // Handle repair form state
   const handleChange = (e) => {
-    if(e.target.name == "selectDevices") {
-      setRepairFormValues(null);
-    }
-    setRepairFormValues({ ...repairFormValues, [e.target.name]: e.target.value });
+    // if(e.target.name == "selectDevices") {
+    //   setRepairFormValues(null);
+    //   setRepairFormValues({ selectDevices: e.target.value });
+    // }
+    setRepairFormValues({...repairFormValues, [e.target.name]: e.target.value});
   }
 
   // When repair form is submitted...
   const postSubmit = () => {
-    const { name } = repairFormValues;
-    router.push({
-      pathname: '/thank-you',
-      query: { n: name.includes(' ') ? name.split(' ')[0] : name }
-    });
-    scrollToSection("hero");
+    console.log(repairFormValues)
+    // const { name } = repairFormValues;
+    // router.push({
+    //   pathname: '/thank-you',
+    //   query: { n: name.includes(' ') ? name.split(' ')[0] : name }
+    // });
+    // scrollToSection("hero");
   }
 
   useEffect(() => {
@@ -376,13 +378,11 @@ export default function Form({ make }) {
               ) : null
             }
             {
-              (devicesWithHomeButton.includes(repairFormValues.chooseDeviceModel) ||
-              (repairFormValues.selectDevices == "ipad") || 
-              (router.query.make == "ipad"))
+              (devicesWithHomeButton.includes(repairFormValues.chooseDeviceModel))
               ? (
                 <div className="field" id="homeButton">
                   <div className="select is-rounded">
-                    <select defaultValue={'default'} id="select-color" name="color" onChange={handleChange}>
+                    <select defaultValue={'default'} id="homeButtonColor" name="homeButtonColor" onChange={handleChange}>
                       <option value="default" disabled>
                         Home Button Color
                       </option>
