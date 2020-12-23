@@ -314,7 +314,7 @@ export default function Form({ make }) {
               ? (
                 <div className="field">
                   <div className="select is-danger is-rounded" style={{ borderRadius: '3em' }}>
-                    <select defaultValue={ router.query.issue ? router.query.issue : 'default' } id="issue" name="issue" onChange={handleChange} required>
+                    <select defaultValue={ router.query.issue ? router.query.issue : 'default' } id="select-issue" name="issue" onChange={handleChange} required>
                       <option value="default" disabled>
                         Select Problem
                       </option>
