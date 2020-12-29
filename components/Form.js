@@ -18,7 +18,6 @@ export default function Form({ make }) {
     selectDevices: 'default',
     chooseDeviceModel: 'default',
     homeButtonColor: 'default',
-    issue: 'default',
   });
   
   
@@ -94,8 +93,8 @@ export default function Form({ make }) {
         }
         <NetlifyForm formName="repair-form" formValues={repairFormValues} postSubmit={postSubmit} id="repair-form" name="repair-form">
           <input name="form-name" type="hidden" defaultValue="repair-form" value="repair-form" />
-          <input name="deviceModel" type="hidden" value={repairFormValues.chooseDeviceModel} />
-          <input name="deviceIssue" type="hidden" value={repairFormValues.issue} />
+          {/* <input name="deviceModel" type="hidden" value={repairFormValues.chooseDeviceModel} />
+          <input name="deviceIssue" type="hidden" value={repairFormValues.issue} /> */}
           <div className="field">
             <div className="field">
               <div className="select is-info is-rounded">
@@ -190,7 +189,7 @@ export default function Form({ make }) {
                 ? (
                   <div className="field" id="pixels">
                     <div className="select is-info is-rounded">
-                      <select defaultValue={ router.query.model ? router.query.model : 'default' } id="select-pixel-model" name="chooseDeviceModel" onChange={handleChange}>
+                      <select value={ router.query.model ? router.query.model : 'default' } id="select-pixel-model" name="chooseDeviceModel" onChange={handleChange}>
                         <option value="default" disabled>
                           Select Model
                         </option>
@@ -237,7 +236,7 @@ export default function Form({ make }) {
                 ? (
                   <div className="field">
                     <div className="select is-info is-rounded">
-                      <select defaultValue={ router.query.model ? router.query.model : 'default' } id="select-ipad-model" name="chooseDeviceModel" onChange={handleChange}>
+                      <select value={ router.query.model ? router.query.model : 'default' } id="select-ipad-model" name="chooseDeviceModel" onChange={handleChange}>
                         <option value="default" disabled>
                           Select Model
                         </option>
@@ -315,8 +314,8 @@ export default function Form({ make }) {
               ? (
                 <div className="field">
                   <div className="select is-danger is-rounded" style={{ borderRadius: '3em' }}>
-                    <input style={{ display: 'none' }} type="text" name="issue" id="issue" value={repairFormValues.issue} />
-                    <select defaultValue={ router.query.issue ? router.query.issue : 'default' } onChange={(e)=>setRepairFormValues({ ...repairFormValues, issue: e.target.value })} required>
+                    {/* <input style={{ display: 'none' }} type="text" name="issue" id="issue" value={repairFormValues.issue} /> */}
+                    <select value={ router.query.issue ? router.query.issue : 'default' } onChange={(e)=>setRepairFormValues({ ...repairFormValues, issue: e.target.value })} required>
                       <option value="default" disabled>
                         Select Problem
                       </option>
