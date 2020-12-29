@@ -16,7 +16,9 @@ export default function Form({ make }) {
 
   const [repairFormValues, setRepairFormValues] = useState({
     selectDevices: 'default',
-    homeButtonColor: 'default'
+    chooseDeviceModel: 'default',
+    homeButtonColor: 'default',
+    issue: 'default',
   });
   
   
@@ -92,7 +94,8 @@ export default function Form({ make }) {
         }
         <NetlifyForm formName="repair-form" formValues={repairFormValues} postSubmit={postSubmit} id="repair-form" name="repair-form">
           <input name="form-name" type="hidden" defaultValue="repair-form" value="repair-form" />
-          <input name="deviceModel" type="hidden" value={repairFormValues.chooseDeviceModel || ''} />
+          <input name="deviceModel" type="hidden" value={repairFormValues.chooseDeviceModel} />
+          <input name="deviceIssue" type="hidden" value={repairFormValues.issue} />
           <div className="field">
             <div className="field">
               <div className="select is-info is-rounded">
