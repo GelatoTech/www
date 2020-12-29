@@ -17,6 +17,7 @@ export default function Form({ make }) {
   const [repairFormValues, setRepairFormValues] = useState({
     selectDevices: 'default',
     chooseDeviceModel: 'default',
+    issue: 'default',
     homeButtonColor: 'default',
   });
   
