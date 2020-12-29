@@ -14,7 +14,10 @@ export default function Form({ make }) {
 
   const router = useRouter();
 
-  const [repairFormValues, setRepairFormValues] = useState({});
+  const [repairFormValues, setRepairFormValues] = useState({
+    selectDevices: 'default',
+    homeButtonColor: 'default'
+  });
   
   
   // Handle repair form state
@@ -28,7 +31,7 @@ export default function Form({ make }) {
 
   // When repair form is submitted...
   const postSubmit = () => {
-    // console.log(repairFormValues)
+    console.log(repairFormValues)
     const { name } = repairFormValues;
     router.push({
       pathname: '/thank-you',
@@ -48,7 +51,7 @@ export default function Form({ make }) {
         <i><h1 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">Schedule Repair</h1></i>
         <h2 className="subtitle" data-aos="fade-up">Pick your device model and problem.</h2>
         {
-          repairFormValues.selectDevices ||
+          repairFormValues.selectDevices !== 'default' ||
           make
           ? (
             <figure>
@@ -88,11 +91,11 @@ export default function Form({ make }) {
           : ''
         }
         <NetlifyForm formName="repair-form" formValues={repairFormValues} postSubmit={postSubmit} id="repair-form" name="repair-form">
-          <input name="form-name" type="hidden" defaultValue="repair-form" />
+          <input name="form-name" type="hidden" defaultValue="repair-form" value="repair-form" />
           <div className="field">
             <div className="field">
               <div className="select is-info is-rounded">
-                <select id="select-device" defaultValue={ (router.query.make || make) ? (router.query.make || make) : 'default' } name="selectDevices" onChange={handleChange} required>
+                <select id="select-device" value={ (router.query.make || make) ? (router.query.make || make) : repairFormValues.selectDevices } name="selectDevices" onChange={handleChange} required>
                   <option value="default" disabled>
                     Select Device
                   </option>
@@ -377,7 +380,7 @@ export default function Form({ make }) {
               ? (
                 <div className="field" id="homeButton">
                   <div className="select is-rounded">
-                    <select defaultValue={'default'} id="homeButtonColor" name="homeButtonColor" onChange={handleChange}>
+                    <select value={repairFormValues.homeButtonColor} id="homeButtonColor" name="homeButtonColor" onChange={handleChange}>
                       <option value="default" disabled>
                         Home Button Color
                       </option>
