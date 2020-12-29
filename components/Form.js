@@ -67,6 +67,7 @@ export default function Form({ make }) {
             (repairFormValues.selectDevices || make) &&
             repairFormValues.chooseDeviceModel &&
             repairFormValues.issue &&
+            repairFormValues.issue !== 'default' &&
             devices[repairFormValues.chooseDeviceModel][repairFormValues.issue].price
           )
           ? (<p id="total-price-text" style={{ fontSize: '1.9em' }}>Estimated {devices[repairFormValues.chooseDeviceModel][repairFormValues.issue].price} repair</p>)
@@ -77,6 +78,7 @@ export default function Form({ make }) {
             (repairFormValues.selectDevices || make) &&
             repairFormValues.chooseDeviceModel &&
             repairFormValues.issue &&
+            repairFormValues.issue !== 'default' &&
             devices[repairFormValues.chooseDeviceModel][repairFormValues.issue].warranty
           )
           ? (<p id="warranty-text" style={{ fontSize: '1.5em' }}><strong>{devices[repairFormValues.chooseDeviceModel][repairFormValues.issue].warranty}</strong> warranty</p>)
@@ -87,6 +89,7 @@ export default function Form({ make }) {
             (repairFormValues.selectDevices || make) &&
             repairFormValues.chooseDeviceModel &&
             repairFormValues.issue &&
+            repairFormValues.issue !== 'default' &&
             devices[repairFormValues.chooseDeviceModel][repairFormValues.issue].duration
           )
           ? (<p id="repairtime-text" style={{ fontSize: '1.2em', marginBottom: '0.5em' }}>Estimated <strong>{devices[repairFormValues.chooseDeviceModel][repairFormValues.issue].duration}</strong> repair time</p>)
