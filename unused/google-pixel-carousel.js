@@ -32,7 +32,7 @@ export default function GooglePixelCarousel() {
               <h1>Google Pixel</h1>
               <button 
                 style={buttonStyles}
-                onClick={()=> {router.push('/?make=google&model=googlePixel#repair')}}
+                onClick={()=> {router.push('/?m=google&model=googlePixel#repair')}}
               >Repair Now</button>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function GooglePixelCarousel() {
               <h1>Google Pixel XL</h1>
               <button 
                 style={buttonStyles}
-                onClick={()=> router.push('/?make=google&model=googlePixelXL#repair')}
+                onClick={()=> router.push('/?m=google&model=googlePixelXL#repair')}
               >Repair Now</button>
             </div>
           </div>
@@ -56,7 +56,7 @@ export default function GooglePixelCarousel() {
               <h1>Google Pixel 2</h1>
               <button 
                 style={buttonStyles}
-                onClick={()=> router.push('/?make=google&model=googlePixel2#repair')}
+                onClick={()=> router.push('/?m=google&model=googlePixel2#repair')}
               >Repair Now</button>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function GooglePixelCarousel() {
               <h1>Google Pixel 2 XL</h1>
               <button 
                 style={buttonStyles}
-                onClick={()=> router.push('/?make=google&model=googlePixel2XL#repair')}
+                onClick={()=> router.push('/?m=google&model=googlePixel2XL#repair')}
               >Repair Now</button>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function GooglePixelCarousel() {
               <h1>Google Pixel 3</h1>
               <button 
                 style={buttonStyles}
-                onClick={()=> router.push('/?make=google&model=googlePixel3#repair')}
+                onClick={()=> router.push('/?m=google&model=googlePixel3#repair')}
               >Repair Now</button>
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function GooglePixelCarousel() {
               <h1>Google Pixel 3 XL</h1>
               <button 
                 style={buttonStyles}
-                onClick={()=> router.push('/?make=google&model=googlePixel3XL#repair')}
+                onClick={()=> router.push('/?m=google&model=googlePixel3XL#repair')}
               >Repair Now</button>
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function GooglePixelCarousel() {
               <h1>Google Pixel 3A</h1>
               <button 
                 style={buttonStyles}
-                onClick={()=> router.push('/?make=google&model=googlePixel3a#repair')}
+                onClick={()=> router.push('/?m=google&model=googlePixel3a#repair')}
               >Repair Now</button>
             </div>
           </div>
@@ -116,7 +116,7 @@ export default function GooglePixelCarousel() {
               <h1>Google Pixel 4</h1>
               <button 
                 style={buttonStyles}
-                onClick={()=> router.push('/?make=google&model=googlePixel4#repair')}
+                onClick={()=> router.push('/?m=google&model=googlePixel4#repair')}
               >Repair Now</button>
             </div>
           </div>
@@ -128,7 +128,7 @@ export default function GooglePixelCarousel() {
               <h1>Google Pixel 4 XL</h1>
               <button 
                 style={buttonStyles}
-                onClick={()=> router.push('/?make=google&model=googlePixel4XL#repair')}
+                onClick={()=> router.push('/?m=google&model=googlePixel4XL#repair')}
               >Repair Now</button>
             </div>
           </div>

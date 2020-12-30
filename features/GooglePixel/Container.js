@@ -146,7 +146,7 @@ export default function GooglePixel() {
         </div>
       </div>
       <section style={{ textAlign: 'center', margin: '2em' }}>
-        <a onClick={()=> router.push('/?make=iphone#repair')}>have an iPhone?</a>
+        <a onClick={()=> router.push('/?m=iphone#repair')}>have an iPhone?</a>
         <hr />
       </section>
     </section>

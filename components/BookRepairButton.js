@@ -16,7 +16,7 @@ export default function BookRepairButton({ text, make }) {
           router.pathname == '/' 
           ? scrollToSection("repair")
           : make
-            ? router.push(`/?make=${make}#repair`)
+            ? router.push(`/?m=${make}#repair`)
             : router.push('/#repair');
         }}
         >

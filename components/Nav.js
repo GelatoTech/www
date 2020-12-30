@@ -63,7 +63,7 @@ export default function Nav() {
                     <a className="navbar-item" onClick={()=> {
                       setOurServicesDropdownActive(false);
                       setBurger(false);
-                      router.push('/?make=iphone#repair');
+                      router.push('/?m=iphone#repair');
                       }}>iPhone Repair</a> 
                     <a className="navbar-item" onClick={() => {
                       setOurServicesDropdownActive(false);
