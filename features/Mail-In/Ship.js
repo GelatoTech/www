@@ -188,11 +188,10 @@ export default function Ship() {
                           <input 
                             required
                             className="input is-primary" 
-                            name="email" 
                             type="email" 
                             placeholder="Email"
                             value={shipFormValues.email}
-                            onChange={handleChange}
+                            onChange={(e) => setShipFormValues({ ...shipFormValues, email: e.target.value })}
                           />
                           <span className="icon is-small is-left">
                             <FontAwesomeIcon icon={faEnvelope} style={{ width: '1em' }} />
@@ -235,6 +234,7 @@ export default function Ship() {
               : null
             }
           </div>
+          <input name="email" type="hidden" value={shipFormValues.email} />
           <input name="carrier" type="hidden" value={shipFormValues.carrier} />
           <input name="trackingNumber" type="hidden" value={shipFormValues.trackingNumber} />
           </NetlifyForm>
