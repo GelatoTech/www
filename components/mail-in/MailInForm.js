@@ -17,7 +17,6 @@ import {
   faLocationArrow
 } from '@fortawesome/free-solid-svg-icons';
 
-import scrollToSection from '../../helpers/scrollToSection';
 import MailInTerms from './MailInTerms';
 
 
@@ -112,7 +111,7 @@ export default function MailIn() {
                   <p className="control is-expanded has-icons-left"><input value={repairFormValues.model} className="input" name="model" placeholder="Device Model (ex: iPhone 11 Pro)" required type="text" onChange={handleChange} /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faMobile} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
                 </div>
                 <div className="field">
-                  <p className="control is-expanded has-icons-left"><input value={repairFormValues.imeiOrSerial} className="input" name="imeiOrSerial" placeholder="IMEI/Serial # (optional)" type="text" onChange={handleChange} /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faFingerprint} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
+                  <p className="control is-expanded has-icons-left"><input value={repairFormValues.imeiOrSerial} className="`input`" name="imeiOrSerial" placeholder="IMEI/Serial # (optional)" type="text" onChange={handleChange} /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faFingerprint} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
                 </div>
                 <div className="field">
                   <p className="control is-expanded has-icons-left"><input value={repairFormValues.devicePassword} className="input" name="devicePassword" placeholder="Device Passcode (or remove)" type="text" onChange={handleChange} /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faLock} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>

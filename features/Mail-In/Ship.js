@@ -68,6 +68,7 @@ export default function Ship() {
           id="ship-form" 
           name="ship-form"
         >
+          <input name="form-name" type="hidden" value="ship-form" />
           <div className="card column" style={{
             marginTop: '3em',
             padding: '2rem',
@@ -93,11 +94,10 @@ export default function Ship() {
                 }}>
                   <input 
                     type="radio" 
-                    name="carrier" 
                     value="USPS" 
                     style={{display: 'none'}}
                     checked={shipFormValues.carrier === 'USPS'}
-                    onChange={handleChange}
+                    onChange={(e) => setShipFormValues({ ...shipFormValues, carrier: e.target.value })}
                   />
                   <img 
                     src={uspsLogo} 
@@ -113,11 +113,10 @@ export default function Ship() {
                 }}>
                   <input 
                     type="radio" 
-                    name="carrier" 
                     value="UPS" 
                     style={{display: 'none'}}
                     checked={shipFormValues.carrier === 'UPS'}
-                    onChange={handleChange}
+                    onChange={(e) => setShipFormValues({ ...shipFormValues, carrier: e.target.value })}
                   />
                   <img 
                     src={upsLogo} 
@@ -134,11 +133,10 @@ export default function Ship() {
                 }}>
                   <input 
                     type="radio" 
-                    name="carrier" 
                     value="FedEx" 
                     style={{display: 'none'}}
                     checked={shipFormValues.carrier === 'FedEx'} 
-                    onChange={handleChange}
+                    onChange={(e) => setShipFormValues({ ...shipFormValues, carrier: e.target.value })}
                   />
                   <img 
                     src={fedExLogo} 
@@ -175,11 +173,10 @@ export default function Ship() {
                           <input 
                             required
                             className="input is-primary" 
-                            name="trackingNumber" 
                             type="text" 
                             placeholder="Tracking #"
                             value={shipFormValues.trackingNumber}
-                            onChange={handleChange}
+                            onChange={(e) => setShipFormValues({ ...shipFormValues, trackingNumber: e.target.value })}
                           />
                           <span className="icon is-small is-left">
                             <FontAwesomeIcon icon={faPlaneDeparture} style={{ width: '1em' }} />
@@ -238,6 +235,8 @@ export default function Ship() {
               : null
             }
           </div>
+          <input name="carrier" type="hidden" value={shipFormValues.carrier} />
+          <input name="trackingNumber" type="hidden" value={shipFormValues.trackingNumber} />
           </NetlifyForm>
       </div>
     </div>
