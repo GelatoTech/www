@@ -98,7 +98,6 @@ export default function Form({ make }) {
         }
         <NetlifyForm formName="repair-form" formValues={repairFormValues} postSubmit={postSubmit} id="repair-form" name="repair-form">
           <input name="form-name" type="hidden" value="repair-form" />
-          <input name="deviceModel" type="hidden" value={repairFormValues.deviceModel} />
           <div className="field">
             <div className="field">
               <div className="select is-info is-rounded">
@@ -118,6 +117,9 @@ export default function Form({ make }) {
                 </select>
               </div>
             </div>
+            <input name="deviceModel" type="hidden" value={repairFormValues.deviceModel} />
+            <input name="deviceIssue" type="hidden" value={repairFormValues.deviceIssue} />
+            <input name="deviceHomeButtonColor" type="hidden" value={repairFormValues.deviceHomeButtonColor} />
             <div>
               {
                 repairFormValues.deviceMake !== 'default'
@@ -300,7 +302,7 @@ export default function Form({ make }) {
                 <div className="field">
                   <div className="select is-danger is-rounded" style={{ borderRadius: '3em' }}>
                     {/* <input style={{ display: 'none' }} type="text" name="issue" id="issue" value={repairFormValues.issue} /> */}
-                    <select value={ repairFormValues.deviceIssue } name="deviceIssue" onChange={handleChange} required>
+                    <select value={repairFormValues.deviceIssue} onChange={(e)=>setRepairFormValues({ ...repairFormValues, deviceIssue: e.target.value })} required>
                       <option value="default" disabled>
                         Select Problem
                       </option>
@@ -368,7 +370,7 @@ export default function Form({ make }) {
               ? (
                 <div className="field" id="homeButton">
                   <div className="select is-rounded">
-                    <select value={repairFormValues.deviceHomeButtonColor} id="homeButtonColor" name="deviceHomeButtonColor" onChange={handleChange}>
+                    <select value={repairFormValues.deviceHomeButtonColor} onChange={(e)=>setRepairFormValues({ ...repairFormValues, deviceHomeButtonColor: e.target.value })}>
                       <option value="default" disabled>
                         Home Button Color
                       </option>
