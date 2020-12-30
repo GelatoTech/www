@@ -41,7 +41,6 @@ export default function Form({ make }) {
 
   // When repair form is submitted...
   const postSubmit = () => {
-    console.log(repairFormValues)
     const { customerName } = repairFormValues;
     router.push({
       pathname: '/thank-you',
@@ -49,8 +48,6 @@ export default function Form({ make }) {
     });
     scrollToSection("hero");
   }
-
-  console.log(repairFormValues);
 
   return(
     <section className="section" id="repair">
@@ -101,6 +98,7 @@ export default function Form({ make }) {
         }
         <NetlifyForm formName="repair-form" formValues={repairFormValues} postSubmit={postSubmit} id="repair-form" name="repair-form">
           <input name="form-name" type="hidden" value="repair-form" />
+          <input name="deviceModel" type="hidden" value={repairFormValues.deviceModel} />
           <div className="field">
             <div className="field">
               <div className="select is-info is-rounded">
@@ -126,7 +124,7 @@ export default function Form({ make }) {
                   ? (
                     <div className="field">
                       <div className="select is-info is-rounded">
-                        <select value={ repairFormValues.deviceModel } id="deviceModel" name="deviceModel" onChange={handleChange}>
+                        <select value={ repairFormValues.deviceModel } onChange={(e)=>setRepairFormValues({ ...repairFormValues, deviceModel: e.target.value })}>
                           <option value="default" disabled>
                             Select Model
                           </option>
