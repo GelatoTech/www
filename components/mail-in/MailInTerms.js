@@ -190,7 +190,7 @@ Terms and conditions last updated November 08, 2020`
 export default function MailInTerms() {
   return(
   <div>
-    <textarea value={termsAndConditions} readOnly={true} disabled name="input_18" className="textarea" aria-invalid="false" rows="10" cols="50"></textarea>
+    <textarea value={termsAndConditions} readOnly={true} disabled className="textarea" aria-invalid="false" rows="10" cols="50"></textarea>
     </div>
   )
 }

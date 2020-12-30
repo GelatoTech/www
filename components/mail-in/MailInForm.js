@@ -4,6 +4,7 @@ import AOS from 'aos';
 import NetlifyForm from 'react-ssg-netlify-forms';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
+  faClock,
   faUsers, 
   faUser, 
   faEnvelope, 
@@ -18,9 +19,10 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import MailInTerms from './MailInTerms';
+import MicroSolderTerms from '../MicroSolderTerms';
 
 
-export default function MailIn() {
+export default function MailIn({ serviceType, repairType }) {
 
   const router = useRouter();
 
@@ -40,7 +42,7 @@ export default function MailIn() {
       return alert('You must accept the terms and conditions before submitting.')
     }
     
-    router.push('/mail-in/diagnostic-fee');
+    router.push(`/mail-in/diagnostic-fee${serviceType==='on-demand' ? '?on-demand=true' : ''}`);
   }
 
   useEffect(() => {
@@ -51,7 +53,7 @@ export default function MailIn() {
   return(
     <section className="section" id="repair">
       <div className=" form-container container has-text-centered">
-        <i><h1 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">Mail-In Form</h1></i>
+        <i><h1 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">{serviceType === 'on-demand' ? 'Pickup' : 'Mail-In'} Form</h1></i>
         {/* <h2 className="subtitle" data-aos="fade-up">Pick your device model and problem.</h2> */}
         <NetlifyForm formName="mail-in-form" formValues={repairFormValues} postSubmit={postSubmit} id="mail-in-form" name="mail-in-form">
           {/* <input name="form-name" type="hidden" defaultValue="repair-form" /> */}
@@ -74,16 +76,14 @@ export default function MailIn() {
             <div className="field-body">
               <div className="field">
                 <p className="control is-expanded has-icons-left has-icons-right">
-                  <div>
-                    {/* <GooglePlacesAutocomplete 
-                      apiKey={process.env.GOOGLE_PLACES_API_KEY} 
-                      value={repairFormValues.address} 
-                      onChange={handleChange} 
-                      className="input" name="address" 
-                      required 
-                    /><span className="icon is-small is-left"><FontAwesomeIcon icon={faHome} style={{ height: '1em', marginLeft: '0.3em' }} /></span> */}
-                    <input value={repairFormValues.address} onChange={handleChange} className="input" name="address" placeholder="Address" required type="address" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faHome} style={{ height: '1em', marginLeft: '0.3em' }} /></span>
-                  </div>
+                  {/* <GooglePlacesAutocomplete 
+                    apiKey={process.env.GOOGLE_PLACES_API_KEY} 
+                    value={repairFormValues.address} 
+                    onChange={handleChange} 
+                    className="input" name="address" 
+                    required 
+                  /><span className="icon is-small is-left"><FontAwesomeIcon icon={faHome} style={{ height: '1em', marginLeft: '0.3em' }} /></span> */}
+                  <input value={repairFormValues.address} onChange={handleChange} className="input" name="address" placeholder="Address" required type="address" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faHome} style={{ height: '1em', marginLeft: '0.3em' }} /></span>
                 </p>
               </div>
               <div className="field">
@@ -102,6 +102,28 @@ export default function MailIn() {
               </div>
             </div>
           </div>
+          <input type="hidden" name="pickupDate" value={repairFormValues.pickupDate} />
+          <input type="hidden" name="pickupTime" value={repairFormValues.pickupTime} />
+          {
+            serviceType === 'on-demand'
+              ? (
+                <>
+                  <hr />
+                  <h2 className="title is-5 has-text-weight-light">Pickup Time &amp; Date <FontAwesomeIcon icon={faClock} style={{ height: '1em', marginLeft: '0.3em' }} /></h2>
+                  <div className="field is-horizontal">
+                    <div className="field-body">
+                      <div className="field">
+                        <input value={repairFormValues.pickupDate} onChange={(e) => setRepairFormValues({ ...repairFormValues, pickupDate: e.target.value })} className="input" required type="date" />
+                      </div>
+                      <div className="field">
+                        <input value={repairFormValues.pickupTime} onChange={(e) => setRepairFormValues({ ...repairFormValues, pickupTime: e.target.value })} className="input" max="22:00" min="09:00" type="time" />
+                      </div>
+                    </div>
+                  </div>
+                </>
+              )
+              : ''
+          }
           <hr />
           <h2 className="title is-5 has-text-weight-light">Device Details <FontAwesomeIcon icon={faInfoCircle} style={{ height: '1em', marginLeft: '0.3em' }} /></h2>
           <div className="field">
@@ -111,7 +133,7 @@ export default function MailIn() {
                   <p className="control is-expanded has-icons-left"><input value={repairFormValues.model} className="input" name="model" placeholder="Device Model (ex: iPhone 11 Pro)" required type="text" onChange={handleChange} /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faMobile} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
                 </div>
                 <div className="field">
-                  <p className="control is-expanded has-icons-left"><input value={repairFormValues.imeiOrSerial} className="`input`" name="imeiOrSerial" placeholder="IMEI/Serial # (optional)" type="text" onChange={handleChange} /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faFingerprint} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
+                  <p className="control is-expanded has-icons-left"><input value={repairFormValues.imeiOrSerial} className="input" name="imeiOrSerial" placeholder="IMEI/Serial # (optional)" type="text" onChange={handleChange} /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faFingerprint} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
                 </div>
                 <div className="field">
                   <p className="control is-expanded has-icons-left"><input value={repairFormValues.devicePassword} className="input" name="devicePassword" placeholder="Device Passcode (or remove)" type="text" onChange={handleChange} /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faLock} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
@@ -141,7 +163,11 @@ export default function MailIn() {
           <hr />
           <h2 className="title is-5 has-text-weight-light">Terms &amp; Conditions <FontAwesomeIcon icon={faCheckCircle} style={{ height: '1em', marginLeft: '0.3em' }} /></h2>
           <div className="field">
-            <MailInTerms />
+            {
+              repairType==='micro-soldering'
+                ? (<MicroSolderTerms />)
+                : (<MailInTerms />)
+            }
             <label>
             <input 
               type="checkbox" 

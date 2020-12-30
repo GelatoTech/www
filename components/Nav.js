@@ -59,6 +59,11 @@ export default function Nav() {
                       setBurger(false);
                       router.push('/mail-in');
                       }}>Mail-In Repair</a>
+                    <a className="navbar-item" onClick={() => {
+                      setOurServicesDropdownActive(false);
+                      setBurger(false);
+                      router.push('/microsoldering');
+                      }}>Micro Soldering</a>
                     <hr />
                     <a className="navbar-item" onClick={()=> {
                       setOurServicesDropdownActive(false);
