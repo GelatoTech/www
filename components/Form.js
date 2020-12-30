@@ -67,38 +67,37 @@ export default function Form({ make }) {
           (
             (repairFormValues.deviceMake) &&
             repairFormValues.deviceModel &&
-            repairFormValues.issue &&
-            repairFormValues.issue !== 'default' &&
-            devices[repairFormValues.deviceModel][repairFormValues.issue].price
+            repairFormValues.deviceIssue &&
+            repairFormValues.deviceIssue !== 'default' &&
+            devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price
           )
-          ? (<p id="total-price-text" style={{ fontSize: '1.9em' }}>Estimated {devices[repairFormValues.deviceModel][repairFormValues.issue].price} repair</p>)
+          ? (<p id="total-price-text" style={{ fontSize: '1.9em' }}>Estimated {devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price} repair</p>)
           : ''
         }
         {
           (
             (repairFormValues.deviceMake) &&
             repairFormValues.deviceModel &&
-            repairFormValues.issue &&
-            repairFormValues.issue !== 'default' &&
-            devices[repairFormValues.deviceModel][repairFormValues.issue].warranty
+            repairFormValues.deviceIssue &&
+            repairFormValues.deviceIssue !== 'default' &&
+            devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].warranty
           )
-          ? (<p id="warranty-text" style={{ fontSize: '1.5em' }}><strong>{devices[repairFormValues.deviceModel][repairFormValues.issue].warranty}</strong> warranty</p>)
+          ? (<p id="warranty-text" style={{ fontSize: '1.5em' }}><strong>{devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].warranty}</strong> warranty</p>)
           : ''
         }
         {
           (
             (repairFormValues.deviceMake) &&
             repairFormValues.deviceModel &&
-            repairFormValues.issue &&
-            repairFormValues.issue !== 'default' &&
-            devices[repairFormValues.deviceModel][repairFormValues.issue].duration
+            repairFormValues.deviceIssue &&
+            repairFormValues.deviceIssue !== 'default' &&
+            devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].duration
           )
-          ? (<p id="repairtime-text" style={{ fontSize: '1.2em', marginBottom: '0.5em' }}>Estimated <strong>{devices[repairFormValues.deviceModel][repairFormValues.issue].duration}</strong> repair time</p>)
+          ? (<p id="repairtime-text" style={{ fontSize: '1.2em', marginBottom: '0.5em' }}>Estimated <strong>{devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].duration}</strong> repair time</p>)
           : ''
         }
         <NetlifyForm formName="repair-form" formValues={repairFormValues} postSubmit={postSubmit} id="repair-form" name="repair-form">
           <input name="form-name" type="hidden" value="repair-form" />
-          <div className="field">
             <div className="field">
               <div className="select is-info is-rounded">
                 <select id="select-device" value={repairFormValues.deviceMake} name="deviceMake" onChange={handleChange} required>
@@ -120,11 +119,11 @@ export default function Form({ make }) {
             <input name="deviceModel" type="hidden" value={repairFormValues.deviceModel} />
             <input name="deviceIssue" type="hidden" value={repairFormValues.deviceIssue} />
             <input name="deviceHomeButtonColor" type="hidden" value={repairFormValues.deviceHomeButtonColor} />
-            <div>
+            <div className="field">
               {
                 repairFormValues.deviceMake !== 'default'
                   ? (
-                    <div className="field">
+                    <div>
                       <div className="select is-info is-rounded">
                         <select value={ repairFormValues.deviceModel } onChange={(e)=>setRepairFormValues({ ...repairFormValues, deviceModel: e.target.value })}>
                           <option value="default" disabled>
@@ -301,7 +300,6 @@ export default function Form({ make }) {
               ? (
                 <div className="field">
                   <div className="select is-danger is-rounded" style={{ borderRadius: '3em' }}>
-                    {/* <input style={{ display: 'none' }} type="text" name="issue" id="issue" value={repairFormValues.issue} /> */}
                     <select value={repairFormValues.deviceIssue} onChange={(e)=>setRepairFormValues({ ...repairFormValues, deviceIssue: e.target.value })} required>
                       <option value="default" disabled>
                         Select Problem
@@ -386,7 +384,6 @@ export default function Form({ make }) {
               )
               : null
             }
-          </div>
           <hr />
           <h2 className="title is-5 has-text-weight-light">Contact info <FontAwesomeIcon icon={faUsers} style={{ height: '1em', marginLeft: '0.3em' }} /></h2>
           <div className="field">
