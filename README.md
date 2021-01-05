@@ -1,7 +1,7 @@
 # GelatoTech
 [GelatoTech.com](https://gelatotech.com)
 
-[Staging Preview](https://react-gelatotech.netlify.app/)
+[Staging Preview](https://gelatotech-staging.netlify.app/)
 
 ## Installation
 
