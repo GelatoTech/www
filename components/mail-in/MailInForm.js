@@ -42,7 +42,7 @@ export default function MailIn({ serviceType, repairType }) {
       return alert('You must accept the terms and conditions before submitting.')
     }
     
-    router.push(`/mail-in/diagnostic-fee${serviceType==='on-demand' ? '?on-demand=true' : ''}`);
+    router.push(`/mail-in/diagnostic-fee${serviceType==='onDemand' ? '?onDemand=true' : ''}`);
   }
 
   useEffect(() => {
@@ -53,7 +53,7 @@ export default function MailIn({ serviceType, repairType }) {
   return(
     <section className="section" id="repair">
       <div className=" form-container container has-text-centered">
-        <i><h1 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">{serviceType === 'on-demand' ? 'Pickup' : 'Mail-In'} Form</h1></i>
+        <i><h1 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">{serviceType === 'onDemand' ? 'Pickup' : 'Mail-In'} Form</h1></i>
         {/* <h2 className="subtitle" data-aos="fade-up">Pick your device model and problem.</h2> */}
         <NetlifyForm formName="mail-in-form" formValues={repairFormValues} postSubmit={postSubmit} id="mail-in-form" name="mail-in-form">
           {/* <input name="form-name" type="hidden" defaultValue="repair-form" /> */}
@@ -105,7 +105,7 @@ export default function MailIn({ serviceType, repairType }) {
           <input type="hidden" name="pickupDate" value={repairFormValues.pickupDate} />
           <input type="hidden" name="pickupTime" value={repairFormValues.pickupTime} />
           {
-            serviceType === 'on-demand'
+            serviceType === 'onDemand'
               ? (
                 <>
                   <hr />

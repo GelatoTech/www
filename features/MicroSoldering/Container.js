@@ -75,9 +75,9 @@ export default function MicroSoldering() {
         <div className="tabs is-toggle" style={{ marginBottom: '4em' }}>
           <ul>
             <li 
-              className={`${service === 'mail-in' ? 'is-active' : ''}`}
+              className={`${service === 'mailIn' ? 'is-active' : ''}`}
               onClick={() => {
-                setService('mail-in');
+                setService('mailIn');
               }}
               style={styles.tabLI}
             >
@@ -90,9 +90,9 @@ export default function MicroSoldering() {
               </a>
             </li>
             <li 
-              className={`${service === 'on-demand' ? 'is-active' : ''}`}
+              className={`${service === 'onDemand' ? 'is-active' : ''}`}
               onClick={() => {
-                setService('on-demand');
+                setService('onDemand');
               }}
               style={styles.tabLI}
             >
@@ -106,7 +106,7 @@ export default function MicroSoldering() {
         </div>
       </div>
       {
-        service === 'mail-in'
+        service === 'mailIn'
           ? (
             <div style={{marginTop: '3em', overflow: 'scroll'}}>
               <MailInSteps step={0} />
