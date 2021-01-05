@@ -5,7 +5,7 @@ import spinner from '../../public/images/spinner.gif';
 
 // pk_test_2Cjx3du4k79QEq53UnOjVsNJ00iGsDQY8O
 // pk_live_lpxMrRsh0fd6Lu9mIH7X2Wxb005L2828aV
-const stripePromise = loadStripe('pk_live_lpxMrRsh0fd6Lu9mIH7X2Wxb005L2828aV');
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE);
 
 export default function DiagnosticFee() {
 
@@ -16,7 +16,7 @@ export default function DiagnosticFee() {
     const stripe = await stripePromise;
     const { error } = await stripe.redirectToCheckout({
       lineItems: [{
-        price: 'price_1HzDwFKzes2Vr1ZLkCvzWdMH', // price_1HzFXEKzes2Vr1ZLDgUnjWdF (TEST) | price_1HzDwFKzes2Vr1ZLkCvzWdMH (PROD)
+        price: process.env.NEXT_PUBLIC_STRIPE_ITEM, // price_1HzFXEKzes2Vr1ZLDgUnjWdF (TEST) | price_1HzDwFKzes2Vr1ZLkCvzWdMH (PROD)
         quantity: 1,
       }],
       mode: 'payment',
