@@ -23,14 +23,14 @@ export default function MicroSoldering() {
   return(
     <div>
       <Head>
-        <title>Micro Soldering Services - San Francisco | Gelatotech</title>
+        <title>Micro Soldering Service - iPhone & MacBook Repair in San Francisco | Gelatotech</title>
 
         {/* HTML Meta Tags */}
         <meta name="description" content="On-demand and mail-in iPhone/MacBook micro soldering services." />
         <meta name="keywords" content="motherboard, solder, soldering, micro soldering, ipad, ipad pro, ipad mini, screen repair, battery replacement, fix, on-demand, on demand, driver, technician, fast, quick, San Francisco, Bay Area, CA, sf" />
 
         {/* Google / Search Engine Tags */}
-        <meta itemProp="name" content="Micro soldering services - San Francisco | Gelatotech" />
+        <meta itemProp="name" content="Micro Soldering Service - iPhone & MacBook Repair in San Francisco | Gelatotech" />
         <meta itemProp="description" content="On-demand and mail-in iPhone/MacBook micro soldering services." />
         <meta itemProp="image" content="images/micro-soldering.jpg" />
 
