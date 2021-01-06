@@ -7,6 +7,7 @@ import TrustedBy from '../../components/TrustedBy';
 import scrollToSection from '../../helpers/scrollToSection';
 import AOS from 'aos';
 const ReactRotatingText = require('react-rotating-text');
+import WhyUs from '../../components/microsoldering/WhyUs';
 import MailInForm from '../../components/mail-in/MailInForm';
 import MailInSteps from '../../components/mail-in/MailInSteps';
 
@@ -96,10 +97,11 @@ export default function MicroSoldering() {
         </div>
       </section>
       <TrustedBy />
-      <div id="serviceSelector" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '3em', flexDirection: 'column' }}>
+      <WhyUs />
+      <div id="serviceSelector" style={{ backgroundColor: 'gainsboro', display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '2.7em', flexDirection: 'column' }}>
         <h1 className="heading" style={{ fontSize: '1em', marginBottom: '1em' }}>Select service</h1>
         <div className="is-hidden-mobile">
-          <div className="tabs is-toggle" style={{ marginBottom: '4em' }}>
+          <div className="tabs is-toggle" style={{ marginBottom: '4em',  backgroundColor: 'white', borderRadius: '6px' }}>
             <ul>
               <li 
                 className={`${service === 'mailIn' ? 'is-active' : ''}`}
