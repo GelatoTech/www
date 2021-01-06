@@ -6,6 +6,7 @@ import { faCar, faEnvelope, faScrewdriver } from '@fortawesome/free-solid-svg-ic
 import TrustedBy from '../../components/TrustedBy';
 import scrollToSection from '../../helpers/scrollToSection';
 import AOS from 'aos';
+const ReactRotatingText = require('react-rotating-text');
 import MailInForm from '../../components/mail-in/MailInForm';
 import MailInSteps from '../../components/mail-in/MailInSteps';
 
@@ -38,16 +39,41 @@ export default function MicroSoldering() {
       <section className="hero" id="hero">
         <div className="hero-body container">
           <h1 
-            className="header-title" 
+            className="header-title is-hidden-mobile" 
             style={{ 
               fontWeight: 'bold', 
               fontSize: '3em',
-              marginLeft: 0, 
-              paddingLeft: 0 
           }}>
             iPhone/MacBook Micro Soldering
           </h1>
-          <h2 className="subtitle" style={{ textAlign: 'center' }}>
+          <h1 
+            className="header-title is-hidden-tablet is-hidden-desktop"
+            style={{ 
+              fontWeight: 'bold', 
+              fontSize: '3em',
+              marginBottom: '-1.8em',
+              width: '100%',
+             }}
+          >
+            Micro Soldering
+          </h1>
+          <h1 
+            className="header-title is-hidden-desktop is-hidden-tablet"
+            style={{
+              marginBottom: '-1em',
+            }}
+          >
+            <ReactRotatingText style={{ fontSize: '2em' }} 
+              items={[
+                'iPhone', 
+                'MacBook', 
+                'Motherboard', 
+                'Water Damage', 
+                'Data Recovery',
+              ]} 
+            />
+           </h1>
+          <h2 className="subtitle is-hidden-mobile" style={{ textAlign: 'center' }}>
             Motherboard • Water Damage • Data Recovery
           </h2>
         </div>
@@ -72,6 +98,41 @@ export default function MicroSoldering() {
       <TrustedBy />
       <div id="serviceSelector" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: '3em', flexDirection: 'column' }}>
         <h1 className="heading" style={{ fontSize: '1em', marginBottom: '1em' }}>Select service</h1>
+        <div className="is-hidden-mobile">
+          <div className="tabs is-toggle" style={{ marginBottom: '4em' }}>
+            <ul>
+              <li 
+                className={`${service === 'mailIn' ? 'is-active' : ''}`}
+                onClick={() => {
+                  setService('mailIn');
+                }}
+                style={styles.tabLI}
+              >
+                <a style={styles.tabA}>
+                  <FontAwesomeIcon icon={faEnvelope} style={{ width: '3em'}} />
+                  <span className="heading" style={{ fontSize: '1em' }}>
+                    Mail-In
+                  </span><hr style={{ width: '100%', height: '1px', margin: '0', marginBottom: '1em' }} />
+                  <span style={{ fontSize: "0.8em" }}>Send your device by mail to us for repair.</span>
+                </a>
+              </li>
+              <li 
+                className={`${service === 'onDemand' ? 'is-active' : ''}`}
+                onClick={() => {
+                  setService('onDemand');
+                }}
+                style={styles.tabLI}
+              >
+                <a style={styles.tabA}>
+                  <FontAwesomeIcon icon={faCar} style={{ width: '3em'}} />
+                  <span className="heading" style={{ fontSize: '1em' }}>FREE Pickup</span><hr style={{ width: '100%', height: '1px', margin: '0', marginBottom: '1em' }} />
+                  <span style={{ fontSize: "0.8em" }}>Our <strong>San Francisco</strong> technicians drive to you.</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="is-hidden-tablet is-hidden-desktop">
         <div className="tabs is-toggle" style={{ marginBottom: '4em' }}>
           <ul>
             <li 
@@ -79,14 +140,13 @@ export default function MicroSoldering() {
               onClick={() => {
                 setService('mailIn');
               }}
-              style={styles.tabLI}
+              style={{ width: '10em' }}
             >
               <a style={styles.tabA}>
                 <FontAwesomeIcon icon={faEnvelope} style={{ width: '3em'}} />
                 <span className="heading" style={{ fontSize: '1em' }}>
                   Mail-In
-                </span><hr style={{ width: '100%', height: '1px', margin: '0', marginBottom: '1em' }} />
-                <span style={{ fontSize: "0.8em" }}>Send your device by mail to us for repair.</span>
+                </span>
               </a>
             </li>
             <li 
@@ -94,15 +154,15 @@ export default function MicroSoldering() {
               onClick={() => {
                 setService('onDemand');
               }}
-              style={styles.tabLI}
+              style={{ width: '10em' }}
             >
-               <a style={styles.tabA}>
+              <a style={styles.tabA}>
                 <FontAwesomeIcon icon={faCar} style={{ width: '3em'}} />
-                <span className="heading" style={{ fontSize: '1em' }}>FREE Pickup</span><hr style={{ width: '100%', height: '1px', margin: '0', marginBottom: '1em' }} />
-                <span style={{ fontSize: "0.8em" }}>Our <strong>San Francisco</strong> technicians drive to you.</span>
+                <span className="heading" style={{ fontSize: '1em' }}>FREE Pickup</span>
               </a>
             </li>
-          </ul>
+            </ul>
+          </div>
         </div>
       </div>
       {

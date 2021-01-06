@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 #hero {
   background: url("../images/micro-soldering-bg.jpg");
   background-repeat: no-repeat;
@@ -7,9 +10,13 @@
 @media only screen and (max-width: 800px) {
   #hero {
     color: white;
-    background: url("../images/mail-in.jpeg");
+    background: url("../images/micro-soldering-bg-2.jpg");
     /* margin-left: 2rem; */
-    margin-bottom: -4rem;
+    margin-top: -2rem;
+    font-size: smaller;
+  }
+  .header-title {
+    margin-top: '1em'
   }
 }
 #hero h1 {
