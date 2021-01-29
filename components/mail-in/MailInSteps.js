@@ -1,13 +1,35 @@
+import ReactTooltip from 'react-tooltip';
+
 export default function MailInSteps(props) {
 
   const steps = [
-    'Submit Mail-In Form', 
-    '$40 Diagnostic Fee', 
-    'Mail Your Device', 
-    'Get Repair Estimate', 
-    'Device Repaired', 
-    'Pay Invoice', 
-    'Receive Device'
+    { 
+      title: 'Submit Mail-In Form', 
+      tooltip: `Fill out the Mail-On Form. <br />Make sure all information is correct and <br />write a clear description of the device problem.`}, 
+    { 
+      title: '$40 Diagnostic Fee', 
+      tooltip: `We first run a diagnostic test to find the problem with your device. <br />Once we find the problem, we will contact you & tell you the cost of the repair. <br />If you approve the repair cost, we will put the $40 diagnostic fee towards your repair. <br />If you disapprove the repair cost, we will ship back your device and only charge you $40 for the diagnostic fee.`
+    }, 
+    { 
+      title: 'Mail Your Device', 
+      tooltip: `Once you ship your device to us, <br />we will contact you to confirm your mail-in device repair.`
+    }, 
+    { 
+      title: 'Get Repair Estimate', 
+      tooltip: `Once we do the diagnostic test and find the problems. <br />We will contact you and give you an estimate on your device repair.`
+    }, 
+    { 
+      title: 'Device Repaired', 
+      tooltip: `Once the repair is done, we will test your device <br />to make sure everything works before shipping back.`
+    }, 
+    { 
+      title: 'Pay Invoice', 
+      tooltip: `After the repair & test is done, we will send you an Invoice via Stripe. <br />We also accept Bitcoin for payment if you prefer to pay with crypto.`
+    }, 
+    { 
+      title: 'Receive Device', 
+      tooltip: `After we receive the payment, we will ship your device same-day <br/>and provide you a shipping tracking number. <br />Once you receive your device, make sure to test everything and reach out to us if there is any problem.`
+    },
   ];
 
   return (
@@ -19,8 +41,12 @@ export default function MailInSteps(props) {
             return (
               <li 
                 key={i}
+                data-tip={step.tooltip}
                 style={{ width: '8em' }}
-                className={(props.step === i) ? 'is-active' : null}>{step}</li>
+                className={(props.step === i) ? 'is-active' : null}>
+                  <ReactTooltip insecure multiline clickable />
+                  {step.title}
+                </li>
             )
           })
         }

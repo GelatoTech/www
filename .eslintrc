@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "semistandard",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react"
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "videojs": true,
+    "io": true,
+    "Hls": true,
+    "Peer": true,
+  },
+  "parser": "@babel/eslint-parser"
+}

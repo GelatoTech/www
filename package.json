@@ -32,6 +32,7 @@
     "react-rotating-text": "^1.4.1",
     "react-scroll": "^1.8.1",
     "react-ssg-netlify-forms": "^1.0.2",
+    "react-tooltip": "^4.2.13",
     "sass": "^1.30.0"
   },
   "devDependencies": {
