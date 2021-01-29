@@ -11,6 +11,9 @@ $grey-light: #ededed;
     background-color: $grey-light;
   }
 }
+.tooltip {
+  width: 15rem;
+}
 .multi-steps{
   display: table;
   table-layout: fixed;
