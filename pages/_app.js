@@ -39,6 +39,7 @@ export default function App({ Component, pageProps }) {
 
     // LinkedIn Insight
     LinkedInTag.init(process.env.NEXT_PUBLIC_LINKEDIN_PARTNER_ID, 'dc');
+    LinkedInTag.track(process.env.NEXT_PUBLIC_LINKEDIN_CONVERSION_ID);
 
     router.events.on('routeChangeComplete', () => {
       window.scroll({
