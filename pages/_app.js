@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import ReactGA from 'react-ga';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
+import FacebookPixel from '../components/FacebookPixel';
 import '../public/stylesheets/bulma.min.css';
 import '../public/stylesheets/main.css';
 import '../public/stylesheets/phone-repair.css'
@@ -10,7 +11,7 @@ import '../public/stylesheets/booking.css'
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import 'aos/dist/aos.css';
-import '../public/stylesheets/stepper.scss';
+import '../public/stylesheets/stepper.css';
 
 // import '../public/stylesheets/battery.css';
 // import '../public/stylesheets/booking.css';
@@ -51,7 +52,9 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Nav />
       <div ref={useRef("customer-chat")}></div>
-      <Component {...pageProps} />
+      <FacebookPixel>
+        <Component {...pageProps} />
+      </FacebookPixel>
       <MessengerCustomerChat
         pageId="1848657532048801"
         appId="gelato"
