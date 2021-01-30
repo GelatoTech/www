@@ -4,6 +4,7 @@ import Head from 'next/head';
 import ReactGA from 'react-ga';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import FacebookPixel from '../components/FacebookPixel';
+import LinkedInTag from 'react-linkedin-insight';
 import '../public/stylesheets/bulma.min.css';
 import '../public/stylesheets/main.css';
 import '../public/stylesheets/phone-repair.css'
@@ -35,6 +36,9 @@ export default function App({ Component, pageProps }) {
     // Google Analytics
     ReactGA.initialize('UA-121085071-1'); // GA ID
     ReactGA.pageview(window.location.pathname + window.location.search);
+
+    // LinkedIn Insight
+    LinkedInTag.init(process.env.NEXT_PUBLIC_LINKEDIN_PARTNER_ID, 'dc');
 
     router.events.on('routeChangeComplete', () => {
       window.scroll({
