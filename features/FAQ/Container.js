@@ -68,7 +68,7 @@ export default function FAQ() {
         <ul className="c-faqs">
           <li className="c-faq">
             <span className="c-faq__title">How long does it take to set me up with a technician?</span>
-            <div className="c-faq__answer">Once you book your appointment <a href="book.html">here</a> we'll confirm your
+            <div className="c-faq__answer">Once you book your appointment <a href="/#repair">here</a> we'll confirm your
               appointment in 1 hour or less</div>
           </li>
           <li className="c-faq">
