@@ -8,6 +8,7 @@ import scrollToSection from '../../helpers/scrollToSection';
 import AOS from 'aos';
 const ReactRotatingText = require('react-rotating-text');
 import WhyUs from '../../components/microsoldering/WhyUs';
+import Prices from '../../components/microsoldering/Prices';
 import MailInForm from '../../components/mail-in/MailInForm';
 import MailInSteps from '../../components/mail-in/MailInSteps';
 
@@ -181,6 +182,7 @@ export default function MicroSoldering() {
           ? (<MailInForm serviceType={service} repairType={'micro-soldering'} />)
           : ''
       }
+      <Prices />
       <section>
         <div className="section" id="get-started"
           style={{
