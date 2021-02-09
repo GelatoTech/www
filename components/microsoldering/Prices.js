@@ -189,7 +189,7 @@ export default function SimpleAccordion() {
                               <AccordionSummary
                                 expandIcon={<ExpandMoreIcon />}
                               >
-                                <Typography className={classes.heading}>{name} <span class="has-text-grey" style={{ marginLeft: '0.5em' }}>{price}</span></Typography>
+                                <Typography style={{ fontSize: '0.9em' }}>{name} <span class="has-text-grey" style={{ marginLeft: '0.5em' }}>{price}</span></Typography>
                               </AccordionSummary>
                               <AccordionDetails>
                                 <Typography style={{ fontSize: '0.8em' }}>
