@@ -6,7 +6,26 @@ const devicesWithHomeButton = [
   "6splus",
   "6s",
   "6plus",
-  "6"
+  "6",
+  "ipadmini",
+  "ipadmini2",
+  "ipadmini3",
+  "ipadmini4",
+  "ipadmini5",
+  "ipad2",
+  "ipad3",
+  "ipad4",
+  "ipad5",
+  "ipad6",
+  "ipad7",
+  "ipadair",
+  "ipadair2",
+  "ipadair3",
+  "ipadpro9",
+  "ipadpro10",
+  "ipadpro11",
+  "ipadpro121",
+  "ipadpro122"
 ];
 
 const devices = {
@@ -316,7 +335,7 @@ const devices = {
           price: "$300-$450",
           warranty: "90 day",
           duration: "2-3 business days",
-      }, //ipad pro
+      },
   },
   "ipadpro9": {
       screen: {
@@ -340,7 +359,7 @@ const devices = {
           duration: "2-3 business days",
       },
   },
-  "ipadpro2": {
+  "ipadpro10": {
       screen: {
           price: "$350",
           warranty: "90 day",
@@ -362,7 +381,7 @@ const devices = {
           duration: "2-3 business days",
       },
   },
-  "ipadpro3": {
+  "ipadpro11": {
       screen: {
           price: "$350",
           warranty: "90 day",
@@ -384,7 +403,7 @@ const devices = {
           duration: "2-3 business days",
       },
   },
-  "ipadpro10": {
+  "ipadpro121": {
       screen: {
           price: "$280",
           warranty: "90 day",
@@ -406,7 +425,7 @@ const devices = {
           duration: "2-3 business days",
       },
   },
-  "ipadpro121": {
+  "ipadpro122": {
       screen: {
           price: "$320",
           warranty: "90 day",
@@ -428,7 +447,7 @@ const devices = {
           duration: "2-3 business days",
       },
   },
-  "ipadpro122": {
+  "ipadpro123": {
       screen: {
           price: "$500",
           warranty: "90 day",
@@ -441,28 +460,6 @@ const devices = {
       },
       charging: {
           price: "$230",
-          warranty: "90 day",
-          duration: "3 hour",
-      },
-      water: {
-          price: "$600-$680",
-          warranty: "90 day",
-          duration: "2-3 business days",
-      },
-  },
-  "ipadpro123": {
-      screen: {
-          price: "$400",
-          warranty: "90 day",
-          duration: "1 hour",
-      },
-      battery: {
-          price: "$330",
-          warranty: "90 day",
-          duration: "1 hour",
-      },
-      charging: {
-          price: "$330",
           warranty: "90 day",
           duration: "3 hour",
       },
