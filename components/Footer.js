@@ -37,6 +37,7 @@ export default function Footer() {
                 <li><a className="footer-item" onClick={() => { router.push('/microsoldering') }} style={{color: '#A9A9A9'}}>Micro soldering</a></li>
                 <li><a className="footer-item" onClick={() => { router.push('/?m=iphone#repair') }} style={{color: '#A9A9A9'}}>iPhone Repair</a></li>
                 <li><a className="footer-item" onClick={() => { router.push('/ipad') }} style={{color: '#A9A9A9'}}>iPad Repair</a></li>
+                <li><a className="footer-item" onClick={() => { router.push('/samsung') }} style={{color: '#A9A9A9'}}>Samsung</a></li>
                 <li><a className="footer-item" onClick={() => { router.push('/google-pixel') }} style={{color: '#A9A9A9'}}>Google Pixel Repair</a></li>
                 <li><a className="footer-item" onClick={() => { router.push('/faq') }} style={{color: '#A9A9A9'}}>FAQ</a></li>
                 <li><a className="footer-item" onClick={() => { router.push('/about') }} style={{color: '#A9A9A9'}}>About us</a></li>

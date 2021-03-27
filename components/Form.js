@@ -7,7 +7,7 @@ import { faUsers, faUser, faEnvelope, faHome, faPhone, faClock } from '@fortawes
 
 import scrollToSection from '../helpers/scrollToSection';
 import formatDate from '../helpers/formatDate';
-import { devices, devicesWithHomeButton } from '../public/javascripts/devices';
+import { devices, devicesWithHomeButton, samsungDevices } from '../public/javascripts/devices';
 
 
 
@@ -110,6 +110,9 @@ export default function Form({ make }) {
                   <option value="ipad">
                     iPad
                   </option>
+                  <option value="samsung">
+                    Samsung
+                  </option>
                   <option value="google">
                     Google
                   </option>
@@ -183,41 +186,6 @@ export default function Form({ make }) {
                               : ''
                           }
                           {
-                            repairFormValues.deviceMake == "google"
-                              ? (
-                                <>
-                                  <option value="googlePixel">
-                                    Google Pixel
-                                  </option>
-                                  <option value="googlePixelXL">
-                                    Google Pixel XL
-                                  </option>
-                                  <option value="googlePixel2">
-                                    Google Pixel 2
-                                  </option>
-                                  <option value="googlePixel2XL">
-                                    Google Pixel 2 XL
-                                  </option>
-                                  <option value="googlePixel3">
-                                    Google Pixel 3
-                                  </option>
-                                  <option value="googlePixel3XL">
-                                    Google Pixel 3 XL
-                                  </option>
-                                  <option value="googlePixel3A">
-                                    Google Pixel 3A
-                                  </option>
-                                  <option value="googlePixel4">
-                                    Google Pixel 4
-                                  </option>
-                                  <option value="googlePixel4XL">
-                                    Google Pixel 4 XL
-                                  </option>
-                                </>
-                              )
-                              : ''
-                          }
-                          {
                             repairFormValues.deviceMake == "ipad"
                               ? (
                                 <>
@@ -283,6 +251,111 @@ export default function Form({ make }) {
                                   </option>
                                   <option value="ipadpro124">
                                     iPad Pro 12.9-inch (4th generation) (A2229)
+                                  </option>
+                                </>
+                              )
+                              : ''
+                          }
+                          {
+                            repairFormValues.deviceMake == "google"
+                              ? (
+                                <>
+                                  <option value="googlePixel">
+                                    Google Pixel
+                                  </option>
+                                  <option value="googlePixelXL">
+                                    Google Pixel XL
+                                  </option>
+                                  <option value="googlePixel2">
+                                    Google Pixel 2
+                                  </option>
+                                  <option value="googlePixel2XL">
+                                    Google Pixel 2 XL
+                                  </option>
+                                  <option value="googlePixel3">
+                                    Google Pixel 3
+                                  </option>
+                                  <option value="googlePixel3XL">
+                                    Google Pixel 3 XL
+                                  </option>
+                                  <option value="googlePixel3A">
+                                    Google Pixel 3A
+                                  </option>
+                                  <option value="googlePixel4">
+                                    Google Pixel 4
+                                  </option>
+                                  <option value="googlePixel4XL">
+                                    Google Pixel 4 XL
+                                  </option>
+                                </>
+                              )
+                              : ''
+                          }
+                          {
+                            repairFormValues.deviceMake == "samsung"
+                              ? (
+                                <>
+                                  <optgroup label="Galaxy S Series"></optgroup>
+                                  <option value="S20FE5G">
+                                    S20 FE 5G
+                                  </option>
+                                  <option value="S20Ultra5g">
+                                    S20 Ultra 5g
+                                  </option>
+                                  <option value="S20Plus5g">
+                                    S20 Plus 5g
+                                  </option>
+                                  <option value="S205G">
+                                    S20 5G
+                                  </option>
+                                  <option value="S10Lite">
+                                    S10 Lite
+                                  </option>
+                                  <option value="S105G">
+                                    S10 5G
+                                  </option>
+                                  <option value="S10Plus">
+                                    S10 Plus
+                                  </option>
+                                  <option value="S10">
+                                    S10
+                                  </option>
+                                  <option value="S10e">
+                                    S10e
+                                  </option>
+                                  <option value="S9Plus">
+                                    S9 Plus 
+                                  </option>
+                                  <option value="S9">
+                                    S9 
+                                  </option>
+                                  <option value="S8Plus">
+                                    S8 Plus
+                                  </option>
+                                  <option value="S8">
+                                    S8
+                                  </option>
+                                  <optgroup label="Galaxy Note Series"></optgroup>
+                                  <option value="Note20Ultra">
+                                    Note 20 Ultra
+                                  </option>
+                                  <option value="Note205G">
+                                    Note 20 5G
+                                  </option>
+                                  <option value="Note10Plus">
+                                    Note 10 Plus
+                                  </option>
+                                  <option value="Note10Lite">
+                                    Note 10 Lite
+                                  </option>
+                                  <option value="Note10">
+                                    Note 10
+                                  </option>
+                                  <option value="Note9">
+                                    Note 9
+                                  </option>
+                                  <option value="Note8">
+                                    Note 8
                                   </option>
                                 </>
                               )
@@ -383,6 +456,62 @@ export default function Form({ make }) {
                 </div>
               )
               : null
+            }
+            {
+              (samsungDevices.includes(repairFormValues.deviceModel)) && (
+                <div className="field" id="samsungColor">
+                  <div className="select is-rounded">
+                    <select value={repairFormValues.samsungColor} onChange={(e)=>setRepairFormValues({ ...repairFormValues, samsungColor: e.target.value })}>
+                      <option value="default" disabled>Select color</option>
+                      <option value="AlpineWhite">Alpine White</option>
+                      <option value="ArcticSilver">Arctic Silver</option>
+                      <option value="AuraBlack">Aura Black</option>
+                      <option value="AuraBlue">Aura Blue</option>
+                      <option value="AuraGlow">Aura Glow</option>
+                      <option value="AuraPink">Aura Pink</option>
+                      <option value="AuraWhite">Aura White</option>
+                      <option value="Blue">Blue</option>
+                      <option value="CanaryYellow">Canary Yellow</option>
+                      <option value="CeramicWhite">Ceramic White</option>
+                      <option value="ClodNavy">Clod Navy</option>
+                      <option value="CloudBlue">Cloud Blue</option>
+                      <option value="CloudLavender">Cloud Lavender</option>
+                      <option value="CloudMint">Cloud Mint</option>
+                      <option value="CloudNavy">Cloud Navy</option>
+                      <option value="CloudOrange">Cloud Orange</option>
+                      <option value="CloudPink">Cloud Pink</option>
+                      <option value="CloudRed">Cloud Red</option>
+                      <option value="CloudSilver">Cloud Silver</option>
+                      <option value="CloudWhite">Cloud White</option>
+                      <option value="CloudBlue">Cloud Blue</option>
+                      <option value="CoralBlue">Coral Blue</option>
+                      <option value="CosmicBlack">Cosmic Black</option>
+                      <option value="CosmicGrey">Cosmic Grey</option>
+                      <option value="CrownSilver">Crown Silver</option>
+                      <option value="FlamingoPink">Flamingo Pink</option>
+                      <option value="Gold">Gold</option>
+                      <option value="Grey">Grey</option>
+                      <option value="LilacPurple">Lilac Purple</option>
+                      <option value="MajesticBlack">Majestic Black</option>
+                      <option value="MapleGold">Maple Gold</option>
+                      <option value="MidnightBlack">Midnight Black</option>
+                      <option value="MysticBlack">Mystic Black</option>
+                      <option value="MysticBronze">Mystic Bronze</option>
+                      <option value="MysticGreen">Mystic Green</option>
+                      <option value="MysticWhite">Mystic White</option>
+                      <option value="MysticGray">Mystic Gray</option>
+                      <option value="Ocean">Ocean</option>
+                      <option value="OrchidGrey">Orchid Grey</option>
+                      <option value="PrismBlack">Prism Black</option>
+                      <option value="PrismBlue">Prism Blue</option>
+                      <option value="PrismGreen">Prism Green</option>
+                      <option value="PrismWhite">Prism White</option>
+                      <option value="RoyalGold">Royal Gold</option>
+                      <option value="SunriseGold">Sunrise Gold</option>
+                    </select>
+                  </div>
+                </div>
+              )
             }
           <hr />
           <h2 className="title is-5 has-text-weight-light">Contact info <FontAwesomeIcon icon={faUsers} style={{ height: '1em', marginLeft: '0.3em' }} /></h2>
