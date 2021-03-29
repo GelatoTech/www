@@ -20,6 +20,7 @@ export default function Form({ make }) {
     deviceModel: 'default',
     deviceIssue: 'default',
     deviceHomeButtonColor: 'default',
+    samsungColor: 'default',
     customerName: '',
     customerAddress: '',
     customerPhone: '',
