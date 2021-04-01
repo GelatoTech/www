@@ -28,29 +28,6 @@ const devicesWithHomeButton = [
   "ipadpro122"
 ];
 
-const samsungDevices = [
-    "S20FE5G",
-    "S20Ultra5g",
-    "S20Plus5g",
-    "S205G",
-    "S10Lite",
-    "S105G",
-    "S10Plus",
-    "S10",
-    "S10e",
-    "S9Plus",
-    "S9",
-    "S8Plus",
-    "S8",
-    "Note20Ultra",
-    "Note205G",
-    "Note10Plus",
-    "Note10Lite",
-    "Note10",
-    "Note9",
-    "Note8",
-];
-
 const devices = {
     "ipadmini": {
         screen: {
@@ -1054,6 +1031,14 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Cloud Navy",
+            "Cloud White",
+            "Cloud Mint",
+            "Cloud Orange",
+            "Cloud Red",
+            "Cloud Lavender",
+        ]
     },
     "S20Ultra5g": {
         screen: {
@@ -1076,6 +1061,10 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Cosmic Grey",
+            "Cosmic Black",
+        ]
     },
     "S20Plus5g": {
         screen: {
@@ -1098,6 +1087,13 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Aura Blue",
+            "Cloud White",
+            "Cloud Blue",
+            "Cosmic Grey",
+            "Cosmic Black",
+        ]
     },
     "S205G": {
         screen: {
@@ -1120,6 +1116,13 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Cloud Pink",
+            "Cosmic Grey",
+            "Cloud Blue",
+            "Cosmic Black",
+            "Cloud White",
+        ]
     },
     "S10Lite": {
         screen: {
@@ -1142,6 +1145,11 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Prism White",
+            "Prism Blue",
+            "Prism Black",
+        ]
     },
     "S105G": {
         screen: {
@@ -1164,6 +1172,11 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Majestic Black",
+            "Crown Silver",
+            "Royal Gold",
+        ]
     },
     "S10Plus": {
         screen: {
@@ -1186,6 +1199,14 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Ceramic White",
+            "Prism Blue",
+            "Prism Green",
+            "Prism Black",
+            "Prism White",
+            "Flamingo Pink",
+        ]
     },
     "S10": {
         screen: {
@@ -1208,6 +1229,13 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Prism Black",
+            "Prism White",
+            "Prism Green",
+            "Flamingo Pink",
+            "Prism Blue",
+        ]
     },
     "S10e": {
         screen: {
@@ -1230,6 +1258,14 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Prism Black",
+            "Prism White",
+            "Prism Green",
+            "Canary Yellow",
+            "Flamingo Pink",
+            "Prism Blue",
+        ]
     },
     "S9Plus": {
         screen: {
@@ -1252,6 +1288,13 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Sunrise Gold",
+            "Midnight Black",
+            "Lilac Purple",
+            "Grey",
+            "Coral Blue",
+        ]
     },
     "S9": {
         screen: {
@@ -1274,6 +1317,13 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Sunrise Gold",
+            "Midnight Black",
+            "Lilac Purple",
+            "Grey",
+            "Coral Blue",
+        ]
     },
     "S8Plus": {
         screen: {
@@ -1296,6 +1346,13 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Midnight Black",
+            "Grey",
+            "Maple Gold",
+            "Coral Blue",
+            "Arctic Silver",
+        ]
     },
     "S8": {
         screen: {
@@ -1318,6 +1375,14 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Grey",
+            "Gold",
+            "Coral Blue",
+            "Midnight Black",
+            "Maple Gold",
+            "Arctic Silver",
+        ]
     },
     "Note20Ultra": {
         screen: {
@@ -1340,6 +1405,11 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Mystic Bronze",
+            "Mystic Black",
+            "Mystic White",
+        ]
     },
     "Note205G": {
         screen: {
@@ -1362,6 +1432,11 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Mystic Green",
+            "Mystic Bronze",
+            "Mystic Gray",
+        ]
     },
     "Note10Plus": {
         screen: {
@@ -1384,6 +1459,11 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Aura Black",
+            "Aura White",
+            "Aura Glow",
+        ]
     },
     "Note10Lite": {
         screen: {
@@ -1406,6 +1486,10 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Aura Glow",
+            "Aura Black",
+        ]
     },
     "Note10": {
         screen: {
@@ -1428,6 +1512,12 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        color: [
+            "Aura Black",
+            "Aura Glow",
+            "Aura White",
+            "Aura Pink",
+        ]
     },
     "Note9": {
         screen: {
@@ -1450,6 +1540,11 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Cloud Silver",
+            "Alpine White",
+            "Ocean",
+        ]
     },
     "Note8": {
         screen: {
@@ -1472,6 +1567,14 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
+        colors: [
+            "Grey",
+            "Gold",
+            "Coral Blue",
+            "Midnight Black",
+            "Maple Gold",
+            "Arctic Silver",
+        ]
     },
 }
 
@@ -1479,4 +1582,4 @@ const devices = {
 
 
 
-export { devices, devicesWithHomeButton, samsungDevices }
+export { devices, devicesWithHomeButton }

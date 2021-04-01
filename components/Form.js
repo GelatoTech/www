@@ -7,7 +7,7 @@ import { faUsers, faUser, faEnvelope, faHome, faPhone, faClock } from '@fortawes
 
 import scrollToSection from '../helpers/scrollToSection';
 import formatDate from '../helpers/formatDate';
-import { devices, devicesWithHomeButton, samsungDevices } from '../public/javascripts/devices';
+import { devices, devicesWithHomeButton } from '../public/javascripts/devices';
 
 
 
@@ -20,7 +20,7 @@ export default function Form({ make }) {
     deviceModel: 'default',
     deviceIssue: 'default',
     deviceHomeButtonColor: 'default',
-    samsungColor: 'default',
+    color: 'default',
     customerName: '',
     customerAddress: '',
     customerPhone: '',
@@ -123,7 +123,7 @@ export default function Form({ make }) {
             <input name="deviceModel" type="hidden" value={repairFormValues.deviceModel} />
             <input name="deviceIssue" type="hidden" value={repairFormValues.deviceIssue} />
             <input name="deviceHomeButtonColor" type="hidden" value={repairFormValues.deviceHomeButtonColor} />
-            <input name="samsungColor" type="hidden" value={repairFormValues.samsungColor} />
+            <input name="color" type="hidden" value={repairFormValues.color} />
             <div className="field">
               {
                 repairFormValues.deviceMake !== 'default'
@@ -371,6 +371,43 @@ export default function Form({ make }) {
               }
             </div>
             {
+              (devicesWithHomeButton.includes(repairFormValues.deviceModel))
+              ? (
+                <div className="field" id="homeButton">
+                  <div className="select is-rounded">
+                    <select value={repairFormValues.deviceHomeButtonColor} onChange={(e)=>setRepairFormValues({ ...repairFormValues, deviceHomeButtonColor: e.target.value })}>
+                      <option value="default" disabled>
+                        Home Button Color
+                      </option>
+                      <option value="black">
+                        Black
+                      </option>
+                      <option value="white">
+                        White
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              )
+              : null
+            }
+            {
+              (devices[repairFormValues.deviceModel] && devices[repairFormValues.deviceModel]["colors"]) && (
+                <div className="field">
+                  <div className="select is-rounded">
+                    <select value={repairFormValues.color} onChange={(e)=>setRepairFormValues({ ...repairFormValues, color: e.target.value })}>
+                      <option value="default" disabled>Select color</option>
+                      {
+                        devices[repairFormValues.deviceModel]["colors"].map((color) => {
+                          return (<option value={color}>{color}</option>)
+                        })
+                      }
+                    </select>
+                  </div>
+                </div>
+              )
+            }
+            {
               repairFormValues.deviceModel !== 'default'
               ? (
                 <div className="field">
@@ -437,83 +474,6 @@ export default function Form({ make }) {
                   </div>
                 </div>
               ) : null
-            }
-            {
-              (devicesWithHomeButton.includes(repairFormValues.deviceModel))
-              ? (
-                <div className="field" id="homeButton">
-                  <div className="select is-rounded">
-                    <select value={repairFormValues.deviceHomeButtonColor} onChange={(e)=>setRepairFormValues({ ...repairFormValues, deviceHomeButtonColor: e.target.value })}>
-                      <option value="default" disabled>
-                        Home Button Color
-                      </option>
-                      <option value="black">
-                        Black
-                      </option>
-                      <option value="white">
-                        White
-                      </option>
-                    </select>
-                  </div>
-                </div>
-              )
-              : null
-            }
-            {
-              (samsungDevices.includes(repairFormValues.deviceModel)) && (
-                <div className="field">
-                  <div className="select is-rounded">
-                    <select value={repairFormValues.samsungColor} onChange={(e)=>setRepairFormValues({ ...repairFormValues, samsungColor: e.target.value })}>
-                      <option value="default" disabled>Select color</option>
-                      <option value="AlpineWhite">Alpine White</option>
-                      <option value="ArcticSilver">Arctic Silver</option>
-                      <option value="AuraBlack">Aura Black</option>
-                      <option value="AuraBlue">Aura Blue</option>
-                      <option value="AuraGlow">Aura Glow</option>
-                      <option value="AuraPink">Aura Pink</option>
-                      <option value="AuraWhite">Aura White</option>
-                      <option value="Blue">Blue</option>
-                      <option value="CanaryYellow">Canary Yellow</option>
-                      <option value="CeramicWhite">Ceramic White</option>
-                      <option value="ClodNavy">Clod Navy</option>
-                      <option value="CloudBlue">Cloud Blue</option>
-                      <option value="CloudLavender">Cloud Lavender</option>
-                      <option value="CloudMint">Cloud Mint</option>
-                      <option value="CloudNavy">Cloud Navy</option>
-                      <option value="CloudOrange">Cloud Orange</option>
-                      <option value="CloudPink">Cloud Pink</option>
-                      <option value="CloudRed">Cloud Red</option>
-                      <option value="CloudSilver">Cloud Silver</option>
-                      <option value="CloudWhite">Cloud White</option>
-                      <option value="CloudBlue">Cloud Blue</option>
-                      <option value="CoralBlue">Coral Blue</option>
-                      <option value="CosmicBlack">Cosmic Black</option>
-                      <option value="CosmicGrey">Cosmic Grey</option>
-                      <option value="CrownSilver">Crown Silver</option>
-                      <option value="FlamingoPink">Flamingo Pink</option>
-                      <option value="Gold">Gold</option>
-                      <option value="Grey">Grey</option>
-                      <option value="LilacPurple">Lilac Purple</option>
-                      <option value="MajesticBlack">Majestic Black</option>
-                      <option value="MapleGold">Maple Gold</option>
-                      <option value="MidnightBlack">Midnight Black</option>
-                      <option value="MysticBlack">Mystic Black</option>
-                      <option value="MysticBronze">Mystic Bronze</option>
-                      <option value="MysticGreen">Mystic Green</option>
-                      <option value="MysticWhite">Mystic White</option>
-                      <option value="MysticGray">Mystic Gray</option>
-                      <option value="Ocean">Ocean</option>
-                      <option value="OrchidGrey">Orchid Grey</option>
-                      <option value="PrismBlack">Prism Black</option>
-                      <option value="PrismBlue">Prism Blue</option>
-                      <option value="PrismGreen">Prism Green</option>
-                      <option value="PrismWhite">Prism White</option>
-                      <option value="RoyalGold">Royal Gold</option>
-                      <option value="SunriseGold">Sunrise Gold</option>
-                    </select>
-                  </div>
-                </div>
-              )
             }
           <hr />
           <h2 className="title is-5 has-text-weight-light">Contact info <FontAwesomeIcon icon={faUsers} style={{ height: '1em', marginLeft: '0.3em' }} /></h2>
