@@ -123,6 +123,7 @@ export default function Form({ make }) {
             <input name="deviceModel" type="hidden" value={repairFormValues.deviceModel} />
             <input name="deviceIssue" type="hidden" value={repairFormValues.deviceIssue} />
             <input name="deviceHomeButtonColor" type="hidden" value={repairFormValues.deviceHomeButtonColor} />
+            <input name="samsungColor" type="hidden" value={repairFormValues.samsungColor} />
             <div className="field">
               {
                 repairFormValues.deviceMake !== 'default'
@@ -460,7 +461,7 @@ export default function Form({ make }) {
             }
             {
               (samsungDevices.includes(repairFormValues.deviceModel)) && (
-                <div className="field" id="samsungColor">
+                <div className="field">
                   <div className="select is-rounded">
                     <select value={repairFormValues.samsungColor} onChange={(e)=>setRepairFormValues({ ...repairFormValues, samsungColor: e.target.value })}>
                       <option value="default" disabled>Select color</option>
