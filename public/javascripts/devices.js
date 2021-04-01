@@ -853,8 +853,67 @@ const devices = {
             duration: "2-3 business days",
         },
         backglass: {
-        duration: "3 hour",
-        price: "$180"
+            duration: "3 hour",
+            price: "$180"
+        }
+    },
+    "12mini": {
+        screen: {
+            price: "$415",
+            warranty: "Lifetime",
+            duration: "15 minutes",
+        },
+        battery: {
+            price: "$120",
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        charging: {
+            price: "$120",
+            warranty: "90 day",
+            duration: "30 minutes",
+        },
+        backglass: {
+            duration: "3 hour",
+            price: "$180"
+        }
+    },
+    "1212pro": {
+        screen: {
+            price: "$490",
+            warranty: "Lifetime",
+            duration: "15 minutes",
+        },
+        battery: {
+            price: "$120",
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        charging: {
+            price: "$140",
+            warranty: "90 day",
+            duration: "30 minutes",
+        },
+    },
+    "12proMax": {
+        screen: {
+            price: "$520",
+            warranty: "Lifetime",
+            duration: "15 minutes",
+        },
+        battery: {
+            price: "$140",
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        charging: {
+            price: "$140",
+            warranty: "90 day",
+            duration: "30 minutes",
+        },
+        backglass: {
+            duration: "3 hour",
+            price: "$200"
         }
     },
     "googlePixel": {
@@ -876,7 +935,7 @@ const devices = {
     },
     "googlePixelXL": {
         screen: {
-            price: "$140",
+            price: "$130",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -893,7 +952,7 @@ const devices = {
     },
     "googlePixel2": {
         screen: {
-            price: "$130",
+            price: "$140",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -910,7 +969,7 @@ const devices = {
     },
     "googlePixel2XL": {
         screen: {
-            price: "$220",
+            price: "$190",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -927,7 +986,7 @@ const devices = {
     },
     "googlePixel3": {
         screen: {
-            price: "$250",
+            price: "$180",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -944,7 +1003,7 @@ const devices = {
     },
     "googlePixel3XL": {
         screen: {
-            price: "$280",
+            price: "$190",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -961,7 +1020,7 @@ const devices = {
     },
     "googlePixel3A": {
         screen: {
-            price: "$200",
+            price: "$180",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -995,17 +1054,28 @@ const devices = {
     },
     "googlePixel4XL": {
         screen: {
-            price: "$280",
+            price: "$200",
             warranty: "90 day",
             duration: "1 hour",
         },
-        battery: {
-            price: "$75",
+    },
+    "googlePixel4a": {
+        screen: {
+            price: "$220",
             warranty: "90 day",
             duration: "1 hour",
         },
-        charging: {
-            price: "$65",
+    },
+    "googlePixel4a5g": {
+        screen: {
+            price: "$220",
+            warranty: "90 day",
+            duration: "1 hour",
+        },
+    },
+    "googlePixel5": {
+        screen: {
+            price: "$260",
             warranty: "90 day",
             duration: "1 hour",
         },

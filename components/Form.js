@@ -138,6 +138,15 @@ export default function Form({ make }) {
                             repairFormValues.deviceMake == "iphone"
                               ? (
                                 <>
+                                  <option value="12proMax">
+                                    iPhone 12 Pro Max
+                                  </option>
+                                  <option value="1212pro">
+                                    iPhone 12/12 Pro
+                                  </option>
+                                  <option value="12mini">
+                                    iPhone 12 Mini
+                                  </option>
                                   <option value="11proMax">
                                     iPhone 11 Pro Max
                                   </option>
@@ -288,6 +297,15 @@ export default function Form({ make }) {
                                   </option>
                                   <option value="googlePixel4XL">
                                     Google Pixel 4 XL
+                                  </option>
+                                  <option value="googlePixel4a">
+                                    Google Pixel 4a
+                                  </option>
+                                  <option value="googlePixel4a5g">
+                                    Google Pixel 4a 5g
+                                  </option>
+                                  <option value="googlePixel5">
+                                    Google Pixel 5
                                   </option>
                                 </>
                               )
