@@ -1512,7 +1512,7 @@ const devices = {
             warranty: "90 day",
             duration: "45 minutes",
         },
-        color: [
+        colors: [
             "Aura Black",
             "Aura Glow",
             "Aura White",
