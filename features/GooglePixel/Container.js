@@ -37,12 +37,12 @@ export default function GooglePixel() {
       <div className="hero-body">
         <div className="container has-text-centered">
           <h1 className="title is-1">
-            Mobile Google Pixel Repair
+            Mobile Google Pixel Repair at Your Location
           </h1>
         </div>
         <div className="container has-text-centered">
           <h2 className="subtitle is-6">
-            At your location
+            San Francisco, CA
           </h2>
           <a 
             className="button is-info is-large" 
