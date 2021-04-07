@@ -23,7 +23,6 @@ const devicesWithHomeButton = [
   "ipadair3",
   "ipadpro9",
   "ipadpro10",
-  "ipadpro11",
   "ipadpro121",
   "ipadpro122"
 ];
@@ -361,7 +360,7 @@ const devices = {
     },
     "ipadpro10": {
         screen: {
-            price: "$350",
+            price: "$260",
             warranty: "90 day",
             duration: "1 hour",
         },
