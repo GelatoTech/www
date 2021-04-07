@@ -248,7 +248,7 @@ export default function Form({ make }) {
                                   <option value="ipadpro10">
                                     iPad Pro (10.5-inch)(A1701, A1709)
                                   </option>
-                                  <option value="ipadpro3">
+                                  <option value="ipadpro11">
                                     iPad Pro 11-inch (A1980, A2013, A1934)
                                   </option>
                                   <option value="ipadpro121">
