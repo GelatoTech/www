@@ -568,7 +568,7 @@ const devices = {
             duration: "15 minutes",
         },
         charging: {
-            price: "$55",
+            price: "$50",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -634,7 +634,7 @@ const devices = {
             duration: "15 minutes",
         },
         charging: {
-            price: "$55",
+            price: "$60",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -644,7 +644,7 @@ const devices = {
             duration: "2-3 business days",
         },
         backglass: {
-        duration: "3 hour",
+            duration: "3 hour",
         price: "$140"
         }
     },
@@ -660,7 +660,7 @@ const devices = {
             duration: "15 minutes",
         },
         charging: {
-            price: "$55",
+            price: "$60",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -670,7 +670,7 @@ const devices = {
             duration: "2-3 business days",
         },
         backglass: {
-        duration: "3 hour",
+            duration: "3 hour",
         price: "$140"
         }
     },
@@ -686,7 +686,7 @@ const devices = {
             duration: "15 minutes",
         },
         charging: {
-            price: "$65",
+            price: "$75",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -696,7 +696,7 @@ const devices = {
             duration: "2-3 business days",
         },
         backglass: {
-        duration: "3 hour",
+            duration: "3 hour",
         price: "$150"
         }
     },
@@ -707,12 +707,12 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$65",
+            price: "$75",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$65",
+            price: "$75",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -722,7 +722,7 @@ const devices = {
             duration: "2-3 business days",
         },
         backglass: {
-        duration: "3 hour",
+            duration: "3 hour",
         price: "$150"
         }
     },
@@ -733,12 +733,12 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$65",
+            price: "$75",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$65",
+            price: "$75",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -748,7 +748,7 @@ const devices = {
             duration: "2-3 business days",
         },
         backglass: {
-        duration: "3 hour",
+            duration: "3 hour",
         price: "$150"
         }
     },
@@ -800,7 +800,7 @@ const devices = {
             duration: "2-3 business days",
         },
         backglass: {
-        duration: "3 hour",
+            duration: "3 hour",
         price: "$180"
         }
     },
@@ -816,7 +816,7 @@ const devices = {
             duration: "15 minutes",
         },
         charging: {
-            price: "$100",
+            price: "$120",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -837,12 +837,12 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$100",
+            price: "$120",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$100",
+            price: "$120",
             warranty: "90 day",
             duration: "30 minutes",
         },
