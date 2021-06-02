@@ -252,7 +252,7 @@ export default function SimpleAccordion() {
                       <br />
                       <br />
                       Cash, Credit, Cash App, Paypal and Venmo accepted<br />
-                      Call or text <a href="tel:4155177897">(415) 517-7897</a> to set up appointment (fastest response is through text). Visit <a href="https://gelatotech.com">Gelatotech.com</a> for all other iPhone repairs and pricing <br />
+                      Call or text <a href="tel:4156219055">(415) 621-9055</a> to set up appointment (fastest response is through text). Visit <a href="https://gelatotech.com">Gelatotech.com</a> for all other iPhone repairs and pricing <br />
                     </Typography>
                   </AccordionDetails>
                 </Accordion>

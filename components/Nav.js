@@ -133,7 +133,7 @@ export default function Nav() {
                 <a className="navbar-item" onClick={()=>{
                   setBurger(false);
                   scrollToSection("business")
-                  }}>Hours <FontAwesomeIcon icon={faClock} style={{ width: '1em', marginLeft:'0.3em' }} /></a> <a className="button is-info" href="tel:4155177897">(415) 517-7897 <FontAwesomeIcon icon={faPhone} style={{ marginLeft: "0.3em", width: '1em' }} /></a>
+                  }}>Hours <FontAwesomeIcon icon={faClock} style={{ width: '1em', marginLeft:'0.3em' }} /></a> <a className="button is-info" href="tel:4156219055">(415) 621-9055 <FontAwesomeIcon icon={faPhone} style={{ marginLeft: "0.3em", width: '1em' }} /></a>
             </div>
           </div>
         </nav>

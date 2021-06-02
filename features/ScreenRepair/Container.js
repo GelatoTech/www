@@ -76,7 +76,7 @@ export default function ScreenRepair() {
             <br />
             <li><strong>iii. Incredibly fast and reliable service:</strong> Gelatotech repairs iPhone screens within 15 minutes, and you don't need to take the company's word for it. There are verifiable online customer reviews on Google and Yelp to verify this. You can get 1st hand information on what it means to get your iPhone repairs done by Gelatotech from past and present customers who have reviewed the service.</li>
             <br />
-            <li>To get your iPhone repair, simply schedule repair online within seconds or CALL (415) 517 7897 and book your preferred location and time. Gelatotech phone screen repair services are available everyday between 10am and 6 pm, and technicians will repair your iPhone on the spot inside Galototech's eco-friendly smart cars. Gelatotech confirms repair service bookings within an hour and delivers same-day services.</li>
+            <li>To get your iPhone repair, simply schedule repair online within seconds or CALL (415) 621-9055 and book your preferred location and time. Gelatotech phone screen repair services are available everyday between 10am and 6 pm, and technicians will repair your iPhone on the spot inside Galototech's eco-friendly smart cars. Gelatotech confirms repair service bookings within an hour and delivers same-day services.</li>
             <br />
             <li><strong>iv. Lifetime warranty:</strong> Gelatotech is also one of the few mobile phone repair services that offer a lifetime warranty on screen repairs. The services is risk-FREE. In the unlikely event that your screen malfunctions after repair, you can get a new screen or the required service at ZERO cost.</li>
             <br />
@@ -92,7 +92,7 @@ export default function ScreenRepair() {
           <br />
           <p>Gelatotech specializes in iPhone Repair, MacBook Repair and iPad repair as well as Google Pixel repair, and Samsung repair. The aim of the service is to save you time and money when you need your iPhone, MacBook, iPad, Google Pixel, or Samsung repaired. You shouldn't waste money and time on AppleCare+ that is restricted to Apple stores and service centers only. What's more, it's not recommendable to trust other services that can't be verified online.</p>
           <br />
-          <p>Book iPhone repair near me services online NOW or call <a href="tel:14155177897">(415) 517-7897</a> to arrange an appointment with a phone repair service rated five stars in Yelp &amp; Google.</p>
+          <p>Book iPhone repair near me services online NOW or call <a href="tel:4156219055">(415) 621-9055</a> to arrange an appointment with a phone repair service rated five stars in Yelp &amp; Google.</p>
         </div>
       </section>
     </div>

@@ -66,7 +66,7 @@ export default function Footer() {
               </ul>
               <hr />
               <h5 id="contact">Contact Us</h5>
-              <p> <FontAwesomeIcon style={{ width: '1em' }} className="fas fa-phone" aria-hidden="true" icon={faPhone} />  <a href="tel:4155177897">(415) 517-7897</a></p>
+              <p> <FontAwesomeIcon style={{ width: '1em' }} className="fas fa-phone" aria-hidden="true" icon={faPhone} />  <a href="tel:4156219055">(415) 621-9055</a></p>
               <br />
               <p> <FontAwesomeIcon style={{ width: '1em' }} className="fa fa-envelope" aria-hidden="true" icon={faEnvelope} /> <a href="mailto:support@gelatotech.com" target="_blank"> support@gelatotech.com</a></p>
               <br />
