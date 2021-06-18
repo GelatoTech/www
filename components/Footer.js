@@ -96,7 +96,7 @@ export default function Footer() {
               <a href="https://www.linkedin.com/company/gelatotech-on-demand-iphone-repair/?viewAsMember=true" target="_blank"><FontAwesomeIcon style={{ height: '34px' }} id="linkedin" className="fab fa-linkedin" icon={faLinkedin} /></a>
             </div>
           </div>
-          <p className="has-text-centered copyright has-text-grey">Copyright © 2020 gelatotech.com. All rights reserved</p>
+          <p className="has-text-centered copyright has-text-grey">Copyright © 2021 gelatotech.com. All rights reserved</p>
         </div></footer>
     </div>
   )
