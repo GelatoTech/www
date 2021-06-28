@@ -893,6 +893,10 @@ const devices = {
             warranty: "90 day",
             duration: "30 minutes",
         },
+        backglass: {
+            duration: "3 hour",
+            price: "$200"
+        }
     },
     "12proMax": {
         screen: {
