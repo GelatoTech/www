@@ -879,7 +879,7 @@ const devices = {
     },
     "1212pro": {
         screen: {
-            price: "$490",
+            price: "$240",
             warranty: "Lifetime",
             duration: "15 minutes",
         },
@@ -896,7 +896,7 @@ const devices = {
     },
     "12proMax": {
         screen: {
-            price: "$520",
+            price: "$260",
             warranty: "Lifetime",
             duration: "15 minutes",
         },
