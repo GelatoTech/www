@@ -858,7 +858,7 @@ const devices = {
     },
     "12mini": {
         screen: {
-            price: "$415",
+            price: "$225",
             warranty: "Lifetime",
             duration: "15 minutes",
         },
