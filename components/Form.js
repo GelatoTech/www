@@ -20,6 +20,7 @@ export default function Form({ make }) {
     deviceModel: 'default',
     deviceIssue: 'default',
     deviceHomeButtonColor: 'default',
+    appleWatchVersion: 'default',
     color: 'default',
     customerName: '',
     customerAddress: '',
@@ -111,6 +112,9 @@ export default function Form({ make }) {
                   <option value="ipad">
                     iPad
                   </option>
+                  <option value="apple-watch">
+                    Apple Watch
+                  </option>
                   <option value="samsung">
                     Samsung
                   </option>
@@ -123,6 +127,7 @@ export default function Form({ make }) {
             <input name="deviceModel" type="hidden" value={repairFormValues.deviceModel} />
             <input name="deviceIssue" type="hidden" value={repairFormValues.deviceIssue} />
             <input name="deviceHomeButtonColor" type="hidden" value={repairFormValues.deviceHomeButtonColor} />
+            <input name="appleWatchVersion" type="hidden" value={repairFormValues.appleWatchVersion} />
             <input name="color" type="hidden" value={repairFormValues.color} />
             <div className="field">
               {
@@ -381,6 +386,50 @@ export default function Form({ make }) {
                               )
                               : ''
                           }
+                          {
+                            repairFormValues.deviceMake == "apple-watch"
+                              ? (
+                                <>
+                                  <option value="apple-watch-series-2-38mm">
+                                    Series 2 (38MM)
+                                  </option>
+                                  <option value="apple-watch-series-2-42mm">
+                                    Series 2 (42MM)
+                                  </option>
+                                  <option value="apple-watch-series-3-38mm">
+                                    Series 3 (38MM)
+                                  </option>
+                                  <option value="apple-watch-series-3-42mm">
+                                    Series 3 (42MM)
+                                  </option>
+                                  <option value="apple-watch-series-4-40mm">
+                                    Series 4 (40MM)
+                                  </option>
+                                  <option value="apple-watch-series-4-44mm">
+                                    Series 4 (44MM)
+                                  </option>
+                                  <option value="apple-watch-series-5-40mm">
+                                    Series 5 (40MM)
+                                  </option>
+                                  <option value="apple-watch-series-5-44mm">
+                                    Series 5 (44MM)
+                                  </option>
+                                  <option value="apple-watch-series-se-40mm">
+                                    Series SE (40MM) 
+                                  </option>
+                                  <option value="apple-watch-series-se-44mm">
+                                    Series SE (44MM)
+                                  </option>
+                                  <option value="apple-watch-series-6-40mm">
+                                    Series 6 (40MM)
+                                  </option>
+                                  <option value="apple-watch-series-6-44mm">
+                                    Series 6 (44MM)
+                                  </option>
+                                </>
+                              )
+                              : ''
+                          }
                         </select>
                       </div>
                     </div>
@@ -388,6 +437,27 @@ export default function Form({ make }) {
                   : ''
               }
             </div>
+            {
+              (repairFormValues.deviceMake == "apple-watch")
+              ? (
+                <div className="field" id="appleWatchVersion">
+                  <div className="select is-rounded">
+                    <select value={repairFormValues.appleWatchVersion} onChange={(e)=>setRepairFormValues({ ...repairFormValues, appleWatchVersion: e.target.value })}>
+                      <option value="default" disabled>
+                        Select Version
+                      </option>
+                      <option value="GPS">
+                        GPS Version
+                      </option>
+                      <option value="Cellular">
+                        Cellular Version
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              )
+              : null
+            }
             {
               (devicesWithHomeButton.includes(repairFormValues.deviceModel))
               ? (

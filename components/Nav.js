@@ -78,6 +78,11 @@ export default function Nav() {
                     <a className="navbar-item" onClick={() => {
                       setOurServicesDropdownActive(false);
                       setBurger(false);
+                      router.push('/apple-watch');
+                      }}>Apple Watch Repair</a> 
+                    <a className="navbar-item" onClick={() => {
+                      setOurServicesDropdownActive(false);
+                      setBurger(false);
                       router.push('/samsung');
                       }}>Samsung Repair</a>
                     <a className="navbar-item" onClick={() => {

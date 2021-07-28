@@ -490,6 +490,9 @@ const devices = {
             duration: "2-3 business days",
         },
     },
+    "apple-watch-series-2-38mm": {
+        //
+    },
     "6": {
         screen: {
             price: "$75",
