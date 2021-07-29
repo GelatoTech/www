@@ -7,7 +7,7 @@ import { faUsers, faUser, faEnvelope, faHome, faPhone, faClock } from '@fortawes
 
 import scrollToSection from '../helpers/scrollToSection';
 import formatDate from '../helpers/formatDate';
-import { devices, devicesWithHomeButton } from '../public/javascripts/devices';
+import { devices, devicesWithHomeButton, devicesWithVersions } from '../public/javascripts/devices';
 
 
 
@@ -20,7 +20,7 @@ export default function Form({ make }) {
     deviceModel: 'default',
     deviceIssue: 'default',
     deviceHomeButtonColor: 'default',
-    appleWatchVersion: 'default',
+    deviceVersion: 'default',
     color: 'default',
     customerName: '',
     customerAddress: '',
@@ -73,7 +73,12 @@ export default function Form({ make }) {
             repairFormValues.deviceIssue !== 'default' &&
             devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price
           )
-          ? (<p id="total-price-text" style={{ fontSize: '1.9em' }}>Estimated {devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price} repair</p>)
+          ? (<p id="total-price-text" style={{ fontSize: '1.9em' }}> 
+                Estimated {
+                  typeof devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price === 'object'
+                    ? devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price[repairFormValues.deviceVersion]
+                    : devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price
+                } repair</p>)
           : ''
         }
         {
@@ -127,7 +132,7 @@ export default function Form({ make }) {
             <input name="deviceModel" type="hidden" value={repairFormValues.deviceModel} />
             <input name="deviceIssue" type="hidden" value={repairFormValues.deviceIssue} />
             <input name="deviceHomeButtonColor" type="hidden" value={repairFormValues.deviceHomeButtonColor} />
-            <input name="appleWatchVersion" type="hidden" value={repairFormValues.appleWatchVersion} />
+            <input name="deviceVersion" type="hidden" value={repairFormValues.deviceVersion} />
             <input name="color" type="hidden" value={repairFormValues.color} />
             <div className="field">
               {
@@ -307,7 +312,7 @@ export default function Form({ make }) {
                                     Google Pixel 4a
                                   </option>
                                   <option value="googlePixel4a5g">
-                                    Google Pixel 4a 5g
+                                    Google Pixel 4a 5G
                                   </option>
                                   <option value="googlePixel5">
                                     Google Pixel 5
@@ -321,14 +326,20 @@ export default function Form({ make }) {
                               ? (
                                 <>
                                   <optgroup label="Galaxy S Series"></optgroup>
+                                  <option value="S21plus">
+                                    S21 Plus
+                                  </option>
+                                  <option value="S21">
+                                    S21
+                                  </option>
                                   <option value="S20FE5G">
                                     S20 FE 5G
                                   </option>
                                   <option value="S20Ultra5g">
-                                    S20 Ultra 5g
+                                    S20 Ultra 5G
                                   </option>
                                   <option value="S20Plus5g">
-                                    S20 Plus 5g
+                                    S20 Plus 5G
                                   </option>
                                   <option value="S205G">
                                     S20 5G
@@ -438,20 +449,17 @@ export default function Form({ make }) {
               }
             </div>
             {
-              (repairFormValues.deviceMake == "apple-watch")
+              Object.keys(devicesWithVersions).includes(repairFormValues.deviceModel)
               ? (
-                <div className="field" id="appleWatchVersion">
+                <div className="field" id="deviceVersion">
                   <div className="select is-rounded">
-                    <select value={repairFormValues.appleWatchVersion} onChange={(e)=>setRepairFormValues({ ...repairFormValues, appleWatchVersion: e.target.value })}>
+                    <select value={repairFormValues.deviceVersion} onChange={(e)=>setRepairFormValues({ ...repairFormValues, deviceVersion: e.target.value })}>
                       <option value="default" disabled>
                         Select Version
                       </option>
-                      <option value="GPS">
-                        GPS Version
-                      </option>
-                      <option value="Cellular">
-                        Cellular Version
-                      </option>
+                      {
+                        devicesWithVersions[repairFormValues.deviceModel].map((version, i) => (<option key={i} value={version}>{version}</option>))
+                      }
                     </select>
                   </div>
                 </div>
@@ -512,6 +520,42 @@ export default function Form({ make }) {
                         ? (
                           <option value="screen">
                             Screen replacement
+                          </option>
+                        )
+                        : null
+                      }
+                      {
+                        (
+                          devices[repairFormValues.deviceModel] &&
+                          devices[repairFormValues.deviceModel]["glassOnly"]
+                        )
+                        ? (
+                          <option value="glassOnly">
+                            Screen replacement (glass only)
+                          </option>
+                        )
+                        : null
+                      }
+                      {
+                        (
+                          devices[repairFormValues.deviceModel] &&
+                          devices[repairFormValues.deviceModel]["LCD"]
+                        )
+                        ? (
+                          <option value="LCD">
+                            LCD Screen Assembly Replacement
+                          </option>
+                        )
+                        : null
+                      }
+                      {
+                        (
+                          devices[repairFormValues.deviceModel] &&
+                          devices[repairFormValues.deviceModel]["glassTouch"]
+                        )
+                        ? (
+                          <option value="glassTouch">
+                            Screen replacement (glass + touch)
                           </option>
                         )
                         : null

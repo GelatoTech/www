@@ -27,6 +27,11 @@ const devicesWithHomeButton = [
   "ipadpro122"
 ];
 
+const devicesWithVersions = {
+    "apple-watch-series-3-38mm": ["GPS", "Cellular"],
+    "apple-watch-series-3-42mm": ["GPS", "Cellular"],
+};
+
 const devices = {
     "ipadmini": {
         screen: {
@@ -121,6 +126,11 @@ const devices = {
             price: "$250",
             warranty: "90 day",
             duration: "1 hour",
+        },
+        glassOnly: {
+            price: "$180",
+            warranty: "90 day",
+            duration: "3-5 hours"
         },
         battery: {
             price: "$190",
@@ -320,6 +330,11 @@ const devices = {
             warranty: "90 day",
             duration: "1 hour",
         },
+        glassOnly: {
+            price: "$175",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
         battery: {
             price: "$230",
             warranty: "90 day",
@@ -336,11 +351,28 @@ const devices = {
             duration: "2-3 business days",
         },
     },
+    "ipadair4": {
+        screen: {
+            price: "$380",
+            warranty: "90 day",
+            duration: "1 hours"
+        },
+        glassOnly: {
+            price: "$280",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+    },
     "ipadpro9": {
         screen: {
             price: "$260",
             warranty: "90 day",
             duration: "1 hour",
+        },
+        glassOnly: {
+            price: "$150",
+            warranty: "90 day",
+            duration: "3-5 hours"
         },
         battery: {
             price: "$150",
@@ -364,6 +396,11 @@ const devices = {
             warranty: "90 day",
             duration: "1 hour",
         },
+        glassOnly: {
+            price: "$175",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
         battery: {
             price: "$230",
             warranty: "90 day",
@@ -385,6 +422,11 @@ const devices = {
             price: "$350",
             warranty: "90 day",
             duration: "1 hour",
+        },
+        glassOnly: {
+            price: "$240",
+            warranty: "90 day",
+            duration: "3-5 hours"
         },
         battery: {
             price: "$230",
@@ -408,6 +450,11 @@ const devices = {
             warranty: "90 day",
             duration: "1 hour",
         },
+        glassOnly: {
+            price: "$230",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
         battery: {
             price: "$150",
             warranty: "90 day",
@@ -429,6 +476,11 @@ const devices = {
             price: "$320",
             warranty: "90 day",
             duration: "1 hour",
+        },
+        glassOnly: {
+            price: "$270",
+            warranty: "90 day",
+            duration: "3-5 hours"
         },
         battery: {
             price: "$230",
@@ -452,6 +504,11 @@ const devices = {
             warranty: "90 day",
             duration: "1 hour",
         },
+        glassOnly: {
+            price: "$240",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
         battery: {
             price: "$230",
             warranty: "90 day",
@@ -474,6 +531,11 @@ const devices = {
             warranty: "90 day",
             duration: "1 hour",
         },
+        glassOnly: {
+            price: "$240",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
         battery: {
             price: "$330",
             warranty: "90 day",
@@ -491,7 +553,178 @@ const devices = {
         },
     },
     "apple-watch-series-2-38mm": {
-        //
+        glassOnly: {
+            price: "$120",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        glassTouch: {
+            price: "$120",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        LCD: {
+            price: "$115",
+            warranty: "90 day",
+            duration: "20-30 minutes"
+        }
+    },
+    "apple-watch-series-2-42mm": {
+        glassOnly: {
+            price: "$120",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        glassTouch: {
+            price: "$120",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        LCD: {
+            price: "$135",
+            warranty: "90 day",
+            duration: "20-30 minutes"
+        }
+    },
+    "apple-watch-series-3-38mm": {
+        LCD: {
+            price: {
+                Cellular: "$120",
+                GPS: "$140"
+            },
+            warranty: "90 day",
+            duration: "20-30 minutes"
+        }
+    },
+    "apple-watch-series-3-42mm": {
+        LCD: {
+            price: {
+                Cellular: "$140",
+                GPS: "$170"
+            },
+            warranty: "90 day",
+            duration: "20-30 minutes"
+        }
+    },
+    "apple-watch-series-4-40mm": {
+        glassOnly: {
+            price: "$130",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        glassTouch: {
+            price: "$140",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        LCD: {
+            price: "$220",
+            warranty: "90 day",
+            duration: "20-30 minutes"
+        }
+    },
+    "apple-watch-series-4-44mm": {
+        glassOnly: {
+            price: "$130",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        glassTouch: {
+            price: "$140",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        LCD: {
+            price: "$195",
+            warranty: "90 day",
+            duration: "20-30 minutes"
+        }
+    },
+    "apple-watch-series-5-40mm": {
+        glassOnly: {
+            price: "$140",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        glassTouch: {
+            price: "$170",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        LCD: {
+            price: "$190",
+            warranty: "90 day",
+            duration: "20-30 minutes"
+        }
+    },
+    "apple-watch-series-5-44mm": {
+        glassOnly: {
+            price: "$140",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        glassTouch: {
+            price: "$170",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        LCD: {
+            price: "$190",
+            warranty: "90 day",
+            duration: "20-30 minutes"
+        }
+    },
+    "apple-watch-series-6-40mm": {
+        glassOnly: {
+            price: "$160",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        glassTouch: {
+            price: "$170",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+    },
+    "apple-watch-series-6-44mm": {
+        glassOnly: {
+            price: "$160",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        glassTouch: {
+            price: "$170",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+    },
+    "apple-watch-series-se-40mm": {
+        LCD: {
+            price: "$190",
+            warranty: "90 day",
+            duration: "20-30 minutes"
+        }
+    },
+    "apple-watch-series-se-44mm": {
+        LCD: {
+            price: "$190",
+            warranty: "90 day",
+            duration: "20-30 minutes"
+        }
+    },
+    "apple-watch-series-6-40mm": {
+        LCD: {
+            price: "$190",
+            warranty: "90 day",
+            duration: "20-30 minutes"
+        }
+    },
+    "apple-watch-series-6-44mm": {
+        LCD: {
+            price: "$190",
+            warranty: "90 day",
+            duration: "20-30 minutes"
+        }
     },
     "6": {
         screen: {
@@ -777,8 +1010,8 @@ const devices = {
             duration: "2-3 business days",
         },
         backglass: {
-        duration: "3 hour",
-        price: "$150"
+            duration: "3 hour",
+            price: "$150"
         }
     },
     "11": {
@@ -804,7 +1037,7 @@ const devices = {
         },
         backglass: {
             duration: "3 hour",
-        price: "$180"
+            price: "$180"
         }
     },
     "11pro": {
@@ -812,6 +1045,11 @@ const devices = {
             price: "$280",
             warranty: "Lifetime",
             duration: "15 minutes",
+        },
+        glassTouch: {
+            price: "$185",
+            warranty: "90 day",
+            duration: "3-5 hours"
         },
         battery: {
             price: "$100",
@@ -838,6 +1076,11 @@ const devices = {
             price: "$330",
             warranty: "Lifetime",
             duration: "15 minutes",
+        },
+        glassTouch: {
+            price: "$190",
+            warranty: "90 day",
+            duration: "3-5 hours"
         },
         battery: {
             price: "$120",
@@ -886,6 +1129,11 @@ const devices = {
             warranty: "Lifetime",
             duration: "15 minutes",
         },
+        glassTouch: {
+            price: "$220",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
         battery: {
             price: "$120",
             warranty: "90 day",
@@ -906,6 +1154,11 @@ const devices = {
             price: "$260",
             warranty: "Lifetime",
             duration: "15 minutes",
+        },
+        glassTouch: {
+            price: "$245",
+            warranty: "90 day",
+            duration: "3-5 hours"
         },
         battery: {
             price: "$140",
@@ -1122,6 +1375,11 @@ const devices = {
             warranty: "90 day",
             duration: "1 hour",
         },
+        glassOnly: {
+            price: "$215",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
         battery: {
             price: "$80",
             warranty: "90 day",
@@ -1147,6 +1405,11 @@ const devices = {
             price: "$360",
             warranty: "90 day",
             duration: "1 hour",
+        },
+        glassOnly: {
+            price: "$205",
+            warranty: "90 day",
+            duration: "3-5 hours"
         },
         battery: {
             price: "$80",
@@ -1176,6 +1439,11 @@ const devices = {
             price: "$320",
             warranty: "90 day",
             duration: "1 hour",
+        },
+        glassOnly: {
+            price: "$190",
+            warranty: "90 day",
+            duration: "3-5 hours"
         },
         battery: {
             price: "$80",
@@ -1260,6 +1528,11 @@ const devices = {
             warranty: "90 day",
             duration: "1 hour",
         },
+        glassOnly: {
+            price: "$165",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
         battery: {
             price: "$80",
             warranty: "90 day",
@@ -1289,6 +1562,11 @@ const devices = {
             price: "$380",
             warranty: "90 day",
             duration: "1 hour",
+        },
+        glassOnly: {
+            price: "$165",
+            warranty: "90 day",
+            duration: "3-5 hours"
         },
         battery: {
             price: "$80",
@@ -1349,6 +1627,11 @@ const devices = {
             warranty: "90 day",
             duration: "1 hour",
         },
+        glassOnly: {
+            price: "$150",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
         battery: {
             price: "$80",
             warranty: "90 day",
@@ -1377,6 +1660,11 @@ const devices = {
             price: "$250",
             warranty: "90 day",
             duration: "1 hour",
+        },
+        glassOnly: {
+            price: "$140",
+            warranty: "90 day",
+            duration: "3-5 hours"
         },
         battery: {
             price: "$75",
@@ -1407,6 +1695,11 @@ const devices = {
             warranty: "90 day",
             duration: "1 hour",
         },
+        glassOnly: {
+            price: "$135",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
         battery: {
             price: "$75",
             warranty: "90 day",
@@ -1435,6 +1728,11 @@ const devices = {
             price: "$220",
             warranty: "90 day",
             duration: "1 hour",
+        },
+        glassOnly: {
+            price: "$135",
+            warranty: "90 day",
+            duration: "3-5 hours"
         },
         battery: {
             price: "$70",
@@ -1466,6 +1764,11 @@ const devices = {
             warranty: "90 day",
             duration: "1 hour",
         },
+        glassOnly: {
+            price: "$230",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
         battery: {
             price: "$80",
             warranty: "90 day",
@@ -1493,6 +1796,11 @@ const devices = {
             warranty: "90 day",
             duration: "1 hour",
         },
+        glassOnly: {
+            price: "$200",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
         battery: {
             price: "$80",
             warranty: "90 day",
@@ -1514,11 +1822,30 @@ const devices = {
             "Mystic Gray",
         ]
     },
+    "S21": {
+        glassOnly: {
+            price: "$200",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        }
+    },
+    "S21plus": {
+        glassOnly: {
+            price: "$200",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        }
+    },
     "Note10Plus": {
         screen: {
             price: "$360",
             warranty: "90 day",
             duration: "1 hour",
+        },
+        glassOnly: {
+            price: "$180",
+            warranty: "90 day",
+            duration: "3-5 hours"
         },
         battery: {
             price: "$70",
@@ -1573,6 +1900,11 @@ const devices = {
             warranty: "90 day",
             duration: "1 hour",
         },
+        glassOnly: {
+            price: "$170",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
         battery: {
             price: "$70",
             warranty: "90 day",
@@ -1601,6 +1933,11 @@ const devices = {
             warranty: "90 day",
             duration: "1 hour",
         },
+        glassOnly: {
+            price: "$150",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
         battery: {
             price: "$70",
             warranty: "90 day",
@@ -1627,6 +1964,11 @@ const devices = {
             price: "$270",
             warranty: "90 day",
             duration: "1 hour",
+        },
+        glassOnly: {
+            price: "$150",
+            warranty: "90 day",
+            duration: "3-5 hours"
         },
         battery: {
             price: "$70",
@@ -1658,4 +2000,4 @@ const devices = {
 
 
 
-export { devices, devicesWithHomeButton }
+export { devices, devicesWithHomeButton, devicesWithVersions }
