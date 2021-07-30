@@ -326,6 +326,12 @@ export default function Form({ make }) {
                               ? (
                                 <>
                                   <optgroup label="Galaxy S Series"></optgroup>
+                                  <option value="S21FE5G">
+                                    S21 FE 5G
+                                  </option>
+                                  <option value="S21ultra">
+                                    S21 Ultra
+                                  </option>
                                   <option value="S21plus">
                                     S21 Plus
                                   </option>

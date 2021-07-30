@@ -1876,6 +1876,25 @@ const devices = {
             duration: "3-5 hours"
         }
     },
+    "S21ultra": {
+        glassOnly: {
+            price: "$240",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        LCD: {
+            price: "$480",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        }
+    },
+    "S21FE5G": {
+        glassOnly: {
+            price: "$240",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        }
+    },
     "Note10Plus": {
         screen: {
             price: "$360",
