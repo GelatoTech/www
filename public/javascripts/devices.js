@@ -1885,7 +1885,7 @@ const devices = {
         LCD: {
             price: "$480",
             warranty: "90 day",
-            duration: "3-5 hours"
+            duration: "1 hour"
         }
     },
     "S21FE5G": {
