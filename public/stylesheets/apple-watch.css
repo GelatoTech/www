@@ -23,3 +23,6 @@
   justify-items: center;
   grid-template-columns: auto auto auto auto auto auto;
 }
+#get-started {
+  padding: 2em !important;
+}
