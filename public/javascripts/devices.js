@@ -600,6 +600,11 @@ const devices = {
             warranty: "90 day",
             duration: "3-5 hours"
         },
+        glassTouch: {
+            price: "$120",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
     },
     "apple-watch-series-3-42mm": {
         LCD: {
@@ -611,6 +616,11 @@ const devices = {
             duration: "20-30 minutes"
         },
         glassOnly: {
+            price: "$120",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        glassTouch: {
             price: "$120",
             warranty: "90 day",
             duration: "3-5 hours"
