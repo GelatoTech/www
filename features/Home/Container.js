@@ -27,6 +27,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Mobile iPhone Repair in San Francisco | Gelatotech</title>
+        <meta name="google-site-verification" content="2pNsvmPjStj7kwLITkPD7X8nhIA0gRJ7h2vjYrv__dg" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="ie=edge" httpEquiv="X-UA-Compatible" />
         <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." name="description" />
