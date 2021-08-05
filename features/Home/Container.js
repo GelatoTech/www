@@ -45,7 +45,7 @@ export default function Home() {
         <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." name="twitter:description" />
         <meta content="images/iphone-repair.png" name="twitter:image" />
         <meta content=" iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, demand" name="keywords" />
-        <meta content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" name="google-site-verification" />
+        {/* <meta content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" name="google-site-verification" /> */}
       </Head>
       <section className="hero" id="hero" style={{
         backgroundImage: "url(../images/whats-icracked.jpg)",
