@@ -1022,6 +1022,31 @@ const devices = {
         price: "$150"
         }
     },
+    "se2": {
+        screen: {
+            price: "$110",
+            warranty: "Lifetime",
+            duration: "15 minutes",
+        },
+        battery: {
+            price: "$75",
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        charging: {
+            price: "$75",
+            warranty: "90 day",
+            duration: "30 minutes",
+        },
+        backglass: {
+            duration: "3 hour",
+            price: "$100"
+        },
+        logic: {
+            duration: "1-3 days",
+            price: "$100-$200"
+        }
+    },
     "xr": {
         screen: {
             price: "$150",

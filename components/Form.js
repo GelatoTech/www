@@ -199,6 +199,9 @@ export default function Form({ make }) {
                                   <option value="6plus">
                                     iPhone 6 Plus
                                   </option>
+                                  <option value="se2">
+                                    iPhone SE (2nd Generation)
+                                  </option>
                                   <option value={6}>
                                     iPhone 6
                                   </option>
@@ -604,6 +607,16 @@ export default function Form({ make }) {
                         ? (
                           <option value="water">
                             Water Damage
+                          </option>
+                        )
+                        : null
+                      }
+                      {
+                        devices[repairFormValues.deviceModel] &&
+                        devices[repairFormValues.deviceModel]["logic"]
+                        ? (
+                          <option value="logic">
+                            Logic Board Repair
                           </option>
                         )
                         : null
