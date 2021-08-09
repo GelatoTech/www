@@ -616,7 +616,7 @@ export default function Form({ make }) {
                         devices[repairFormValues.deviceModel]["logic"]
                         ? (
                           <option value="logic">
-                            Logic Board Repair
+                            Logic board repair
                           </option>
                         )
                         : null
