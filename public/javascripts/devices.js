@@ -424,7 +424,7 @@ const devices = {
             duration: "1 hour",
         },
         glassOnly: {
-            price: "$240",
+            price: "$280",
             warranty: "90 day",
             duration: "3-5 hours"
         },
