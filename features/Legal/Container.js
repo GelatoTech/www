@@ -11,7 +11,7 @@ export default function FAQ() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title>Mobile iPhone Repair| Lifetime Warranty Policy | Gelatotech</title>
+        <title>90 day warranty policy | Gelatotech Mobile iPhone Repair SF</title>
         {/* HTML Meta Tags */}
         <meta name="description" content="Gelatotech offers a 90 day warranty on all models of iPhone, iPad, Macbook, Apple Watch, Samsung, and Google Pixel repairs." />
         {/* Google / Search Engine Tags */}
@@ -22,12 +22,12 @@ export default function FAQ() {
         <meta property="og:url" content="https://www.gelatotech.com" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="90 day warranty policy | Gelatotech Mobile iPhone Repair SF" />
-        <meta property="og:description" content="Lifetime Warranty is included on all iPhone Screen Repairs. Other services include a 90 day Warranty." />
+        <meta property="og:description" content="Gelatotech offers a 90 day warranty on all models of iPhone, iPad, Macbook, Apple Watch, Samsung, and Google Pixel repairs." />
         <meta property="og:image" content={pexelsPhoto607812} />
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="90 day warranty policy | Gelatotech Mobile iPhone Repair SF" />
-        <meta name="twitter:description" content="Lifetime Warranty is included on all iPhone Screen Repairs. Other services include a 90 day Warranty." />
+        <meta name="twitter:description" content="Gelatotech offers a 90 day warranty on all models of iPhone, iPad, Macbook, Apple Watch, Samsung, and Google Pixel repairs." />
         <meta name="twitter:image" content={pexelsPhoto607812} />
         <meta name="keywords" content="iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, demand" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
@@ -42,7 +42,7 @@ export default function FAQ() {
           <p>
             Gelatotech is on a mission to connect consumers with the best possible digital device install, support, and repair
             services, provided by our network of skilled Technicians using the top-quality replacement parts. We offer a
-            Lifetime Guarantee on all parts and labor used for services booked through gelatotech, unless it conflicts with
+            90 day warranty on all parts and labor used for services booked through gelatotech, unless it conflicts with
             the below items.
             Please email us at <a href="mailto:support@gelatotech.com">support@gelatotech.com</a> with any questions.</p>
         </div>
@@ -74,11 +74,10 @@ export default function FAQ() {
         </ul>
         <div className="ourwarranty">
           <h2>Using our Warranty</h2>
-          <li>Lifetime warranty only covers functionality problems like bad touch screen. </li>
+          <li>90 day warranty only covers functionality problems like bad touch screen. </li>
           <li>If you wish to perform a warranty repair. Customer has to meet at a 3 mile radius from a drop off location. </li>
           <li>All warranty repairs include a $10 transportation fee or more if outside the Bay Area. Only when customer can’t meet at drop off location.</li>
           <br />
-          <h5>The Life-Time Warranty is only valid with screen repairs. All smart parts and battery repairs have a 90-day warranty.</h5>
           <h5>THE GUARANTEE IS VALID EXCLUSIVELY TO THE CUSTOMER WHO PURCHASED THE REPAIR AND WHOSE NAME IS ON THE
             GUARANTEE/INVOICE. THE GUARANTEE WILL NOT BE TRANSFERABLE IF THE DEVICES OWNERSHIP IS DISTRIBUTED TO ANOTHER
             INDIVIDUAL OR BUSINESS.</h5>
