@@ -134,7 +134,7 @@ export default function Nav() {
                   onClick={() => { 
                     setBurger(false);
                     router.push('/legal') }} 
-                  target="_blank">Lifetime Warranty</a>
+                  target="_blank">90 Day Warranty</a>
                 <a className="navbar-item" onClick={()=>{
                   setBurger(false);
                   scrollToSection("business")

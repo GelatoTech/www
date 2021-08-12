@@ -70,7 +70,7 @@ export default function ScreenRepair() {
           <p>With repair costs ranging from $79 for an iPhone 6 screen repair and $99 for an iPhone 8 screen repair, even with a shattered iPhone screen, it's obvious why you should overlook AppleCare+ and choose Gelatotech, a mobile iPhone repair services based in San Francisco.</p>
           <h5 className="title ad is-4">The Gelatotech Advantage: Why should you choose Gelatotech?</h5>
           <ul className="ads">
-            <li><strong>i. Great pricing:</strong> iPhone screen repair costs start at $79 for the iPhone 6. This is almost half the cost it takes Apple to repair the same phone screen, and the cost covers all kinds of screen repairs, including shattered screen damage. What's more, the pricing is up-front with no hidden fees. Unlike other iPhone screen repair services, Gelatotech prices are beyond fair, considering the repairs come with a FREE lifetime guarantee on the service and parts.</li>
+            <li><strong>i. Great pricing:</strong> iPhone screen repair costs start at $79 for the iPhone 6. This is almost half the cost it takes Apple to repair the same phone screen, and the cost covers all kinds of screen repairs, including shattered screen damage. What's more, the pricing is up-front with no hidden fees. Unlike other iPhone screen repair services, Gelatotech prices are beyond fair, considering the repairs come with a FREE 90 day warranty on the service and parts.</li>
             <br />
             <li><strong>ii. No waiting line:</strong> Gelatotech brings iPhone screen repair services to you. Unlike AppleCare+, where you must visit an Apple store or AppleCare+ service center and endure long waiting lines, Gelatotech technicians come to you the same day you request for iPhone repair San Francisco.</li>
             <br />
@@ -78,9 +78,9 @@ export default function ScreenRepair() {
             <br />
             <li>To get your iPhone repair, simply schedule repair online within seconds or CALL (415) 621-9055 and book your preferred location and time. Gelatotech phone screen repair services are available everyday between 10am and 6 pm, and technicians will repair your iPhone on the spot inside Galototech's eco-friendly smart cars. Gelatotech confirms repair service bookings within an hour and delivers same-day services.</li>
             <br />
-            <li><strong>iv. Lifetime warranty:</strong> Gelatotech is also one of the few mobile phone repair services that offer a lifetime warranty on screen repairs. The services is risk-FREE. In the unlikely event that your screen malfunctions after repair, you can get a new screen or the required service at ZERO cost.</li>
+            <li><strong>iv. 90 day warranty:</strong> Gelatotech is also one of the few mobile phone repair services that offer a 90 day warranty on screen repairs. The services is risk-FREE. In the unlikely event that your screen malfunctions after repair, you can get a new screen or the required service at ZERO cost.</li>
             <br />
-            <li><strong>v. Quality parts:</strong> Gelatotech’s lifetime warranty on screen repairs is a testament that customers get quality parts only. iPhone repair sf services that install fake iPhone parts can’t have the audacity to guarantee such parts and the repair services they offer.</li>
+            <li><strong>v. Quality parts:</strong> Gelatotech’s 90 day warranty on screen repairs is a testament that customers get quality parts only. iPhone repair sf services that install fake iPhone parts can’t have the audacity to guarantee such parts and the repair services they offer.</li>
             <br />
             <li><strong>vi. Unmatched service variety:</strong> Besides repairing iPhone screens, Gelatotech also offers many other mobile iPhone repair services that include but aren’t limited to replacing iPhone batteries and charging ports. You can also get iPhone water damage repair services and contact Gelatotech’s 24/7 support team if you have any iPhone problems that may not be listed online.</li>
             <br />

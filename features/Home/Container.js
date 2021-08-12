@@ -168,7 +168,7 @@ export default function Home() {
                   <li style={{listStyle: 'none'}}><br /></li>
                   <li>
                     <h2 className="title is-3">Risk Free</h2>
-                    <p className="subtitle is-5">You only pay after the repair is done and fully tested. Lifetime warranty is included on Any iPhone Screen Repair.</p>
+                    <p className="subtitle is-5">You only pay after the repair is done and fully tested. 90 day warranty is included on Any iPhone Screen Repair.</p>
                   </li>
                   <li style={{listStyle: 'none'}}><br /></li>
                 </ul>
@@ -195,7 +195,7 @@ export default function Home() {
               <h2>Device Diagnostic <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
             </div>
             <div className="column">
-              <h2>Lifetime Warranty <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
+              <h2>90 Day Warranty <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
             </div>
             <div className="column">
               <h2>Quality Parts <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>

@@ -108,7 +108,7 @@ export default function iPad() {
                   <li style={{listStyle: 'none'}}><br /></li>
                   <li>
                     <h2 className="title is-3">Risk Free</h2>
-                    <p className="subtitle is-5">You only pay after the repair is done and fully tested. Lifetime warranty is included on Any iPad Screen Repair.</p>
+                    <p className="subtitle is-5">You only pay after the repair is done and fully tested. 90 day warranty is included on Any iPad Screen Repair.</p>
                   </li>
                   <li style={{listStyle: 'none'}}><br /></li>
                 </ul>

@@ -789,7 +789,7 @@ const devices = {
     "6": {
         screen: {
             price: "$75",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         battery: {
@@ -811,7 +811,7 @@ const devices = {
     "6s": {
         screen: {
             price: "$85",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         battery: {
@@ -833,7 +833,7 @@ const devices = {
     "6plus": {
         screen: {
             price: "$85",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         battery: {
@@ -855,7 +855,7 @@ const devices = {
     "6splus": {
         screen: {
             price: "$90",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         battery: {
@@ -877,7 +877,7 @@ const devices = {
     "7": {
         screen: {
             price: "$90",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         battery: {
@@ -899,7 +899,7 @@ const devices = {
     "7plus": {
         screen: {
             price: "$109",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         battery: {
@@ -921,7 +921,7 @@ const devices = {
     "8": {
         screen: {
             price: "$109",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         battery: {
@@ -947,7 +947,7 @@ const devices = {
     "8plus": {
         screen: {
             price: "$120",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         battery: {
@@ -973,7 +973,7 @@ const devices = {
     "x": {
         screen: {
             price: "$200",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         battery: {
@@ -999,7 +999,7 @@ const devices = {
     "xs": {
         screen: {
             price: "$200",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         battery: {
@@ -1025,7 +1025,7 @@ const devices = {
     "se2": {
         screen: {
             price: "$110",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         battery: {
@@ -1050,7 +1050,7 @@ const devices = {
     "xr": {
         screen: {
             price: "$150",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         battery: {
@@ -1076,7 +1076,7 @@ const devices = {
     "xsmax": {
         screen: {
             price: "$280",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         battery: {
@@ -1102,7 +1102,7 @@ const devices = {
     "11": {
         screen: {
             price: "$150",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         battery: {
@@ -1128,7 +1128,7 @@ const devices = {
     "11pro": {
         screen: {
             price: "$280",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         glassTouch: {
@@ -1159,7 +1159,7 @@ const devices = {
     "11proMax": {
         screen: {
             price: "$330",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         glassTouch: {
@@ -1190,7 +1190,7 @@ const devices = {
     "12mini": {
         screen: {
             price: "$225",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         battery: {
@@ -1211,7 +1211,7 @@ const devices = {
     "1212pro": {
         screen: {
             price: "$240",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         glassTouch: {
@@ -1237,7 +1237,7 @@ const devices = {
     "12proMax": {
         screen: {
             price: "$260",
-            warranty: "Lifetime",
+            warranty: "90 day",
             duration: "15 minutes",
         },
         glassTouch: {
