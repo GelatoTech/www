@@ -26,8 +26,8 @@ export default function iPad() {
       <meta name="keywords" content="ipad, ipad pro, ipad mini, screen repair, battery replacement, fix, on-demand, on demand, driver, technician, fast, quick, San Francisco, Bay Area, CA, sf" />
 
       {/* Google / Search Engine Tags */}
-      <meta itemProp="name" content="iPad Repair | Gelatotech" />
-      <meta itemProp="description" content="Our technicians drive to your preferred location on-demand to repair your iPad." />
+      <meta itemProp="name" content="Mobile iPad Repair SF | We come to you! Same-day Repair" />
+      <meta itemProp="description" content="iPad screen cracked? We can fix it same-day. Our skilled technicians come to you and fix your iPad within 45-60 mins. Book your iPad repair today." />
       <meta itemProp="image" content="images/ipad-bg.png" />
 
       <link rel="stylesheet" href="../stylesheets/ipad.css" />

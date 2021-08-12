@@ -28,11 +28,11 @@ export default function MicroSoldering() {
         <title>Micro Soldering Service - iPhone & MacBook Repair in San Francisco | Gelatotech</title>
 
         {/* HTML Meta Tags */}
-        <meta name="description" content="On-demand and mail-in iPhone/MacBook micro soldering services." />
+        <meta name="description" content="iPhone or MacBook logic board damaged? Our skilled technicians can fix any problem. Most common problem takes 1-2 days to repair. Schedule your repair today!" />
         <meta name="keywords" content="motherboard, solder, soldering, micro soldering, ipad, ipad pro, ipad mini, screen repair, battery replacement, fix, on-demand, on demand, driver, technician, fast, quick, San Francisco, Bay Area, CA, sf" />
 
         {/* Google / Search Engine Tags */}
-        <meta itemProp="name" content="Micro Soldering Service - iPhone & MacBook Repair in San Francisco | Gelatotech" />
+        <meta itemProp="name" content="Mobile iPhone & Macbook Micro Soldering in San Francisco" />
         <meta itemProp="description" content="On-demand and mail-in iPhone/MacBook micro soldering services." />
         <meta itemProp="image" content="images/micro-soldering.jpg" />
 

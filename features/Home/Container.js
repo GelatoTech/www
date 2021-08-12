@@ -36,8 +36,8 @@ export default function Home() {
         <meta content="images/iphone-repair.png" itemProp="image" />
         <meta content="https://www.gelatotech.com" property="og:url" />
         <meta content="website" property="og:type" />
-        <meta content="Mobile iPhone Repair in San Francisco | Gelatotech" property="og:title" />
-        <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." property="og:description" />
+        <meta content="Mobile iPhone Repair in SF | We come to you! Same-day repair" property="og:title" />
+        <meta content="iPhone screen cracked? No worries, We come to you and fix your iPhone inside our car within 10-15 mins. Same Day repair, Book your iPhone repair today." property="og:description" />
         <meta content="images/iphone-repair.png" property="og:image" />
         <meta content="summary_large_image" name="twitter:card" />
         <meta content="Mobile iPhone Repair in San Francisco | Gelatotech" name="twitter:title" />

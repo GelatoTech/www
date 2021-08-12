@@ -37,12 +37,12 @@ export default function MailIn() {
         <title>Mail-In Repair - San Francisco | Gelatotech</title>
 
         {/* HTML Meta Tags */}
-        <meta name="description" content="Mail your device(s) in for repair." />
+        <meta name="description" content="Gelatotech offers mail-in repair service for all models of iPhone,  iPad, Macbook, Apple Watch,  Samsung, and Google pixel. We can fix any problem." />
         <meta name="keywords" content="ipad, ipad pro, ipad mini, screen repair, battery replacement, fix, on-demand, on demand, driver, technician, fast, quick, San Francisco, Bay Area, CA, sf" />
 
         {/* Google / Search Engine Tags */}
-        <meta itemProp="name" content="Mail-In Repair - San Francisco | Gelatotech" />
-        <meta itemProp="description" content="Mail your device(s) in for repair." />
+        <meta itemProp="name" content="Mail-in iPhone & Macbook Repair | Fast turnaround" />
+        <meta itemProp="description" content="Gelatotech offers mail-in repair service for all models of iPhone,  iPad, Macbook, Apple Watch,  Samsung, and Google pixel. We can fix any problem." />
         <meta itemProp="image" content="images/mail-in.jpeg" />
 
         <link rel="stylesheet" href="../stylesheets/mail-in.css" />

@@ -22,11 +22,11 @@ export default function AppleWatch() {
       <title>Apple Watch Repair San Francisco - On-Demand Repair | Gelatotech</title>
 
       {/* HTML Meta Tags */}
-      <meta name="description" content="Our technicians drive to your preferred location on-demand to repair your Apple Watch." />
+      <meta name="description" content="Apple Watch Screen cracked? We provided glass only repair & OLED screen replacement for any Apple Watch model. We come to you, Same-day repair!" />
       <meta name="keywords" content="apple, watch, screen repair, battery replacement, fix, on-demand, on demand, driver, technician, fast, quick, San Francisco, Bay Area, CA, sf" />
 
       {/* Google / Search Engine Tags */}
-      <meta itemProp="name" content="Apple Watch Repair | Gelatotech" />
+      <meta itemProp="name" content="Apple Watch Repair SF | We come to you | Glass only repair" />
       <meta itemProp="description" content="Our technicians drive to your preferred location on-demand to repair your Apple Watch." />
       <meta itemProp="image" content="images/apple-watch.jpeg" />
 

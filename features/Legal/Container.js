@@ -11,26 +11,25 @@ export default function FAQ() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title> Mobile iPhone Repair| Lifetime Warranty Policy | Gelatotech</title>
+        <title>Mobile iPhone Repair| Lifetime Warranty Policy | Gelatotech</title>
         {/* HTML Meta Tags */}
-        <meta name="description" content="Lifetime Warranty is included on all iPhone Screen Repairs. Other services include a 90 day Warranty." />
+        <meta name="description" content="Gelatotech offers a 90 day warranty on all models of iPhone, iPad, Macbook, Apple Watch, Samsung, and Google Pixel repairs." />
         {/* Google / Search Engine Tags */}
-        <meta itemProp="name" content="Mobile iPhone Repair| Lifetime Warranty Policy| Gelatotech" />
-        <meta itemProp="description" content="Lifetime Warranty is included on all iPhone Screen Repairs. Other services include a 90 day Warranty." />
+        <meta itemProp="name" content="90 day warranty policy | Gelatotech Mobile iPhone Repair SF" />
+        <meta itemProp="description" content="Gelatotech offers a 90 day warranty on all models of iPhone, iPad, Macbook, Apple Watch, Samsung, and Google Pixel repairs." />
         <meta itemProp="image" content={pexelsPhoto607812} />
         {/* Facebook Meta Tags */}
         <meta property="og:url" content="https://www.gelatotech.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Mobile iPhone Repair| Lifetime Warranty Policy| Gelatotech" />
+        <meta property="og:title" content="90 day warranty policy | Gelatotech Mobile iPhone Repair SF" />
         <meta property="og:description" content="Lifetime Warranty is included on all iPhone Screen Repairs. Other services include a 90 day Warranty." />
         <meta property="og:image" content={pexelsPhoto607812} />
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Mobile iPhone Repair| Lifetime Warranty Policy| Gelatotech" />
+        <meta name="twitter:title" content="90 day warranty policy | Gelatotech Mobile iPhone Repair SF" />
         <meta name="twitter:description" content="Lifetime Warranty is included on all iPhone Screen Repairs. Other services include a 90 day Warranty." />
         <meta name="twitter:image" content={pexelsPhoto607812} />
-        <meta name="keywords" content="iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, deamand
-        " />
+        <meta name="keywords" content="iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, demand" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         {/* Global site tag (gtag.js) - Google Analytics */}
         <meta property="og:image" content={pexelsPhoto607812} />

@@ -26,8 +26,8 @@ export default function Samsung() {
       <meta name="keywords" content="samsung, screen repair, battery replacement, fix, on-demand, on demand, driver, technician, fast, quick, San Francisco, Bay Area, CA, sf" />
 
       {/* Google / Search Engine Tags */}
-      <meta itemProp="name" content="Samsung Repair | Gelatotech" />
-      <meta itemProp="description" content="Our technicians drive to your preferred location on-demand to repair your Samsung device." />
+      <meta itemProp="name" content="Mobile Samsung Repair | We come to you, Same day Repair" />
+      <meta itemProp="description" content="Samsung screen cracked? Our skilled technicians come to you and fix your phone screen within 45-60 mins. Same Day Repair, Book your phone repair today!" />
       <meta itemProp="image" content="images/samsung-bg.jpeg" />
 
       <link rel="stylesheet" href="../stylesheets/samsung.css" />

@@ -22,11 +22,11 @@ export default function GooglePixel() {
       <title>Mobile Google Pixel Repair San Francisco - Screen, Battery & Charging port replacement | Gelatotech</title>
 
       {/* HTML Meta Tags */}
-      <meta name="description" content="Our technicians drive to your preferred location on-demand to repair your Google Pixel device." />
+      <meta name="description" content="Google Pixel screen cracked? Our skilled technicians come to you and fix your phone screen within 45-60 mins. Same Day Repair, Book your repair today!" />
       <meta name="keywords" content="google, pixel, screen repair, battery replacement, fix, on-demand, on demand, driver, technician, fast, quick, XL, 3A, 4XL, 3XL, San Francisco, Bay Area, CA, sf" />
 
       {/* Google / Search Engine Tags */}
-      <meta itemProp="name" content="Google Pixel Repair | Gelatotech" />
+      <meta itemProp="name" content="Mobile Google Pixel Repair | We come to you! Same-day Repair" />
       <meta itemProp="description" content="Our technicians drive to your preferred location on-demand to repair your Google Pixel device." />
       <meta itemProp="image" content="images/pixel-bg.jpg" />
 
