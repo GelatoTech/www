@@ -22,6 +22,7 @@ export default function Form({ make }) {
     deviceHomeButtonColor: 'default',
     deviceVersion: 'default',
     color: 'default',
+    addons: '',
     customerName: '',
     customerAddress: '',
     customerPhone: '',
@@ -134,6 +135,7 @@ export default function Form({ make }) {
             <input name="deviceHomeButtonColor" type="hidden" value={repairFormValues.deviceHomeButtonColor} />
             <input name="deviceVersion" type="hidden" value={repairFormValues.deviceVersion} />
             <input name="color" type="hidden" value={repairFormValues.color} />
+            <input name="addons" type="hidden" value={repairFormValues.addons} />
             <div className="field">
               {
                 repairFormValues.deviceMake !== 'default'
@@ -625,6 +627,13 @@ export default function Form({ make }) {
                   </div>
                 </div>
               ) : null
+            }
+            {
+              (repairFormValues.deviceIssue === 'screen' ||
+              repairFormValues.deviceIssue === 'battery' ||
+              repairFormValues.deviceIssue === 'charging') &&
+              repairFormValues.deviceMake === 'iphone'
+                && (<label><input type="checkbox" name="addons" value="screen protector" onChange={handleChange} /> add screen protector</label>)
             }
           <hr />
           <h2 className="title is-5 has-text-weight-light">Contact info <FontAwesomeIcon icon={faUsers} style={{ height: '1em', marginLeft: '0.3em' }} /></h2>
