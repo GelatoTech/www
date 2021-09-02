@@ -15,6 +15,8 @@ export default function Form({ make }) {
 
   const router = useRouter();
 
+  const [addScreenProtector, setAddScreenProtector] = useState(false);
+
   const [repairFormValues, setRepairFormValues] = useState({
     deviceMake: make || router.make || 'default',
     deviceModel: 'default',
@@ -22,7 +24,7 @@ export default function Form({ make }) {
     deviceHomeButtonColor: 'default',
     deviceVersion: 'default',
     color: 'default',
-    addons: '',
+    addScreenProtector: '',
     customerName: '',
     customerAddress: '',
     customerPhone: '',
@@ -135,7 +137,7 @@ export default function Form({ make }) {
             <input name="deviceHomeButtonColor" type="hidden" value={repairFormValues.deviceHomeButtonColor} />
             <input name="deviceVersion" type="hidden" value={repairFormValues.deviceVersion} />
             <input name="color" type="hidden" value={repairFormValues.color} />
-            <input name="addons" type="hidden" value={repairFormValues.addons} />
+            <input name="addScreenProtector" type="hidden" value={repairFormValues.addScreenProtector} />
             <div className="field">
               {
                 repairFormValues.deviceMake !== 'default'
@@ -631,9 +633,30 @@ export default function Form({ make }) {
             {
               (repairFormValues.deviceIssue === 'screen' ||
               repairFormValues.deviceIssue === 'battery' ||
+              repairFormValues.deviceIssue === 'glassOnly' ||
               repairFormValues.deviceIssue === 'charging') &&
               repairFormValues.deviceMake === 'iphone'
-                && (<label><input type="checkbox" name="addons" value="screen protector" onChange={handleChange} /> add screen protector</label>)
+                && (
+                  <div className="is-half">
+                    <div className="column">
+                      <h3><strong>Would you like to add a screen protector?</strong> +$15</h3>
+                    </div>
+                    <div className="column buttons has-addons" style={{ marginTop: '-20px' }}>
+                      <button 
+                        className={`button ${addScreenProtector && 'is-success'}`}
+                        onClick={()=>setAddScreenProtector(true)}
+                      >
+                        Yes
+                      </button>
+                      <button 
+                        className={`button ${!addScreenProtector && 'is-dark'}`}
+                        onClick={()=>setAddScreenProtector(false)}
+                      >
+                        No
+                      </button>
+                    </div>
+                  </div>
+                )
             }
           <hr />
           <h2 className="title is-5 has-text-weight-light">Contact info <FontAwesomeIcon icon={faUsers} style={{ height: '1em', marginLeft: '0.3em' }} /></h2>
