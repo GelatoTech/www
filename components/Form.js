@@ -639,7 +639,7 @@ export default function Form({ make }) {
                 && (
                   <div className="is-half">
                     <div className="column">
-                      <h3><strong>Would you like to add a screen protector?</strong> +$15</h3>
+                      <h3><strong>Would you like to add a screen protector?</strong> <span style={{ color: "#32B610" }}>+$15</span></h3>
                     </div>
                     <div className="column buttons has-addons" style={{ marginTop: '-20px' }}>
                       <button 
