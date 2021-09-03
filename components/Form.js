@@ -15,8 +15,6 @@ export default function Form({ make }) {
 
   const router = useRouter();
 
-  const [addScreenProtector, setAddScreenProtector] = useState(false);
-
   const [repairFormValues, setRepairFormValues] = useState({
     deviceMake: make || router.make || 'default',
     deviceModel: 'default',
@@ -24,7 +22,7 @@ export default function Form({ make }) {
     deviceHomeButtonColor: 'default',
     deviceVersion: 'default',
     color: 'default',
-    addScreenProtector: '',
+    addScreenProtector: false,
     customerName: '',
     customerAddress: '',
     customerPhone: '',
@@ -137,7 +135,7 @@ export default function Form({ make }) {
             <input name="deviceHomeButtonColor" type="hidden" value={repairFormValues.deviceHomeButtonColor} />
             <input name="deviceVersion" type="hidden" value={repairFormValues.deviceVersion} />
             <input name="color" type="hidden" value={repairFormValues.color} />
-            <input name="addScreenProtector" type="hidden" value={repairFormValues.addScreenProtector} />
+            <input name="addScreenProtector" type="hidden" value={repairFormValues.addScreenProtector ? "Yes" : "No"} />
             <div className="field">
               {
                 repairFormValues.deviceMake !== 'default'
@@ -643,14 +641,16 @@ export default function Form({ make }) {
                     </div>
                     <div className="column buttons has-addons" style={{ marginTop: '-20px' }}>
                       <button 
-                        className={`button ${addScreenProtector && 'is-success'}`}
-                        onClick={()=>setAddScreenProtector(true)}
+                        className={`button ${repairFormValues.addScreenProtector && 'is-success'}`}
+                        onClick={()=>handleChange({ target: { name: "addScreenProtector", value: true } })}
+                        // onClick={()=>setAddScreenProtector(true)}
                       >
                         Yes
                       </button>
                       <button 
-                        className={`button ${!addScreenProtector && 'is-dark'}`}
-                        onClick={()=>setAddScreenProtector(false)}
+                        className={`button ${!repairFormValues.addScreenProtector && 'is-dark'}`}
+                        onClick={()=>handleChange({ target: { name: "addScreenProtector", value: false } })}
+                        // onClick={()=>setAddScreenProtector(false)}
                       >
                         No
                       </button>
