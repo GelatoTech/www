@@ -40,7 +40,6 @@ export default function Form({ make }) {
   // Handle repair form state
   const handleChange = (e) => {
     setRepairFormValues({ ...repairFormValues, [e.target.name]: e.target.value });
-    console.log(repairFormValues);
   }
 
   // When repair form is submitted...
