@@ -16,13 +16,13 @@ export default function Form({ make }) {
   const router = useRouter();
 
   const [repairFormValues, setRepairFormValues] = useState({
-    deviceMake: make || router.make || 'default',
-    deviceModel: 'default',
-    deviceIssue: 'default',
-    deviceHomeButtonColor: 'default',
-    deviceVersion: 'default',
-    color: 'default',
-    addScreenProtector: false,
+    deviceMake: make || router.make || '',
+    deviceModel: '',
+    deviceIssue: '',
+    deviceHomeButtonColor: '',
+    deviceVersion: '',
+    color: '',
+    addScreenProtector: 'No',
     customerName: '',
     customerAddress: '',
     customerPhone: '',
@@ -40,6 +40,7 @@ export default function Form({ make }) {
   // Handle repair form state
   const handleChange = (e) => {
     setRepairFormValues({ ...repairFormValues, [e.target.name]: e.target.value });
+    console.log(repairFormValues);
   }
 
   // When repair form is submitted...
@@ -58,7 +59,7 @@ export default function Form({ make }) {
         <i><h1 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">Schedule Repair</h1></i>
         <h2 className="subtitle" data-aos="fade-up">Pick your device model and problem.</h2>
         {
-          repairFormValues.deviceMake !== 'default'
+          repairFormValues.deviceMake !== ''
           ? (
             <figure>
               <img alt="iPhone Screen Repair" src={`images/devices/${repairFormValues.deviceMake}.png`} style={{ width: '500px' }} />
@@ -71,7 +72,7 @@ export default function Form({ make }) {
             (repairFormValues.deviceMake) &&
             repairFormValues.deviceModel &&
             repairFormValues.deviceIssue &&
-            repairFormValues.deviceIssue !== 'default' &&
+            repairFormValues.deviceIssue !== '' &&
             devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price
           )
           ? (<p id="total-price-text" style={{ fontSize: '1.9em' }}> 
@@ -87,7 +88,7 @@ export default function Form({ make }) {
             (repairFormValues.deviceMake) &&
             repairFormValues.deviceModel &&
             repairFormValues.deviceIssue &&
-            repairFormValues.deviceIssue !== 'default' &&
+            repairFormValues.deviceIssue !== '' &&
             devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].warranty
           )
           ? (<p id="warranty-text" style={{ fontSize: '1.5em' }}><strong>{devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].warranty}</strong> warranty</p>)
@@ -98,7 +99,7 @@ export default function Form({ make }) {
             (repairFormValues.deviceMake) &&
             repairFormValues.deviceModel &&
             repairFormValues.deviceIssue &&
-            repairFormValues.deviceIssue !== 'default' &&
+            repairFormValues.deviceIssue !== '' &&
             devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].duration
           )
           ? (<p id="repairtime-text" style={{ fontSize: '1.2em', marginBottom: '0.5em' }}>Estimated <strong>{devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].duration}</strong> repair time</p>)
@@ -109,7 +110,7 @@ export default function Form({ make }) {
             <div className="field">
               <div className="select is-info is-rounded">
                 <select id="select-device" value={repairFormValues.deviceMake} name="deviceMake" onChange={handleChange} required>
-                  <option value="default" disabled>
+                  <option value="" disabled>
                     Select Device
                   </option>
                   <option value="iphone">
@@ -135,15 +136,15 @@ export default function Form({ make }) {
             <input name="deviceHomeButtonColor" type="hidden" value={repairFormValues.deviceHomeButtonColor} />
             <input name="deviceVersion" type="hidden" value={repairFormValues.deviceVersion} />
             <input name="color" type="hidden" value={repairFormValues.color} />
-            <input name="addScreenProtector" type="hidden" value={repairFormValues.addScreenProtector ? "Yes" : "No"} />
+            <input name="addScreenProtector" type="hidden" value={repairFormValues.addScreenProtector} />
             <div className="field">
               {
-                repairFormValues.deviceMake !== 'default'
+                repairFormValues.deviceMake !== ''
                   ? (
                     <div>
                       <div className="select is-info is-rounded">
                         <select value={ repairFormValues.deviceModel } onChange={(e)=>setRepairFormValues({ ...repairFormValues, deviceModel: e.target.value })}>
-                          <option value="default" disabled>
+                          <option value="" disabled>
                             Select Model
                           </option>
                           {
@@ -465,7 +466,7 @@ export default function Form({ make }) {
                 <div className="field" id="deviceVersion">
                   <div className="select is-rounded">
                     <select value={repairFormValues.deviceVersion} onChange={(e)=>setRepairFormValues({ ...repairFormValues, deviceVersion: e.target.value })}>
-                      <option value="default" disabled>
+                      <option value="" disabled>
                         Select Version
                       </option>
                       {
@@ -483,7 +484,7 @@ export default function Form({ make }) {
                 <div className="field" id="homeButton">
                   <div className="select is-rounded">
                     <select value={repairFormValues.deviceHomeButtonColor} onChange={(e)=>setRepairFormValues({ ...repairFormValues, deviceHomeButtonColor: e.target.value })}>
-                      <option value="default" disabled>
+                      <option value="" disabled>
                         Home Button Color
                       </option>
                       <option value="black">
@@ -503,7 +504,7 @@ export default function Form({ make }) {
                 <div className="field">
                   <div className="select is-rounded">
                     <select value={repairFormValues.color} onChange={(e)=>setRepairFormValues({ ...repairFormValues, color: e.target.value })}>
-                      <option value="default" disabled>Select color</option>
+                      <option value="" disabled>Select color</option>
                       {
                         devices[repairFormValues.deviceModel]["colors"].map((color) => {
                           return (<option value={color}>{color}</option>)
@@ -515,12 +516,12 @@ export default function Form({ make }) {
               )
             }
             {
-              repairFormValues.deviceModel !== 'default'
+              repairFormValues.deviceModel !== ''
               ? (
                 <div className="field">
                   <div className="select is-danger is-rounded" style={{ borderRadius: '3em' }}>
                     <select value={repairFormValues.deviceIssue} onChange={(e)=>setRepairFormValues({ ...repairFormValues, deviceIssue: e.target.value })} required>
-                      <option value="default" disabled>
+                      <option value="" disabled>
                         Select Problem
                       </option>
                       {
@@ -641,15 +642,15 @@ export default function Form({ make }) {
                     </div>
                     <div className="column buttons has-addons" style={{ marginTop: '-20px' }}>
                       <button 
-                        className={`button ${repairFormValues.addScreenProtector && 'is-success'}`}
-                        onClick={()=>handleChange({ target: { name: "addScreenProtector", value: true } })}
+                        className={`button ${repairFormValues.addScreenProtector === "Yes" && 'is-success'}`}
+                        onClick={()=>handleChange({ target: { name: "addScreenProtector", value: "Yes" } })}
                         // onClick={()=>setAddScreenProtector(true)}
                       >
                         Yes
                       </button>
                       <button 
-                        className={`button ${!repairFormValues.addScreenProtector && 'is-dark'}`}
-                        onClick={()=>handleChange({ target: { name: "addScreenProtector", value: false } })}
+                        className={`button ${repairFormValues.addScreenProtector === "No" && 'is-dark'}`}
+                        onClick={()=>handleChange({ target: { name: "addScreenProtector", value: "No" } })}
                         // onClick={()=>setAddScreenProtector(false)}
                       >
                         No
