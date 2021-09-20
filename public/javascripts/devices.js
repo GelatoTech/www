@@ -1131,11 +1131,6 @@ const devices = {
             warranty: "90 day",
             duration: "15 minutes",
         },
-        glassTouch: {
-            price: "$185",
-            warranty: "90 day",
-            duration: "3-5 hours"
-        },
         battery: {
             price: "$100",
             warranty: "90 day",
@@ -1161,11 +1156,6 @@ const devices = {
             price: "$330",
             warranty: "90 day",
             duration: "15 minutes",
-        },
-        glassTouch: {
-            price: "$190",
-            warranty: "90 day",
-            duration: "3-5 hours"
         },
         battery: {
             price: "$120",
