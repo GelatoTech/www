@@ -1,6 +1,15 @@
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
 
+const buttonStyles = { 
+  backgroundColor: '#1496ED', 
+  border: 0, 
+  padding: '0.5em', 
+  color: 'white', 
+  borderRadius: '6px',
+  marginTop: '1.5em',
+}
+
 export default function GooglePixelCarousel() {
   return (
     <div>

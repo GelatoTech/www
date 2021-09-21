@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile, faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faYelp } from '@fortawesome/free-brands-svg-icons';
 import AOS from 'aos';
-import { BookRepairButton, Form, HowItWorks, TrustedBy } from '../../components';
+import { BookRepairButton, Form, HowItWorks, TrustedBy, WhyUs } from '../../components';
 import scrollToSection from '../../helpers/scrollToSection';
 
 export default function Home() {
@@ -119,39 +119,7 @@ export default function Home() {
       </section>
       <TrustedBy />
       <HowItWorks deviceName="iPhone" />
-      <section className="section" id="why-us">
-        <div className="container">
-          <h1 className="title is-1 has-text-centered">Why us?</h1>
-          <div className="columns">
-            <div className="column">
-              <div className="why-container" style={{ textAlign: 'left' }}>
-                <ul style={{listStyle: 'none'}}>
-                  <li>
-                    <h2 className="title is-3">Save Your Time</h2>
-                    <p className="subtitle is-5">Our technician comes to you preferred location. We ensure you quality parts. </p>
-                  </li>
-                  <li style={{listStyle: 'none'}}><br /></li>
-                  <li>
-                    <h2 className="title is-3">Fast &amp; Reliable Service</h2>
-                    <p className="subtitle is-5">iPhone Screen Repairs take 15 minutes or less. Read our Customer Reviews on <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Yelp</a> or <a href="https://g.page/GelatotechiPhoneRepair?share" target="_blank">Google</a></p>
-                  </li>
-                  <li style={{listStyle: 'none'}}><br /></li>
-                  <li>
-                    <h2 className="title is-3">Risk Free</h2>
-                    <p className="subtitle is-5">You only pay after the repair is done and fully tested. 90 day warranty is included on Any iPhone Screen Repair.</p>
-                  </li>
-                  <li style={{listStyle: 'none'}}><br /></li>
-                </ul>
-              </div>
-            </div>
-            <div className="column">
-              <figure className="image">
-                <img alt="On-Demand iPhone Screen Repair" src="images/technician-fixing.jpg" style={{borderRadius: '5px', height: '30%'}} />
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
+      <WhyUs />
       <Form make={router.query.make} />
       {/* service include */}
       <section className="section" id="services">

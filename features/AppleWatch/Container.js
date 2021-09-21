@@ -89,12 +89,3 @@ export default function AppleWatch() {
     </section>
   </div>
 )}
-
-const buttonStyles = { 
-  backgroundColor: '#1496ED', 
-  border: 0, 
-  padding: '0.5em', 
-  color: 'white', 
-  borderRadius: '6px',
-  marginTop: '1.5em',
-}
