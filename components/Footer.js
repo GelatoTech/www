@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLink, faLocationArrow, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faTwitterSquare, faGoogle, faYelp, faInstagram, faLinkedin, faFacebookF } from '@fortawesome/free-brands-svg-icons';
 
-export default function Footer() {
+export function Footer() {
 
   const router = useRouter();
 

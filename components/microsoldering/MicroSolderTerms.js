@@ -104,7 +104,7 @@ All customers have the option to go to or contact their device manufacture for a
 Gelatotech.com has the right to make any changes to all repair prices and terms and conditions at anytime without notification. Terms and conditions last updated December 30, 2020
 `;
 
-export default function MicroSolderTerms() {
+export function MicroSolderTerms() {
   return(
   <div>
     <textarea value={termsAndConditions} readOnly={true} disabled className="textarea" aria-invalid="false" rows="10" cols="50"></textarea>

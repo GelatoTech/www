@@ -8,11 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile, faCheck } from '@fortawesome/free-solid-svg-icons';
 import { faYelp } from '@fortawesome/free-brands-svg-icons';
 import AOS from 'aos';
-
-import BookRepairButton from '../../components/BookRepairButton';
-import TrustedBy from '../../components/TrustedBy';
+import { BookRepairButton, Form, HowItWorks, TrustedBy } from '../../components';
 import scrollToSection from '../../helpers/scrollToSection';
-import Form from '../../components/Form';
 
 export default function Home() {
 
@@ -121,34 +118,7 @@ export default function Home() {
         </div>
       </section>
       <TrustedBy />
-      <section className="section" id="works">
-        <div className="container">
-          <h1 className="title is-1">How it Works</h1>
-          <div className="columns">
-            <div className="column">
-              <figure className="image">
-                <img alt="Book your iphone repair" src="images/undraw-calendar-dutt.png" style={{width: '40%', marginLeft: 'auto', marginRight: 'auto'}} />
-                <h2 className="title is-3center" data-aos="zoom-out" style={{textAlign: 'center'}}>Book Your Repair</h2>
-                <p className="subtitle is-5" data-aos="zoom-out" style={{margin: 'auto', textAlign: 'center'}}>Once you schedule your appointment, we will confirm your preferred time and location for us to repair your device.</p>
-              </figure>
-            </div>
-            <div className="column">
-              <figure className="image">
-                <img alt="We repair your phone screen on-spot" src="images/undraw-order-a-car-3tww.png" style={{width: '40%', marginLeft: 'auto', marginRight: 'auto'}} />
-                <h2 className="title is-3 center" data-aos="zoom-out" style={{textAlign: 'center'}}>We Come To You</h2>
-                <p className="subtitle is-5" data-aos="zoom-out" style={{margin: 'auto', textAlign: 'center'}}>We Repair your iPhone On-Spot, usually inside our car or your preferred location.</p>
-              </figure>
-            </div>
-            <div className="column">
-              <figure className="image">
-                <img alt="iPhone screen repair on-spot" src="images/undraw-Credit-card-3ed6.png" style={{width: '40%', marginRight: 'auto', marginLeft: 'auto'}} />
-                <h2 className="title is-3 center" data-aos="zoom-out" style={{textAlign: 'center'}}>Pay After The Repair</h2>
-                <p className="subtitle is-5" data-aos="zoom-out" style={{margin: 'auto', textAlign: 'center'}}>Once the repair is done , we make sure to test everything before leaving. After the test you can pay with Cash, Venmo, Bitcoin or any credit card.</p>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>{/* why us */}
+      <HowItWorks deviceName="iPhone" />
       <section className="section" id="why-us">
         <div className="container">
           <h1 className="title is-1 has-text-centered">Why us?</h1>

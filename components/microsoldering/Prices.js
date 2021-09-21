@@ -166,7 +166,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SimpleAccordion() {
+export function Prices() {
   const classes = useStyles();
 
   return (

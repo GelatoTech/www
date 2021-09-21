@@ -3,14 +3,12 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar, faEnvelope, faScrewdriver } from '@fortawesome/free-solid-svg-icons';
-import TrustedBy from '../../components/TrustedBy';
 import scrollToSection from '../../helpers/scrollToSection';
 import AOS from 'aos';
 const ReactRotatingText = require('react-rotating-text');
-import WhyUs from '../../components/microsoldering/WhyUs';
-import Prices from '../../components/microsoldering/Prices';
-import MailInForm from '../../components/mail-in/MailInForm';
-import MailInSteps from '../../components/mail-in/MailInSteps';
+import { TrustedBy } from '../../components';
+import { MailInForm, MailInSteps } from '../../components/mail-in';
+import { Prices, WhyUs } from '../../components/microsoldering';
 
 export default function MicroSoldering() {
 

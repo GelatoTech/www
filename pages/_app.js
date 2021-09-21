@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import ReactGA from 'react-ga';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
-import FacebookPixel from '../components/FacebookPixel';
+import { FacebookPixel, Footer, Nav } from '../components';
 import LinkedInTag from 'react-linkedin-insight';
 import '../public/stylesheets/bulma.min.css';
 import '../public/stylesheets/main.css';
@@ -23,9 +23,6 @@ import '../public/stylesheets/stepper.css';
 // import '../public/stylesheets/phone-repair.css';
 // import '../public/stylesheets/screenrepairblog.css';
 // import '../public/stylesheets/social.css';
-
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
 
 
 export default function App({ Component, pageProps }) {

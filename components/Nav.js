@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClock, faMobile, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faClock, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 import scrollToSection from '../helpers/scrollToSection';
 import logo from '../public/images/nav-logo-gtech.png';
 
-export default function Nav() {
+export function Nav() {
 
   const router = useRouter();
   

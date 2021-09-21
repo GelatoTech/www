@@ -4,7 +4,7 @@ import { faMobile } from '@fortawesome/free-solid-svg-icons'
 
 import scrollToSection from '../helpers/scrollToSection';
 
-export default function BookRepairButton({ text, make }) {
+export function BookRepairButton({ text, make }) {
 
   const router = useRouter();
 

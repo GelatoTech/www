@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faGoogle, faYelp } from '@fortawesome/free-brands-svg-icons';
 
-export default function TrustedBy() {
+export function TrustedBy() {
 
   return(
     <div>

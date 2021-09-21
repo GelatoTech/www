@@ -1,6 +1,6 @@
 import ReactTooltip from 'react-tooltip';
 
-export default function MailInSteps(props) {
+export function MailInSteps(props) {
 
   const steps = [
     { 

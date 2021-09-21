@@ -7,7 +7,7 @@ import {
   faPrint,
   faPlaneDeparture,
 } from '@fortawesome/free-solid-svg-icons'
-import MailInSteps from '../../components/mail-in/MailInSteps';
+import { MailInSteps } from '../../components/mail-in';
 import { useRouter } from 'next/router';
 import NetlifyForm from 'react-ssg-netlify-forms';
 

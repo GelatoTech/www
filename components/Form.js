@@ -11,7 +11,7 @@ import { devices, devicesWithHomeButton, devicesWithVersions } from '../public/j
 
 
 
-export default function Form({ make }) {
+export function Form({ make }) {
 
   const router = useRouter();
 

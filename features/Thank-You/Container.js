@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import Head from 'next/head';
-import MailInSteps from "../../components/mail-in/MailInSteps";
-import { useEffect, useState } from "react";
+import { MailInSteps } from "../../components/mail-in";
 // import logo from '../../public/images/nav-logo-gtech.png'
 
 export default function ThankYou() {

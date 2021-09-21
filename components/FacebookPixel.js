@@ -6,7 +6,7 @@ const handleRouteChange = () => {
   fbq.pageview()
 }
 
-const FacebookPixel = ({ children }) => {
+export function FacebookPixel({ children }) {
   const router = useRouter()
 
   useEffect(() => {
@@ -21,5 +21,3 @@ const FacebookPixel = ({ children }) => {
 
   return children
 }
-
-export default FacebookPixel

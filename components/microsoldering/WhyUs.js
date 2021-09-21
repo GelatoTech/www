@@ -1,4 +1,4 @@
-export default function WhyUs() {
+export function WhyUs() {
 
   return (
     <section className="section" id="why-us">

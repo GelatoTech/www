@@ -185,12 +185,12 @@ All customers have the option to go to or contact their device manufacture for a
 
 
 Gelatotech.com has the right to make any changes to all repair prices and terms and conditions at anytime without notification.
-Terms and conditions last updated November 08, 2020`
+Terms and conditions last updated November 08, 2020`;
 
-export default function MailInTerms() {
+export function MailInTerms() {
   return(
   <div>
     <textarea value={termsAndConditions} readOnly={true} disabled className="textarea" aria-invalid="false" rows="10" cols="50"></textarea>
-    </div>
+  </div>
   )
 }

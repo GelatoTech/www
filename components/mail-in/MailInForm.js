@@ -18,11 +18,11 @@ import {
   faLocationArrow
 } from '@fortawesome/free-solid-svg-icons';
 
-import MailInTerms from './MailInTerms';
-import MicroSolderTerms from '../MicroSolderTerms';
+import { MailInTerms } from '../../components/mail-in';
+import { MicroSolderTerms } from '../../components/microsoldering';
 
 
-export default function MailIn({ serviceType, repairType }) {
+export function MailInForm({ serviceType, repairType }) {
 
   const router = useRouter();
 

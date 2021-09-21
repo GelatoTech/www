@@ -1,9 +1,6 @@
 import Head from 'next/head';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobile } from '@fortawesome/free-solid-svg-icons';
-
-import TrustedBy from '../../components/TrustedBy';
-import BookRepairButton from '../../components/BookRepairButton';
+import { BookRepairButton, TrustedBy } from '../../components';
 import { faYelp } from '@fortawesome/free-brands-svg-icons';
 
 export default function About() {

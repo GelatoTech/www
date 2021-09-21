@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import TrustedBy from '../../components/TrustedBy';
 import scrollToSection from '../../helpers/scrollToSection';
 import AOS from 'aos';
 const ReactRotatingText = require('react-rotating-text');
@@ -11,8 +10,8 @@ const ReactRotatingText = require('react-rotating-text');
 // import step2Img from '../../public/images/mail-2.png';
 // import step3Img from '../../public/images/mail-3.png';
 // import step4Img from '../../public/images/mail-4.png';
-import MailInForm from '../../components/mail-in/MailInForm';
-import MailInSteps from '../../components/mail-in/MailInSteps';
+import { TrustedBy } from '../../components';
+import { MailInForm, MailInSteps} from '../../components/mail-in';
 
 const itemsWeService = [
   "iPhone",
