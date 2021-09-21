@@ -11,7 +11,7 @@ export function WhyUs() {
                 <ul style={{listStyle: 'none'}}>
                   <li>
                     <h2 className="title is-3">Save Time &amp; Money</h2>
-                    <p className="subtitle is-5">Don’t waste your time &amp; money going to a repair shop. Our professional technicians meet you at your location and fix your device inside our car.</p>
+                    <p className="subtitle is-5">Don’t waste your time &amp; money going to a repair shop. Our professional technicians travel to your location and fix your device inside our car.</p>
                   </li>
                   <li style={{listStyle: 'none'}}><br /></li>
                   <li>
