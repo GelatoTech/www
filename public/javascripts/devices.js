@@ -803,7 +803,7 @@ const devices = {
             duration: "30 minutes",
         },
         water: {
-            price: "$160-$200",
+            price: "$100-$150",
             warranty: "90 day",
             duration: "2-3 business days",
         },
@@ -825,7 +825,7 @@ const devices = {
             duration: "30 minutes",
         },
         water: {
-            price: "$160-$200",
+            price: "$100-$150",
             warranty: "90 day",
             duration: "2-3 business days",
         },
@@ -847,7 +847,7 @@ const devices = {
             duration: "30 minutes",
         },
         water: {
-            price: "$160-$200",
+            price: "$100-$150",
             warranty: "90 day",
             duration: "2-3 business days",
         },
@@ -869,7 +869,7 @@ const devices = {
             duration: "30 minutes",
         },
         water: {
-            price: "$180-$240",
+            price: "$100-$150",
             warranty: "90 day",
             duration: "2-3 business days",
         },
@@ -891,7 +891,7 @@ const devices = {
             duration: "30 minutes",
         },
         water: {
-            price: "$180-$240",
+            price: "$100-$180",
             warranty: "90 day",
             duration: "2-3 business days",
         },
@@ -913,7 +913,7 @@ const devices = {
             duration: "30 minutes",
         },
         water: {
-            price: "$200-$250",
+            price: "$100-$180",
             warranty: "90 day",
             duration: "2-3 business days",
         },
@@ -935,13 +935,13 @@ const devices = {
             duration: "30 minutes",
         },
         water: {
-            price: "$200-$250",
+            price: "$100-$200",
             warranty: "90 day",
             duration: "2-3 business days",
         },
         backglass: {
             duration: "3 hour",
-        price: "$140"
+            price: "$100"
         }
     },
     "8plus": {
@@ -961,13 +961,13 @@ const devices = {
             duration: "30 minutes",
         },
         water: {
-            price: "$200-$250",
+            price: "$100-$200",
             warranty: "90 day",
             duration: "2-3 business days",
         },
         backglass: {
             duration: "3 hour",
-        price: "$140"
+            price: "$100"
         }
     },
     "x": {
@@ -977,23 +977,23 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$65",
+            price: "$80",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$75",
+            price: "$80",
             warranty: "90 day",
             duration: "30 minutes",
         },
         water: {
-            price: "$250-$350",
+            price: "$100-$300",
             warranty: "90 day",
             duration: "2-3 business days",
         },
         backglass: {
             duration: "3 hour",
-        price: "$150"
+            price: "$120"
         }
     },
     "xs": {
@@ -1003,23 +1003,23 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$75",
+            price: "$80",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$75",
+            price: "$80",
             warranty: "90 day",
             duration: "30 minutes",
         },
         water: {
-            price: "$250-$350",
+            price: "$100-$300",
             warranty: "90 day",
             duration: "2-3 business days",
         },
         backglass: {
             duration: "3 hour",
-        price: "$150"
+            price: "$120"
         }
     },
     "se2": {
@@ -1064,13 +1064,13 @@ const devices = {
             duration: "30 minutes",
         },
         water: {
-            price: "$250-$350",
+            price: "$100-$300",
             warranty: "90 day",
             duration: "2-3 business days",
         },
         backglass: {
             duration: "3 hour",
-        price: "$150"
+            price: "$120"
         }
     },
     "xsmax": {
@@ -1080,23 +1080,23 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$75",
+            price: "$80",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$75",
+            price: "$80",
             warranty: "90 day",
             duration: "30 minutes",
         },
         water: {
-            price: "$300 - $450",
+            price: "$100-$300",
             warranty: "90 day",
             duration: "2-3 business days",
         },
         backglass: {
             duration: "3 hour",
-            price: "$150"
+            price: "$120"
         }
     },
     "11": {
@@ -1106,23 +1106,23 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$100",
+            price: "$90",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$100",
+            price: "$90",
             warranty: "90 day",
             duration: "30 minutes",
         },
         water: {
-            price: "$300-$350",
+            price: "$100-$400",
             warranty: "90 day",
             duration: "2-3 business days",
         },
         backglass: {
             duration: "3 hour",
-            price: "$180"
+            price: "$150"
         }
     },
     "11pro": {
@@ -1132,7 +1132,7 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$100",
+            price: "$95",
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -1142,13 +1142,13 @@ const devices = {
             duration: "30 minutes",
         },
         water: {
-            price: "$300-$450",
+            price: "$100-$400",
             warranty: "90 day",
             duration: "2-3 business days",
         },
         backglass: {
-        duration: "3 hour",
-        price: "$180"
+            duration: "3 hour",
+            price: "$150"
         }
     },
     "11proMax": {
@@ -1158,7 +1158,7 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$120",
+            price: "$95",
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -1168,13 +1168,13 @@ const devices = {
             duration: "30 minutes",
         },
         water: {
-            price: "$300-$350",
+            price: "$100-$400",
             warranty: "90 day",
             duration: "2-3 business days",
         },
         backglass: {
             duration: "3 hour",
-            price: "$180"
+            price: "$150"
         }
     },
     "12mini": {
@@ -1205,7 +1205,7 @@ const devices = {
             duration: "15 minutes",
         },
         glassTouch: {
-            price: "$220",
+            price: "$279.99",
             warranty: "90 day",
             duration: "3-5 hours"
         },
@@ -1219,6 +1219,11 @@ const devices = {
             warranty: "90 day",
             duration: "30 minutes",
         },
+        water: {
+            price: "$100-$500",
+            warranty: "90 day",
+            duration: "2-3 business days",
+        },
         backglass: {
             duration: "3 hour",
             price: "$200"
@@ -1231,7 +1236,7 @@ const devices = {
             duration: "15 minutes",
         },
         glassTouch: {
-            price: "$245",
+            price: "$329.99",
             warranty: "90 day",
             duration: "3-5 hours"
         },
@@ -1239,6 +1244,11 @@ const devices = {
             price: "$140",
             warranty: "90 day",
             duration: "15 minutes",
+        },
+        water: {
+            price: "$100-$500",
+            warranty: "90 day",
+            duration: "2-3 business days",
         },
         charging: {
             price: "$140",
