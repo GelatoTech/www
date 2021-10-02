@@ -322,6 +322,12 @@ export function Form({ make }) {
                                   <option value="googlePixel5">
                                     Google Pixel 5
                                   </option>
+                                  <option value="googlePixel5A">
+                                    Google Pixel 5A
+                                  </option>
+                                  <option value="googlePixel5a5g">
+                                    Google Pixel 5A 5G
+                                  </option>
                                 </>
                               )
                               : ''

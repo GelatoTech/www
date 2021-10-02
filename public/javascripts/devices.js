@@ -1127,7 +1127,7 @@ const devices = {
     },
     "11pro": {
         screen: {
-            price: "$280",
+            price: "$220",
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -1420,6 +1420,20 @@ const devices = {
     "googlePixel5": {
         screen: {
             price: "$260",
+            warranty: "90 day",
+            duration: "1 hour",
+        },
+    },
+    "googlePixel5A": {
+        screen: {
+            price: "$250",
+            warranty: "90 day",
+            duration: "1 hour",
+        },
+    },
+    "googlePixel5a5g": {
+        screen: {
+            price: "$250",
             warranty: "90 day",
             duration: "1 hour",
         },
