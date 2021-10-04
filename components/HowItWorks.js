@@ -23,7 +23,7 @@ export function HowItWorks({ deviceName }) {
               <figure className="image">
                 <img alt="Google Pixel screen repair on-spot" src="images/undraw-Credit-card-3ed6.png" style={{width: '40%', marginRight: 'auto', marginLeft: 'auto'}} />
                 <h2 className="title is-3 center" data-aos="zoom-out" style={{textAlign: 'center'}}>Pay After the Repair</h2>
-                <p className="subtitle is-5" data-aos="zoom-out" style={{margin: 'auto', textAlign: 'center'}}>Once your {deviceName} is fixed, we will test your device in-front of you before taking payment. After the test is done, for payment we accept: Cash, Bitcoin, Venmo, CashApp, Zelle, and any debit/credit card. For any credit card payment we charge a 4% processing fee.</p>
+                <p className="subtitle is-5" data-aos="zoom-out" style={{margin: 'auto', textAlign: 'center'}}>Once your {deviceName} is fixed, we will test your device in-front of you before taking payment. After the test is done, for payment we accept: Cash, Bitcoin, Venmo, CashApp, Zelle, and any debit/credit card. For any debit/credit card payment, we charge a 4% processing fee.</p>
               </figure>
             </div>
           </div>
