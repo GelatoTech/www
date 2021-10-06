@@ -5,6 +5,7 @@ import ReactGA from 'react-ga';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import { FacebookPixel, Footer, Nav } from '../components';
 import LinkedInTag from 'react-linkedin-insight';
+import { googleSchemaData } from '../constants';
 import '../public/stylesheets/bulma.min.css';
 import '../public/stylesheets/main.css';
 import '../public/stylesheets/phone-repair.css'
@@ -51,6 +52,11 @@ export default function App({ Component, pageProps }) {
     <div>
       <Head>
         <link href="/images/logo-square.png" rel="shortcut icon" type="image/png" />
+        <script 
+          type="application/ld+json" 
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(googleSchemaData) }}
+        >
+        </script>
       </Head>
       <Nav />
       <div ref={useRef("customer-chat")}></div>

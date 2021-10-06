@@ -1,0 +1,1 @@
+export { googleSchemaData } from './GoogleSchemaData';
