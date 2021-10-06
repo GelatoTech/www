@@ -26,7 +26,7 @@ export function Nav() {
                 router.pathname == '/' ? scrollToSection("hero") : router.push('/'); 
               }}
               >
-                <img alt="iphone screen repair" height="30" src={logo} width="150" />
+                <img alt="Gelatotech" height="30" src={logo} width="150" />
               </a>
             </span> 
             <a aria-expanded="false" aria-label="menu" className={`navbar-burger burger ${burgerOpen ? 'is-active' : ''}`} data-target="navbarBasicExample" role="button"
