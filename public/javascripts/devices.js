@@ -1122,7 +1122,7 @@ const devices = {
         },
         backglass: {
             duration: "3 hour",
-            price: "$150"
+            price: "$140"
         }
     },
     "11pro": {
@@ -1148,7 +1148,7 @@ const devices = {
         },
         backglass: {
             duration: "3 hour",
-            price: "$150"
+            price: "$140"
         }
     },
     "11proMax": {
@@ -1174,7 +1174,7 @@ const devices = {
         },
         backglass: {
             duration: "3 hour",
-            price: "$150"
+            price: "$140"
         }
     },
     "12mini": {
@@ -1195,7 +1195,7 @@ const devices = {
         },
         backglass: {
             duration: "3 hour",
-            price: "$180"
+            price: "$150"
         }
     },
     "1212pro": {
@@ -1226,7 +1226,7 @@ const devices = {
         },
         backglass: {
             duration: "3 hour",
-            price: "$200"
+            price: "$150"
         }
     },
     "12proMax": {
@@ -1257,7 +1257,7 @@ const devices = {
         },
         backglass: {
             duration: "3 hour",
-            price: "$200"
+            price: "$150"
         }
     },
     "googlePixel": {
