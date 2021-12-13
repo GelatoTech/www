@@ -32,7 +32,19 @@ export default function App({ Component, pageProps }) {
 
   useEffect(() => {
     // Google Analytics
-    ReactGA.initialize('UA-121085071-1')
+    ReactGA.initialize(
+      [
+        {
+          trackingId: 'UA-124172320-1',
+          gaOptions: { name: 'ads' }
+        },
+        {
+          trackingId: 'UA-121085071-1',
+          gaOptions: { name: 'analytics' }
+        }
+      ],
+      { alwaysSendToDefaultTracker: false }
+    )
     ReactGA.pageview(window.location.pathname + window.location.search);
 
     // LinkedIn Insight
