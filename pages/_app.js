@@ -43,7 +43,7 @@ export default function App({ Component, pageProps }) {
           gaOptions: { name: 'analytics' }
         }
       ],
-      { debug: true, alwaysSendToDefaultTracker: false }
+      { alwaysSendToDefaultTracker: false }
     )
     ReactGA.pageview(window.location.pathname + window.location.search);
 
