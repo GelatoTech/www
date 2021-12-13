@@ -33,6 +33,7 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     // Google Analytics
     ReactGA.initialize('UA-124172320-1');
+    ReactGA.initialize('UA-121085071-1');
     ReactGA.pageview(window.location.pathname + window.location.search);
 
     // LinkedIn Insight
