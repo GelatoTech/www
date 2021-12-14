@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import ReactGA from 'react-ga';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import { FacebookPixel, Footer, Nav } from '../components';
 import LinkedInTag from 'react-linkedin-insight';
@@ -31,25 +30,6 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
-    // Google Analytics
-    // ReactGA.initialize(
-    //   [
-    //     {
-    //       trackingId: 'UA-124172320-1',
-    //       gaOptions: { name: 'ads' }
-    //     },
-    //     {
-    //       trackingId: 'UA-121085071-1',
-    //       gaOptions: { name: 'analytics' }
-    //     }
-    //   ],
-    //   { alwaysSendToDefaultTracker: false }
-    // )
-    // ReactGA.pageview(window.location.pathname + window.location.search);
-
-    ReactGA.ga('create', 'UA-124172320-1', 'gelatotech.com', 'Ads');
-    ReactGA.ga('create', 'UA-121085071-1', 'gelatotech.com', 'Analytics');
-
     // LinkedIn Insight
     LinkedInTag.init(process.env.NEXT_PUBLIC_LINKEDIN_PARTNER_ID, 'dc');
     LinkedInTag.track(process.env.NEXT_PUBLIC_LINKEDIN_CONVERSION_ID);
