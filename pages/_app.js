@@ -5,7 +5,6 @@ import MessengerCustomerChat from 'react-messenger-customer-chat';
 import { FacebookPixel, Footer, Nav } from '../components';
 import LinkedInTag from 'react-linkedin-insight';
 import ReactGA from 'react-ga';
-import { GATracking } from '../contexts/trackers'
 import { googleSchemaData } from '../constants';
 import '../public/stylesheets/bulma.min.css';
 import '../public/stylesheets/main.css';
