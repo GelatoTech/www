@@ -26,6 +26,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-facebook-pixel": "^1.0.4",
+    "react-ga": "^3.3.0",
     "react-linkedin-insight": "^0.1.2",
     "react-messenger-customer-chat": "^0.8.0",
     "react-owl-carousel": "^2.3.1",

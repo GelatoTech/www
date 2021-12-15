@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
             />
           </noscript>
           {/* Google Analytics */}
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121085071-1"></script>
+          {/* <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121085071-1"></script>
           <script 
             dangerouslySetInnerHTML={{
               __html: `
@@ -40,7 +40,7 @@ export default class MyDocument extends Document {
                 gtag('js', new Date());
                 gtag('config', 'UA-121085071-1');`
             }}
-          />
+          /> */}
           {/* Google Ads */}
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124172320-1"></script>
           <script
