@@ -4,7 +4,7 @@ import Head from 'next/head';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import { FacebookPixel, Footer, Nav } from '../components';
 import LinkedInTag from 'react-linkedin-insight';
-// import ReactGA from 'react-ga';
+import ReactGA from 'react-ga';
 import { GATracking } from '../contexts/trackers'
 import { googleSchemaData } from '../constants';
 import '../public/stylesheets/bulma.min.css';
@@ -36,6 +36,15 @@ export default function App({ Component, pageProps }) {
     LinkedInTag.init(process.env.NEXT_PUBLIC_LINKEDIN_PARTNER_ID, 'dc');
     LinkedInTag.track(process.env.NEXT_PUBLIC_LINKEDIN_CONVERSION_ID);
 
+    // Google Analytics
+    ReactGA.initialize('UA-121085071-1')
+    router.events.on('routeChangeComplete', (url) => {
+      ReactGA.set({ page:  url });
+      ReactGA.pageview(url);
+    });
+
+    
+
     router.events.on('routeChangeComplete', () => {
       window.scroll({
         top: 0,
@@ -58,9 +67,7 @@ export default function App({ Component, pageProps }) {
       <Nav />
       <div ref={useRef("customer-chat")}></div>
       <FacebookPixel>
-        <GATracking>
-          <Component {...pageProps} />
-        </GATracking>
+        <Component {...pageProps} />
       </FacebookPixel>
       <MessengerCustomerChat
         pageId="1848657532048801"
