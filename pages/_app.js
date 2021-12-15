@@ -30,16 +30,19 @@ export default function App({ Component, pageProps }) {
 
   const router = useRouter();
 
+  // Google Analytics
+  ReactGA.initialize('UA-121085071-1');
+
   useEffect(() => {
     // LinkedIn Insight
     LinkedInTag.init(process.env.NEXT_PUBLIC_LINKEDIN_PARTNER_ID, 'dc');
     LinkedInTag.track(process.env.NEXT_PUBLIC_LINKEDIN_CONVERSION_ID);
 
-    // Google Analytics
-    ReactGA.initialize('UA-121085071-1')
-    router.events.on('routeChangeComplete', (url) => {
-      ReactGA.set({ page:  url });
-      ReactGA.pageview(url);
+    // Track initial page load
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    //Track each navigation
+    router.events.on('routeChangeComplete', () => {
+      ReactGA.pageview(window.location.pathname + window.location.search);
     });
 
     
