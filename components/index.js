@@ -1,5 +1,4 @@
 export {BookRepairButton} from './BookRepairButton';
-export {FacebookPixel} from './FacebookPixel';
 export {Footer} from './Footer';
 export {Form} from './Form';
 export {HowItWorks} from './HowItWorks';

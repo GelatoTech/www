@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLink, faLocationArrow, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faTwitterSquare, faGoogle, faYelp, faInstagram, faLinkedin, faFacebookF } from '@fortawesome/free-brands-svg-icons';
@@ -12,7 +13,7 @@ export function Footer() {
       <footer style={{padding: '25px'}}>
         <div className="container">
           <div className="columns">
-            <div className="column footer-menu"><a href="#"><img alt="gelatotech" src="https://i.imgur.com/ovz7ww7.png" /> </a>
+            <div className="column footer-menu"><a href="#"><Image alt="gelatotech" src="/images/logo-square.png" width={95} height={79} /> </a>
               <h3>Mobile iPhone Repair SF </h3>
               {/* Begin Mailchimp Signup Form */}
               <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css" />

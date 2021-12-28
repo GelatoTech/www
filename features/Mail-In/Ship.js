@@ -7,13 +7,10 @@ import {
   faPrint,
   faPlaneDeparture,
 } from '@fortawesome/free-solid-svg-icons'
+import Image from 'next/image';
 import { MailInSteps } from '../../components/mail-in';
 import { useRouter } from 'next/router';
 import NetlifyForm from 'react-ssg-netlify-forms';
-
-import uspsLogo from '../../public/images/usps.png'
-import upsLogo from '../../public/images/ups.png'
-import fedExLogo from '../../public/images/fedex.png'
 
 export default function Ship() {
 
@@ -99,13 +96,12 @@ export default function Ship() {
                     checked={shipFormValues.carrier === 'USPS'}
                     onChange={(e) => setShipFormValues({ ...shipFormValues, carrier: e.target.value })}
                   />
-                  <img 
-                    src={uspsLogo} 
+                  <Image 
+                    src='/images/usps.png'
+                    width={50}
+                    height={50}
                     onClick={()=>{handleSelectCarrier('USPS')}}
-                    style={{ 
-                      width: 'auto', 
-                      maxHeight: '7em' 
-                    }} />
+                  />
                 </label>
                 <label style={{ 
                   ...carrierBorderStyles, 
@@ -118,12 +114,10 @@ export default function Ship() {
                     checked={shipFormValues.carrier === 'UPS'}
                     onChange={(e) => setShipFormValues({ ...shipFormValues, carrier: e.target.value })}
                   />
-                  <img 
-                    src={upsLogo} 
-                    style={{ 
-                      width: 'auto', 
-                      maxHeight: '7em',
-                    }} 
+                  <Image 
+                    src='/images/ups.png'
+                    height={50}
+                    width={50}
                     onClick={()=>handleSelectCarrier('UPS')}
                   />
                 </label>
@@ -138,13 +132,10 @@ export default function Ship() {
                     checked={shipFormValues.carrier === 'FedEx'} 
                     onChange={(e) => setShipFormValues({ ...shipFormValues, carrier: e.target.value })}
                   />
-                  <img 
-                    src={fedExLogo} 
-                    style={{ 
-                      width: 'auto', 
-                      maxHeight: '7em', 
-                      marginLeft: '1em' 
-                    }} 
+                  <Image 
+                    src='/images/fedex.png'
+                    height={50}
+                    width={50}
                     onClick={()=>handleSelectCarrier('FedEx')}
                   />
                 </label>

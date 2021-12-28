@@ -28,9 +28,9 @@ export default function DiagnosticFee() {
 
   useEffect(() => {
     // get window height when window is accessible
-    setTimeout(() => {
+    if(typeof window !== 'undefined') {
       setWindowHeight(window.innerHeight);
-    }, 10);
+    }
     // send to stripe
     setTimeout(() => {
       goToStripe();

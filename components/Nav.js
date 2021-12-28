@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 import scrollToSection from '../helpers/scrollToSection';
-import logo from '../public/images/nav-logo-gtech.png';
 
 export function Nav() {
 
@@ -26,7 +26,7 @@ export function Nav() {
                 router.pathname == '/' ? scrollToSection("hero") : router.push('/'); 
               }}
               >
-                <img alt="Gelatotech" height="30" src={logo} width="150" />
+                <Image alt="Gelatotech" width={150} height={30} src='/images/nav-logo-gtech.png' />
               </a>
             </span> 
             <a aria-expanded="false" aria-label="menu" className={`navbar-burger burger ${burgerOpen ? 'is-active' : ''}`} data-target="navbarBasicExample" role="button"

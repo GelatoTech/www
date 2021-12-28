@@ -1,7 +1,6 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
-
-import pexelsPhoto607812 from '../../public/images/pexels-photo-607812.jpeg'
 
 export default function BatteryTips() {
 
@@ -20,28 +19,33 @@ export default function BatteryTips() {
         {/* Google / Search Engine Tags */}
         <meta itemProp="name" content="Mobile iPhone Repair in SF| Top 3 iPhone Battery Saving Tips | Gelatotech" />
         <meta itemProp="description" content="Learn how to save your iPhone battery health with our top 3 tips" />
-        <meta itemProp="image" content={pexelsPhoto607812} />
+        <meta itemProp="image" content='/images/pexels-photo-607812.jpeg' />
         {/* Facebook Meta Tags */}
         <meta property="og:url" content="https://www.gelatotech.com" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Mobile iPhone Repair in SF| Top 3 iPhone Battery Saving Tips | Gelatotech" />
         <meta property="og:description" content="Learn how to save your iPhone battery health with our top 3 tips" />
-        <meta property="og:image" content={pexelsPhoto607812} />
+        <meta property="og:image" content='/images/pexels-photo-607812.jpeg' />
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Mobile iPhone Repair in SF| Top 3 iPhone Battery Saving Tips | Gelatotech" />
         <meta name="twitter:description" content="Learn how to save your iPhone battery health with our top 3 tips" />
-        <meta name="twitter:image" content={pexelsPhoto607812} />
+        <meta name="twitter:image" content='/images/pexels-photo-607812.jpeg' />
         <meta name="keywords" content=" iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, demand" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         {/* Global site tag (gtag.js) - Google Analytics */}
-        <meta property="og:image" content={pexelsPhoto607812} />
+        <meta property="og:image" content='/images/pexels-photo-607812.jpeg' />
         <link rel="stylesheet" href="/stylesheets/battery.css" />
       </Head>
       <section id="blog">
         <div className="container blog-container">
           <h1 className="title is-1">Top 3 iPhone Battery Saving Tips 🔋</h1>
-          <img src={pexelsPhoto607812} alt="" />
+          <Image src='/images/pexels-photo-607812.jpeg' width={1000} height={600} className="blog-img" />
+          <style jsx global>{`
+            .blog-img {
+              border-radius: 10px;
+            }
+          `}</style>
           <h2 className="title is-3">Intro</h2>
           <p>
             Battery issues are something everyone has experiences with. For this blog I'll show you my personal

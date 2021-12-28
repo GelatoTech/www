@@ -2,9 +2,10 @@ import { useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
-import { FacebookPixel, Footer, Nav } from '../components';
+import { Footer, Nav } from '../components';
 import LinkedInTag from 'react-linkedin-insight';
 import ReactGA from 'react-ga';
+// import FBPixel from 'react-facebook-pixel';
 import { googleSchemaData } from '../constants';
 import '../public/stylesheets/bulma.min.css';
 import '../public/stylesheets/main.css';
@@ -34,25 +35,30 @@ export default function App({ Component, pageProps }) {
   ReactGA.initialize('UA-121085071-1');
 
   useEffect(() => {
+    // Facebook Tracking
+    // FBPixel.init(process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID, {}, { debug: process.env.NODE_ENV === 'development' });
+
+    import('react-facebook-pixel')
+    .then(module => module.default)
+    .then(ReactPixel => {
+      ReactPixel.init(process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID, {}, { debug: process.env.NODE_ENV === 'development' })
+      ReactPixel.pageView()
+    })
+
     // LinkedIn Insight
     LinkedInTag.init(process.env.NEXT_PUBLIC_LINKEDIN_PARTNER_ID, 'dc');
     LinkedInTag.track(process.env.NEXT_PUBLIC_LINKEDIN_CONVERSION_ID);
 
-    // Track initial page load
+    // Google Analytics - Track initial page load
     ReactGA.pageview(window.location.pathname + window.location.search);
-    //Track each navigation
-    router.events.on('routeChangeComplete', () => {
-      ReactGA.pageview(window.location.pathname + window.location.search);
-    });
-
-    
-
+    // Google Analytics - Track each navigation
     router.events.on('routeChangeComplete', () => {
       window.scroll({
         top: 0,
         left: 0,
         behavior: 'smooth'
       });
+      ReactGA.pageview(window.location.pathname + window.location.search);
     });
   });
 
@@ -68,9 +74,9 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Nav />
       <div ref={useRef("customer-chat")}></div>
-      <FacebookPixel>
+      {/* <FacebookPixel> */}
         <Component {...pageProps} />
-      </FacebookPixel>
+      {/* </FacebookPixel> */}
       <MessengerCustomerChat
         pageId="1848657532048801"
         appId="gelato"

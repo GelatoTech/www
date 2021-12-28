@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import screenRepairBlogImage from '../../public/images/screen-repair-blog.jpg';
+import Image from 'next/image';
 
 export default function ScreenRepair() {
   return(
@@ -15,29 +15,34 @@ export default function ScreenRepair() {
         {/* Google / Search Engine Tags */}
         <meta itemProp="name" content="How much will an iPhone screen repair cost you in San Francisco?" />
         <meta itemProp="description" content="AppleCare costs vary depending on the iPhone model. Here’s a summary of the cost of coverage for you to decide if AppleCare is worth it." />
-        <meta itemProp="image" content={screenRepairBlogImage} />
+        <meta itemProp="image" content='/images/screen-repair-blog.jpg' />
         {/* Facebook Meta Tags */}
         <meta property="og:url" content="https://www.gelatotech.com" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="How much will an iPhone screen repair cost you in San Francisco?" />
         <meta property="og:description" content="AppleCare costs vary depending on the iPhone model. Here’s a summary of the cost of coverage for you to decide if AppleCare is worth it." />
-        <meta property="og:image" content={screenRepairBlogImage} />
+        <meta property="og:image" content='/images/screen-repair-blog.jpg' />
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="How much will an iPhone screen repair cost you in San Francisco?" />
         <meta name="twitter:description" content="AppleCare costs vary depending on the iPhone model. Here’s a summary of the cost of coverage for you to decide if AppleCare is worth it." />
-        <meta name="twitter:image" content={screenRepairBlogImage} />
+        <meta name="twitter:image" content='/images/screen-repair-blog.jpg' />
         <meta name="keywords" content="iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, deamand
        " />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         {/* Global site tag (gtag.js) - Google Analytics */}
-        <meta property="og:image" content={screenRepairBlogImage} />
+        <meta property="og:image" content='/images/screen-repair-blog.jpg' />
         {/* meta tag end! */}
         <link rel="stylesheet" href="/stylesheets/screenrepairblog.css" />
       </Head>
       <section id="blog2" className="content">
-        <div className="container blog-container">
-          <img src={screenRepairBlogImage} />
+        <div className="container blog-container pt-4">
+          <Image src='/images/screen-repair-blog.jpg' width={1000} height={600} className="blog-img" />
+          <style jsx global>{`
+            .blog-img {
+              border-radius: 10px;
+            }
+          `}</style>
           <h1 className="title sf ">How much will an iPhone screen repair cost you in San Francisco?</h1>
           <p>by jamesmash on March 17,2020</p>
           <hr />
