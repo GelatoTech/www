@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import Head from 'next/head';
 import { MailInSteps } from "../../components/mail-in";
-// import logo from '../../public/images/nav-logo-gtech.png'
 
 export default function ThankYou() {
 
@@ -24,7 +23,6 @@ export default function ThankYou() {
       </Head>
 
       <div style={{ textAlign: 'center', width: '90vw' }}>
-        {/* <img src={logo} style={{ width: `20vh` }} /> */}
         <h1 style={{ fontSize: '2rem' }}>Thank{n ? 's, ' + n : ' you'}!</h1>
         <p style={{ fontSize: '1em' }}>
           {

@@ -1,7 +1,5 @@
 import Head from 'next/head';
 import pexelsPhoto607812 from '../../public/images/pexels-photo-607812.jpeg'
-import gelatotechLogo from '../../public/images/nav-logo-gtech.png';
-
 
 export default function FAQ() {
   return (
