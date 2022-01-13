@@ -9,6 +9,7 @@
     "postbuild": "next-on-netlify"
   },
   "dependencies": {
+    "@babel/core": "^7.0.0-0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
@@ -19,10 +20,10 @@
     "@stripe/stripe-js": "^1.11.0",
     "@zeit/next-css": "^1.0.1",
     "aos": "^2.3.4",
-    "next": "12",
+    "jquery": "^3.6.0",
+    "next": "^12.0.8",
     "next-compose-plugins": "^2.2.1",
     "next-images": "^1.8.4",
-    "next-on-netlify": "^2.9.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-facebook-pixel": "^1.0.4",
@@ -34,7 +35,8 @@
     "react-scroll": "^1.8.4",
     "react-ssg-netlify-forms": "^1.0.3",
     "react-tooltip": "^4.2.13",
-    "sass": "^1.45.1"
+    "sass": "^1.48.0",
+    "webpack": "^5.66.0"
   },
   "devDependencies": {
     "expose-loader": "^1.0.3"

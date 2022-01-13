@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export function WhyUs() {
 
   return (
@@ -27,8 +29,8 @@ export function WhyUs() {
             </div>
           </div>
           <div className="column">
-            <figure className="image">
-              <img alt="On-Demand iPhone Screen Repair" src="images/microsoldering-tech.jpeg" style={{borderRadius: '5px', height: '30%'}} />
+            <figure className="image" style={{borderRadius: '5px', overflow: 'hidden'}}>
+              <Image alt="On-Demand Repair" src="/images/microsoldering-tech.jpeg" width="100%" height="100%" layout="responsive" objectFit="cover" />
             </figure>
             {/* <div style={{ marginTop: '2em' }}>
               <h1 className="subtitle">Read our Google &amp; Yelp reviews!</h1>

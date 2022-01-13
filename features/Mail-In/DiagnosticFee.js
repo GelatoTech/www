@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { loadStripe } from '@stripe/stripe-js';
-import spinner from '../../public/images/spinner.gif';
 
 // pk_test_2Cjx3du4k79QEq53UnOjVsNJ00iGsDQY8O
 // pk_live_lpxMrRsh0fd6Lu9mIH7X2Wxb005L2828aV
@@ -46,7 +46,7 @@ export default function DiagnosticFee() {
       justifyContent: 'center',
       alignItems: 'center',
     }}>
-      <img src={spinner} style={{ width: '10em' }} />
+      <Image src='/images/spinner.gif' width="10em" height="10em" priority />
       <h2>Going to Stripe...</h2>
     </div>
   );

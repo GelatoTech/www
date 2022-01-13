@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import dynamic from "next/dynamic";
+import Image from 'next/image';
 import { useRouter } from 'next/router';
-const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
 import { useEffect } from 'react';
 // import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,7 +10,7 @@ import { faYelp } from '@fortawesome/free-brands-svg-icons';
 import AOS from 'aos';
 import { BookRepairButton, Form, HowItWorks, TrustedBy, WhyUs } from '../../components';
 import scrollToSection from '../../helpers/scrollToSection';
-
+const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
 export default function Home() {
 
   const router = useRouter();
@@ -79,35 +79,35 @@ export default function Home() {
             >  
             <div className="column">
                 <div className="notification">
-                  <img alt="customer lilly iphone repair review" src="images/testimonials/Lilly-H.png" style={{ maxWidth: '200px' }} />
+                  <Image alt="customer lilly iphone repair review" src="/images/testimonials/Lilly-H.png" width="200px" height="59.97px" />
                   <p>"Elbert is excellent! He is quick and responsive. And did a great job in repairing two of my iPhones. I contacted him Friday night and he came over Saturday. I highly recommend him to anyone.”</p><br />
                   <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
                 </div>
               </div>
               <div className="column">
                 <div className="notification">
-                  <img alt="customer brooke iphone repair review" src="images/testimonials/Brooke.png" style={{ maxWidth: '200px' }} />
+                  <Image alt="customer brooke iphone repair review" src="/images/testimonials/Brooke.png" width="200px" height="59.97px" />
                   <p>"Elbert showed up literally 15 minutes from the time he first texted me back after my request, and repaired my iPhone in less than 15 minutes. He was professional, kind, patient (I kept him waiting a few more minutes while finishing a meeting), and the work was superb! I will absolutely call him again.”</p><br />
                   <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
                 </div>
               </div>
               <div className="column">
                 <div className="notification">
-                  <img alt="customer iphone repair review" src="images/testimonials/Daniel-A.png" style={{ maxWidth: '200px' }} />
+                  <Image alt="customer iphone repair review" src="/images/testimonials/Daniel-A.png" width="200px" height="59.97px" />
                   <p>"This is a truly unique and fantastic idea, well marketed and well executed. I put in a request on their extremely user friendly website and received a call right away and he was at my door just 30min later. He was super friendly and he fixed my iPhone in 20min. cant ask for more.”</p><br />
                   <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
                 </div>
               </div>
               <div className="column">
                 <div className="notification">
-                  <img alt="customer lukas iphone repair review" src="images/testimonials/Lukas-B.png" style={{ maxWidth: '200px' }} />
+                  <Image alt="customer lukas iphone repair review" src="/images/testimonials/Lukas-B.png" width="200px" height="59.97px" />
                   <p>"These guys do great work, are friendly, and have super reasonable prices. I'd recommend them to anyone needing iPhone repair.”</p><br />
                   <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
                 </div>
               </div>
               <div className="column">
                 <div className="notification">
-                  <img alt="customer brendan iphone repair review" src="images/testimonials/Brendan-D.png" style={{ maxWidth: '200px' }} />
+                  <Image alt="customer brendan iphone repair review" src="/images/testimonials/Brendan-D.png" width="200px" height="59.97px" />
                   <p>"If you are reading this just send him a message. Way better than apple store/support for less $$. He even comes to your house!”</p><br />
                   <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
                 </div>

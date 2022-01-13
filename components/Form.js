@@ -4,7 +4,7 @@ import AOS from 'aos';
 import NetlifyForm from 'react-ssg-netlify-forms';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers, faUser, faEnvelope, faHome, faPhone, faClock } from '@fortawesome/free-solid-svg-icons';
-
+import Image from 'next/image';
 import scrollToSection from '../helpers/scrollToSection';
 import formatDate from '../helpers/formatDate';
 import { devices, devicesWithHomeButton, devicesWithVersions } from '../public/javascripts/devices';
@@ -54,15 +54,17 @@ export function Form({ make }) {
 
   return(
     <section className="section" id="repair">
-      <div className=" form-container container has-text-centered">
+      <div className="form-container container has-text-centered">
         <i><h1 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">Schedule Repair</h1></i>
         <h2 className="subtitle" data-aos="fade-up">Pick your device model and problem.</h2>
         {
           repairFormValues.deviceMake !== ''
           ? (
-            <figure>
-              <img alt="iPhone Screen Repair" src={`images/devices/${repairFormValues.deviceMake}.png`} style={{ width: '500px' }} />
-            </figure>
+            <center>
+              <figure style={{ maxWidth: "400px", maxHeight: "300px" }}>
+                <Image alt="iPhone Screen Repair" src={`/images/devices/${repairFormValues.deviceMake}.png`} width="100%" height="50%" layout="responsive" objectFit="contain" />
+              </figure>
+            </center>
           )
           : null
         }

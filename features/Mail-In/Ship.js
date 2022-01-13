@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { 
   faEnvelope, 
@@ -16,30 +17,12 @@ export default function Ship() {
 
   const router = useRouter();
   const [shipFormValues, setShipFormValues] = useState({});
-
-  // Handle ship form state
-  const handleChange = (e) => {
-    setShipFormValues({ ...shipFormValues, [e.target.name]: e.target.value });
-  }
+  const [carrierSite, setCarrierSite] = useState('');
   
   const handleSelectCarrier = (carrier) => {
     setShipFormValues({ ...shipFormValues, carrier });
   }
 
-  const goToCarrierSite = () => {
-    switch(shipFormValues.carrier) {
-      case 'USPS':
-        return window.open('https://usps.com/ship', '_ blank');
-      case 'UPS':
-        return window.open('https://www.ups.com/ship/guided/origin', '_ blank');
-      case 'FedEx':
-        return window.open('https://www.fedex.com/lite/lite-ship.html#address', '_blank');
-      default:
-        return;
-    }
-  }
-
-  // When ship form is submitted...
   const postSubmit = () => {
     router.push('/thank-you?mail=1');
   }
@@ -100,7 +83,10 @@ export default function Ship() {
                     src='/images/usps.png'
                     width={50}
                     height={50}
-                    onClick={()=>{handleSelectCarrier('USPS')}}
+                    onClick={()=> {
+                      handleSelectCarrier('USPS'); 
+                      setCarrierSite('https://usps.com/ship');
+                    }}
                   />
                 </label>
                 <label style={{ 
@@ -118,7 +104,10 @@ export default function Ship() {
                     src='/images/ups.png'
                     height={50}
                     width={50}
-                    onClick={()=>handleSelectCarrier('UPS')}
+                    onClick={()=> {
+                      handleSelectCarrier('UPS');
+                      setCarrierSite('https://www.ups.com/ship/guided/origin');
+                    }}
                   />
                 </label>
                 <label style={{
@@ -136,7 +125,10 @@ export default function Ship() {
                     src='/images/fedex.png'
                     height={50}
                     width={50}
-                    onClick={()=>handleSelectCarrier('FedEx')}
+                    onClick={()=> {
+                      handleSelectCarrier('FedEx');
+                      setCarrierSite('https://www.fedex.com/lite/lite-ship.html#address');
+                    }}
                   />
                 </label>
               </div>
@@ -151,12 +143,14 @@ export default function Ship() {
                           1180 4th St # 415 <br />
                           San Francisco, CA 94158
                         </address>
-                        <a 
-                          className="button is-link is-outlined"
-                          onClick={()=>goToCarrierSite()}
-                        >
-                          <FontAwesomeIcon icon={faPrint} style={{ width: '1em', marginRight: '0.3em' }} /> Get Label
-                        </a>
+                        <Link href={carrierSite} passHref>
+                          <a 
+                            target="_blank"
+                            className="button is-link is-outlined"
+                          >
+                            <FontAwesomeIcon icon={faPrint} style={{ width: '1em', marginRight: '0.3em' }} /> Get Label
+                          </a>
+                        </Link>
                       </div>
                       <h1 className="subtitle" style={{ marginTop: '3em' }}>3. Paste {shipFormValues.carrier} tracking number</h1>
                       <div className="field">

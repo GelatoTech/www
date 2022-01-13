@@ -3,6 +3,9 @@ const withImages = require("next-images");
 const webpack = require("webpack");
 
 module.exports = withPlugins([withImages], {
+  images: {
+    domains: ['px.ads.linkedin.com']
+  },
   // target: 'serverless',
   // env: {
   //   GOOGLE_PLACES_API_KEY: ""
@@ -17,12 +20,12 @@ module.exports = withPlugins([withImages], {
   //     loader: "file-loader",
   //   },
   // });
-  config.plugins.push(
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery",
-    }));
-  return config;
+    config.plugins.push(
+      new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery",
+      }));
+    return config;
   },
 });

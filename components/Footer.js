@@ -17,7 +17,6 @@ export function Footer() {
               <h3>Mobile iPhone Repair SF </h3>
               {/* Begin Mailchimp Signup Form */}
               <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css" />
-              <style type="text/css" dangerouslySetInnerHTML={{__html: "\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n\t/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\n\t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\n" }} />
               <div id="mc_embed_signup">
                 <form action="https://gmail.us4.list-manage.com/subscribe/post?u=5de193c5500cab6f1b5857bbd&id=3f9c581218" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
                   <div id="mc_embed_signup_scroll">
@@ -41,7 +40,7 @@ export function Footer() {
                 <li><a className="footer-item" onClick={() => { router.push('/apple-watch') }} style={{color: '#A9A9A9'}}>Apple Watch Repair</a></li>
                 <li><a className="footer-item" onClick={() => { router.push('/samsung') }} style={{color: '#A9A9A9'}}>Samsung Repair</a></li>
                 <li><a className="footer-item" onClick={() => { router.push('/google-pixel') }} style={{color: '#A9A9A9'}}>Google Pixel Repair</a></li>
-                <li><a className="footer-item" onClick={() => { router.push('/faq') }} style={{color: '#A9A9A9'}}>FAQ</a></li>
+                <li><a className="footer-item" onClick={() => { router.push('/FAQ') }} style={{color: '#A9A9A9'}}>FAQ</a></li>
                 <li><a className="footer-item" onClick={() => { router.push('/about') }} style={{color: '#A9A9A9'}}>About us</a></li>
                 <li><a className="footer-item" onClick={() => { router.push('/legal') }} style={{color: '#A9A9A9'}}>90 Day Warranty</a></li>
               </ul>
@@ -98,7 +97,7 @@ export function Footer() {
               <a href="https://www.linkedin.com/company/gelatotech-on-demand-iphone-repair/?viewAsMember=true" target="_blank"><FontAwesomeIcon style={{ height: '34px' }} id="linkedin" className="fab fa-linkedin" icon={faLinkedin} /></a>
             </div>
           </div>
-          <p className="has-text-centered copyright has-text-grey">Copyright © 2021 gelatotech.com. All rights reserved</p>
+          <p className="has-text-centered copyright has-text-grey">Copyright © {new Date().getFullYear()} gelatotech.com. All rights reserved</p>
         </div></footer>
     </div>
   )

@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile } from '@fortawesome/free-solid-svg-icons'
+import Image from 'next/image';
 
 import scrollToSection from '../helpers/scrollToSection';
 
@@ -20,7 +21,9 @@ export function BookRepairButton({ text, make }) {
             : router.push('/#repair');
         }}
         >
-          <img style={{ width: 1, height: 1, display: 'none'  }} alt="" src={`https://px.ads.linkedin.com/collect/?pid=2925348&conversionId=${process.env.NEXT_PUBLIC_LINKEDIN_CONVERSION_ID}&fmt=gif`} />
+          <div style={{ display: 'none'  }}>
+            <Image width={1} height={1} alt="" src={`https://px.ads.linkedin.com/collect/?pid=2925348&conversionId=${process.env.NEXT_PUBLIC_LINKEDIN_CONVERSION_ID}&fmt=gif`} />
+          </div>
         {
           text
           ? text

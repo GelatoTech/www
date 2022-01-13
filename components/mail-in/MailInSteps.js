@@ -40,21 +40,17 @@ export function MailInSteps(props) {
       </div>
       <ul className="list-unstyled multi-steps">
         {
-          steps.map((step, i) => {
-            return (
-              <>
-              {/* <ReactTooltip insecure multiline clickable place="top" className="tooltip" /> */}
-                <li 
-                  key={i}
-                  data-tip={step.tooltip}
-                  style={{ width: '8em' }}
-                  className={(props.step === i) ? 'is-active' : null}>
-                    <ReactTooltip insecure multiline clickable place="top" className="tooltip" />
-                    {step.title}
-                </li>
-              </>
+          steps.map((step, i) => (
+            <li 
+              key={i}
+              data-tip={step.tooltip}
+              style={{ width: '8em' }}
+              className={(props.step === i) ? 'is-active' : null}>
+                <ReactTooltip insecure multiline clickable place="top" className="tooltip" />
+                {step.title}
+            </li>
             )
-          })
+          )
         }
       </ul>
       <br /><br />
