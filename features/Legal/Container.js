@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import pexelsPhoto607812 from '../../public/images/pexels-photo-607812.jpeg'
+import pexelsPhoto607812 from '/images/pexels-photo-607812.jpeg'
 
 export default function FAQ() {
   return (
