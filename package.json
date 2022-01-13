@@ -33,7 +33,6 @@
     "react-owl-carousel": "^2.3.3",
     "react-rotating-text": "^1.4.1",
     "react-scroll": "^1.8.4",
-    "react-ssg-netlify-forms": "^1.0.3",
     "react-tooltip": "^4.2.13",
     "sass": "^1.48.0",
     "webpack": "^5.66.0"
