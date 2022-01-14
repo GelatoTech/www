@@ -4,7 +4,6 @@ import Head from 'next/head';
 import { Footer, Nav } from '../components';
 import LinkedInTag from 'react-linkedin-insight';
 import ReactGA from 'react-ga';
-import TawkTo from 'tawkto-react';
 // import FBPixel from 'react-facebook-pixel';
 import { googleSchemaData } from '../constants';
 import '../public/stylesheets/bulma.min.css';
@@ -60,8 +59,6 @@ export default function App({ Component, pageProps }) {
       });
       ReactGA.pageview(window.location.pathname + window.location.search);
     });
-
-    new TawkTo(process.env.NEXT_PUBLIC_TAWK_PROPERTY_ID, process.env.NEXT_PUBLIC_TAWK_ID)
   }, []);
 
   return (
