@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { BookRepairButton, TrustedBy } from '../../components';
 import { faYelp } from '@fortawesome/free-brands-svg-icons';
@@ -61,11 +62,17 @@ export default function About() {
         <div className="columns">
           <div className="column">
             <figure className="image">
-              <img src="../images/junior.png" style={{width: '40%', marginLeft: 'auto', marginRight: 'auto', borderRadius: '5px'}} alt="junior technician" />
+              <div style={{width: '40%', marginLeft: 'auto', marginRight: 'auto', borderRadius: '5px'}}>
+                <Image src="/images/junior.png" alt="junior technician" width="100%" height="100%" layout="responsive" objectFit="contain" />
+              </div>
             </figure>
             <h2 className="subtitle is-3">Junior S.</h2>
             <div className="notification">
-              <img src="../images/Anna-b.png" style={{maxWidth: '200px'}} alt="customer anna iphone repair" />
+              <center>
+                <div style={{maxWidth: '200px'}}>
+                  <Image src="/images/Anna-b.png" alt="customer anna iphone repair" width="100%" height="50%" layout="responsive" objectFit="contain" />
+                </div>
+              </center>
               <p>"Junior came to my location in just 20 minutes. Super friendly and he fixed my iPhone in 15 mininutes.” </p>
               <br />
               <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?start=20" target="_blank" className="button is-danger is-rounded">Read on Yelp <FontAwesomeIcon style={{marginLeft: '10px', width: '1em'}} icon={faYelp} /></a>
@@ -73,11 +80,17 @@ export default function About() {
           </div>
           <div className="column">
             <figure className="image">
-              <img src="../images/elbert.png" style={{width: '40%', marginLeft: 'auto', marginRight: 'auto', borderRadius: '5px'}} alt="" />
+              <div style={{width: '40%', marginLeft: 'auto', marginRight: 'auto', borderRadius: '5px'}}>
+                <Image src="/images/elbert.png" alt="" width="100%" height="100%" layout="responsive" objectFit="contain" />
+              </div>
             </figure>
             <h2 className="subtitle is-3">Elbert O.</h2>
             <div className="notification">
-              <img src="../images/Rishabh-P.png" style={{maxWidth: '200px'}} alt="" />
+              <center>
+                <div style={{maxWidth: '200px'}}>
+                  <Image src="/images/Rishabh-P.png" width="100%" height="50%" layout="responsive" objectFit="contain" />
+                </div>
+              </center>
               <p>"Very quick and convenient. They came to me Same-Day, they fixed my iPhone in 15 minutes. Thanks to Elbert! ” </p>
               <br />
               <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?start=20" target="_blank" className="button is-danger is-rounded">Read on Yelp <FontAwesomeIcon style={{marginLeft: '5px', width: '1em'}} icon={faYelp} /></a>
@@ -92,7 +105,7 @@ export default function About() {
         <div className="columns is-vcentered is-center">
           <div className="column">
             <figure className="card-image is-large">
-              <img src="../images/pexels-photo-699122.jpeg" alt="iphone" />
+              <Image src="/images/pexels-photo-699122.jpeg" alt="iphone" width="100%" height="50%" layout="responsive" objectFit="contain" />
             </figure>
           </div>
           <div className="column">
