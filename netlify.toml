@@ -7,6 +7,6 @@
   framework = "#static"
 
 [build]
-  command   = "npm run build"
+  command   = "yarn build && yarn start"
   functions = "out_functions"
   publish   = "out_publish"
