@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import pexelsPhoto607812 from '/images/pexels-photo-607812.jpeg'
 
 export default function FAQ() {
   return (
@@ -15,22 +14,22 @@ export default function FAQ() {
         {/* Google / Search Engine Tags */}
         <meta itemProp="name" content="90 day warranty policy | Gelatotech Mobile iPhone Repair SF" />
         <meta itemProp="description" content="Gelatotech offers a 90 day warranty on all models of iPhone, iPad, Macbook, Apple Watch, Samsung, and Google Pixel repairs." />
-        <meta itemProp="image" content={pexelsPhoto607812} />
+        <meta itemProp="image" content={'/images/pexels-photo-607812.jpeg'} />
         {/* Facebook Meta Tags */}
         <meta property="og:url" content="https://www.gelatotech.com" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="90 day warranty policy | Gelatotech Mobile iPhone Repair SF" />
         <meta property="og:description" content="Gelatotech offers a 90 day warranty on all models of iPhone, iPad, Macbook, Apple Watch, Samsung, and Google Pixel repairs." />
-        <meta property="og:image" content={pexelsPhoto607812} />
+        <meta property="og:image" content={'/images/pexels-photo-607812.jpeg'} />
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="90 day warranty policy | Gelatotech Mobile iPhone Repair SF" />
         <meta name="twitter:description" content="Gelatotech offers a 90 day warranty on all models of iPhone, iPad, Macbook, Apple Watch, Samsung, and Google Pixel repairs." />
-        <meta name="twitter:image" content={pexelsPhoto607812} />
+        <meta name="twitter:image" content={'/images/pexels-photo-607812.jpeg'} />
         <meta name="keywords" content="iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, demand" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         {/* Global site tag (gtag.js) - Google Analytics */}
-        <meta property="og:image" content={pexelsPhoto607812} />
+        <meta property="og:image" content={'/images/pexels-photo-607812.jpeg'} />
         {/* meta tag end! */}
         <link rel="stylesheet" href="/stylesheets/legal.css" />
       </Head>
