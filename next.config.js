@@ -6,7 +6,7 @@ module.exports = withPlugins([withImages], {
   images: {
     domains: ['px.ads.linkedin.com']
   },
-  // target: 'serverless',
+  target: 'serverless',
   // env: {
   //   GOOGLE_PLACES_API_KEY: ""
   // },
