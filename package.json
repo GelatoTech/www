@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@babel/core": "^7.0.0-0",
@@ -39,6 +40,6 @@
     "webpack": "^5.66.0"
   },
   "devDependencies": {
-    "expose-loader": "^1.0.3"
+    "next-sitemap": "^1.9.12"
   }
 }
