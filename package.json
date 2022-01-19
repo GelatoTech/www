@@ -37,8 +37,5 @@
     "sass": "^1.48.0",
     "tawkto-react": "^3.0.0",
     "webpack": "^5.66.0"
-  },
-  "devDependencies": {
-    "expose-loader": "^1.0.3"
   }
 }
