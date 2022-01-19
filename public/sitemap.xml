@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+            <url>
+              <loc>https://gelatotech.com</loc>
+              <lastmod>2022-01-19T04:17:08.382Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+
+            <url>
+              <loc>https://gelatotech.com/about</loc>
+              <lastmod>2022-01-19T04:17:08.382Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+
+            <url>
+              <loc>https://gelatotech.com/FAQ</loc>
+              <lastmod>2022-01-19T04:17:08.382Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+
+            <url>
+              <loc>https://gelatotech.com/blog</loc>
+              <lastmod>2022-01-19T04:17:08.382Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+
+            <url>
+              <loc>https://gelatotech.com/apple-watch</loc>
+              <lastmod>2022-01-19T04:17:08.382Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+
+            <url>
+              <loc>https://gelatotech.com/google-pixel</loc>
+              <lastmod>2022-01-19T04:17:08.382Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+
+            <url>
+              <loc>https://gelatotech.com/ipad</loc>
+              <lastmod>2022-01-19T04:17:08.382Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+
+            <url>
+              <loc>https://gelatotech.com/legal</loc>
+              <lastmod>2022-01-19T04:17:08.382Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+
+            <url>
+              <loc>https://gelatotech.com/mail-in</loc>
+              <lastmod>2022-01-19T04:17:08.382Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+
+            <url>
+              <loc>https://gelatotech.com/microsoldering</loc>
+              <lastmod>2022-01-19T04:17:08.382Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+
+            <url>
+              <loc>https://gelatotech.com/samsung</loc>
+              <lastmod>2022-01-19T04:17:08.382Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+
+    </urlset>
