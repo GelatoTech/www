@@ -6,7 +6,7 @@
   background: #d32323 !important;
 }
 #hero {
-  background: url("../images/shipping-electronics.jpg");
+  background: url("/images/shipping-electronics.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 4rem;
@@ -14,7 +14,7 @@
 @media only screen and (max-width: 800px) {
   #hero {
     color: white;
-    background: url("../images/mail-in.jpeg");
+    background: url("/images/mail-in.jpeg");
     /* margin-left: 2rem; */
     margin-bottom: -4rem;
   }

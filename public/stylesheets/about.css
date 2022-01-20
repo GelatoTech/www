@@ -6,7 +6,7 @@
   background: #d32323 !important;
 }
 #hero {
-  background: url("../images/imageonline-co-darkenimage.png");
+  background: url("/images/imageonline-co-darkenimage.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 3rem 8rem;
@@ -101,7 +101,7 @@
 }
 /* get started */
 #get-started {
-  background-image: url("../images/macbook-iphone.png");
+  background-image: url("/images/macbook-iphone.png");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;

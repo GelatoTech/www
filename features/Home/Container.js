@@ -44,7 +44,7 @@ export default function Home() {
         <meta content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" name="google-site-verification" />
       </Head>
       <section className="hero" id="hero" style={{
-        backgroundImage: "url(../images/whats-icracked.jpg)",
+        backgroundImage: "url(/images/whats-icracked.jpg)",
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '100%',

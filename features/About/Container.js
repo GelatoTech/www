@@ -34,7 +34,6 @@ export default function About() {
       <link rel="stylesheet" href="../stylesheets/about.css" />
     </Head>
     <section className="hero" id="hero" style={{
-      backgroundImage: "url(../images/imageonline-co-darkenimage.png)",
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '100%',
@@ -117,7 +116,6 @@ export default function About() {
     </section>
     {/* get started banner */}
     <div className="section" id="get-started" style={{
-      backgroundImage: 'url(../images/macbook-iphone.png)',
       backgroundSize: 'cover',
       backgroundPosition: 'left',
       backgroundRepeat: 'no-repeat',

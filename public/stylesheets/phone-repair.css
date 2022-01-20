@@ -103,7 +103,7 @@
     border-radius: 5px;
   }
   #get-started {
-    background-image: url("../images/iphones-bg.jpeg");
+    background-image: url("/images/iphones-bg.jpeg");
     
     background-size: cover;
     background-position: center;

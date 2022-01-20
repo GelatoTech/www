@@ -6,7 +6,7 @@
   background: #d32323 !important;
 }
 #hero {
-  background: url("../images/ipad-bg.png");
+  background: url("/images/ipad-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 3rem 8rem;
