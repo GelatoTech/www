@@ -141,12 +141,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="section" id="get-started">
-        <div className="container">
-          <h3 className="title is-1" data-aos="fade-right" style={{color: 'white'}}>Ready to get started?</h3>
-          <h3 className="subtitle is-4" data-aos="fade-right" style={{color: 'white'}}>iPhone Screen Repair only takes 15 minutes!</h3><br />
-          <a className="button is-info is-large" onClick={()=>scrollToSection("repair")}>Book iPhone Repair <FontAwesomeIcon icon={faMobile} style={{ height: '1em', marginLeft: '0.3em' }} /></a>
+      <div className="section container" id="get-started" style={{ borderRadius: "8px", overflow: 'hidden', padding: '5em', marginBottom: '5em' }}>
+        <Image src="/images/iphones-bg.jpeg" layout="fill" objectFit='cover' />
+        <div style={{ position: 'relative', marginBottom: '29px' }}>
+          <h2 data-aos="fade-right" style={{color: 'white'}} className="title is-2">Ready to get started?</h2>
+          <h2 data-aos="fade-right" style={{color: 'white'}} className="subtitle is-5">iPhone Screen Repair only takes 15 minutes!</h2>
         </div>
+        <a className="button is-info is-large" onClick={()=>scrollToSection("repair")}>Book iPhone Repair <FontAwesomeIcon icon={faMobile} style={{ height: '1em', marginLeft: '0.3em' }} /></a>
       </div>
     </div>
   )

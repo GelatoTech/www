@@ -115,19 +115,13 @@ export default function About() {
       </div>
     </section>
     {/* get started banner */}
-    <div className="section" id="get-started" style={{
-      backgroundSize: 'cover',
-      backgroundPosition: 'left',
-      backgroundRepeat: 'no-repeat',
-      height: '100%',
-      width: '100%',
-      padding: '5rem'
-    }}>
-      <div className="container">
+    <div className="section container" id="get-started" style={{ borderRadius: "8px", overflow: 'hidden', marginBottom: '5em' }}>
+      <Image src="/images/iphones-bg.jpeg" layout="fill" objectFit='cover' />
+      <div style={{ position: 'relative', marginBottom: '29px' }}>
         <h2 className="title is-1">Ready to get started?</h2>
         <h2 className="subtitle is-4">iPhone Screen Repair only takes 15 minutes!</h2>
-        <BookRepairButton />
       </div>
+      <BookRepairButton />
     </div>
   </div>
   )

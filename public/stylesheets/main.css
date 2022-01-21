@@ -50,20 +50,19 @@ header{
 }
 
 
-#services {
+/* #services {
   background: rgb(244, 244, 244);
   padding: 1.5rem;
   margin-bottom: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
   border-radius: 5px;
-}
+} */
 #get-started {  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-attachment:fixed; */
-  padding: 5rem;
+  background-attachment:fixed;
 }
 
 #get-started h1 {
