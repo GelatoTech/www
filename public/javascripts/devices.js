@@ -1094,7 +1094,7 @@ const devices = {
     },
     "se2": {
         screen: {
-            price: "$110",
+            price: "$90",
             warranty: "90 day",
             duration: "15 minutes",
         },
