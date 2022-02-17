@@ -788,7 +788,14 @@ const devices = {
     },
     "6": {
         screen: {
-            price: "$75",
+            price: {
+                AQ7: "$75",
+                OX7H: "$80",
+                OX7S: null,
+                OEMS: "$80",
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -810,7 +817,14 @@ const devices = {
     },
     "6s": {
         screen: {
-            price: "$85",
+            price: {
+                AQ7: "$80",
+                OX7H: "$85",
+                OX7S: null,
+                OEMS: "$85",
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -832,7 +846,14 @@ const devices = {
     },
     "6plus": {
         screen: {
-            price: "$85",
+            price: {
+                AQ7: "$85",
+                OX7H: "$85",
+                OX7S: null,
+                OEMS: "$90",
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -854,7 +875,14 @@ const devices = {
     },
     "6splus": {
         screen: {
-            price: "$90",
+            price: {
+                AQ7: "$85",
+                OX7H: "$90",
+                OX7S: null,
+                OEMS: "$95",
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -876,7 +904,14 @@ const devices = {
     },
     "7": {
         screen: {
-            price: "$90",
+            price: {
+                AQ7: "$80",
+                OX7H: "$85",
+                OX7S: null,
+                OEMS: "$85",
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -898,7 +933,14 @@ const devices = {
     },
     "7plus": {
         screen: {
-            price: "$109",
+            price: {
+                AQ7: "$80",
+                OX7H: "$90",
+                OX7S: null,
+                OEMS: "$100",
+                OEMT: "$90",
+                OEML: "$100",
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -920,7 +962,14 @@ const devices = {
     },
     "8": {
         screen: {
-            price: "$109",
+            price: {
+                AQ7: "$80",
+                OX7H: "$85",
+                OX7S: null,
+                OEMS: "$90",
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -946,7 +995,14 @@ const devices = {
     },
     "8plus": {
         screen: {
-            price: "$120",
+            price: {
+                AQ7: "$85",
+                OX7H: "$90",
+                OX7S: null,
+                OEMS: "$90",
+                OEMT: "$90",
+                OEML: "$100",
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -972,7 +1028,14 @@ const devices = {
     },
     "x": {
         screen: {
-            price: "$200",
+            price: {
+                AQ7: "$105",
+                OX7H: "$115",
+                OX7S: "$150",
+                OEMS: null,
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -998,7 +1061,14 @@ const devices = {
     },
     "xs": {
         screen: {
-            price: "$200",
+            price: {
+                AQ7: "$105",
+                OX7H: null,
+                OX7S: "$125",
+                OEMS: "$145",
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -1049,7 +1119,14 @@ const devices = {
     },
     "xr": {
         screen: {
-            price: "$150",
+            price: {
+                AQ7: "$110",
+                OX7H: "$125",
+                OX7S: null,
+                OEMS: "$150",
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -1075,7 +1152,14 @@ const devices = {
     },
     "xsmax": {
         screen: {
-            price: "$280",
+            price: {
+                AQ7: "$110",
+                OX7H: "$130",
+                OX7S: "$150",
+                OEMS: "$200",
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -1101,7 +1185,14 @@ const devices = {
     },
     "11": {
         screen: {
-            price: "$150",
+            price: {
+                AQ7: "$115",
+                OX7H: "$125",
+                OX7S: null,
+                OEMS: "$150",
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -1127,7 +1218,14 @@ const devices = {
     },
     "11pro": {
         screen: {
-            price: "$220",
+            price: {
+                AQ7: "$110",
+                OX7H: null,
+                OX7S: "$130",
+                OEMS: "$175",
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -1153,7 +1251,14 @@ const devices = {
     },
     "11proMax": {
         screen: {
-            price: "$330",
+            price: {
+                AQ7: "$155",
+                OX7H: "$210",
+                OX7S: "$260",
+                OEMS: "$345",
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -1179,7 +1284,14 @@ const devices = {
     },
     "12mini": {
         screen: {
-            price: "$225",
+            price: {
+                AQ7: "$165",
+                OX7H: "$185",
+                OX7S: null,
+                OEMS: "$265",
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -1200,7 +1312,14 @@ const devices = {
     },
     "1212pro": {
         screen: {
-            price: "$240",
+            price: {
+                AQ7: "$165",
+                OX7H: "$185",
+                OX7S: "$200",
+                OEMS: "$265",
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -1231,7 +1350,14 @@ const devices = {
     },
     "12proMax": {
         screen: {
-            price: "$260",
+            price: {
+                AQ7: "$185",
+                OX7H: "$205",
+                OX7S: null,
+                OEMS: "$315",
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -1258,6 +1384,62 @@ const devices = {
         backglass: {
             duration: "3 hour",
             price: "$150"
+        }
+    },
+    "13mini": {
+        screen: {
+            price: {
+                AQ7: null,
+                OX7H: null,
+                OX7S: null,
+                OEMS: "$415",
+                OEMT: null,
+                OEML: null,
+            },
+            warranty: "90 day",
+            duration: "15 minutes",
+        }
+    },
+    "13": {
+        screen: {
+            price: {
+                AQ7: null,
+                OX7H: null,
+                OX7S: null,
+                OEMS: "$320",
+                OEMT: null,
+                OEML: null,
+            },
+            warranty: "90 day",
+            duration: "15 minutes",
+        }
+    },
+    "13pro": {
+        screen: {
+            price: {
+                AQ7: null,
+                OX7H: null,
+                OX7S: null,
+                OEMS: "$355",
+                OEMT: null,
+                OEML: null,
+            },
+            warranty: "90 day",
+            duration: "15 minutes",
+        }
+    },
+    "13proMax": {
+        screen: {
+            price: {
+                AQ7: null,
+                OX7H: null,
+                OX7S: null,
+                OEMS: "$375",
+                OEMT: null,
+                OEML: null,
+            },
+            warranty: "90 day",
+            duration: "15 minutes",
         }
     },
     "googlePixel": {
@@ -2118,4 +2300,8 @@ const devices = {
 
 
 
-export { devices, devicesWithHomeButton, devicesWithVersions }
+export { 
+    devices, 
+    devicesWithHomeButton, 
+    devicesWithVersions
+}

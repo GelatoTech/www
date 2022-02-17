@@ -7,8 +7,20 @@ import { faUsers, faUser, faEnvelope, faHome, faPhone, faClock } from '@fortawes
 import Image from 'next/image';
 import scrollToSection from '../helpers/scrollToSection';
 import formatDate from '../helpers/formatDate';
-import { devices, devicesWithHomeButton, devicesWithVersions } from '../public/javascripts/devices';
+import { 
+  devices, 
+  devicesWithHomeButton, 
+  devicesWithVersions
+} from '../public/javascripts/devices';
 
+const screenReplacementTypes = [
+  "AQ7",
+  "OX7H",
+  "OX7S",
+  "OEML", 
+  "OEMS", 
+  "OEMT"
+];
 
 
 export function Form({ make }) {
@@ -22,6 +34,7 @@ export function Form({ make }) {
     deviceHomeButtonColor: '',
     deviceVersion: '',
     color: '',
+    screenReplacementType: '',
     addScreenProtector: 'No',
     customerName: '',
     customerAddress: '',
@@ -32,17 +45,45 @@ export function Form({ make }) {
   });
 
   useEffect(() => {
+    if(repairFormValues.deviceIssue==='screen') {
+      const availableScreens = screenReplacementTypes.filter(type => devices[repairFormValues.deviceModel].screen.price[type]);
+      if (availableScreens.length === 1) {
+        setRepairFormValues({ ...repairFormValues, screenReplacementType: availableScreens[0] })
+      }
+    }
     AOS.init(); // animations
     const { m } = router.query;
     if (m && repairFormValues.deviceMake !== m) setRepairFormValues({...repairFormValues, deviceMake: m});
-  });
+  }, [repairFormValues.screenReplacementType]);
 
   // Handle repair form state
   const handleChange = (e) => {
     setRepairFormValues({ ...repairFormValues, [e.target.name]: e.target.value });
   }
 
-  // When repair form is submitted...
+  const hasTieredScreenPricing = (model) => {
+    if(devices[model] && typeof devices[model]?.screen?.price === 'object') {
+      return !Object.keys(devices[model].screen.price).every((tier) => devices[model].screen.price[tier] === null);
+    }
+  };
+
+  const getFirstAvailableOEMType = (model) => { 
+    // prioritize LG screens (OEML)
+    return ["OEML", "OEMS", "OEMT"].filter(type => devices[model].screen.price[type])[0]
+  };
+
+  const getPrice = () => {
+    if(typeof devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price === 'object') {
+      if(hasTieredScreenPricing(repairFormValues.deviceModel)) {
+        return devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price[repairFormValues.screenReplacementType]
+      }
+      return devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price[repairFormValues.deviceVersion]
+    } else {
+      return devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price
+    }
+  }
+
+  // After repair form is submitted...
   const postSubmit = () => {
     const { customerName } = repairFormValues;
     router.push({
@@ -70,19 +111,14 @@ export function Form({ make }) {
         }
         {
           (
+            repairFormValues.screenReplacementType ||
             (repairFormValues.deviceMake) &&
             repairFormValues.deviceModel &&
             repairFormValues.deviceIssue &&
             repairFormValues.deviceIssue !== '' &&
-            devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price
-          )
-          ? (<p id="total-price-text" style={{ fontSize: '1.9em' }}> 
-                Estimated {
-                  typeof devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price === 'object'
-                    ? devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price[repairFormValues.deviceVersion]
-                    : devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price
-                } repair</p>)
-          : ''
+            getPrice() // if there is a price
+          ) && (<p id="total-price-text" style={{ fontSize: '1.9em' }}> 
+                Estimated {getPrice()} repair</p>)
         }
         {
           (
@@ -137,6 +173,7 @@ export function Form({ make }) {
             <input name="deviceHomeButtonColor" type="hidden" value={repairFormValues.deviceHomeButtonColor} />
             <input name="deviceVersion" type="hidden" value={repairFormValues.deviceVersion} />
             <input name="color" type="hidden" value={repairFormValues.color} />
+            <input name="screenReplacementType" type="hidden" value={repairFormValues.screenReplacementType} />
             <input name="addScreenProtector" type="hidden" value={repairFormValues.addScreenProtector} />
             <div className="field">
               {
@@ -152,6 +189,18 @@ export function Form({ make }) {
                             repairFormValues.deviceMake == "iphone"
                               ? (
                                 <>
+                                  <option value="13proMax">
+                                    iPhone 13 Pro Max
+                                  </option>
+                                  <option value="13pro">
+                                    iPhone 13 Pro
+                                  </option>
+                                  <option value="13">
+                                    iPhone 13
+                                  </option>
+                                  <option value="13mini">
+                                    iPhone 13 Mini
+                                  </option>
                                   <option value="12proMax">
                                     iPhone 12 Pro Max
                                   </option>
@@ -534,7 +583,13 @@ export function Form({ make }) {
                       {
                         (
                           devices[repairFormValues.deviceModel] &&
-                          devices[repairFormValues.deviceModel]["screen"]
+                          (
+                            hasTieredScreenPricing(repairFormValues.deviceModel) ||
+                            (
+                              devices[repairFormValues.deviceModel]["screen"] &&
+                              typeof devices[repairFormValues.deviceModel]["screen"].price !== 'object'
+                            )
+                          )
                         )
                         ? (
                           <option value="screen">
@@ -637,33 +692,61 @@ export function Form({ make }) {
               ) : null
             }
             {
-              (repairFormValues.deviceIssue === 'screen' ||
-              repairFormValues.deviceIssue === 'battery' ||
-              repairFormValues.deviceIssue === 'glassOnly' ||
-              repairFormValues.deviceIssue === 'charging') &&
-              repairFormValues.deviceMake === 'iphone'
-                && (
-                  <div className="is-half">
-                    <div className="column">
-                      <h3><strong>Would you like to add a screen protector?</strong> <span style={{ color: "#32B610" }}>+$15</span></h3>
-                    </div>
-                    <div className="column buttons has-addons" style={{ marginTop: '-20px' }}>
-                      <button 
-                        className={`button ${repairFormValues.addScreenProtector === "Yes" && 'is-success'}`}
-                        onClick={()=>handleChange({ target: { name: "addScreenProtector", value: "Yes" } })}
-                        // onClick={()=>setAddScreenProtector(true)}
-                      >
-                        Yes
-                      </button>
-                      <button 
-                        className={`button ${repairFormValues.addScreenProtector === "No" && 'is-dark'}`}
-                        onClick={()=>handleChange({ target: { name: "addScreenProtector", value: "No" } })}
-                        // onClick={()=>setAddScreenProtector(false)}
-                      >
-                        No
-                      </button>
-                    </div>
+              repairFormValues.deviceIssue === 'screen' &&
+              hasTieredScreenPricing(repairFormValues.deviceModel) &&
+              Object.values(devices[repairFormValues.deviceModel].screen.price).filter(type => type).length > 1 &&
+              (
+                <div className="is-half" style={{ display:'flex',justifyContent:'center',flexDirection:'column', alignItems: 'center' }}>
+                  <div className="column">
+                    <h3><strong>Which type of screen would you like?</strong></h3>
                   </div>
+                  <div className="control">
+                    {devices[repairFormValues.deviceModel].screen.price["AQ7"] &&
+                      (<><label className="radio">
+                      <input type="radio" name="screenReplacementType" value="AQ7" checked={repairFormValues.screenReplacementType === 'AQ7'} onChange={handleChange} style={{marginRight: '0.5em'}} />
+                      Aftermarket screen: AQ7 LCD 
+                    </label><br /></>)
+                    }
+                    {devices[repairFormValues.deviceModel].screen.price["OX7H"] &&
+                      (<><label className="radio">
+                          <input type="radio" name="screenReplacementType" value="OX7H" checked={repairFormValues.screenReplacementType === 'OX7H'} onChange={handleChange} style={{marginRight: '0.5em'}}/>
+                          Aftermarket screen: OX7 HARD OLED
+                        </label><br /></>)
+                    }
+                    {devices[repairFormValues.deviceModel].screen.price["OX7S"] &&
+                      (<><label className="radio">
+                        <input type="radio" name="screenReplacementType" value="OX7S" checked={repairFormValues.screenReplacementType === 'OX7S'} onChange={handleChange} style={{marginRight: '0.5em'}}/>
+                        Aftermarket screen: OX7 SOFT OLED
+                      </label><br /></>)
+                    }
+                    {
+                      getFirstAvailableOEMType(repairFormValues.deviceModel) &&
+                      (<><label className="radio">
+                        <input type="radio" name="screenReplacementType" value={getFirstAvailableOEMType(repairFormValues.deviceModel)} checked={repairFormValues.screenReplacementType === getFirstAvailableOEMType(repairFormValues.deviceModel)} onChange={handleChange} style={{marginRight: '0.5em'}}/>
+                        Original Apple Screen
+                      </label><br /></>)
+                    }
+                  </div>
+                  <div className="column">
+                    <h3><strong>Would you like to add a screen protector?</strong> <span style={{ color: "#32B610" }}>+$15</span></h3>
+                  </div>
+                  <div className="column buttons has-addons" style={{ marginTop: '-20px' }}>
+                    <button 
+                      className={`button ${repairFormValues.addScreenProtector === "Yes" && 'is-success'}`}
+                      onClick={()=>handleChange({ target: { name: "addScreenProtector", value: "Yes" } })}
+                      // onClick={()=>setAddScreenProtector(true)}
+                    >
+                      Yes
+                    </button>
+                    <button 
+                      className={`button ${repairFormValues.addScreenProtector === "No" && 'is-dark'}`}
+                      onClick={()=>handleChange({ target: { name: "addScreenProtector", value: "No" } })}
+                      // onClick={()=>setAddScreenProtector(false)}
+                    >
+                      No
+                    </button>
+                  </div>
+                </div>
                 )
             }
           <hr />
