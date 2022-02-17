@@ -1255,7 +1255,7 @@ const devices = {
                 AQ7: "$155",
                 OX7H: "$210",
                 OX7S: "$260",
-                OEMS: "$345",
+                OEMS: "$330",
                 OEMT: null,
                 OEML: null,
             },
