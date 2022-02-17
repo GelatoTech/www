@@ -1031,8 +1031,8 @@ const devices = {
             price: {
                 AQ7: "$105",
                 OX7H: "$115",
-                OX7S: "$150",
-                OEMS: null,
+                OX7S: "$120",
+                OEMS: "$150",
                 OEMT: null,
                 OEML: null,
             },
@@ -1323,11 +1323,6 @@ const devices = {
             warranty: "90 day",
             duration: "15 minutes",
         },
-        glassTouch: {
-            price: "$279.99",
-            warranty: "90 day",
-            duration: "3-5 hours"
-        },
         battery: {
             price: "$120",
             warranty: "90 day",
@@ -1360,11 +1355,6 @@ const devices = {
             },
             warranty: "90 day",
             duration: "15 minutes",
-        },
-        glassTouch: {
-            price: "$329.99",
-            warranty: "90 day",
-            duration: "3-5 hours"
         },
         battery: {
             price: "$140",
