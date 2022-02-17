@@ -75,7 +75,11 @@ export function Form({ make }) {
   const getPrice = () => {
     if(typeof devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price === 'object') {
       if(hasTieredScreenPricing(repairFormValues.deviceModel)) {
-        return devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price[repairFormValues.screenReplacementType]
+        if(Object.values(devices[repairFormValues.deviceModel].screen.price).filter(type => type).length > 1) {
+          return devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price[repairFormValues.screenReplacementType] 
+        } else {
+          return Object.values(devices[repairFormValues.deviceModel].screen.price).filter(type => type)[0]
+        }
       }
       return devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].price[repairFormValues.deviceVersion]
     } else {
@@ -700,7 +704,7 @@ export function Form({ make }) {
                   <div className="column">
                     <h3><strong>Which type of screen would you like?</strong></h3>
                   </div>
-                  <div className="control">
+                  <div className="control" style={{ marginBottom: '1em' }}>
                     {devices[repairFormValues.deviceModel].screen.price["AQ7"] &&
                       (<><label className="radio">
                       <input type="radio" name="screenReplacementType" value="AQ7" checked={repairFormValues.screenReplacementType === 'AQ7'} onChange={handleChange} style={{marginRight: '0.5em'}} />
