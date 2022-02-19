@@ -32,6 +32,16 @@ const devicesWithVersions = {
     "apple-watch-series-3-42mm": ["GPS", "Cellular"],
 };
 
+const iphoneSixThroughEightPlus = [
+    "6",
+    "6s",
+    "6splus",
+    "7",
+    "7plus",
+    "8",
+    "8plus",
+]
+
 const devices = {
     "ipadmini": {
         screen: {
@@ -847,7 +857,7 @@ const devices = {
     "6plus": {
         screen: {
             price: {
-                AQ7: "$85",
+                AQ7: "$80",
                 OX7H: "$85",
                 OX7S: null,
                 OEMS: "$90",
@@ -1065,7 +1075,7 @@ const devices = {
                 AQ7: "$105",
                 OX7H: null,
                 OX7S: "$125",
-                OEMS: "$145",
+                OEMS: "$180",
                 OEMT: null,
                 OEML: null,
             },
@@ -1094,7 +1104,14 @@ const devices = {
     },
     "se2": {
         screen: {
-            price: "$90",
+            price: {
+                AQ7: "$80",
+                OX7H: "$85",
+                OX7S: null,
+                OEMS: "$90",
+                OEMT: null,
+                OEML: null,
+            },
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -1222,7 +1239,7 @@ const devices = {
                 AQ7: "$110",
                 OX7H: null,
                 OX7S: "$130",
-                OEMS: "$175",
+                OEMS: "$180",
                 OEMT: null,
                 OEML: null,
             },
@@ -1678,7 +1695,7 @@ const devices = {
             duration: "1 hour",
         },
         glassOnly: {
-            price: "$205",
+            price: "$285",
             warranty: "90 day",
             duration: "3-5 hours"
         },
@@ -2293,5 +2310,6 @@ const devices = {
 export { 
     devices, 
     devicesWithHomeButton, 
-    devicesWithVersions
+    devicesWithVersions,
+    iphoneSixThroughEightPlus
 }
