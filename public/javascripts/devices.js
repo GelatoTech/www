@@ -638,7 +638,7 @@ const devices = {
     },
     "apple-watch-series-4-40mm": {
         glassOnly: {
-            price: "$130",
+            price: "$145",
             warranty: "90 day",
             duration: "3-5 hours"
         },
@@ -655,7 +655,7 @@ const devices = {
     },
     "apple-watch-series-4-44mm": {
         glassOnly: {
-            price: "$130",
+            price: "$145",
             warranty: "90 day",
             duration: "3-5 hours"
         },
