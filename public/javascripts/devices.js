@@ -642,11 +642,11 @@ const devices = {
             warranty: "90 day",
             duration: "3-5 hours"
         },
-        glassTouch: {
-            price: "$140",
-            warranty: "90 day",
-            duration: "3-5 hours"
-        },
+        // glassTouch: {
+        //     price: "$140",
+        //     warranty: "90 day",
+        //     duration: "3-5 hours"
+        // },
         LCD: {
             price: "$220",
             warranty: "90 day",
@@ -659,11 +659,11 @@ const devices = {
             warranty: "90 day",
             duration: "3-5 hours"
         },
-        glassTouch: {
-            price: "$140",
-            warranty: "90 day",
-            duration: "3-5 hours"
-        },
+        // glassTouch: {
+        //     price: "$140",
+        //     warranty: "90 day",
+        //     duration: "3-5 hours"
+        // },
         LCD: {
             price: "$195",
             warranty: "90 day",
