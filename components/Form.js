@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import AOS from 'aos';
 import NetlifyForm from 'react-ssg-netlify-forms';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers, faUser, faEnvelope, faHome, faPhone, faClock } from '@fortawesome/free-solid-svg-icons';
+import { faUsers, faUser, faEnvelope, faHome, faPhone, faClock, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import scrollToSection from '../helpers/scrollToSection';
 import formatDate from '../helpers/formatDate';
@@ -731,6 +732,16 @@ export function Form({ make }) {
                         Original Apple Screen
                       </label><br /></>)
                     }
+                    <div style={{ paddingTop: '0.5em', display: 'flex', alignItems: 'center'}}>
+                      <span className="icon is-small is-left"><FontAwesomeIcon icon={faInfoCircle} style={{ height: '1em', marginRight: '0.3em' }} /></span>
+                      <small>Learn more about our{' '}
+                        <Link href="/blog/quality-standards" passHref>
+                          <a target="_blank" rel="noopener noreferrer">
+                            quality standards
+                          </a>
+                        </Link>
+                      </small>
+                    </div>
                   </div>
                   <div className="column">
                     <h3><strong>Would you like to add a screen protector?</strong> <span style={{ color: "#32B610" }}>+$15</span></h3>

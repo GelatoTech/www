@@ -1,0 +1,75 @@
+.blog-container{
+  padding: 4rem 8rem;
+}
+#blog p{
+  font-size: 1.3rem;
+  
+}
+#blog{
+  margin-top:3rem;
+}
+@media only screen and (max-width: 600px) {
+  .blog-container{
+      padding: 1rem 1rem;
+  }
+}
+.grid{
+  display: grid;
+  margin: 3rem 2rem;
+  justify-items: center;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+/* social icons */
+#twitter {
+  color:#1da1f2;
+  font-size: 2rem;
+}
+#twitter:hover{color:#87caf3}
+
+#yelp {
+  color:red;
+  font-size: 2rem;
+}
+#yelp:hover{color:rgba(255, 0, 0, 0.514);}
+#google {
+  color:#4285F4;
+  font-size: 2rem;
+}
+#google:hover{color:rgb(122, 153, 194);}
+#instagram{
+  color:#3f729b;
+  font-size: 2rem;
+}
+#instagram:hover{color:rgb(122, 153, 194);}
+#linkedin{
+  color:#0e76a8;
+  font-size: 2rem;
+}
+
+#linkedin:hover{color: #798ea0;}
+#facebook{
+  color:#3b5998;
+  font-size: 2rem;
+}
+#facebook:hover{color:#798ea0;}
+.btn-action {
+  
+  background: var(--action-color);
+  color: white;
+}
+
+.navbar {
+  padding: 8px !important;
+}
+#nav-menu {
+  margin-left: 21vw;
+  cursor: pointer;
+}
+
+#nav-items a {
+  margin: 0.5rem;
+}
+.date li{
+  padding: 1rem;
+}

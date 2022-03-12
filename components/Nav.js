@@ -112,6 +112,14 @@ export function Nav() {
                         setBlogDropdownActive(false);
                         setBurger(false);
                         scrollToSection("hero"); 
+                        router.push('/blog/quality-standards'); 
+                      }} 
+                      id="blog">Quality Standards</a> 
+                    <a className="navbar-item" 
+                      onClick={() => {
+                        setBlogDropdownActive(false);
+                        setBurger(false);
+                        scrollToSection("hero"); 
                         router.push('/blog/battery-tips'); 
                       }} 
                       id="blog">3 iOS Battery Saving Tips</a> 
