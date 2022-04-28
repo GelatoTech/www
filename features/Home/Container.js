@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 // import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMobile, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faMobile, faCheck, faCar, faStore, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faYelp } from '@fortawesome/free-brands-svg-icons';
 import AOS from 'aos';
 import { BookRepairButton, Form, HowItWorks, TrustedBy, WhyUs } from '../../components';
@@ -43,6 +43,60 @@ export default function Home() {
         <meta content=" iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, demand" name="keywords" />
         <meta content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" name="google-site-verification" />
       </Head>
+      <section style={{ marginTop: '4.5em', paddingTop: '2em', height: '28vh', backgroundColor: 'gainsboro' }}>
+        <div className="container">
+          <div style={{ height: '10em', display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '2em' }}>
+            <div style={{ alignSelf: 'start', height: '10em', display: 'flex', alignItems: 'center'}}>
+              <h1 className="subtitle is-3">Start Your Repair</h1>
+            </div>
+            <div className="card" style={{ width: '16em', borderRadius: '0.8em', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)'}}>
+              <div className="is-centered has-text-centered">
+                <FontAwesomeIcon icon={faCar} style={{ height: '3em', paddingTop: '1em' }} />
+              </div>
+              <div className="card-content">
+                <div className="media">
+                  <div className="media-content">
+                    <p className="title is-4 has-text-centered">We Come to You</p>
+                  </div>
+                </div>
+                <div className="content has-text-centered">
+                  Our technicians come to you!
+                </div>
+              </div>
+            </div>
+            <div className="card" style={{ width: '16em', borderRadius: '0.8em', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)'}}>
+              <div className="is-centered has-text-centered">
+                <FontAwesomeIcon icon={faStore} style={{ height: '3em', paddingTop: '1em' }} />
+              </div>
+              <div className="card-content">
+                <div className="media">
+                  <div className="media-content">
+                    <p className="title is-4 has-text-centered">Carry In</p>
+                  </div>
+                </div>
+                <div className="content has-text-centered">
+                  Visit our San Francisco location
+                </div>
+              </div>
+            </div>
+            <div className="card" style={{ width: '16em', borderRadius: '0.8em', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)'}}>
+              <div className="is-centered has-text-centered">
+                <FontAwesomeIcon icon={faEnvelope} style={{ height: '3em', paddingTop: '1em' }} />
+              </div>
+              <div className="card-content">
+                <div className="media">
+                  <div className="media-content">
+                    <p className="title is-4 has-text-centered">Mail In</p>
+                  </div>
+                </div>
+                <div className="content has-text-centered">
+                  Ship us your device
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="hero" id="hero" style={{
         backgroundImage: "url(/images/whats-icracked.jpg)",
         backgroundSize: 'cover',
@@ -51,10 +105,12 @@ export default function Home() {
         padding: '3rem 0'
       }}>
         <div id="hero-body">
-          <div className="container has-text-centered">
-            <h1 className="title is-1">Mobile iPhone Repair<br />at Your Location</h1>
-            <p className="subtitle is-3" style={{ color: 'white' }}>San Francisco, CA</p><br />
-            <BookRepairButton />
+          <div className="container">
+            <h1 className="title is-1">
+              Mobile iPhone Repair<br />at Your Location<br />
+              <p className="subtitle is-3" style={{ color: 'white', opacity: 0.3 }}>San Francisco, CA</p><br />
+              {/* <BookRepairButton /> */}
+            </h1>
           </div>
           <div className="container" id="reviews">
             {/* <div className="columns owl-carousel owl-theme" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '80px' }}> */}
