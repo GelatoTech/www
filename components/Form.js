@@ -25,7 +25,7 @@ const screenReplacementTypes = [
 ];
 
 
-export function Form({ make }) {
+export function Form({ make, isCarryIn }) {
 
   const router = useRouter();
 
@@ -44,6 +44,7 @@ export function Form({ make }) {
     customerEmail: '',
     repairTime: '',
     repairDate: formatDate(new Date()),
+    isCarryIn: !!isCarryIn
   });
 
   useEffect(() => {
@@ -94,16 +95,22 @@ export function Form({ make }) {
     const { customerName } = repairFormValues;
     router.push({
       pathname: '/thank-you',
-      query: { n: customerName.includes(' ') ? customerName.split(' ')[0] : customerName }
+      query: { 
+        n: customerName.includes(' ') ? customerName.split(' ')[0] : customerName, // to show their name
+        c: isCarryIn,
+        d: repairFormValues.repairDate,
+        t: repairFormValues.repairTime
+      }
     });
     scrollToSection("hero");
   }
 
   return(
-    <section className="section" id="repair">
+    <section className="section">
       <div className="form-container container has-text-centered">
-        <i><h1 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">Schedule Repair</h1></i>
-        <h2 className="subtitle" data-aos="fade-up">Pick your device model and problem.</h2>
+        <h1 className="title" style={{ fontSize: '1.5em' }} data-aos="fade-up">{isCarryIn ? 'Carry In Repair' : 'Schedule On-Demand Repair'}</h1>
+        {isCarryIn && (<h2 className="subtitle" style={{ fontSize: '1em', marginTop: '1em' }}><strong><a target="_blank" href="https://www.google.com/maps/@37.7735602,-122.391504,3a,29.8y,289.35h,91.65t/data=!3m6!1e1!3m4!1s5b-8jCZm9i_ADTz_DOg5Uw!2e0!7i16384!8i8192">1180 4th St San Francisco, CA</a></strong></h2>)}
+        {!repairFormValues.deviceMake && !isCarryIn &&(<h2 className="subtitle" style={{ fontSize: '1em', marginTop: '1em' }} data-aos="fade-up">Pick your device model and problem.</h2>)}
         {
           repairFormValues.deviceMake !== ''
           ? (
@@ -181,6 +188,7 @@ export function Form({ make }) {
             <input name="color" type="hidden" value={repairFormValues.color} />
             <input name="screenReplacementType" type="hidden" value={repairFormValues.screenReplacementType} />
             <input name="addScreenProtector" type="hidden" value={repairFormValues.addScreenProtector} />
+            <input name="isCarryIn" type="hidden" value={repairFormValues.isCarryIn} />
             <div className="field">
               {
                 repairFormValues.deviceMake !== ''
@@ -773,7 +781,7 @@ export function Form({ make }) {
                 <div className="field">
                   <p className="control is-expanded has-icons-left"><input value={repairFormValues.customerName} className="input" name="customerName" placeholder="Name" required type="text" onChange={handleChange} /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faUser} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
                 </div>
-                <div className="field">
+                {!isCarryIn && (<div className="field">
                   <p className="control is-expanded has-icons-left has-icons-right">
                       {/* <GooglePlacesAutocomplete 
                         apiKey={process.env.GOOGLE_PLACES_API_KEY} 
@@ -784,7 +792,7 @@ export function Form({ make }) {
                       /><span className="icon is-small is-left"><FontAwesomeIcon icon={faHome} style={{ height: '1em', marginLeft: '0.3em' }} /></span> */}
                       <input value={repairFormValues.customerAddress} onChange={handleChange} className="input" name="customerAddress" placeholder="Address" required type="text" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faHome} style={{ height: '1em', marginLeft: '0.3em' }} /></span>
                   </p>
-                </div>
+                </div>)}
                 <div className="field">
                   <p className="control is-expanded has-icons-left has-icons-right"><input value={repairFormValues.customerPhone} onChange={handleChange} className="input" name="customerPhone" placeholder="Cell #" required type="tel" /> <span className="icon is-small is-left"><FontAwesomeIcon icon={faPhone} style={{ height: '1em', marginLeft: '0.3em' }} /></span></p>
                 </div>

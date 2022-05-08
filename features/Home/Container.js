@@ -2,7 +2,7 @@ import Head from 'next/head';
 import dynamic from "next/dynamic";
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 // import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMobile, faCheck, faCar, faStore, faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -14,6 +14,8 @@ const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
 export default function Home() {
 
   const router = useRouter();
+
+  const [isCarryIn, setIsCarryIn] = useState(false);
 
   useEffect(() => {
     AOS.init(); // animations
@@ -43,60 +45,6 @@ export default function Home() {
         <meta content=" iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, demand" name="keywords" />
         <meta content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" name="google-site-verification" />
       </Head>
-      <section style={{ marginTop: '4.5em', paddingTop: '2em', height: '28vh', backgroundColor: 'gainsboro' }}>
-        <div className="container">
-          <div style={{ height: '10em', display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '2em' }}>
-            <div style={{ alignSelf: 'start', height: '10em', display: 'flex', alignItems: 'center'}}>
-              <h1 className="subtitle is-3">Start Your Repair</h1>
-            </div>
-            <div className="card" style={{ width: '16em', borderRadius: '0.8em', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)'}}>
-              <div className="is-centered has-text-centered">
-                <FontAwesomeIcon icon={faCar} style={{ height: '3em', paddingTop: '1em' }} />
-              </div>
-              <div className="card-content">
-                <div className="media">
-                  <div className="media-content">
-                    <p className="title is-4 has-text-centered">We Come to You</p>
-                  </div>
-                </div>
-                <div className="content has-text-centered">
-                  Our technicians come to you!
-                </div>
-              </div>
-            </div>
-            <div className="card" style={{ width: '16em', borderRadius: '0.8em', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)'}}>
-              <div className="is-centered has-text-centered">
-                <FontAwesomeIcon icon={faStore} style={{ height: '3em', paddingTop: '1em' }} />
-              </div>
-              <div className="card-content">
-                <div className="media">
-                  <div className="media-content">
-                    <p className="title is-4 has-text-centered">Carry In</p>
-                  </div>
-                </div>
-                <div className="content has-text-centered">
-                  Visit our San Francisco location
-                </div>
-              </div>
-            </div>
-            <div className="card" style={{ width: '16em', borderRadius: '0.8em', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)'}}>
-              <div className="is-centered has-text-centered">
-                <FontAwesomeIcon icon={faEnvelope} style={{ height: '3em', paddingTop: '1em' }} />
-              </div>
-              <div className="card-content">
-                <div className="media">
-                  <div className="media-content">
-                    <p className="title is-4 has-text-centered">Mail In</p>
-                  </div>
-                </div>
-                <div className="content has-text-centered">
-                  Ship us your device
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section className="hero" id="hero" style={{
         backgroundImage: "url(/images/whats-icracked.jpg)",
         backgroundSize: 'cover',
@@ -104,79 +52,190 @@ export default function Home() {
         backgroundPosition: '100%',
         padding: '3rem 0'
       }}>
-        <div id="hero-body">
+        <div id="hero-body" style={{ paddingTop: '3em' }}>
           <div className="container">
-            <h1 className="title is-1">
-              Mobile iPhone Repair<br />at Your Location<br />
-              <p className="subtitle is-3" style={{ color: 'white', opacity: 0.3 }}>San Francisco, CA</p><br />
-              {/* <BookRepairButton /> */}
-            </h1>
-          </div>
-          <div className="container" id="reviews">
-            {/* <div className="columns owl-carousel owl-theme" style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '80px' }}> */}
-            <OwlCarousel 
-              margin={8} 
-              autoplay={true} 
-              loop 
-              dots={false} 
-              style={{ marginTop: '80px' }} 
-              autoplayTimeout={8000}
-              responsive={{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:2
-                },
-                1000:{
-                    items:3
-                }
-            }}
-            >  
-            <div className="column">
-                <div className="notification">
-                  <Image alt="customer lilly iphone repair review" src="/images/testimonials/Lilly-H.png" width="200px" height="59.97px" />
-                  <p>"Elbert is excellent! He is quick and responsive. And did a great job in repairing two of my iPhones. I contacted him Friday night and he came over Saturday. I highly recommend him to anyone.”</p><br />
-                  <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
-                </div>
+            <div className="columns">
+              <div className="column is-half">
+                <h1 className="title is-1">
+                  Mobile iPhone Repair<br />at Your Location<br />
+                  <p className="subtitle is-3" style={{ color: 'white', opacity: 0.7 }}>San Francisco, CA</p><br />
+                  <div className="is-hidden-tablet" style={{ display: 'flex', flexDirection: 'column', gap: '0.5em'}}>
+                    <div style={{ display: 'flex', alignItems: 'center' }} onClick={() => {
+                      setIsCarryIn(false);
+                      scrollToSection("repair");
+                    }}>
+                      <div style={{ backgroundColor: 'white', width: '1.5em', height: '1.5em', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                        <FontAwesomeIcon icon={faCar} style={{ color: '#4A4A4A', width: '0.9em' }} />
+                      </div>
+                      <h2 className="subtitle" style={{ marginLeft: '0.4em' }}>On-demand</h2>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center' }} onClick={()=>{
+                      setIsCarryIn(true);
+                      scrollToSection("repair");
+                    }}>
+                      <div style={{ backgroundColor: 'white', width: '1.5em', height: '1.5em', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                        <FontAwesomeIcon icon={faStore} style={{ color: '#4A4A4A', width: '0.8em' }} />
+                      </div>
+                      <h2 className="subtitle" style={{ marginLeft: '0.4em' }}>Carry In</h2>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center' }} onClick={()=>router.push('/mail-in')}>
+                      <div style={{ backgroundColor: 'white', width: '1.5em', height: '1.5em', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                        <FontAwesomeIcon icon={faEnvelope} style={{ color: '#4A4A4A', width: '0.7em' }} />
+                      </div>
+                      <h2 className="subtitle" style={{ marginLeft: '0.4em' }}>Mail In</h2>
+                    </div>
+                  </div>
+                  {/* <BookRepairButton /> */}
+                </h1>
               </div>
-              <div className="column">
-                <div className="notification">
-                  <Image alt="customer brooke iphone repair review" src="/images/testimonials/Brooke.png" width="200px" height="59.97px" />
-                  <p>"Elbert showed up literally 15 minutes from the time he first texted me back after my request, and repaired my iPhone in less than 15 minutes. He was professional, kind, patient (I kept him waiting a few more minutes while finishing a meeting), and the work was superb! I will absolutely call him again.”</p><br />
-                  <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+              <div className="column columns is-desktop is-hidden-mobile is-half" style={{ alignItems: 'center'}}>
+                {/* <div className="column is-flex" style={{ alignItems: 'center'}}> */}
+                  <div className="column">
+                    <div className="card repairType" onClick={()=>{
+                      setIsCarryIn(false);
+                      scrollToSection("repair");
+                    }} style={{ borderRadius: '0.8em', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.7)'}}>
+                      <div className="is-centered has-text-centered">
+                        <FontAwesomeIcon icon={faCar} style={{ height: '3em', paddingTop: '1em' }} />
+                      </div>
+                      <div className="card-content">
+                        <div className="media">
+                          <div className="media-content">
+                            <p className="subtitle is-4 has-text-centered">On-Demand</p>
+                          </div>
+                        </div>
+                        <div className="content has-text-centered">
+                          We come to you
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="column">
+                    <div className="card repairType" onClick={()=>{
+                      setIsCarryIn(true);
+                      scrollToSection("repair");
+                    }} style={{ borderRadius: '0.8em', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.7)'}}>
+                      <div className="is-centered has-text-centered">
+                        <FontAwesomeIcon icon={faStore} style={{ height: '3em', paddingTop: '1em' }} />
+                      </div>
+                      <div className="card-content">
+                        <div className="media">
+                          <div className="media-content">
+                            <p className="subtitle is-4 has-text-centered">Carry In</p>
+                          </div>
+                        </div>
+                        <div className="content has-text-centered">
+                          Visit our location
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="column">
+                    <div className="card repairType" onClick={()=>router.push('/mail-in')} style={{ borderRadius: '0.8em', boxShadow: '0 4px 8px 0 rgba(0,0,0,0.7)'}}>
+                      <div className="is-centered has-text-centered">
+                        <FontAwesomeIcon icon={faEnvelope} style={{ height: '3em', paddingTop: '1em' }} />
+                      </div>
+                      <div className="card-content">
+                        <div className="media">
+                          <div className="media-content">
+                            <p className="subtitle is-4 has-text-centered">Mail-In</p>
+                          </div>
+                        </div>
+                        <div className="content has-text-centered">
+                          Ship us your device
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="column">
-                <div className="notification">
-                  <Image alt="customer iphone repair review" src="/images/testimonials/Daniel-A.png" width="200px" height="59.97px" />
-                  <p>"This is a truly unique and fantastic idea, well marketed and well executed. I put in a request on their extremely user friendly website and received a call right away and he was at my door just 30min later. He was super friendly and he fixed my iPhone in 20min. cant ask for more.”</p><br />
-                  <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
-                </div>
-              </div>
-              <div className="column">
-                <div className="notification">
-                  <Image alt="customer lukas iphone repair review" src="/images/testimonials/Lukas-B.png" width="200px" height="59.97px" />
-                  <p>"These guys do great work, are friendly, and have super reasonable prices. I'd recommend them to anyone needing iPhone repair.”</p><br />
-                  <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
-                </div>
-              </div>
-              <div className="column">
-                <div className="notification">
-                  <Image alt="customer brendan iphone repair review" src="/images/testimonials/Brendan-D.png" width="200px" height="59.97px" />
-                  <p>"If you are reading this just send him a message. Way better than apple store/support for less $$. He even comes to your house!”</p><br />
-                  <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
-                </div>
-              </div>
-            </OwlCarousel>
-            {/* </div> */}
+              {/* </div> */}
+            </div>
           </div>
         </div>
       </section>
       <TrustedBy />
       <HowItWorks deviceName="iPhone" />
       <WhyUs />
-      <Form make={router.query.make} />
+      <div className="container" id="reviews">
+        <OwlCarousel 
+          margin={8} 
+          autoplay={true} 
+          loop 
+          dots={false} 
+          autoplayTimeout={8000}
+          responsive={{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }}
+        >  
+          <div className="column">
+              <div className="notification">
+                <Image alt="customer lilly iphone repair review" src="/images/testimonials/Lilly-H.png" width="200px" height="59.97px" />
+                <p>"Elbert is excellent! He is quick and responsive. And did a great job in repairing two of my iPhones. I contacted him Friday night and he came over Saturday. I highly recommend him to anyone.”</p><br />
+                <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+              </div>
+            </div>
+            <div className="column">
+              <div className="notification">
+                <Image alt="customer brooke iphone repair review" src="/images/testimonials/Brooke.png" width="200px" height="59.97px" />
+                <p>"Elbert showed up literally 15 minutes from the time he first texted me back after my request, and repaired my iPhone in less than 15 minutes. He was professional, kind, patient (I kept him waiting a few more minutes while finishing a meeting), and the work was superb! I will absolutely call him again.”</p><br />
+                <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+              </div>
+            </div>
+            <div className="column">
+              <div className="notification">
+                <Image alt="customer iphone repair review" src="/images/testimonials/Daniel-A.png" width="200px" height="59.97px" />
+                <p>"This is a truly unique and fantastic idea, well marketed and well executed. I put in a request on their extremely user friendly website and received a call right away and he was at my door just 30min later. He was super friendly and he fixed my iPhone in 20min. cant ask for more.”</p><br />
+                <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+              </div>
+            </div>
+            <div className="column">
+              <div className="notification">
+                <Image alt="customer lukas iphone repair review" src="/images/testimonials/Lukas-B.png" width="200px" height="59.97px" />
+                <p>"These guys do great work, are friendly, and have super reasonable prices. I'd recommend them to anyone needing iPhone repair.”</p><br />
+                <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+              </div>
+            </div>
+            <div className="column">
+              <div className="notification">
+                <Image alt="customer brendan iphone repair review" src="/images/testimonials/Brendan-D.png" width="200px" height="59.97px" />
+                <p>"If you are reading this just send him a message. Way better than apple store/support for less $$. He even comes to your house!”</p><br />
+                <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Read on Yelp <FontAwesomeIcon icon={faYelp} style={{ height: '60%', marginLeft: '0.3em' }} /></a>
+              </div>
+            </div>
+          </OwlCarousel>
+      </div>
+      <span id="repair"></span>
+      <div className="tabs is-centered is-hidden-tablet">
+        <ul>
+          <li className={!isCarryIn && 'is-active'} onClick={()=>setIsCarryIn(false)}>
+            <a>
+              <FontAwesomeIcon icon={faCar} style={{ height: '1em', paddingRight: '0.3em' }} />
+              <span>On-Demand</span>
+            </a>
+          </li>
+          <li className={isCarryIn && 'is-active'} onClick={()=>setIsCarryIn(true)}>
+            <a>
+              <FontAwesomeIcon icon={faStore} style={{ height: '1em', paddingRight: '0.3em' }} />
+              <span>Carry In</span>
+            </a>
+          </li>
+          <li onClick={()=>router.push('/mail-in')}>
+            <a>
+              <FontAwesomeIcon icon={faEnvelope} style={{ height: '1em', paddingRight: '0.3em' }} />
+              <span>Mail In</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <Form make={router.query.make} isCarryIn={isCarryIn} />
       {/* service include */}
       <section className="section" id="services">
         <div className="container has-text-centered">
