@@ -67,7 +67,7 @@ export default function Home() {
                       <div style={{ backgroundColor: 'white', width: '1.5em', height: '1.5em', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                         <FontAwesomeIcon icon={faCar} style={{ color: '#4A4A4A', width: '0.9em' }} />
                       </div>
-                      <h2 className="subtitle" style={{ marginLeft: '0.4em' }}>On-demand</h2>
+                      <h2 className="subtitle" style={{ marginLeft: '0.4em' }}>We Come to You</h2>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center' }} onClick={()=>{
                       setIsCarryIn(true);
@@ -101,11 +101,11 @@ export default function Home() {
                       <div className="card-content">
                         <div className="media">
                           <div className="media-content">
-                            <p className="subtitle is-4 has-text-centered">On-Demand</p>
+                            <p className="subtitle is-4 has-text-centered">We Come to You</p>
                           </div>
                         </div>
                         <div className="content has-text-centered">
-                          We come to you
+                          On-demand repair
                         </div>
                       </div>
                     </div>
@@ -156,7 +156,11 @@ export default function Home() {
       <TrustedBy />
       <HowItWorks deviceName="iPhone" />
       <WhyUs />
-      <div className="container" id="reviews">
+      <div className="container has-text-centered" id="reviews">
+       <h1 className="subtitle is-4">What Our Customers Are Saying About Cell Phone Repair Services</h1>
+       <p style={{ marginBottom: '1em' }}>
+        <small>Whether you had a stellar experience or you think there’s room for improvement, please let us know. <br />We value your experience at Gelatotech above anything else. We want to hear from you!</small></p>
+        <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Add a Review</a>
         <OwlCarousel 
           margin={8} 
           autoplay={true} 
@@ -238,20 +242,23 @@ export default function Home() {
       <Form make={router.query.make} isCarryIn={isCarryIn} />
       {/* service include */}
       <section className="section" id="services">
-        <div className="container has-text-centered">
+        <div className="container">
           <h1 className="subtitle is-2">Service Includes</h1>
           <div className="columns">
             <div className="column">
-              <h2>Same-Day iPhone Repair <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
+              <h2><FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /> High-quality cell phone repair</h2>
             </div>
             <div className="column">
-              <h2>Device Diagnostic <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
+              <h2><FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /> Reliable repair for the device you depend on most</h2>
             </div>
             <div className="column">
-              <h2>90 Day Warranty <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
+              <h2><FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /> Free diagnostic test on the common cell phone repairs. </h2>
             </div>
             <div className="column">
-              <h2>Quality Parts <FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /></h2>
+              <h2><FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /> Our lowest price guaranteed</h2>
+            </div>
+            <div className="column">
+              <h2><FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /> All repairs backed by a 90 fault Warranty</h2>
             </div>
           </div>
         </div>
