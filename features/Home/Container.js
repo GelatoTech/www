@@ -252,13 +252,13 @@ export default function Home() {
               <h2><FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /> Reliable repair for the device you depend on most</h2>
             </div>
             <div className="column">
-              <h2><FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /> Free diagnostic test on the common cell phone repairs. </h2>
+              <h2><FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /> Free diagnostic test on the common cell phone repairs</h2>
             </div>
             <div className="column">
               <h2><FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /> Our lowest price guaranteed</h2>
             </div>
             <div className="column">
-              <h2><FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /> All repairs backed by a 90 fault Warranty</h2>
+              <h2><FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /> All repairs backed by a 90 fault warranty</h2>
             </div>
           </div>
         </div>
