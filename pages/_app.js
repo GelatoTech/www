@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { Footer, Nav } from '../components';
@@ -29,6 +29,7 @@ import '../public/stylesheets/stepper.css';
 export default function App({ Component, pageProps }) {
 
   const router = useRouter();
+  const [open, setOpen] = useState(true);
 
   // Google Analytics
   ReactGA.initialize('UA-121085071-1');
@@ -62,7 +63,7 @@ export default function App({ Component, pageProps }) {
   }, []);
 
   return (
-    <div>
+    <div onClick={()=> setOpen(false)}>
       <Head>
         <link href="/images/logo-square.png" rel="shortcut icon" type="image/png" />
         <script 
@@ -72,6 +73,15 @@ export default function App({ Component, pageProps }) {
         </script>
       </Head>
       <Nav />
+      <div class={`modal ${open && 'is-active'}`}>
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <p class="image is-4by3">
+            <img src="/images/closed.png" alt="" style={{ borderRadius: '1em' }} />
+          </p>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
       <Component {...pageProps} />
       <Footer />
     </div>
