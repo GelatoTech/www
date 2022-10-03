@@ -29,7 +29,7 @@ import '../public/stylesheets/stepper.css';
 export default function App({ Component, pageProps }) {
 
   const router = useRouter();
-  const [open, setOpen] = useState(true);
+  // const [open, setOpen] = useState(true);
 
   // Google Analytics
   ReactGA.initialize('UA-121085071-1');
@@ -63,7 +63,9 @@ export default function App({ Component, pageProps }) {
   }, []);
 
   return (
-    <div onClick={()=> setOpen(false)}>
+    <div 
+      // onClick={()=> setOpen(false)} // this is for the closed message
+    >
       <Head>
         <link href="/images/logo-square.png" rel="shortcut icon" type="image/png" />
         <script 
@@ -73,7 +75,7 @@ export default function App({ Component, pageProps }) {
         </script>
       </Head>
       <Nav />
-      <div class={`modal ${open && 'is-active'}`}>
+      {/* <div class={`modal ${open && 'is-active'}`}>
         <div class="modal-background"></div>
         <div class="modal-content">
           <p class="image is-4by3">
@@ -81,7 +83,7 @@ export default function App({ Component, pageProps }) {
           </p>
         </div>
         <button class="modal-close is-large" aria-label="close"></button>
-      </div>
+      </div> */}
       <Component {...pageProps} />
       <Footer />
     </div>
