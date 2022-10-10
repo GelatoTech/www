@@ -49,13 +49,13 @@ export function Footer() {
               <h5 id="business">Business Hours</h5>
               <hr />
               <ul className="date">
-                <li>Monday: 10:00am - 6:00pm </li>
-                <li>Tuesday:  10:00am - 6:00pm </li>
-                <li>Wednesday: 10:00am - 6:00pm </li>
-                <li>Thursday: 10:00am - 6:00pm </li>
-                <li>Friday: 10:00am - 6:00pm </li>
-                <li>Saturday: 10:00am - 6:00pm </li>
-                <li>Sunday: 12:00pm - 6:00pm </li>
+                <li>Monday: 10:00am - 8:00pm </li>
+                <li>Tuesday:  10:00am - 8:00pm </li>
+                <li>Wednesday: 10:00am - 8:00pm </li>
+                <li>Thursday: 10:00am - 8:00pm </li>
+                <li>Friday: 10:00am - 8:00pm </li>
+                <li>Saturday: 10:00am - 8:00pm </li>
+                <li>Sunday: 1:00pm - 7:00pm </li>
               </ul>
             </div>
             <div className="column footer-menu">
