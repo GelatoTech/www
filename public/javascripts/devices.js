@@ -72,7 +72,7 @@ const devices = {
             duration: "1 hour",
         },
         battery: {
-            price: "$129",
+            price: "$130",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -799,7 +799,6 @@ const devices = {
     "6": {
         screen: {
             price: {
-                AQ7: "$75",
                 OX7H: "$80",
                 OX7S: null,
                 OEMS: "$80",
@@ -828,7 +827,6 @@ const devices = {
     "6s": {
         screen: {
             price: {
-                AQ7: "$80",
                 OX7H: "$85",
                 OX7S: null,
                 OEMS: "$85",
@@ -857,7 +855,6 @@ const devices = {
     "6plus": {
         screen: {
             price: {
-                AQ7: "$80",
                 OX7H: "$85",
                 OX7S: null,
                 OEMS: "$90",
@@ -886,7 +883,6 @@ const devices = {
     "6splus": {
         screen: {
             price: {
-                AQ7: "$85",
                 OX7H: "$90",
                 OX7S: null,
                 OEMS: "$95",
@@ -915,7 +911,6 @@ const devices = {
     "7": {
         screen: {
             price: {
-                AQ7: "$80",
                 OX7H: "$85",
                 OX7S: null,
                 OEMS: "$85",
@@ -944,7 +939,6 @@ const devices = {
     "7plus": {
         screen: {
             price: {
-                AQ7: "$80",
                 OX7H: "$90",
                 OX7S: null,
                 OEMS: "$100",
@@ -973,7 +967,6 @@ const devices = {
     "8": {
         screen: {
             price: {
-                AQ7: "$80",
                 OX7H: "$85",
                 OX7S: null,
                 OEMS: "$90",
@@ -1006,7 +999,6 @@ const devices = {
     "8plus": {
         screen: {
             price: {
-                AQ7: "$85",
                 OX7H: "$90",
                 OX7S: null,
                 OEMS: "$90",
@@ -1039,7 +1031,6 @@ const devices = {
     "x": {
         screen: {
             price: {
-                AQ7: "$105",
                 OX7H: "$115",
                 OX7S: "$120",
                 OEMS: "$150",
@@ -1072,7 +1063,6 @@ const devices = {
     "xs": {
         screen: {
             price: {
-                AQ7: "$105",
                 OX7H: null,
                 OX7S: "$125",
                 OEMS: "$180",
@@ -1105,7 +1095,6 @@ const devices = {
     "se2": {
         screen: {
             price: {
-                AQ7: "$80",
                 OX7H: "$85",
                 OX7S: null,
                 OEMS: "$90",
@@ -1137,7 +1126,6 @@ const devices = {
     "xr": {
         screen: {
             price: {
-                AQ7: "$110",
                 OX7H: "$125",
                 OX7S: null,
                 OEMS: "$150",
@@ -1170,7 +1158,6 @@ const devices = {
     "xsmax": {
         screen: {
             price: {
-                AQ7: "$110",
                 OX7H: "$130",
                 OX7S: "$150",
                 OEMS: "$200",
@@ -1203,7 +1190,6 @@ const devices = {
     "11": {
         screen: {
             price: {
-                AQ7: "$115",
                 OX7H: "$125",
                 OX7S: null,
                 OEMS: "$150",
@@ -1236,7 +1222,6 @@ const devices = {
     "11pro": {
         screen: {
             price: {
-                AQ7: "$110",
                 OX7H: null,
                 OX7S: "$130",
                 OEMS: "$180",
@@ -1269,7 +1254,6 @@ const devices = {
     "11proMax": {
         screen: {
             price: {
-                AQ7: "$155",
                 OX7H: "$210",
                 OX7S: "$260",
                 OEMS: "$330",
@@ -1302,7 +1286,6 @@ const devices = {
     "12mini": {
         screen: {
             price: {
-                AQ7: "$165",
                 OX7H: "$185",
                 OX7S: null,
                 OEMS: "$265",
@@ -1330,7 +1313,6 @@ const devices = {
     "1212pro": {
         screen: {
             price: {
-                AQ7: "$165",
                 OX7H: "$185",
                 OX7S: "$200",
                 OEMS: "$265",
@@ -1363,7 +1345,6 @@ const devices = {
     "12proMax": {
         screen: {
             price: {
-                AQ7: "$185",
                 OX7H: "$205",
                 OX7S: null,
                 OEMS: "$315",
@@ -1396,7 +1377,6 @@ const devices = {
     "13mini": {
         screen: {
             price: {
-                AQ7: null,
                 OX7H: null,
                 OX7S: null,
                 OEMS: "$415",
@@ -1410,7 +1390,6 @@ const devices = {
     "13": {
         screen: {
             price: {
-                AQ7: null,
                 OX7H: null,
                 OX7S: null,
                 OEMS: "$320",
@@ -1424,7 +1403,6 @@ const devices = {
     "13pro": {
         screen: {
             price: {
-                AQ7: null,
                 OX7H: null,
                 OX7S: null,
                 OEMS: "$355",
@@ -1438,7 +1416,6 @@ const devices = {
     "13proMax": {
         screen: {
             price: {
-                AQ7: null,
                 OX7H: null,
                 OX7S: null,
                 OEMS: "$375",

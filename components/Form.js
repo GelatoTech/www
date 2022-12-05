@@ -729,7 +729,8 @@ export function Form({ make, isCarryIn }) {
                     {devices[repairFormValues.deviceModel].screen.price["OX7H"] &&
                       (<><label className="radio">
                           <input type="radio" name="screenReplacementType" value="OX7H" checked={repairFormValues.screenReplacementType === 'OX7H'} onChange={handleChange} style={{marginRight: '0.5em'}}/>
-                          Aftermarket screen: OX7 {iphoneSixThroughEightPlus.includes(repairFormValues.deviceModel) ? 'LCD' : 'HARD OLED'}
+                          {/* Aftermarket screen: OX7 {iphoneSixThroughEightPlus.includes(repairFormValues.deviceModel) ? 'LCD' : 'HARD OLED'} */}
+                          Aftermarket screen: OX7 LCD
                         </label><br /></>)
                     }
                     {devices[repairFormValues.deviceModel].screen.price["OX7S"] &&
