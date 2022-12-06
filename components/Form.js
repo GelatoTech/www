@@ -135,8 +135,17 @@ export function Form({ make, isCarryIn }) {
             repairFormValues.deviceIssue &&
             repairFormValues.deviceIssue !== '' &&
             getPrice() // if there is a price
-          ) && (<p id="total-price-text" style={{ fontSize: '1.9em' }}> 
-                Estimated {getPrice()} repair</p>)
+          ) && (
+            <>
+            {(()=> {
+              if(getPrice() === 'call') {
+                return (<p style={{ marginBottom: '2em', fontSize: '1.3em'}}>Call us: <a href="tel:4156219055">(415) 621-9055</a> for price estimate</p>)
+              } else {
+                return (<p id="total-price-text" style={{ fontSize: '1.9em' }}>Estimated {getPrice()} repair</p>)
+              }
+            })()}
+            </>
+            )
         }
         {
           (
@@ -300,6 +309,9 @@ export function Form({ make, isCarryIn }) {
                                   <option value="ipadmini5">
                                     iPad mini 5 (A2133, A2124, A2126, A2125)
                                   </option>
+                                  <option value="ipadmini6">
+                                    iPad mini 6
+                                  </option>
                                   <option value="ipad2">
                                     iPad 2 (A1395, A1396)
                                   </option>
@@ -333,8 +345,17 @@ export function Form({ make, isCarryIn }) {
                                   <option value="ipadpro10">
                                     iPad Pro (10.5-inch)(A1701, A1709)
                                   </option>
-                                  <option value="ipadpro11">
-                                    iPad Pro 11-inch (A1980, A2013, A1934)
+                                  <option value="ipadpro111">
+                                    iPad Pro 11-inch (1st gen. 2018)
+                                  </option>
+                                  <option value="ipadpro112">
+                                    iPad Pro 11-inch (2nd gen. 2020)
+                                  </option>
+                                  <option value="ipadpro113">
+                                    iPad Pro 11-inch (3rd gen. 2021)
+                                  </option>
+                                  <option value="ipadpro114">
+                                    iPad Pro 11-inch (4th gen. 2022)
                                   </option>
                                   <option value="ipadpro121">
                                     iPad Pro 12.9-inch (A1584, A1652)
@@ -347,6 +368,12 @@ export function Form({ make, isCarryIn }) {
                                   </option>
                                   <option value="ipadpro124">
                                     iPad Pro 12.9-inch (4th generation) (A2229)
+                                  </option>
+                                  <option value="ipadpro125">
+                                    iPad Pro 12.9-inch (5th generation)
+                                  </option>
+                                  <option value="ipadpro126">
+                                    iPad Pro 12.9-inch (6th generation)
                                   </option>
                                 </>
                               )

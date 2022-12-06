@@ -45,7 +45,7 @@ const iphoneSixThroughEightPlus = [
 const devices = {
     "ipadmini": {
         screen: {
-            price: "$100",
+            price: "$125",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -67,7 +67,7 @@ const devices = {
     },
     "ipadmini2": {
         screen: {
-            price: "$100",
+            price: "$125",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -89,7 +89,7 @@ const devices = {
     },
     "ipadmini3": {
         screen: {
-            price: "$150",
+            price: "$125",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -111,7 +111,7 @@ const devices = {
     },
     "ipadmini4": {
         screen: {
-            price: "$250",
+            price: "$210",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -133,7 +133,7 @@ const devices = {
     },
     "ipadmini5": {
         screen: {
-            price: "$250",
+            price: "$230",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -156,6 +156,33 @@ const devices = {
             price: "$300-$450",
             warranty: "90 day",
             duration: "2-3 business days",
+        },
+    },
+    "ipadmini6": {
+        screen: {
+            price: "$440",
+            // warranty: "90 day",
+            // duration: "1 hour",
+        },
+        glassOnly: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "3-5 hours"
+        },
+        battery: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "1 hour",
+        },
+        charging: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "3 hour",
+        },
+        water: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "2-3 business days",
         },
     },
     "ipad2": {
@@ -226,7 +253,7 @@ const devices = {
     },
     "ipad5": {
         screen: {
-            price: "$150",
+            price: "$140",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -248,7 +275,7 @@ const devices = {
     },
     "ipad6": {
         screen: {
-            price: "$150",
+            price: "$145",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -270,7 +297,7 @@ const devices = {
     },
     "ipad7": {
         screen: {
-            price: "$180",
+            price: "$145",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -290,9 +317,53 @@ const devices = {
             duration: "2-3 business days",
         },
     },
+    "ipad8": {
+        screen: {
+            price: "$145",
+            warranty: "90 day",
+            duration: "1 hour",
+        },
+        battery: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "1 hour",
+        },
+        charging: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "3 hour",
+        },
+        water: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "2-3 business days",
+        },
+    },
+    "ipad9": {
+        screen: {
+            price: "$145",
+            warranty: "90 day",
+            duration: "1 hour",
+        },
+        battery: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "1 hour",
+        },
+        charging: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "3 hour",
+        },
+        water: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "2-3 business days",
+        },
+    },
     "ipadair": {
         screen: {
-            price: "$150",
+            price: "$140",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -314,7 +385,7 @@ const devices = {
     },
     "ipadair2": {
         screen: {
-            price: "$260",
+            price: "$245",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -336,7 +407,7 @@ const devices = {
     },
     "ipadair3": {
         screen: {
-            price: "$280",
+            price: "$270",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -363,7 +434,7 @@ const devices = {
     },
     "ipadair4": {
         screen: {
-            price: "$380",
+            price: "$240",
             warranty: "90 day",
             duration: "1 hours"
         },
@@ -373,9 +444,21 @@ const devices = {
             duration: "3-5 hours"
         },
     },
+    "ipadair5": {
+        screen: {
+            price: "$255",
+            warranty: "90 day",
+            duration: "1 hours"
+        },
+        glassOnly: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "3-5 hours"
+        },
+    },
     "ipadpro9": {
         screen: {
-            price: "$260",
+            price: "$245",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -402,7 +485,7 @@ const devices = {
     },
     "ipadpro10": {
         screen: {
-            price: "$260",
+            price: "$290",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -427,9 +510,9 @@ const devices = {
             duration: "2-3 business days",
         },
     },
-    "ipadpro11": {
+    "ipadpro111": {
         screen: {
-            price: "$350",
+            price: "$260",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -454,9 +537,90 @@ const devices = {
             duration: "2-3 business days",
         },
     },
+    "ipadpro112": {
+        screen: {
+            price: "$260",
+            warranty: "90 day",
+            duration: "1 hour",
+        },
+        glassOnly: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "3-5 hours"
+        },
+        battery: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "1 hour",
+        },
+        charging: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "3 hour",
+        },
+        water: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "2-3 business days",
+        },
+    },
+    "ipadpro113": {
+        screen: {
+            price: "$275",
+            warranty: "90 day",
+            duration: "1 hour",
+        },
+        glassOnly: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "3-5 hours"
+        },
+        battery: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "1 hour",
+        },
+        charging: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "3 hour",
+        },
+        water: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "2-3 business days",
+        },
+    },
+    "ipadpro114": {
+        screen: {
+            price: "$275",
+            warranty: "90 day",
+            duration: "1 hour",
+        },
+        glassOnly: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "3-5 hours"
+        },
+        battery: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "1 hour",
+        },
+        charging: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "3 hour",
+        },
+        water: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "2-3 business days",
+        },
+    },
     "ipadpro121": {
         screen: {
-            price: "$280",
+            price: "$320",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -483,7 +647,7 @@ const devices = {
     },
     "ipadpro122": {
         screen: {
-            price: "$320",
+            price: "$565",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -510,7 +674,7 @@ const devices = {
     },
     "ipadpro123": {
         screen: {
-            price: "$500",
+            price: "$280",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -537,7 +701,7 @@ const devices = {
     },
     "ipadpro124": {
         screen: {
-            price: "$400",
+            price: "$280",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -560,6 +724,60 @@ const devices = {
             price: "$600-$680",
             warranty: "90 day",
             duration: "2-3 business days",
+        },
+    },
+    "ipadpro125": {
+        screen: {
+            price: "$435",
+            warranty: "90 day",
+            duration: "1 hour",
+        },
+        glassOnly: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "3-5 hours"
+        },
+        battery: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "1 hour",
+        },
+        charging: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "3 hour",
+        },
+        water: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "2-3 business days",
+        },
+    },
+    "ipadpro126": {
+        screen: {
+            price: "$435",
+            warranty: "90 day",
+            duration: "1 hour",
+        },
+        glassOnly: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "3-5 hours"
+        },
+        battery: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "1 hour",
+        },
+        charging: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "3 hour",
+        },
+        water: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "2-3 business days",
         },
     },
     "apple-watch-series-2-38mm": {
