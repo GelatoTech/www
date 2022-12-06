@@ -551,6 +551,18 @@ export function Form({ make, isCarryIn }) {
                                   <option value="apple-watch-series-6-44mm">
                                     Series 6 (44MM)
                                   </option>
+                                  <option value="apple-watch-series-7-41mm">
+                                    Series 7 (41MM)
+                                  </option>
+                                  <option value="apple-watch-series-7-45mm">
+                                    Series 7 (45MM)
+                                  </option>
+                                  <option value="apple-watch-series-se-2-40mm">
+                                    Series SE (2nd Gen. 40MM)
+                                  </option>
+                                  <option value="apple-watch-series-se-2-44mm">
+                                    Series SE (2nd Gen. 44MM)
+                                  </option>
                                 </>
                               )
                               : ''
@@ -644,7 +656,7 @@ export function Form({ make, isCarryIn }) {
                         )
                         : null
                       }
-                      {
+                      {/* {
                         (
                           devices[repairFormValues.deviceModel] &&
                           devices[repairFormValues.deviceModel]["glassOnly"]
@@ -655,7 +667,7 @@ export function Form({ make, isCarryIn }) {
                           </option>
                         )
                         : null
-                      }
+                      } */}
                       {
                         (
                           devices[repairFormValues.deviceModel] &&

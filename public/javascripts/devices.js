@@ -817,19 +817,19 @@ const devices = {
     "apple-watch-series-3-38mm": {
         LCD: {
             price: {
-                Cellular: "$120",
-                GPS: "$140"
+                Cellular: "$160",
+                GPS: "$160"
             },
             warranty: "90 day",
             duration: "20-30 minutes"
         },
         glassOnly: {
-            price: "$120",
+            price: "$160",
             warranty: "90 day",
             duration: "3-5 hours"
         },
         glassTouch: {
-            price: "$120",
+            price: "$160",
             warranty: "90 day",
             duration: "3-5 hours"
         },
@@ -837,65 +837,65 @@ const devices = {
     "apple-watch-series-3-42mm": {
         LCD: {
             price: {
-                Cellular: "$140",
-                GPS: "$170"
+                Cellular: "$190",
+                GPS: "$190"
             },
             warranty: "90 day",
             duration: "20-30 minutes"
         },
         glassOnly: {
-            price: "$120",
+            price: "$190",
             warranty: "90 day",
             duration: "3-5 hours"
         },
         glassTouch: {
-            price: "$120",
+            price: "$190",
             warranty: "90 day",
             duration: "3-5 hours"
         },
     },
     "apple-watch-series-4-40mm": {
         glassOnly: {
-            price: "$145",
+            price: "$210",
             warranty: "90 day",
             duration: "3-5 hours"
         },
         // glassTouch: {
-        //     price: "$140",
+        //     price: "$210",
         //     warranty: "90 day",
         //     duration: "3-5 hours"
         // },
         LCD: {
-            price: "$220",
+            price: "$210",
             warranty: "90 day",
             duration: "20-30 minutes"
         }
     },
     "apple-watch-series-4-44mm": {
         glassOnly: {
-            price: "$145",
+            price: "$225",
             warranty: "90 day",
             duration: "3-5 hours"
         },
         // glassTouch: {
-        //     price: "$140",
+        //     price: "$225",
         //     warranty: "90 day",
         //     duration: "3-5 hours"
         // },
         LCD: {
-            price: "$195",
+            price: "$225",
             warranty: "90 day",
             duration: "20-30 minutes"
         }
     },
     "apple-watch-series-5-40mm": {
         glassOnly: {
-            price: "$140",
+            price: "$190",
             warranty: "90 day",
             duration: "3-5 hours"
         },
         glassTouch: {
-            price: "$170",
+            price: "$190",
             warranty: "90 day",
             duration: "3-5 hours"
         },
@@ -907,17 +907,17 @@ const devices = {
     },
     "apple-watch-series-5-44mm": {
         glassOnly: {
-            price: "$140",
+            price: "$225",
             warranty: "90 day",
             duration: "3-5 hours"
         },
         glassTouch: {
-            price: "$170",
+            price: "$225",
             warranty: "90 day",
             duration: "3-5 hours"
         },
         LCD: {
-            price: "$190",
+            price: "$225",
             warranty: "90 day",
             duration: "20-30 minutes"
         }
@@ -953,29 +953,29 @@ const devices = {
             duration: "20-30 minutes"
         },
         glassOnly: {
-            price: "$160",
+            price: "$190",
             warranty: "90 day",
             duration: "3-5 hours"
         },
         glassTouch: {
-            price: "$170",
+            price: "$190",
             warranty: "90 day",
             duration: "3-5 hours"
         },
     },
     "apple-watch-series-se-44mm": {
         LCD: {
-            price: "$190",
+            price: "$225",
             warranty: "90 day",
             duration: "20-30 minutes"
         },
         glassOnly: {
-            price: "$160",
+            price: "$225",
             warranty: "90 day",
             duration: "3-5 hours"
         },
         glassTouch: {
-            price: "$170",
+            price: "$225",
             warranty: "90 day",
             duration: "3-5 hours"
         },
@@ -987,29 +987,97 @@ const devices = {
             duration: "20-30 minutes"
         },
         glassOnly: {
-            price: "$160",
+            price: "$190",
             warranty: "90 day",
             duration: "3-5 hours"
         },
         glassTouch: {
-            price: "$170",
+            price: "$190",
             warranty: "90 day",
             duration: "3-5 hours"
         },
     },
     "apple-watch-series-6-44mm": {
         LCD: {
+            price: "$210",
+            warranty: "90 day",
+            duration: "20-30 minutes"
+        },
+        glassOnly: {
+            price: "$210",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        glassTouch: {
+            price: "$210",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+    },
+    "apple-watch-series-7-41mm": {
+        LCD: {
+            price: "$210",
+            warranty: "90 day",
+            duration: "20-30 minutes"
+        },
+        glassOnly: {
+            price: "$210",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        glassTouch: {
+            price: "$210",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+    },
+    "apple-watch-series-7-45mm": {
+        LCD: {
+            price: "$215",
+            warranty: "90 day",
+            duration: "20-30 minutes"
+        },
+        glassOnly: {
+            price: "$215",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        glassTouch: {
+            price: "$215",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+    },
+    "apple-watch-series-se-2-40mm": {
+        LCD: {
             price: "$190",
             warranty: "90 day",
             duration: "20-30 minutes"
         },
         glassOnly: {
-            price: "$160",
+            price: "$190",
             warranty: "90 day",
             duration: "3-5 hours"
         },
         glassTouch: {
-            price: "$170",
+            price: "$190",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+    },
+    "apple-watch-series-se-2-44mm": {
+        LCD: {
+            price: "$225",
+            warranty: "90 day",
+            duration: "20-30 minutes"
+        },
+        glassOnly: {
+            price: "$225",
+            warranty: "90 day",
+            duration: "3-5 hours"
+        },
+        glassTouch: {
+            price: "$225",
             warranty: "90 day",
             duration: "3-5 hours"
         },
