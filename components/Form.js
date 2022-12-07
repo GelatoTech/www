@@ -404,6 +404,9 @@ export function Form({ make, isCarryIn }) {
                                   <option value="googlePixel3A">
                                     Google Pixel 3A
                                   </option>
+                                  <option value="googlePixel3AXL">
+                                    Google Pixel 3A XL
+                                  </option>
                                   <option value="googlePixel4">
                                     Google Pixel 4
                                   </option>
@@ -424,6 +427,21 @@ export function Form({ make, isCarryIn }) {
                                   </option>
                                   <option value="googlePixel5a5g">
                                     Google Pixel 5A 5G
+                                  </option>
+                                  <option value="googlePixel6">
+                                    Google Pixel 6
+                                  </option>
+                                  <option value="googlePixel6pro">
+                                    Google Pixel 6 Pro
+                                  </option>
+                                  <option value="googlePixel6A">
+                                    Google Pixel 6A
+                                  </option>
+                                  <option value="googlePixel7">
+                                    Google Pixel 7
+                                  </option>
+                                  <option value="googlePixel7pro">
+                                    Google Pixel 7 Pro
                                   </option>
                                 </>
                               )
