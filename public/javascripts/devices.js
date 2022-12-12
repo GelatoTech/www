@@ -1509,8 +1509,8 @@ const devices = {
         screen: {
             price: {
                 OX7H: null,
-                OX7S: "$160",
-                OEMS: "$210",
+                OX7S: "$140",
+                OEMS: "$160",
                 OEMT: null,
                 OEML: null,
             },
@@ -1540,9 +1540,9 @@ const devices = {
     "11proMax": {
         screen: {
             price: {
-                OX7H: "$210",
-                OX7S: "$260",
-                OEMS: "$330",
+                OX7H: null,
+                OX7S: "$160",
+                OEMS: "$210",
                 OEMT: null,
                 OEML: null,
             },
