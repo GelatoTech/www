@@ -1509,8 +1509,8 @@ const devices = {
         screen: {
             price: {
                 OX7H: null,
-                OX7S: "$130",
-                OEMS: "$180",
+                OX7S: "$160",
+                OEMS: "$210",
                 OEMT: null,
                 OEML: null,
             },
