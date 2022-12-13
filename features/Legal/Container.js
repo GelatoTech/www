@@ -42,6 +42,13 @@ export default function FAQ() {
             90 day warranty on all parts and labor used for services booked through gelatotech, unless it conflicts with
             the below items.
             Please email us at <a href="mailto:support@gelatotech.com">support@gelatotech.com</a> with any questions.</p>
+            
+          <p>
+            We at Gelatotech appreciate your business and value your trust in us. However, we want to make it clear that we cannot be held responsible for any loss or damage to your device if you leave it with us for more than 30 days.
+            As a customer, it is your responsibility to retrieve your device within 30 days of leaving it with us. If you fail to do so, we will not be held responsible for any loss or damage that may occur to your device after that time.
+            We understand that sometimes unforeseen circumstances can arise that prevent you from retrieving your device within the 30-day timeframe. In such cases, we encourage you to contact us as soon as possible to make arrangements for the safekeeping of your device.
+            We take every precaution to ensure the safety and security of all devices left in our care, but we cannot guarantee their safety or condition after the 30-day period. Thank you for your understanding and cooperation.
+          </p>
         </div>
         <h2>WHAT IS NOT INCLUDED IN THE GUARANTEE:</h2>
         <ul>
