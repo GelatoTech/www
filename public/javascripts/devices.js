@@ -1085,7 +1085,7 @@ const devices = {
     "6": {
         screen: {
             price: {
-                OX7H: "$80",
+                OX7H: null,
                 OX7S: null,
                 OEMS: "$80",
                 OEMT: null,
@@ -1095,12 +1095,12 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$50",
+            price: "$85",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$50",
+            price: "$85",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -1113,7 +1113,7 @@ const devices = {
     "6s": {
         screen: {
             price: {
-                OX7H: "$85",
+                OX7H: null,
                 OX7S: null,
                 OEMS: "$85",
                 OEMT: null,
@@ -1123,12 +1123,12 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$50",
+            price: "$85",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$50",
+            price: "$85",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -1141,7 +1141,7 @@ const devices = {
     "6plus": {
         screen: {
             price: {
-                OX7H: "$85",
+                OX7H: null,
                 OX7S: null,
                 OEMS: "$90",
                 OEMT: null,
@@ -1151,12 +1151,12 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$50",
+            price: "$85",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$50",
+            price: "$85",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -1169,9 +1169,9 @@ const devices = {
     "6splus": {
         screen: {
             price: {
-                OX7H: "$90",
+                OX7H: null,
                 OX7S: null,
-                OEMS: "$95",
+                OEMS: "$90",
                 OEMT: null,
                 OEML: null,
             },
@@ -1184,7 +1184,7 @@ const devices = {
             duration: "15 minutes",
         },
         charging: {
-            price: "$50",
+            price: "$90",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -1197,7 +1197,7 @@ const devices = {
     "7": {
         screen: {
             price: {
-                OX7H: "$85",
+                OX7H: null,
                 OX7S: null,
                 OEMS: "$85",
                 OEMT: null,
@@ -1225,7 +1225,7 @@ const devices = {
     "7plus": {
         screen: {
             price: {
-                OX7H: "$90",
+                OX7H: null,
                 OX7S: null,
                 OEMS: "$100",
                 OEMT: "$90",
@@ -1279,7 +1279,8 @@ const devices = {
         },
         backglass: {
             duration: "3 hour",
-            price: "$100"
+            price: "$100",
+            warranty: "90 day"
         }
     },
     "8plus": {
@@ -1311,15 +1312,16 @@ const devices = {
         },
         backglass: {
             duration: "3 hour",
-            price: "$100"
+            price: "$100",
+            warranty: "90 day"
         }
     },
     "x": {
         screen: {
             price: {
-                OX7H: "$115",
-                OX7S: "$120",
-                OEMS: "$150",
+                OX7H: null,
+                OX7S: "$130",
+                OEMS: "$155",
                 OEMT: null,
                 OEML: null,
             },
@@ -1327,12 +1329,12 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$80",
+            price: "$100",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$80",
+            price: "$100",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -1343,15 +1345,21 @@ const devices = {
         },
         backglass: {
             duration: "3 hour",
-            price: "$120"
+            price: "$120",
+            warranty: "90 day"
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$100",
+            warranty: "90 day"
         }
     },
     "xs": {
         screen: {
             price: {
                 OX7H: null,
-                OX7S: "$125",
-                OEMS: "$180",
+                OX7S: "$130",
+                OEMS: "$155",
                 OEMT: null,
                 OEML: null,
             },
@@ -1359,12 +1367,12 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$80",
+            price: "$100",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$80",
+            price: "$100",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -1376,14 +1384,19 @@ const devices = {
         backglass: {
             duration: "3 hour",
             price: "$120"
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$100",
+            warranty: "90 day"
         }
     },
     "se2": {
         screen: {
             price: {
-                OX7H: "$85",
+                OX7H: "$100",
                 OX7S: null,
-                OEMS: "$90",
+                OEMS: "$110",
                 OEMT: null,
                 OEML: null,
             },
@@ -1396,25 +1409,69 @@ const devices = {
             duration: "15 minutes",
         },
         charging: {
-            price: "$75",
+            price: "$95",
             warranty: "90 day",
             duration: "30 minutes",
         },
         backglass: {
             duration: "3 hour",
-            price: "$100"
+            price: "$120"
         },
         logic: {
             duration: "1-3 days",
             price: "$100-$200"
         }
     },
+    "se2-20": {
+        screen: {
+            price: {
+                OX7H: "$100",
+                OX7S: null,
+                OEMS: "$110",
+                OEMT: null,
+                OEML: null,
+            },
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        charging: {
+            price: "$95",
+            warranty: "90 day",
+            duration: "30 minutes",
+        },
+        backglass: {
+            duration: "3 hour",
+            price: "$120"
+        },
+    },
+    "se3": {
+        screen: {
+            price: {
+                OX7H: "$100",
+                OX7S: null,
+                OEMS: "$110",
+                OEMT: null,
+                OEML: null,
+            },
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        charging: {
+            price: "$95",
+            warranty: "90 day",
+            duration: "30 minutes",
+        },
+        backglass: {
+            duration: "3 hour",
+            price: "$120"
+        },
+    },
     "xr": {
         screen: {
             price: {
-                OX7H: "$125",
+                OX7H: "$105",
                 OX7S: null,
-                OEMS: "$150",
+                OEMS: "$140",
                 OEMT: null,
                 OEML: null,
             },
@@ -1422,12 +1479,12 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$75",
+            price: "$100",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$75",
+            price: "$100",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -1439,14 +1496,19 @@ const devices = {
         backglass: {
             duration: "3 hour",
             price: "$120"
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$100",
+            warranty: "90 day"
         }
     },
     "xsmax": {
         screen: {
             price: {
-                OX7H: "$130",
-                OX7S: "$150",
-                OEMS: "$200",
+                OX7H: null,
+                OX7S: "$140",
+                OEMS: "$205",
                 OEMT: null,
                 OEML: null,
             },
@@ -1454,12 +1516,12 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$80",
+            price: "$105",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$80",
+            price: "$105",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -1471,14 +1533,19 @@ const devices = {
         backglass: {
             duration: "3 hour",
             price: "$120"
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$100",
+            warranty: "90 day"
         }
     },
     "11": {
         screen: {
             price: {
-                OX7H: "$125",
+                OX7H: "$110",
                 OX7S: null,
-                OEMS: "$150",
+                OEMS: "$140",
                 OEMT: null,
                 OEML: null,
             },
@@ -1486,12 +1553,12 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$90",
+            price: "$115",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$90",
+            price: "$115",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -1503,6 +1570,11 @@ const devices = {
         backglass: {
             duration: "3 hour",
             price: "$140"
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$100",
+            warranty: "90 day"
         }
     },
     "11pro": {
@@ -1518,7 +1590,7 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$95",
+            price: "$120",
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -1535,6 +1607,11 @@ const devices = {
         backglass: {
             duration: "3 hour",
             price: "$140"
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$100",
+            warranty: "90 day"
         }
     },
     "11proMax": {
@@ -1550,12 +1627,12 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$95",
+            price: "$140",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$120",
+            price: "$140",
             warranty: "90 day",
             duration: "30 minutes",
         },
@@ -1567,14 +1644,20 @@ const devices = {
         backglass: {
             duration: "3 hour",
             price: "$140"
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$100",
+            warranty: "90 day"
         }
     },
     "12mini": {
         screen: {
             price: {
-                OX7H: "$185",
+                OX7H: null,
                 OX7S: null,
-                OEMS: "$265",
+                HARD: "$200",
+                OEMS: "$330",
                 OEMT: null,
                 OEML: null,
             },
@@ -1582,34 +1665,40 @@ const devices = {
             duration: "15 minutes",
         },
         battery: {
-            price: "$120",
+            price: "$130",
             warranty: "90 day",
             duration: "15 minutes",
         },
         charging: {
-            price: "$120",
+            price: "$150",
             warranty: "90 day",
             duration: "30 minutes",
         },
         backglass: {
             duration: "3 hour",
-            price: "$150"
+            price: "$170"
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$100",
+            warranty: "90 day"
         }
     },
     "1212pro": {
         screen: {
             price: {
-                OX7H: "$185",
-                OX7S: "$200",
-                OEMS: "$265",
+                OX7H: null,
+                OX7S: null,
+                OEMS: "$210",
                 OEMT: null,
                 OEML: null,
+                SOFT: "$165"
             },
             warranty: "90 day",
             duration: "15 minutes",
         },
         battery: {
-            price: "$120",
+            price: "$130",
             warranty: "90 day",
             duration: "15 minutes",
         },
@@ -1625,17 +1714,23 @@ const devices = {
         },
         backglass: {
             duration: "3 hour",
-            price: "$150"
+            price: "$170"
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$100",
+            warranty: "90 day"
         }
     },
     "12proMax": {
         screen: {
             price: {
-                OX7H: "$205",
+                OX7H: null,
                 OX7S: null,
-                OEMS: "$315",
+                OEMS: "$380",
                 OEMT: null,
                 OEML: null,
+                SOFT: "$190"
             },
             warranty: "90 day",
             duration: "15 minutes",
@@ -1657,7 +1752,12 @@ const devices = {
         },
         backglass: {
             duration: "3 hour",
-            price: "$150"
+            price: "$170"
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$100",
+            warranty: "90 day"
         }
     },
     "13mini": {
@@ -1665,12 +1765,38 @@ const devices = {
             price: {
                 OX7H: null,
                 OX7S: null,
-                OEMS: "$415",
+                OEMS: "$300",
                 OEMT: null,
                 OEML: null,
+                SOFT: "$260"
             },
             warranty: "90 day",
             duration: "15 minutes",
+        },
+        backglass: {
+            duration: "3 hour",
+            price: "$180",
+            warranty: "90 day"
+        },
+        battery: {
+            price: "$140",
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        charging: {
+            price: "$140",
+            warranty: "90 day",
+            duration: "30 minutes",
+        },
+        water: {
+            price: "$200-$400",
+            warranty: "90 day",
+            duration: "2-3 business days",
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$100",
+            warranty: "90 day"
         }
     },
     "13": {
@@ -1678,12 +1804,38 @@ const devices = {
             price: {
                 OX7H: null,
                 OX7S: null,
-                OEMS: "$320",
+                OEMS: "$280",
                 OEMT: null,
                 OEML: null,
+                SOFT: "$240"
             },
             warranty: "90 day",
             duration: "15 minutes",
+        },
+        backglass: {
+            duration: "3 hour",
+            price: "$180",
+            warranty: "90 day"
+        },
+        battery: {
+            price: "$140",
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        charging: {
+            price: "$140",
+            warranty: "90 day",
+            duration: "30 minutes",
+        },
+        water: {
+            price: "$200-$600",
+            warranty: "90 day",
+            duration: "2-3 business days",
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$100",
+            warranty: "90 day"
         }
     },
     "13pro": {
@@ -1691,12 +1843,37 @@ const devices = {
             price: {
                 OX7H: null,
                 OX7S: null,
-                OEMS: "$355",
+                OEMS: "$440",
                 OEMT: null,
                 OEML: null,
             },
             warranty: "90 day",
             duration: "15 minutes",
+        },
+        backglass: {
+            duration: "3 hour",
+            price: "$180",
+            warranty: "90 day"
+        },
+        battery: {
+            price: "$140",
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        charging: {
+            price: "$140",
+            warranty: "90 day",
+            duration: "30 minutes",
+        },
+        water: {
+            price: "$200-$400",
+            warranty: "90 day",
+            duration: "2-3 business days",
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$100",
+            warranty: "90 day"
         }
     },
     "13proMax": {
@@ -1704,12 +1881,190 @@ const devices = {
             price: {
                 OX7H: null,
                 OX7S: null,
-                OEMS: "$375",
+                OEMS: "$470",
                 OEMT: null,
                 OEML: null,
             },
             warranty: "90 day",
             duration: "15 minutes",
+        },
+        backglass: {
+            duration: "3 hour",
+            price: "$180",
+            warranty: "90 day"
+        },
+        battery: {
+            price: "$180",
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        charging: {
+            price: "$180",
+            warranty: "90 day",
+            duration: "30 minutes",
+        },
+        water: {
+            price: "$200-$600",
+            warranty: "90 day",
+            duration: "2-3 business days",
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$100",
+            warranty: "90 day"
+        }
+    },
+    "14": {
+        screen: {
+            price: {
+                OX7H: null,
+                OX7S: null,
+                OEMS: "$330",
+                OEMT: null,
+                OEML: null,
+                SOFT: "$300"
+            },
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        backglass: {
+            duration: "3 hour",
+            price: "$250",
+            warranty: "90 day"
+        },
+        battery: {
+            price: "$200",
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        charging: {
+            price: "$200",
+            warranty: "90 day",
+            duration: "30 minutes",
+        },
+        water: {
+            price: "$200-$600",
+            warranty: "90 day",
+            duration: "2-3 business days",
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$140",
+            warranty: "90 day"
+        }
+    },
+    "14plus": {
+        screen: {
+            price: {
+                OX7H: null,
+                OX7S: null,
+                OEMS: "$370",
+                OEMT: null,
+                OEML: null
+            },
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        backglass: {
+            duration: "3 hour",
+            price: "$250",
+            warranty: "90 day"
+        },
+        battery: {
+            price: "$200",
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        charging: {
+            price: "$200",
+            warranty: "90 day",
+            duration: "30 minutes",
+        },
+        water: {
+            price: "$200-$600",
+            warranty: "90 day",
+            duration: "2-3 business days",
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$140",
+            warranty: "90 day"
+        }
+    },
+    "14pro": {
+        screen: {
+            price: {
+                OX7H: null,
+                OX7S: null,
+                OEMS: "$475",
+                OEMT: null,
+                OEML: null
+            },
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        backglass: {
+            duration: "3 hour",
+            price: "$250",
+            warranty: "90 day"
+        },
+        battery: {
+            price: "$200",
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        charging: {
+            price: "$200",
+            warranty: "90 day",
+            duration: "30 minutes",
+        },
+        water: {
+            price: "$200-$600",
+            warranty: "90 day",
+            duration: "2-3 business days",
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$140",
+            warranty: "90 day"
+        }
+    },
+    "14proMax": {
+        screen: {
+            price: {
+                OX7H: null,
+                OX7S: null,
+                OEMS: "$495",
+                OEMT: null,
+                OEML: null
+            },
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        backglass: {
+            duration: "3 hour",
+            price: "$250",
+            warranty: "90 day"
+        },
+        battery: {
+            price: "$200",
+            warranty: "90 day",
+            duration: "15 minutes",
+        },
+        charging: {
+            price: "$200",
+            warranty: "90 day",
+            duration: "30 minutes",
+        },
+        water: {
+            price: "$200-$600",
+            warranty: "90 day",
+            duration: "2-3 business days",
+        },
+        rearCam: {
+            duration: "15 minutes",
+            price: "$140",
+            warranty: "90 day"
         }
     },
     "googlePixel": {

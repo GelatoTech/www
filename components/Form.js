@@ -21,7 +21,9 @@ const screenReplacementTypes = [
   "OX7S",
   "OEML", 
   "OEMS", 
-  "OEMT"
+  "OEMT",
+  "HARD",
+  "SOFT"
 ];
 
 
@@ -217,6 +219,21 @@ export function Form({ make, isCarryIn }) {
                             repairFormValues.deviceMake == "iphone"
                               ? (
                                 <>
+                                  <option value="14proMax">
+                                    iPhone 14 Pro Max
+                                  </option>
+                                  <option value="14pro">
+                                    iPhone 14 Pro
+                                  </option>
+                                  <option value="14plus">
+                                    iPhone 14 Plus
+                                  </option>
+                                  <option value="14">
+                                    iPhone 14
+                                  </option>
+                                  <option value="se3">
+                                    iPhone SE (3rd Gen) 2022
+                                  </option>
                                   <option value="13proMax">
                                     iPhone 13 Pro Max
                                   </option>
@@ -237,6 +254,9 @@ export function Form({ make, isCarryIn }) {
                                   </option>
                                   <option value="12mini">
                                     iPhone 12 Mini
+                                  </option>
+                                  <option value="se2-20">
+                                    iPhone SE (2nd Gen) 2020
                                   </option>
                                   <option value="11proMax">
                                     iPhone 11 Pro Max
@@ -271,6 +291,9 @@ export function Form({ make, isCarryIn }) {
                                   <option value={7}>
                                     iPhone 7
                                   </option>
+                                  <option value="se2">
+                                    iPhone SE (2nd Gen) 2016
+                                  </option>
                                   <option value="6splus">
                                     iPhone 6s Plus
                                   </option>
@@ -279,9 +302,6 @@ export function Form({ make, isCarryIn }) {
                                   </option>
                                   <option value="6plus">
                                     iPhone 6 Plus
-                                  </option>
-                                  <option value="se2">
-                                    iPhone SE (2nd Generation)
                                   </option>
                                   <option value={6}>
                                     iPhone 6
@@ -762,6 +782,16 @@ export function Form({ make, isCarryIn }) {
                         )
                         : null
                       }
+                      {
+                        devices[repairFormValues.deviceModel] &&
+                        devices[repairFormValues.deviceModel]["rearCam"]
+                        ? (
+                          <option value="rearCam">
+                            Rear Camera Lens
+                          </option>
+                        )
+                        : null
+                      }
                     </select>
                   </div>
                 </div>
@@ -783,6 +813,18 @@ export function Form({ make, isCarryIn }) {
                       Aftermarket screen: AQ7 LCD 
                     </label><br /></>)
                     }
+                    {devices[repairFormValues.deviceModel].screen.price["HARD"] &&
+                      (<><label className="radio">
+                          <input type="radio" name="screenReplacementType" value="HARD" checked={repairFormValues.screenReplacementType === 'HARD'} onChange={handleChange} style={{marginRight: '0.5em'}}/>
+                          Aftermarket Screen: Hard OLED
+                        </label><br /></>)
+                    }
+                    {devices[repairFormValues.deviceModel].screen.price["SOFT"] &&
+                      (<><label className="radio">
+                          <input type="radio" name="screenReplacementType" value="SOFT" checked={repairFormValues.screenReplacementType === 'SOFT'} onChange={handleChange} style={{marginRight: '0.5em'}}/>
+                          Aftermarket Screen: Soft OLED
+                        </label><br /></>)
+                    }
                     {devices[repairFormValues.deviceModel].screen.price["OX7H"] &&
                       (<><label className="radio">
                           <input type="radio" name="screenReplacementType" value="OX7H" checked={repairFormValues.screenReplacementType === 'OX7H'} onChange={handleChange} style={{marginRight: '0.5em'}}/>
@@ -800,7 +842,7 @@ export function Form({ make, isCarryIn }) {
                       getFirstAvailableOEMType(repairFormValues.deviceModel) &&
                       (<><label className="radio">
                         <input type="radio" name="screenReplacementType" value={getFirstAvailableOEMType(repairFormValues.deviceModel)} checked={repairFormValues.screenReplacementType === getFirstAvailableOEMType(repairFormValues.deviceModel)} onChange={handleChange} style={{marginRight: '0.5em'}}/>
-                        Original Apple Screen
+                        Original Apple Screen: OLED
                       </label><br /></>)
                     }
                     <div style={{ paddingTop: '0.5em', display: 'flex', alignItems: 'center'}}>
