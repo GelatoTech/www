@@ -117,6 +117,14 @@ export function Nav() {
                         setBlogDropdownActive(false);
                         setBurger(false);
                         scrollToSection("hero"); 
+                        router.push('/blog/find-your-ipad-model'); 
+                      }} 
+                      id="blog">Find Your iPad Model</a> 
+                    <a className="navbar-item" 
+                      onClick={() => {
+                        setBlogDropdownActive(false);
+                        setBurger(false);
+                        scrollToSection("hero"); 
                         router.push('/blog/quality-standards'); 
                       }} 
                       id="blog">Quality Standards</a> 

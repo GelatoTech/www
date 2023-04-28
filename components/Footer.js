@@ -61,6 +61,8 @@ export function Footer() {
             <div className="column footer-menu">
               <h5 style={{color: '#212121'}}>Blog</h5>
               <ul>
+                <li><a onClick={() => { router.push('/blog/find-your-ipad-model') }}>Find Your iPad Model</a></li>
+                <br />
                 <li><a onClick={() => { router.push('/blog/quality-standards') }}>Quality Standards</a></li>
                 <br />
                 <li><a onClick={() => { router.push('/blog/battery-tips') }}>Top 3 Battery Tips</a></li>
