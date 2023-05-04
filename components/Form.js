@@ -606,6 +606,7 @@ export function Form({ make, isCarryIn }) {
                               : ''
                           }
                         </select>
+                        {(repairFormValues.deviceMake === 'ipad') && (<p>Not sure how to find your iPad model? <Link href="/blog/find-your-ipad-model">Click here</Link></p>)}
                       </div>
                     </div>
                   )
@@ -878,7 +879,7 @@ export function Form({ make, isCarryIn }) {
                 </div>
                 )
             }
-          <hr />
+          <hr style={{ marginTop: '3em' }} />
           <h2 className="title is-5 has-text-weight-light">Contact info <FontAwesomeIcon icon={faUsers} style={{ height: '1em', marginLeft: '0.3em' }} /></h2>
           <div className="field">
             <div className="field is-horizontal">
