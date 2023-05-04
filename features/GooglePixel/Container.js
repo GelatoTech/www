@@ -61,7 +61,7 @@ export default function GooglePixel() {
     <TrustedBy />
     <HowItWorks deviceName="Google Pixel" />
     <WhyUs deviceName="Google Pixel" />
-    <section>
+    <section id="repair">
       <Form make="google" />
       <div className="section" id="get-started"
         style={{

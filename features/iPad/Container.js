@@ -46,7 +46,7 @@ export default function iPad() {
           <a 
             className="button is-info is-large" 
             onClick={()=>{
-              scrollToSection("form-section");
+              scrollToSection("repair");
             }}
           >
             Repair my iPad
@@ -61,7 +61,7 @@ export default function iPad() {
     <TrustedBy />
     <HowItWorks deviceName="iPad" />
     <WhyUs />
-    <section id="form-section">
+    <section id="repair">
       <Form make="ipad" />
       <div className="section" id="get-started"
         style={{

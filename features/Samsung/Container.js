@@ -61,7 +61,7 @@ export default function Samsung() {
     <TrustedBy />
     <HowItWorks deviceName="Samsung" />
     <WhyUs />
-    <section>
+    <section id="repair">
       <Form make="samsung" />
       <div className="section" id="get-started"
         style={{

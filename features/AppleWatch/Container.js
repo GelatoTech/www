@@ -60,7 +60,9 @@ export default function AppleWatch() {
     </section>
     <TrustedBy />
     <HowItWorks deviceName="Apple Watch" />
-    <Form make="apple-watch" />
+    <section id="repair">
+      <Form make="apple-watch" />
+    </section>
     <div className="section" id="get-started"
       style={{
         backgroundImage: `url('images/apple-watch-cracked.png')`
