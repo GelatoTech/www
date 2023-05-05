@@ -350,6 +350,15 @@ export function Form({ make, isCarryIn }) {
                                   <option value="ipad7">
                                     iPad 7 (A2197, A2198, A2200)
                                   </option>
+                                  <option value="ipad8">
+                                    iPad 8 (A2270, A2428, A2429, A2430)
+                                  </option>
+                                  <option value="ipad9">
+                                    iPad 9 (A2602, A2603, A2604, A2605)
+                                  </option>
+                                  <option value="ipad10">
+                                    iPad 10 (A2696, A2757, A2777)
+                                  </option>
                                   <option value="ipadair">
                                     iPad Air (A1474, A1475)
                                   </option>
@@ -358,6 +367,12 @@ export function Form({ make, isCarryIn }) {
                                   </option>
                                   <option value="ipadair3">
                                     iPad Air 3 (A2152, A2123, A2153)
+                                  </option>
+                                  <option value="ipadair4">
+                                    iPad Air 4 (A2316, A2324, A2325)
+                                  </option>
+                                  <option value="ipadair5">
+                                    iPad Air 5 (A2588, A2589, A2591)
                                   </option>
                                   <option value="ipadpro9">
                                     iPad Pro 9.7 inch (A1673, A1674)
@@ -606,8 +621,8 @@ export function Form({ make, isCarryIn }) {
                               : ''
                           }
                         </select>
-                        {(repairFormValues.deviceMake === 'ipad') && (<p>Not sure how to find your iPad model? <Link href="/blog/find-your-ipad-model">Click here</Link></p>)}
                       </div>
+                      {((repairFormValues.deviceMake === 'ipad') && !repairFormValues.deviceModel) && (<p>Not sure how to find your iPad model? <Link href="/blog/find-your-ipad-model">Click here</Link></p>)}
                     </div>
                   )
                   : ''

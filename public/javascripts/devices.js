@@ -160,7 +160,7 @@ const devices = {
     },
     "ipadmini6": {
         screen: {
-            price: "$440",
+            price: "$480",
             // warranty: "90 day",
             // duration: "1 hour",
         },
@@ -342,6 +342,28 @@ const devices = {
     "ipad9": {
         screen: {
             price: "$145",
+            warranty: "90 day",
+            duration: "1 hour",
+        },
+        battery: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "1 hour",
+        },
+        charging: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "3 hour",
+        },
+        water: {
+            price: "call",
+            // warranty: "90 day",
+            // duration: "2-3 business days",
+        },
+    },
+    "ipad10": {
+        screen: {
+            price: "$200",
             warranty: "90 day",
             duration: "1 hour",
         },
