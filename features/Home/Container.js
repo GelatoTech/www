@@ -157,10 +157,10 @@ export default function Home() {
       <HowItWorks deviceName="iPhone" />
       <WhyUs />
       <div className="container has-text-centered" id="reviews">
-       <h1 className="subtitle is-4">What Our Customers Are Saying About Cell Phone Repair Services</h1>
+       <h1 className="subtitle is-4">We value our customers' feedback on the cell phone repair services we provide</h1>
        <p style={{ marginBottom: '1em' }}>
-        <small>Whether you had a stellar experience or you think there’s room for improvement, please let us know. <br />We value your experience at Gelatotech above anything else. We want to hear from you!</small></p>
-        <a className="button is-dangers is-rounded" href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Add a Review</a>
+        <small>Whether your experience was great or you believe there's room for improvement, we encourage you to share your thoughts. Your experience matters the most to us at Gelatotech, and we are eager to hear from you!</small></p>
+        <a className="button is-dangers is-rounded" style={{ marginBottom: '1em' }} href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Add a Review</a>
         <OwlCarousel 
           margin={8} 
           autoplay={true} 
@@ -240,10 +240,13 @@ export default function Home() {
         </ul>
       </div>
       <Form make={router.query.make} isCarryIn={isCarryIn} />
-      {/* service include */}
+      {/* service includes */}
       <section className="section" id="services">
         <div className="container">
           <h1 className="subtitle is-2">Service Includes</h1>
+          <p style={{ marginBottom: '2em' }}>
+            <small>We specialize in providing top-notch repair services for your cell phone, which is probably your most essential device. Our free diagnostic test can help identify common cell phone problems, and we back up all our repairs with a 90-day warranty. Moreover, we assure you that our prices are unbeatable in the market. You can count on us to deliver dependable repairs for your cell phone.</small>
+          </p>
           <div className="columns">
             <div className="column">
               <h2><FontAwesomeIcon icon={faCheck} style={{ height: '1em', marginLeft: '0.5rem', color: '#1ED760' }} /> High-quality cell phone repair</h2>
@@ -266,8 +269,8 @@ export default function Home() {
       <div className="section container" id="get-started" style={{ borderRadius: "8px", overflow: 'hidden', padding: '5em', marginBottom: '5em' }}>
         <Image src="/images/iphones-bg.jpeg" layout="fill" objectFit='cover' />
         <div style={{ position: 'relative', marginBottom: '29px' }}>
-          <h2 data-aos="fade-right" style={{color: 'white'}} className="title is-2">Ready to get started?</h2>
-          <h2 data-aos="fade-right" style={{color: 'white'}} className="subtitle is-5">iPhone Screen Repair only takes 15 minutes!</h2>
+          <h2 data-aos="fade-right" style={{color: 'white'}} className="title is-2">iPhone Screen Repair only takes 15 minutes!</h2>
+          <h2 data-aos="fade-right" style={{color: 'white'}} className="subtitle is-5">Would you like to get started? Your iPhone screen can be repaired in just 15 minutes!</h2>
         </div>
         <a className="button is-info is-large" onClick={()=>scrollToSection("repair")}>Book iPhone Repair <FontAwesomeIcon icon={faMobile} style={{ height: '1em', marginLeft: '0.3em' }} /></a>
       </div>
