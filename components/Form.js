@@ -935,7 +935,8 @@ export function Form({ make, isCarryIn }) {
               </div>
             </div>
           </div><br />
-          <button className="btn btn-action" type="submit">Book Repair Now</button>
+          <button className="btn btn-action" type="submit">Book Repair Now</button><br />
+          <span style={{ marginTop: '2em' }}><small>by submitting this form, you consent to receive a receipt over text</small></span>
         </NetlifyForm>
       </div>
     </section>
