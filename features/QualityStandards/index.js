@@ -10,18 +10,24 @@ export default function QualityStandards() {
   return (
     <div>
       <Head>
-        {/* Global site tag (gtag.js) - Google Analytics */}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title>Mobile iPhone Repair in SF| Our Quality Standards | Gelatotech </title>
-        {/* HTML Meta Tags */}
-        <meta name="description" content="Learn about how we provide the best quality parts for our customers" />
-        {/* Google / Search Engine Tags */}
-        <meta itemProp="name" content="Mobile iPhone Repair in SF | Our Quality Standards | Gelatotech" />
-        <meta itemProp="description" content="Learn about how we provide the best quality parts for our customers" />
-        <meta itemProp="image" content='/images/pexels-photo-607812.jpeg' />
-        {/* Global site tag (gtag.js) - Google Analytics */}
+        <title>Our Quality Standards for Device Repair | Gelatotech - San Francisco</title>
+        <meta name="description" content="Discover Gelatotech's commitment to quality with our range of parts for iPhone, iPad, MacBook, and more. Learn about our standards for aftermarket and genuine OEM parts." />
+        <meta name="keywords" content="Quality Device Repair, Genuine Parts, Aftermarket Parts, iPhone Repair, MacBook Repair, iPad Repair, Apple Watch Repair, San Francisco Repair Service" />
+        <meta itemProp="name" content="Gelatotech Quality Standards | Mobile Device Repair in SF" />
+        <meta itemProp="description" content="At Gelatotech, we prioritize quality. Explore our selection of genuine OEM and high-quality aftermarket parts for your mobile device repair needs in San Francisco." />
+        <meta itemProp="image" content='/images/quality-standards.jpeg' />
+        <meta property="og:url" content="https://www.gelatotech.com/blog/quality-standards" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Gelatotech's Commitment to Quality | Device Repair in SF" />
+        <meta property="og:description" content="Learn about Gelatotech's quality standards for mobile device repair, including our use of genuine OEM and premium aftermarket parts." />
+        <meta property="og:image" content='/images/quality-standards-og.jpeg' />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Quality Standards at Gelatotech | SF's Premier Device Repair" />
+        <meta name="twitter:description" content="Gelatotech ensures the highest quality in device repairs with a selection of the best parts available. Find out about our quality commitment in San Francisco." />
+        <meta name="twitter:image" content='/images/quality-standards-twitter.jpeg' />
         <link rel="stylesheet" href="/stylesheets/quality-standards.css" />
       </Head>
       <section id="blog">

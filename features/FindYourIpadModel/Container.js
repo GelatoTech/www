@@ -11,59 +11,52 @@ export default function FindYourIpadModel() {
   return (
     <div>
       <Head>
-        {/* Global site tag (gtag.js) - Google Analytics */}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title>How to find your iPad model? | Gelatotech </title>
-        {/* HTML Meta Tags */}
+        <title>Identify Your iPad Model | Step-by-Step Guide | Gelatotech</title>
         <meta
           name="description"
-          content="Looking to figure out which model of iPad you own? Our latest blog post offers a comprehensive guide on how to find your iPad model number, including step-by-step instructions and helpful visuals. Don't miss out on this essential information for any iPad owner!"
+          content="Not sure which iPad model you have? Our easy guide helps you identify your iPad model with simple instructions. Perfect for when you need repairs or just want to know your device better."
         />
-        {/* Google / Search Engine Tags */}
         <meta
           itemProp="name"
-          content="How to find your iPad model? | Gelatotech"
+          content="Identify Your iPad Model | Gelatotech"
         />
         <meta
           itemProp="description"
-          content="Looking to figure out which model of iPad you own? Our latest blog post offers a comprehensive guide on how to find your iPad model number, including step-by-step instructions and helpful visuals. Don't miss out on this essential information for any iPad owner!"
+          content="Find out your iPad model quickly with our straightforward guide. Whether for repairs or curiosity, we make it easy to know your iPad inside and out."
         />
-        <meta itemProp="image" content="/images/ipad-model-1.jpeg" />
-        {/* Facebook Meta Tags */}
-        <meta property="og:url" content="https://www.gelatotech.com" />
-        <meta property="og:type" content="website" />
+        <meta itemProp="image" content="/images/ipad-model-guide.jpeg" />
+        <meta property="og:url" content="https://www.gelatotech.com/blog/find-your-ipad-model" />
+        <meta property="og:type" content="article" />
         <meta
           property="og:title"
-          content="How to find your iPad model? | Gelatotech"
+          content="How to Easily Identify Your iPad Model | Gelatotech"
         />
         <meta
           property="og:description"
-          content="Looking to figure out which model of iPad you own? Our latest blog post offers a comprehensive guide on how to find your iPad model number, including step-by-step instructions and helpful visuals. Don't miss out on this essential information for any iPad owner!"
+          content="Discover your iPad model with our simple guide. Ideal for users needing repair services or wanting to learn more about their device."
         />
-        <meta property="og:image" content="/images/ipad-model-1.jpeg" />
-        {/* Twitter Meta Tags */}
+        <meta property="og:image" content="/images/ipad-model-guide.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="How to find your iPad model? | Gelatotech"
+          content="Find Your iPad Model with Gelatotech's Easy Guide"
         />
         <meta
           name="twitter:description"
-          content="Looking to figure out which model of iPad you own? Our latest blog post offers a comprehensive guide on how to find your iPad model number, including step-by-step instructions and helpful visuals. Don't miss out on this essential information for any iPad owner!"
+          content="Identify your iPad model in minutes with our step-by-step instructions. Essential reading for iPad owners seeking repair or information."
         />
-        <meta name="twitter:image" content="/images/ipad-model-1.jpeg" />
+        <meta name="twitter:image" content="/images/ipad-model-guide.jpeg" />
         <meta
           name="keywords"
-          content=" iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, demand"
+          content="iPad Model, Identify iPad, iPad Repair, Gelatotech, Find iPad Model, iPad Guide, iPad Information"
         />
         <meta
           name="google-site-verification"
           content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g"
         />
-        {/* Global site tag (gtag.js) - Google Analytics */}
-        <meta property="og:image" content="/images/ipad-model-1.jpeg" />
         <link rel="stylesheet" href="/stylesheets/battery.css" />
       </Head>
       <section id="blog">

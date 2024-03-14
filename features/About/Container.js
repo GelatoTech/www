@@ -8,31 +8,32 @@ export default function About() {
   return(
   <div>
     <Head>
-      <title>Gelatotech iPhone Repair | About Us </title>
+      <title>About Gelatotech - Redefining Mobile Device Repair in San Francisco</title>
 
       {/* HTML Meta Tags */}
-      <meta name="description" content="Your Phone is Important To Us, Thats why we come to you and Repair your phone same-day! " />
+      <meta name="description" content="Learn about Gelatotech, the heart behind San Francisco's premier on-demand device repair service. Discover our commitment to convenience, quality, and rapid service, directly to your doorstep." />
 
       {/* Google / Search Engine Tags */}
-      <meta itemProp="name" content="Mobile iPhone Repair | About Us | Gelatotech" />
-      <meta itemProp="description" content="Your Phone is Important To Us, Thats why we come to you and Repair your phone same-day!" />
-      <meta itemProp="image" content="images/iphone-repair.png" />
+      <meta itemProp="name" content="About Gelatotech - Our Story & Mission" />
+      <meta itemProp="description" content="Gelatotech stands for more than just device repair; we're about providing peace of mind, with fast, reliable, and convenient repair services for all your mobile devices." />
+      <meta itemProp="image" content="images/about-gelatotech.png" />
 
       {/* Facebook Meta Tags */}
-      <meta property="og:url" content="https://www.gelatotech.com" />
+      <meta property="og:url" content="https://www.gelatotech.com/about" />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="Mobile iPhone Repair | About Us | Gelatotech" />
-      <meta property="og:description" content="Your Phone is Important To Us, Thats why we come to you and Repair your phone same-day!" />
-      <meta property="og:image" content="images/iphone-repair.png" />
+      <meta property="og:title" content="About Gelatotech - Your Trusted Partner in Mobile Device Repair" />
+      <meta property="og:description" content="Meet Gelatotech, your ally in navigating the hassles of device repair. We specialize in quick, reliable repairs, ensuring your life stays uninterrupted. Get to know our story." />
+      <meta property="og:image" content="images/about-gelatotech.png" />
 
       {/* Twitter Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Mobile iPhone Repair | About Us | Gelatotech" />
-      <meta name="twitter:description" content="Your Phone is Important To Us, Thats why we come to you and Repair your phone same-day!" />
-      <meta name="twitter:image" content="images/iphone-repair.png" />
-      <meta name="keywords" content=" iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement on-demand, on demand" />
+      <meta name="twitter:title" content="Discover Gelatotech - Innovation in Device Repair" />
+      <meta name="twitter:description" content="At Gelatotech, we do more than fix devices; we ensure your day runs smoothly. Find out how our San Francisco-based team makes technology repair convenient and efficient." />
+      <meta name="twitter:image" content="images/about-gelatotech.png" />
+      <meta name="keywords" content="About Gelatotech, Mobile Device Repair, On-Demand Repair Service, San Francisco, iPhone Repair, iPad Repair, Samsung Repair, Technology Repair Services" />
       <link rel="stylesheet" href="../stylesheets/about.css" />
     </Head>
+
     <section className="hero" id="hero" style={{
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',

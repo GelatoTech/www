@@ -25,26 +25,27 @@ export default function Home() {
   return(
     <div>
       <Head>
-        <title>Mobile iPhone Repair in San Francisco | Gelatotech</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        <meta content="ie=edge" httpEquiv="X-UA-Compatible" />
-        <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." name="description" />
-        <meta content="index" name="robots" />
-        <meta content="Mobile iPhone Repair in San Francisco | Gelatotech" itemProp="name" />
-        <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." itemProp="description" />
-        <meta content="images/iphone-repair.png" itemProp="image" />
-        <meta content="https://www.gelatotech.com" property="og:url" />
-        <meta content="website" property="og:type" />
-        <meta content="Mobile iPhone Repair in SF | We come to you! Same-day repair" property="og:title" />
-        <meta content="iPhone screen cracked? No worries, We come to you and fix your iPhone inside our car within 10-15 mins. Same Day repair, Book your iPhone repair today." property="og:description" />
-        <meta content="images/iphone-repair.png" property="og:image" />
-        <meta content="summary_large_image" name="twitter:card" />
-        <meta content="Mobile iPhone Repair in San Francisco | Gelatotech" name="twitter:title" />
-        <meta content="San Francisco Mobile iPad Repair and iPhone Repair. We repair your device at your preferred time & location. Most iPhone Screen Repair Only takes 15 minutes." name="twitter:description" />
-        <meta content="images/iphone-repair.png" name="twitter:image" />
-        <meta content=" iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, demand" name="keywords" />
-        <meta content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" name="google-site-verification" />
-      </Head>
+        <title>On-Demand Mobile Device Repair in San Francisco | Gelatotech - Fast, Reliable Service</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="description" content="Gelatotech offers fast, on-demand repair for iPhones, Samsungs, iPads, and more right at your doorstep in San Francisco. Experience our quick, reliable service for screen, battery, camera repairs, and more. Book now and get your device fixed in as little as 15 minutes." />
+        <meta name="robots" content="index, follow" />
+        <meta itemProp="name" content="On-Demand Mobile Device Repair in San Francisco | Gelatotech" />
+        <meta itemProp="description" content="Fast, expert repair for a wide range of devices including iPhones, iPads, Samsungs, and more. We come to you, providing convenience and quality service anywhere in San Francisco." />
+        <meta itemProp="image" content="images/iphone-repair.png" />
+        <meta property="og:url" content="https://www.gelatotech.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Fast, On-Demand Mobile Device Repair in SF | Gelatotech" />
+        <meta property="og:description" content="Need your device fixed fast? Gelatotech provides on-site repairs for smartphones and tablets across SF. Book today for quick, reliable service at your location." />
+        <meta property="og:image" content="images/iphone-repair.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="On-Demand Mobile Device Repair in San Francisco | Gelatotech" />
+        <meta name="twitter:description" content="Gelatotech specializes in on-demand, on-site repairs for iPhones, Samsungs, iPads, and more in SF. Quick, convenient, and reliable service. Book now." />
+        <meta name="twitter:image" content="images/iphone-repair.png" />
+        <meta name="keywords" content="iPhone Repair, Samsung Repair, iPad Repair, Mobile Device Repair, On-Demand Repair, San Francisco, Screen Replacement, Battery Replacement, Charging Port Repair, Camera Repair, Water Damage Repair, Back Glass Repair, Apple Watch Repair, Google Pixel Repair" />
+        <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
+    </Head>
+
       <section className="hero" id="hero" style={{
         backgroundImage: "url(/images/whats-icracked.jpg)",
         backgroundSize: 'cover',

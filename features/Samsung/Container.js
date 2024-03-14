@@ -18,20 +18,26 @@ export default function Samsung() {
   return(
   <div>
     <Head>
-      <title>Mobile Samsung Repair San Francisco - Screen, Battery & Charging port replacement | Gelatotech</title>
-
-      {/* HTML Meta Tags */}
-      <meta name="description" content="Our technicians drive to your preferred location on-demand to repair your Samsung device." />
-      <meta name="keywords" content="samsung, screen repair, battery replacement, fix, on-demand, on demand, driver, technician, fast, quick, San Francisco, Bay Area, CA, sf" />
-
-      {/* Google / Search Engine Tags */}
-      <meta itemProp="name" content="Mobile Samsung Repair | We come to you, Same day Repair" />
-      <meta itemProp="description" content="Samsung screen cracked? Our skilled technicians come to you and fix your phone screen within 45-60 mins. Same Day Repair, Book your phone repair today!" />
-      <meta itemProp="image" content="images/samsung-bg.jpeg" />
-
-      <link rel="stylesheet" href="../stylesheets/samsung.css" />
-      <link rel="stylesheet" href="../stylesheets/device-card.css" />
+      <title>On-Demand Samsung Repair in San Francisco | Screen, Battery, Port Replacement | Gelatotech</title>
+      <meta name="description" content="Expert Samsung device repair at your doorstep in San Francisco. We offer screen replacements, battery swaps, and charging port fixes within 45-60 minutes. Book your same-day repair now!" />
+      <meta name="keywords" content="Samsung Repair, Screen Replacement, Battery Replacement, Charging Port Repair, On-Demand Repair Service, Mobile Technician, San Francisco, Fast Repair, Samsung Galaxy, Samsung Note, Samsung S Series" />
+      <meta itemProp="name" content="Fast Samsung Device Repair | Gelatotech Comes to You" />
+      <meta itemProp="description" content="Need a quick Samsung repair in San Francisco? Our mobile technicians specialize in screen, battery, and port repairs, offering same-day service for all Samsung models." />
+      <meta itemProp="image" content="/images/samsung-repair-service.jpeg" />
+      <meta property="og:url" content="https://www.gelatotech.com/samsung" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Samsung Repair Services in San Francisco | Gelatotech" />
+      <meta property="og:description" content="Get your Samsung phone fixed today with our mobile repair service. We handle screen, battery, and charging port issues, ensuring quick and reliable repairs." />
+      <meta property="og:image" content="/images/samsung-repair-og.jpeg" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Mobile Samsung Repair in SF | Quick & Reliable | Gelatotech" />
+      <meta name="twitter:description" content="Your Samsung device deserves the best care. Trust Gelatotech for fast, on-site repairs in San Francisco. Contact us for same-day service." />
+      <meta name="twitter:image" content="/images/samsung-repair-twitter.jpeg" />
+      <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
+      <link rel="stylesheet" href="/stylesheets/samsung.css" />
+      <link rel="stylesheet" href="/stylesheets/device-card.css" />
     </Head>
+
     <section className="hero" id="hero">
       <div className="hero-body">
         <div className="container has-text-centered">

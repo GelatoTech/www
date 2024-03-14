@@ -18,19 +18,24 @@ export default function GooglePixel() {
   return(
   <div>
     <Head>
-      <title>Mobile Google Pixel Repair San Francisco - Screen, Battery & Charging port replacement | Gelatotech</title>
-
-      {/* HTML Meta Tags */}
-      <meta name="description" content="Google Pixel screen cracked? Our skilled technicians come to you and fix your phone screen within 45-60 mins. Same Day Repair, Book your repair today!" />
-      <meta name="keywords" content="google, pixel, screen repair, battery replacement, fix, on-demand, on demand, driver, technician, fast, quick, XL, 3A, 4XL, 3XL, San Francisco, Bay Area, CA, sf" />
-
-      {/* Google / Search Engine Tags */}
-      <meta itemProp="name" content="Mobile Google Pixel Repair | We come to you! Same-day Repair" />
-      <meta itemProp="description" content="Our technicians drive to your preferred location on-demand to repair your Google Pixel device." />
-      <meta itemProp="image" content="images/pixel-bg.jpg" />
-
-      <link rel="stylesheet" href="../stylesheets/pixel.css" />
-      <link rel="stylesheet" href="../stylesheets/device-card.css" />
+      <title>On-Site Google Pixel Repair in San Francisco | Screen, Battery, Charging Port | Gelatotech</title>
+      <meta name="description" content="Expert Google Pixel repair at your doorstep in San Francisco. Screen, battery, and charging port replacements in 45-60 mins. Book your same-day repair service today!" />
+      <meta name="keywords" content="Google Pixel Repair, Screen Replacement, Battery Replacement, Charging Port Repair, Mobile Repair Service, San Francisco, Same-Day Repair, On-Demand Repair, Google Pixel, Pixel 3A, Pixel 4XL, Pixel 3XL" />
+      <meta itemProp="name" content="On-Site Google Pixel Repair | Gelatotech" />
+      <meta itemProp="description" content="Need a Google Pixel repair in San Francisco? Our mobile technicians come to you for screen, battery, and charging port replacements. Fast, convenient service guaranteed." />
+      <meta itemProp="image" content="/images/google-pixel-repair.jpg" />
+      <meta property="og:url" content="https://www.gelatotech.com/google-pixel" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Google Pixel Repair in San Francisco | Screen, Battery, Port | Gelatotech" />
+      <meta property="og:description" content="Same-day, on-site Google Pixel repair service in San Francisco. Our experts handle screen, battery, and charging port issues efficiently. Book now for quick repairs." />
+      <meta property="og:image" content="/images/google-pixel-repair-og.jpg" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Fast Google Pixel Repair in SF | Gelatotech" />
+      <meta name="twitter:description" content="Get your Google Pixel fixed today with our mobile repair service. Screen, battery, and port repairs done at your location in San Francisco. Book online now!" />
+      <meta name="twitter:image" content="/images/google-pixel-repair-twitter.jpg" />
+      <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
+      <link rel="stylesheet" href="/stylesheets/pixel.css" />
+      <link rel="stylesheet" href="/stylesheets/device-card.css" />
     </Head>
     <section className="hero" id="hero">
       <div className="hero-body">

@@ -9,34 +9,28 @@ export default function BatteryTips() {
   return (
     <div>
       <Head>
-        {/* Global site tag (gtag.js) - Google Analytics */}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title>Mobile iPhone Repair in SF| Top 3 iPhone Battery Saving Tips | Gelatotech </title>
-        {/* HTML Meta Tags */}
-        <meta name="description" content="Learn how to save your iPhone battery health with our top 3 tips" />
-        {/* Google / Search Engine Tags */}
-        <meta itemProp="name" content="Mobile iPhone Repair in SF| Top 3 iPhone Battery Saving Tips | Gelatotech" />
-        <meta itemProp="description" content="Learn how to save your iPhone battery health with our top 3 tips" />
+        <title>Extend Your iPhone's Battery Life - Top Tips by Gelatotech | On-Demand Repair in SF</title>
+        <meta name="description" content="Discover the top tips to extend your iPhone's battery life from Gelatotech. Learn simple, effective ways to maintain your battery health and performance." />
+        <meta name="keywords" content="iPhone Battery, Battery Saving Tips, iPhone Repair, Battery Health, iPhone Battery Replacement, On-Demand Repair, San Francisco" />
+        <meta itemProp="name" content="Extend Your iPhone's Battery Life - Expert Tips by Gelatotech" />
+        <meta itemProp="description" content="Maximize your iPhone's battery performance with our expert tips. Facing battery issues? Gelatotech offers on-demand battery replacement services in SF." />
         <meta itemProp="image" content='/images/pexels-photo-607812.jpeg' />
-        {/* Facebook Meta Tags */}
-        <meta property="og:url" content="https://www.gelatotech.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Mobile iPhone Repair in SF| Top 3 iPhone Battery Saving Tips | Gelatotech" />
-        <meta property="og:description" content="Learn how to save your iPhone battery health with our top 3 tips" />
+        <meta property="og:url" content="https://www.gelatotech.com/blog/battery-tips" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="How to Save Your iPhone Battery Life - Learn from Gelatotech" />
+        <meta property="og:description" content="Get the best iPhone battery saving tips from Gelatotech. If tips aren't enough, we provide on-demand iPhone battery replacements in San Francisco." />
         <meta property="og:image" content='/images/pexels-photo-607812.jpeg' />
-        {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Mobile iPhone Repair in SF| Top 3 iPhone Battery Saving Tips | Gelatotech" />
-        <meta name="twitter:description" content="Learn how to save your iPhone battery health with our top 3 tips" />
+        <meta name="twitter:title" content="Top iPhone Battery Saving Tips | Gelatotech" />
+        <meta name="twitter:description" content="Boost your iPhone's battery life with Gelatotech's expert advice. Need a replacement? We offer quick, on-demand services in SF." />
         <meta name="twitter:image" content='/images/pexels-photo-607812.jpeg' />
-        <meta name="keywords" content=" iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, demand" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
-        {/* Global site tag (gtag.js) - Google Analytics */}
-        <meta property="og:image" content='/images/pexels-photo-607812.jpeg' />
         <link rel="stylesheet" href="/stylesheets/battery.css" />
       </Head>
+
       <section id="blog">
         <div className="container blog-container">
           <h1 className="title is-1">Top 3 iPhone Battery Saving Tips 🔋</h1>

@@ -18,20 +18,21 @@ export default function AppleWatch() {
   return(
   <div>
     <Head>
-      <title>Apple Watch Repair San Francisco - On-Demand Repair | Gelatotech</title>
+      <title>Apple Watch Repair in San Francisco | On-Demand Service | Gelatotech</title>
 
       {/* HTML Meta Tags */}
-      <meta name="description" content="Apple Watch Screen cracked? We provided glass only repair & OLED screen replacement for any Apple Watch model. We come to you, Same-day repair!" />
-      <meta name="keywords" content="apple, watch, screen repair, battery replacement, fix, on-demand, on demand, driver, technician, fast, quick, San Francisco, Bay Area, CA, sf" />
+      <meta name="description" content="Fast, reliable Apple Watch repair in San Francisco. From cracked screens to battery replacements, our on-demand service brings the fix to you, same day. Book now for expert Apple Watch glass and OLED screen repairs." />
+      <meta name="keywords" content="Apple Watch Repair, Screen Repair, Battery Replacement, On-Demand Repair, San Francisco, Gelatotech, Quick, Professional, Apple Watch Series, OLED Replacement, Glass Repair, Technician, Mobile Service, SF Bay Area" />
 
       {/* Google / Search Engine Tags */}
-      <meta itemProp="name" content="Apple Watch Repair SF | We come to you | Glass only repair" />
-      <meta itemProp="description" content="Our technicians drive to your preferred location on-demand to repair your Apple Watch." />
-      <meta itemProp="image" content="images/apple-watch.jpeg" />
+      <meta itemProp="name" content="On-Demand Apple Watch Repair in San Francisco | Gelatotech" />
+      <meta itemProp="description" content="Need your Apple Watch fixed? Gelatotech offers mobile repair services for all models, including screen and battery replacements. We come to you for a hassle-free repair experience." />
+      <meta itemProp="image" content="images/apple-watch-repair.jpeg" />
 
       <link rel="stylesheet" href="../stylesheets/apple-watch.css" />
       <link rel="stylesheet" href="../stylesheets/device-card.css" />
-    </Head>
+   </Head>
+
     <section className="hero" id="hero">
       <div className="hero-body">
         <div className="container has-text-centered">

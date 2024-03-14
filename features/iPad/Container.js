@@ -18,19 +18,24 @@ export default function iPad() {
   return(
   <div>
     <Head>
-      <title>Mobile iPad Repair San Francisco - Screen, Battery & Charging port replacement | Gelatotech</title>
-
-      {/* HTML Meta Tags */}
-      <meta name="description" content="Our technicians drive to your preferred location on-demand to repair your iPad." />
-      <meta name="keywords" content="ipad, ipad pro, ipad mini, screen repair, battery replacement, fix, on-demand, on demand, driver, technician, fast, quick, San Francisco, Bay Area, CA, sf" />
-
-      {/* Google / Search Engine Tags */}
-      <meta itemProp="name" content="Mobile iPad Repair SF | We come to you! Same-day Repair" />
-      <meta itemProp="description" content="iPad screen cracked? We can fix it same-day. Our skilled technicians come to you and fix your iPad within 45-60 mins. Book your iPad repair today." />
-      <meta itemProp="image" content="images/ipad-bg.png" />
-
-      <link rel="stylesheet" href="../stylesheets/ipad.css" />
-      <link rel="stylesheet" href="../stylesheets/device-card.css" />
+      <title>On-Demand iPad Repair in San Francisco | Screen, Battery, Charging Port | Gelatotech</title>
+      <meta name="description" content="Expert iPad repair service at your doorstep. We specialize in screen, battery, and charging port replacements for all iPad models. Fast, convenient, and reliable - book your same-day service in San Francisco now!" />
+      <meta name="keywords" content="iPad Repair, iPad Pro, iPad Mini, Screen Replacement, Battery Replacement, Charging Port Repair, On-Demand, Mobile Repair, Fast Service, San Francisco, Bay Area" />
+      <meta itemProp="name" content="Mobile iPad Repair in San Francisco | Quick, Reliable Service" />
+      <meta itemProp="description" content="Need your iPad fixed fast? Our mobile technicians offer screen, battery, and charging port replacements directly to your location. Book your same-day iPad repair in San Francisco today!" />
+      <meta itemProp="image" content="/images/ipad-repair-service.png" />
+      <meta property="og:url" content="https://www.gelatotech.com/ipad" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="iPad Repair Service in San Francisco | Gelatotech" />
+      <meta property="og:description" content="Get your iPad repaired quickly with our mobile service. Offering screen, battery, and charging port replacements for all models. Contact us for same-day repairs in San Francisco." />
+      <meta property="og:image" content="/images/ipad-repair-og.png" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Fast and Reliable iPad Repair in San Francisco | Gelatotech" />
+      <meta name="twitter:description" content="Your iPad can be repaired today! Our technicians come to you for fast screen, battery, and port replacements. Book your iPad repair with Gelatotech now." />
+      <meta name="twitter:image" content="/images/ipad-repair-twitter.png" />
+      <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
+      <link rel="stylesheet" href="/stylesheets/ipad.css" />
+      <link rel="stylesheet" href="/stylesheets/device-card.css" />
     </Head>
     <section className="hero" id="hero">
       <div className="hero-body">

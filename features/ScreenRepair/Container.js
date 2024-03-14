@@ -5,36 +5,27 @@ export default function ScreenRepair() {
   return(
     <div>
       <Head>
-        {/* Global site tag (gtag.js) - Google Analytics */}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title>How much will an iPhone screen repair cost you in San Francisco?</title>
-        {/* HTML Meta Tags */}
-        <meta name="description" content="AppleCare costs vary depending on the iPhone model. Here’s a summary of the cost of coverage for you to decide if AppleCare is worth it." />
-        {/* Google / Search Engine Tags */}
-        <meta itemProp="name" content="How much will an iPhone screen repair cost you in San Francisco?" />
-        <meta itemProp="description" content="AppleCare costs vary depending on the iPhone model. Here’s a summary of the cost of coverage for you to decide if AppleCare is worth it." />
-        <meta itemProp="image" content='/images/screen-repair-blog.jpg' />
-        {/* Facebook Meta Tags */}
-        <meta property="og:url" content="https://www.gelatotech.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="How much will an iPhone screen repair cost you in San Francisco?" />
-        <meta property="og:description" content="AppleCare costs vary depending on the iPhone model. Here’s a summary of the cost of coverage for you to decide if AppleCare is worth it." />
-        <meta property="og:image" content='/images/screen-repair-blog.jpg' />
-        {/* Twitter Meta Tags */}
+        <title>Comparing iPhone Screen Repair Costs in San Francisco | Gelatotech</title>
+        <meta name="description" content="Unveiling the real cost of iPhone screen repairs in San Francisco. Get insights on AppleCare+ coverage vs. Gelatotech's affordable, high-quality repair services." />
+        <meta name="keywords" content="iPhone Screen Repair, AppleCare+ Costs, San Francisco Screen Repair, Mobile Repair Service, Fast iPhone Fix, Screen Repair Cost, iPhone Repair Options" />
+        <meta itemProp="name" content="iPhone Screen Repair Costs in San Francisco Explained | Gelatotech" />
+        <meta itemProp="description" content="Explore the cost differences for iPhone screen repairs with or without AppleCare+ in San Francisco. Learn why Gelatotech offers the best value and convenience." />
+        <meta itemProp="image" content='/images/screen-repair-comparison.jpeg' />
+        <meta property="og:url" content="https://www.gelatotech.com/blog/screen-repair" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="iPhone Screen Repair Cost Analysis in SF | Gelatotech" />
+        <meta property="og:description" content="Dive deep into the costs of repairing an iPhone screen in SF with AppleCare+ vs. Gelatotech's service. Discover affordable, quick repair solutions." />
+        <meta property="og:image" content='/images/screen-repair-cost-analysis.jpeg' />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="How much will an iPhone screen repair cost you in San Francisco?" />
-        <meta name="twitter:description" content="AppleCare costs vary depending on the iPhone model. Here’s a summary of the cost of coverage for you to decide if AppleCare is worth it." />
-        <meta name="twitter:image" content='/images/screen-repair-blog.jpg' />
-        <meta name="keywords" content="iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, deamand
-       " />
-        <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
-        {/* Global site tag (gtag.js) - Google Analytics */}
-        <meta property="og:image" content='/images/screen-repair-blog.jpg' />
-        {/* meta tag end! */}
+        <meta name="twitter:title" content="San Francisco iPhone Screen Repair Cost Guide | Gelatotech" />
+        <meta name="twitter:description" content="Facing an iPhone screen crack? Compare repair costs in San Francisco and see how Gelatotech offers the best service at lower prices." />
+        <meta name="twitter:image" content='/images/screen-repair-twitter-guide.jpeg' />
         <link rel="stylesheet" href="/stylesheets/screenrepairblog.css" />
       </Head>
+
       <section id="blog2" className="content">
         <div className="container blog-container pt-4">
           <Image src='/images/screen-repair-blog.jpg' width={1000} height={600} className="blog-img" />
@@ -44,7 +35,7 @@ export default function ScreenRepair() {
             }
           `}</style>
           <h1 className="title sf ">How much will an iPhone screen repair cost you in San Francisco?</h1>
-          <p>by jamesmash on March 17,2020</p>
+          <p>by jamesmash on March 17, 2020</p>
           <hr />
           <h2 className="title apple is-4">Is Apple Care Worth it?</h2>
           <p><strong>About AppleCare</strong></p>

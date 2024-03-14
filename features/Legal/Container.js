@@ -4,33 +4,25 @@ export default function FAQ() {
   return (
     <div>
       <Head>
-        {/* Global site tag (gtag.js) - Google Analytics */}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title>90 day warranty policy | Gelatotech Mobile iPhone Repair SF</title>
-        {/* HTML Meta Tags */}
-        <meta name="description" content="Gelatotech offers a 90 day warranty on all models of iPhone, iPad, Macbook, Apple Watch, Samsung, and Google Pixel repairs." />
-        {/* Google / Search Engine Tags */}
-        <meta itemProp="name" content="90 day warranty policy | Gelatotech Mobile iPhone Repair SF" />
-        <meta itemProp="description" content="Gelatotech offers a 90 day warranty on all models of iPhone, iPad, Macbook, Apple Watch, Samsung, and Google Pixel repairs." />
-        <meta itemProp="image" content={'/images/pexels-photo-607812.jpeg'} />
-        {/* Facebook Meta Tags */}
-        <meta property="og:url" content="https://www.gelatotech.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="90 day warranty policy | Gelatotech Mobile iPhone Repair SF" />
-        <meta property="og:description" content="Gelatotech offers a 90 day warranty on all models of iPhone, iPad, Macbook, Apple Watch, Samsung, and Google Pixel repairs." />
-        <meta property="og:image" content={'/images/pexels-photo-607812.jpeg'} />
-        {/* Twitter Meta Tags */}
+        <title>Legal & Warranty Policy | Gelatotech - Comprehensive Mobile Repair Service in SF</title>
+        <meta name="description" content="Understand your rights and our commitment. Gelatotech's legal and warranty policy page outlines our 90-day warranty for all mobile device repairs, including iPhone, iPad, MacBook, and more." />
+        <meta itemProp="name" content="Legal & 90-Day Warranty Policy | Gelatotech - San Francisco's Mobile Repair" />
+        <meta itemProp="description" content="Gelatotech offers a 90-day warranty, ensuring quality and satisfaction for all your mobile repair needs. Learn more about our commitment to excellence on our legal page." />
+        <meta itemProp="image" content="/images/legal-warranty.jpeg" />
+        <meta property="og:url" content="https://www.gelatotech.com/legal" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Legal & Warranty Info | Gelatotech - Your Trusted Repair Partner in SF" />
+        <meta property="og:description" content="Discover Gelatotech's commitment to quality with our 90-day warranty on mobile device repairs. Visit our legal page for detailed policy information." />
+        <meta property="og:image" content="/images/legal-og.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="90 day warranty policy | Gelatotech Mobile iPhone Repair SF" />
-        <meta name="twitter:description" content="Gelatotech offers a 90 day warranty on all models of iPhone, iPad, Macbook, Apple Watch, Samsung, and Google Pixel repairs." />
-        <meta name="twitter:image" content={'/images/pexels-photo-607812.jpeg'} />
-        <meta name="keywords" content="iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, demand" />
+        <meta name="twitter:title" content="Gelatotech's Legal & Warranty Policy | Ensuring Customer Satisfaction in SF" />
+        <meta name="twitter:description" content="Gelatotech stands by our work with a 90-day warranty for all repairs. Visit our legal page for comprehensive policy details." />
+        <meta name="twitter:image" content="/images/legal-twitter.jpeg" />
+        <meta name="keywords" content="Legal, Warranty Policy, Mobile Repair Service, iPhone Repair, iPad Repair, MacBook Repair, San Francisco, Customer Satisfaction, Quality Guarantee" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
-        {/* Global site tag (gtag.js) - Google Analytics */}
-        <meta property="og:image" content={'/images/pexels-photo-607812.jpeg'} />
-        {/* meta tag end! */}
         <link rel="stylesheet" href="/stylesheets/legal.css" />
       </Head>
       <div className="content terms">

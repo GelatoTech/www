@@ -14,35 +14,30 @@ export default function FAQ() {
   return (
     <div>
       <Head>
-        {/* Global site tag (gtag.js) - Google Analytics */}
-        <title>Mobile iPhone Repair in San Francisco| FAQs | Gelatotech</title>
-        <meta name="description" content="How long does it take to get a iPhone screen repair?" />
-        {/* Google / Search Engine Tags */}
-        <meta itemProp="name" content="Mobile iPhone Repair in San Francisco| FAQs | Gelatotech" />
-        <meta itemProp="description" content="How long does it take to get a iPhone screen repair?" />
-        <meta itemProp="image" content="images/iphone-repair.png" />
-        {/* Facebook Meta Tags */}
-        <meta property="og:url" content="https://www.gelatotech.com" />
+        <title>Gelatotech FAQ: All Your Mobile Repair Questions Answered</title>
+        <meta name="description" content="Find answers to all your mobile device repair questions with Gelatotech. From iPhone screen repairs to booking queries, get all the information you need to make an informed decision." />
+        <meta name="keywords" content="FAQ, Mobile Repair, iPhone Screen Repair, Booking Repair, Device Repair Questions, Gelatotech, San Francisco" />
+        <meta itemProp="name" content="Gelatotech FAQs: Your Mobile Repair Questions Answered" />
+        <meta itemProp="description" content="Looking for quick answers to your mobile repair queries? Check out Gelatotech's FAQ page for all your questions about iPhone and other device repairs." />
+        <meta itemProp="image" content="images/faq-iphone-repair.png" />
+        <meta property="og:url" content="https://www.gelatotech.com/faq" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Mobile iPhone Repair in San Francisco| FAQs | Gelatotech" />
-        <meta property="og:description" content="How long does it take to get a iPhone screen repair?" />
-        <meta property="og:image" content="images/iphone-repair.png" />
-        {/* Twitter Meta Tags */}
+        <meta property="og:title" content="Frequently Asked Questions | Gelatotech Mobile Repair" />
+        <meta property="og:description" content="Have questions about mobile device repairs? Gelatotech's FAQ page offers answers on iPhone repairs, service bookings, and much more." />
+        <meta property="og:image" content="images/faq-iphone-repair.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Mobile iPhone Repair in San Francisco| FAQs | Gelatotech" />
-        <meta name="twitter:description" content="How long does it take to get a iPhone screen repair?" />
-        <meta name="twitter:image" content="images/iphone-repair.png" />
-        <meta name="keywords" content=" iPhone Repair, iPhone Screen Repair, iPhone fix, iPhone Replacement On-demand, on, deamand
-  " />
+        <meta name="twitter:title" content="Gelatotech FAQ: Your Repair Questions Answered" />
+        <meta name="twitter:description" content="Find quick answers to common mobile repair questions at Gelatotech. Learn about our services, booking process, and more." />
+        <meta name="twitter:image" content="images/faq-iphone-repair.png" />
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="/fonts/ABeeZee.css" rel="stylesheet" />
         <link rel="stylesheet" href="/stylesheets/reset.min.css" />
         <link rel="stylesheet prefetch" href="/stylesheets/animate.min.css" />
-        {/* faq css*/}
         <link rel="stylesheet" href="/stylesheets/faq.css" />
         <link rel="stylesheet" href="/stylesheets/w3.css" />
       </Head>
+      
       <div className="section">
         <h1 className="section__headline">FAQs</h1>
         <h2 className="c-faqs__headline">Repairing my Device</h2>

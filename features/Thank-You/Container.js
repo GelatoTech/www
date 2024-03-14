@@ -23,6 +23,7 @@ export default function ThankYou() {
       <div style={{ backgroundColor: 'gainsboro', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center'  }}>
       <Head>
         <title>Thank You | Gelatotech iPhone Repair</title>
+        <meta name="robots" content="noindex, follow" />
       </Head>
 
       <div style={{ textAlign: 'center', width: '90vw' }}>

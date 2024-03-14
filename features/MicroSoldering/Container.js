@@ -23,18 +23,23 @@ export default function MicroSoldering() {
   return(
     <div>
       <Head>
-        <title>Micro Soldering Service - iPhone & MacBook Repair in San Francisco | Gelatotech</title>
-
-        {/* HTML Meta Tags */}
-        <meta name="description" content="iPhone or MacBook logic board damaged? Our skilled technicians can fix any problem. Most common problem takes 1-2 days to repair. Schedule your repair today!" />
-        <meta name="keywords" content="motherboard, solder, soldering, micro soldering, ipad, ipad pro, ipad mini, screen repair, battery replacement, fix, on-demand, on demand, driver, technician, fast, quick, San Francisco, Bay Area, CA, sf" />
-
-        {/* Google / Search Engine Tags */}
-        <meta itemProp="name" content="Mobile iPhone & Macbook Micro Soldering in San Francisco" />
-        <meta itemProp="description" content="On-demand and mail-in iPhone/MacBook micro soldering services." />
-        <meta itemProp="image" content="images/micro-soldering.jpg" />
-
-        <link rel="stylesheet" href="../stylesheets/micro-soldering.css" />
+        <title>Expert Micro Soldering for iPhone & MacBook in San Francisco | Gelatotech</title>
+        <meta name="description" content="Specializing in micro soldering for iPhone and MacBook logic boards, Gelatotech's skilled technicians can address complex issues with a 1-2 day turnaround. Book your precision repair service in San Francisco today." />
+        <meta name="keywords" content="Micro Soldering, iPhone Repair, MacBook Repair, Logic Board Repair, San Francisco, Precision Soldering, Electronic Repair, Motherboard Repair, Tech Repair Services, Bay Area" />
+        <meta itemProp="name" content="Expert Micro Soldering - iPhone & MacBook | Gelatotech San Francisco" />
+        <meta itemProp="description" content="Gelatotech offers expert micro soldering services for complex iPhone and MacBook repairs in San Francisco. Trust our technicians for precision logic board fixes." />
+        <meta itemProp="image" content="/images/micro-soldering-service.jpg" />
+        <meta property="og:url" content="https://www.gelatotech.com/microsoldering" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Micro Soldering Service for iPhone & MacBook | Gelatotech" />
+        <meta property="og:description" content="Need advanced repair for your iPhone or MacBook? Gelatotech's micro soldering service in San Francisco offers high-precision fixes for logic board issues. Schedule now." />
+        <meta property="og:image" content="/images/micro-soldering-og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Professional Micro Soldering - iPhone & MacBook in SF | Gelatotech" />
+        <meta name="twitter:description" content="Discover Gelatotech's micro soldering services for advanced iPhone and MacBook repairs in San Francisco. Fast, precise, and reliable logic board repairs." />
+        <meta name="twitter:image" content="/images/micro-soldering-twitter.jpg" />
+        <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
+        <link rel="stylesheet" href="/stylesheets/micro-soldering.css" />
       </Head>
       <section className="hero" id="hero">
         <div className="hero-body container">

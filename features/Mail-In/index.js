@@ -33,18 +33,23 @@ export default function MailIn() {
   return(
     <div>
       <Head>
-        <title>Mail-In Repair - San Francisco | Gelatotech</title>
-
-        {/* HTML Meta Tags */}
-        <meta name="description" content="Gelatotech offers mail-in repair service for all models of iPhone,  iPad, Macbook, Apple Watch,  Samsung, and Google pixel. We can fix any problem." />
-        <meta name="keywords" content="ipad, ipad pro, ipad mini, screen repair, battery replacement, fix, on-demand, on demand, driver, technician, fast, quick, San Francisco, Bay Area, CA, sf" />
-
-        {/* Google / Search Engine Tags */}
-        <meta itemProp="name" content="Mail-in iPhone & Macbook Repair | Fast turnaround" />
-        <meta itemProp="description" content="Gelatotech offers mail-in repair service for all models of iPhone,  iPad, Macbook, Apple Watch,  Samsung, and Google pixel. We can fix any problem." />
-        <meta itemProp="image" content="images/mail-in.jpeg" />
-
-        <link rel="stylesheet" href="../stylesheets/mail-in.css" />
+        <title>Mail-In Device Repair Service Nationwide | Gelatotech</title>
+        <meta name="description" content="Convenient mail-in repair service for iPhones, iPads, MacBooks, Apple Watches, Samsung, and Google Pixels by Gelatotech. Expert repairs with fast turnaround, no matter where you are in the U.S." />
+        <meta name="keywords" content="Mail-In Repair, iPhone Repair, iPad Repair, MacBook Repair, Apple Watch Repair, Samsung Galaxy Repair, Google Pixel Repair, Nationwide Repair Service, Device Repair, Fast Turnaround" />
+        <meta itemProp="name" content="Nationwide Mail-In Repair Service | iPhones, MacBooks & More" />
+        <meta itemProp="description" content="Trust Gelatotech for all your device repair needs. Mail-in your iPhone, iPad, MacBook, or other devices from anywhere in the U.S. for quick, expert repairs." />
+        <meta itemProp="image" content="/images/mail-in-service.jpeg" />
+        <meta property="og:url" content="https://www.gelatotech.com/mail-in" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Mail-In Repair Service for All Devices | Gelatotech" />
+        <meta property="og:description" content="Expert mail-in repair service available nationwide for iPhones, iPads, MacBooks, and more. Fast, reliable repairs by Gelatotech, wherever you are." />
+        <meta property="og:image" content="/images/mail-in-og.jpeg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Convenient Mail-In Device Repair | Nationwide Service by Gelatotech" />
+        <meta name="twitter:description" content="Need device repair? Mail-in your iPhone, iPad, or MacBook from anywhere in the U.S. for fast, expert service by Gelatotech." />
+        <meta name="twitter:image" content="/images/mail-in-twitter.jpeg" />
+        <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
+        <link rel="stylesheet" href="/stylesheets/mail-in.css" />
       </Head>
       <section className="hero" id="hero">
         <div className="hero-body container" style={{ display: 'flex' }}>
