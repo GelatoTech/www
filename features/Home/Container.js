@@ -102,7 +102,7 @@ export default function Home() {
                       <div className="card-content">
                         <div className="media">
                           <div className="media-content">
-                            <p className="subtitle is-4 has-text-centered">We Come to You</p>
+                            <p className="subtitle is-4 has-text-centered" style={{fontSize: '1.1em'}}>We Come to You</p>
                           </div>
                         </div>
                         <div className="content has-text-centered">

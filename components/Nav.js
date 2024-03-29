@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock, faPhone } from '@fortawesome/free-solid-svg-icons'
 
@@ -26,7 +25,7 @@ export function Nav() {
                 router.pathname == '/' ? scrollToSection("hero") : router.push('/'); 
               }}
               >
-                <Image alt="Gelatotech" width={150} height={30} src='/images/nav-logo-gtech.png' />
+                <img alt="Gelatotech" width={150} src='/images/logo.svg' />
               </a>
             </span> 
             <a aria-expanded="false" aria-label="menu" className={`navbar-burger burger ${burgerOpen ? 'is-active' : ''}`} data-target="navbarBasicExample" role="button"
@@ -44,7 +43,7 @@ export function Nav() {
                     setBurger(false);
                     router.pathname == '/' ? scrollToSection("works") : router.push('/#works');
                   }}
-                >How it Works</a> 
+                >How We Operate</a> 
                 <div className="navbar-item has-dropdown is-hoverable">
                   <a className="navbar-link" onClick={()=>{
                     setOurServicesDropdownActive(!ourServicesDropdownActive);

@@ -35,7 +35,7 @@ export function MailInSteps(props) {
   return (
     <div className="container">
       <div style={{ marginLeft: '1em', marginBottom: '2em' }}>
-        <h1 className="title">How It Works</h1>
+        <h1 className="title">How it works</h1>
         <h1 className="subtitle has-text-grey" style={{ fontSize: '0.8em' }}>Hover over steps for more info</h1>
       </div>
       <ul className="list-unstyled multi-steps">

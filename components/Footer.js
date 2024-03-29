@@ -13,7 +13,7 @@ export function Footer() {
       <footer style={{padding: '25px'}}>
         <div className="container">
           <div className="columns">
-            <div className="column footer-menu"><a href="#"><Image alt="gelatotech" src="/images/logo-square.png" width={95} height={79} /> </a>
+            <div className="column footer-menu"><a href="/"><img alt="gelatotech" src="/images/logo.svg" width={200} /> </a>
               <h3>Mobile iPhone Repair SF </h3>
               {/* Begin Mailchimp Signup Form */}
               <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css" />
@@ -83,7 +83,7 @@ export function Footer() {
           <hr />
           <div className="grid">
             <div>
-              <a href="https://twitter.com/gelatotech?lang=en" target="_blank"><FontAwesomeIcon style={{ height: '34px' }} className="fab fa-twitter-square" id="twitter" icon={faTwitterSquare} /></a>
+              <a href="https://x.com/gelatotech?lang=en" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="34" height="34"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
             </div>
             <div>
               <a href="https://www.google.com/search?sxsrf=ACYBGNRW0soodNIzft09KFwpePu3ebj1AQ:1569811253188&q=gelato+tech&spell=1&sa=X&ved=0ahUKEwiZgfHQwvfkAhVMnJ4KHROKB1AQBQgvKAA&biw=840&bih=367&dpr=2" target="_blank"><FontAwesomeIcon style={{ height: '34px' }} id="google" icon={faGoogle} /></a>
