@@ -159,5 +159,41 @@ header{
   color: white;
 }
 
+@keyframes wipeToLeft {
+  to {
+    transform: translateX(-100%) scale(1.2);
+    opacity: 0;
+  }
+}
 
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.logo-full {
+  animation-fill-mode: forwards;
+}
+
+.logo-emblem {
+  display: none;
+}
+
+.animate-wipe {
+  animation: wipeToLeft 0.2s ease-in-out forwards;
+}
+
+.animate-bounce {
+  display: block;
+  animation: bounceIn 0.2s ease-in-out forwards;
+}
 

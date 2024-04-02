@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock, faPhone } from '@fortawesome/free-solid-svg-icons'
@@ -12,22 +12,31 @@ export function Nav() {
   const  [burgerOpen, setBurger] = useState(false);
   const  [ourServicesDropdownActive, setOurServicesDropdownActive] = useState(false);
   const  [blogDropdownActive, setBlogDropdownActive] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Trigger animations after scrolling 50px
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
 
   return(
     <div>
       <header className="is-fixed-top">
         <nav aria-label="main navigation" className="navbar" id='nav' role="navigation">
           <div className="navbar-brand" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <span>
-              <a className="navbar-item"
-              onClick={() => { 
-                setBurger(false);
-                router.pathname == '/' ? scrollToSection("hero") : router.push('/'); 
-              }}
-              >
-                <img alt="Gelatotech" width={150} src='/images/logo.svg' />
-              </a>
-            </span> 
+          <span>
+            <a className="navbar-item">
+            <img alt="Emblem" style={{ position: 'fixed' }} width={50} src='/images/logo-square.svg' className={`logo-emblem ${isScrolled ? 'animate-bounce' : ''}`} />
+
+              <img alt="Gelatotech Full Logo" style={{ position: 'fixed' }} width={150} src='/images/logo.svg' className={`logo-full ${isScrolled ? 'animate-wipe' : ''}`} />
+            </a>
+          </span>
             <a aria-expanded="false" aria-label="menu" className={`navbar-burger burger ${burgerOpen ? 'is-active' : ''}`} data-target="navbarBasicExample" role="button"
               onClick={() => { setBurger(!burgerOpen) }}
             >
