@@ -219,6 +219,18 @@ export function Form({ make, isCarryIn }) {
                             repairFormValues.deviceMake == "iphone"
                               ? (
                                 <>
+                                  <option value="15proMax">
+                                    iPhone 15 Pro Max
+                                  </option>
+                                  <option value="15pro">
+                                    iPhone 15 Pro
+                                  </option>
+                                  <option value="15plus">
+                                    iPhone 15 Plus
+                                  </option>
+                                  <option value="15">
+                                    iPhone 15
+                                  </option>
                                   <option value="14proMax">
                                     iPhone 14 Pro Max
                                   </option>

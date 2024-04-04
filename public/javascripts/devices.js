@@ -2089,6 +2089,58 @@ const devices = {
             warranty: "90 day"
         }
     },
+    "15": {
+        screen: {
+            price: {
+                OX7H: null,
+                OX7S: "$270",
+                OEMS: "$480",
+                OEMT: null,
+                OEML: null
+            },
+            warranty: "90 day",
+            duration: "15 minutes",
+        }
+    },
+    "15plus": {
+        screen: {
+            price: {
+                OX7H: null,
+                OX7S: "$590",
+                OEMS: "$590",
+                OEMT: null,
+                OEML: null
+            },
+            warranty: "90 day",
+            duration: "15 minutes",
+        }
+    },
+    "15pro": {
+        screen: {
+            price: {
+                OX7H: null,
+                OX7S: "$350",
+                OEMS: "$420",
+                OEMT: null,
+                OEML: null
+            },
+            warranty: "90 day",
+            duration: "15 minutes",
+        }
+    },
+    "15proMax": {
+        screen: {
+            price: {
+                OX7H: null,
+                OX7S: null,
+                OEMS: "$440",
+                OEMT: null,
+                OEML: null
+            },
+            warranty: "90 day",
+            duration: "15 minutes",
+        }
+    },
     "googlePixel": {
         screen: {
             price: "$100",
