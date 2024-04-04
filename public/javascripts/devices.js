@@ -2160,7 +2160,7 @@ const devices = {
     },
     "googlePixelXL": {
         screen: {
-            price: "$125",
+            price: "$123",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -2177,7 +2177,7 @@ const devices = {
     },
     "googlePixel2": {
         screen: {
-            price: "$135",
+            price: "$134",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -2338,7 +2338,7 @@ const devices = {
     },
     "googlePixel6": {
         screen: {
-            price: "$265",
+            price: "$280",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -2371,9 +2371,23 @@ const devices = {
             duration: "1 hour",
         },
     },
-    "googlePixel5a5g": {
+    "googlePixelFold": {
         screen: {
-            price: "$250",
+            price: "$265",
+            warranty: "90 day",
+            duration: "1 hour",
+        },
+    },
+    "googlePixel8": {
+        screen: {
+            price: "$290",
+            warranty: "90 day",
+            duration: "1 hour",
+        },
+    },
+    "googlePixel8pro": {
+        screen: {
+            price: "$350",
             warranty: "90 day",
             duration: "1 hour",
         },

@@ -80,6 +80,11 @@ export function Footer() {
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12614.767559056148!2d-122.3917718!3d37.7738221!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f621c4f11f36a76!2sMobile%20iPhone%20Repair%20SF%20%7C%20Gelatotech!5e0!3m2!1sen!2sus!4v1583816693352!5m2!1sen!2sus" width={600} height={450} frameBorder={0} style={{border: 0}} allowFullScreen />
             </div> 
           </div>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+          <button className="button" style={{backgroundColor: '#209cee', borderRadius: '8px', fontWeight: 'bold', color: '#fff', padding: '1.5em'}} onClick={() => router.push('/#repair')}>
+            Schedule Service
+          </button>
+          </div>
           <hr />
           <div className="grid">
             <div>

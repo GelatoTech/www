@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClock, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faCalendar, faClock, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 import scrollToSection from '../helpers/scrollToSection';
 
@@ -159,7 +159,8 @@ export function Nav() {
                     setBurger(false);
                     router.push('/FAQ') 
                   }} 
-                >FAQ</a> <a className="navbar-item" 
+                >FAQ</a> 
+                <a className="navbar-item" 
                   onClick={() => { 
                     setBurger(false);
                     router.push('/legal') }} 
@@ -167,7 +168,15 @@ export function Nav() {
                 <a className="navbar-item" onClick={()=>{
                   setBurger(false);
                   scrollToSection("business")
-                  }}>Hours <FontAwesomeIcon icon={faClock} style={{ width: '1em', marginLeft:'0.3em' }} /></a> <a className="button is-info" href="tel:4156219055">(415) 621-9055 <FontAwesomeIcon icon={faPhone} style={{ marginLeft: "0.3em", width: '1em' }} /></a>
+                  }}>Hours <FontAwesomeIcon icon={faClock} style={{ width: '1em', marginLeft:'0.3em' }} /></a> 
+                  {/* Book Us button with calendar icon */}
+                <a className="button is-primary" onClick={() => {
+                  setBurger(false);
+                  router.push('/#repair')
+                }}>
+                  <FontAwesomeIcon icon={faCalendar} style={{ marginRight: "0.3em", width: '1em' }} /> Book Us
+                </a>
+                  <a className="button is-info" href="tel:4156219055">(415) 621-9055 <FontAwesomeIcon icon={faPhone} style={{ marginLeft: "0.3em", width: '1em' }} /></a>
             </div>
           </div>
         </nav>
