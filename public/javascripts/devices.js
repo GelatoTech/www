@@ -2160,7 +2160,7 @@ const devices = {
     },
     "googlePixelXL": {
         screen: {
-            price: "$123",
+            price: "$125",
             warranty: "90 day",
             duration: "1 hour",
         },
@@ -2177,7 +2177,7 @@ const devices = {
     },
     "googlePixel2": {
         screen: {
-            price: "$134",
+            price: "$135",
             warranty: "90 day",
             duration: "1 hour",
         },
