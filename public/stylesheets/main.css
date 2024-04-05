@@ -200,3 +200,10 @@ header{
 .copyright {
   /* font-family:'Courier New', Courier, monospace */
 }
+
+.navbar-brand {
+  display: flex;
+  justify-content: space-between; 
+  /* width: 100%; */
+  /* padding-right: 0;  */
+}
