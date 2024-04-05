@@ -29,21 +29,20 @@ export function Nav() {
     <div>
       <header className="is-fixed-top">
         <nav aria-label="main navigation" className="navbar" id='nav' role="navigation">
-          <div className="navbar-brand" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div className="navbar-brand" style={{ display: 'flex', justifyContent: 'start', alignItems: 'center' }}>
           <a href="/">
             <a className="navbar-item">
-            <img alt="Emblem" style={{ position: 'fixed' }} width={50} src='/images/logo-square.svg' className={`logo-emblem ${isScrolled ? 'animate-bounce' : ''}`} />
-
+              <img alt="Emblem" style={{ position: 'fixed' }} width={50} src='/images/logo-square.svg' className={`logo-emblem ${isScrolled ? 'animate-bounce' : ''}`} />
               <img alt="Gelatotech Full Logo" style={{ position: 'fixed' }} width={150} src='/images/logo.svg' className={`logo-full ${isScrolled ? 'animate-wipe' : ''}`} />
             </a>
           </a>
-            <a aria-expanded="false" aria-label="menu" className={`navbar-burger burger ${burgerOpen ? 'is-active' : ''}`} data-target="navbarBasicExample" role="button"
-              onClick={() => { setBurger(!burgerOpen) }}
-            >
-              <span aria-hidden="true"></span> 
-              <span aria-hidden="true"></span> 
-              <span aria-hidden="true"></span>
-            </a>
+          <a aria-expanded="false" aria-label="menu" className={`navbar-burger burger ${burgerOpen ? 'is-active' : ''}`} data-target="navbarBasicExample" role="button"
+            onClick={() => { setBurger(!burgerOpen) }}
+          >
+            <span aria-hidden="true"></span> 
+            <span aria-hidden="true"></span> 
+            <span aria-hidden="true"></span>
+          </a>
           </div>
           <div className={`navbar-menu has-dropdown ${burgerOpen ? 'is-active' : ''}`} id="navbarBasicExample">
             <div className="navbar-end" id="nav-items">
