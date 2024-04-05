@@ -3,6 +3,14 @@
 @import 'social.css';
 @import 'booking.css';
 
+@font-face {
+  font-family: 'SiscoMedium-Medium';
+  font-style: normal;
+  src: url('/fonts/SiscoMedium-Medium.otf');
+  
+}
+
+
 :root {
   --action-color: #21bd21;
 }
@@ -198,12 +206,7 @@ header{
 }
 
 .copyright {
-  /* font-family:'Courier New', Courier, monospace */
-}
-
-.navbar-brand {
-  display: flex;
-  justify-content: space-between; 
-  /* width: 100%; */
-  /* padding-right: 0;  */
+  font-family: 'SiscoMedium-Medium';
+  font-size: 0.8em;
+  text-transform: uppercase;
 }

@@ -173,7 +173,7 @@ export function Nav() {
                 }}>
                   <FontAwesomeIcon icon={faCalendar} style={{ marginRight: "0.3em", width: '1em' }} /> Book Us
                 </a>
-                  <a className="button is-info" href="tel:4156219055">(415) 621-9055 <FontAwesomeIcon icon={faPhone} style={{ marginLeft: "0.3em", width: '1em' }} /></a>
+                  <a className="button is-info" href="tel:4156219055"><FontAwesomeIcon icon={faPhone} style={{ marginRight: "0.3em", width: '1em' }} /> (415) 621-9055</a>
             </div>
           </div>
         </nav>
