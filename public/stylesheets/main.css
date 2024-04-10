@@ -7,9 +7,11 @@
   font-family: 'SiscoMedium-Medium';
   font-style: normal;
   src: url('/fonts/SiscoMedium-Medium.otf');
-  
 }
 
+body {
+  font-family: 'SiscoMedium-Medium';
+}
 
 :root {
   --action-color: #21bd21;
