@@ -107,7 +107,12 @@ export function Footer() {
             </div>
           </div>
           <p className="has-text-centered copyright has-text-grey">Copyright © {new Date().getFullYear()} GELATOTECH.com. All rights reserved</p>
-        </div></footer>
+        </div>
+        <center>
+        <a href="/sitemap" style={{ fontSize: '0.8em' }}>sitemap</a>
+        </center>
+
+        </footer>
     </div>
   )
 }
