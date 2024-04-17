@@ -67,7 +67,7 @@ export default function App({ Component, pageProps }) {
       // onClick={()=> setOpen(false)} // this is for the closed message
     >
       <Head>
-        <link href="/images/logo-square.png" rel="shortcut icon" type="image/png" />
+        {/* <link href="/images/logo-square.png" rel="shortcut icon" type="image/png" /> */}
         <script 
           type="application/ld+json" 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(googleSchemaData) }}
