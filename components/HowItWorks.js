@@ -5,7 +5,7 @@ export function HowItWorks({ deviceName }) {
     <>
       <section className="section" id="works">
         <div className="container">
-          <h1 className="title is-3">How we operate</h1>
+          <h3 className="title is-3">How we operate</h3>
           <div className="columns">
             <div className="column">
               <figure className="image">
