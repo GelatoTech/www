@@ -43,7 +43,7 @@ export default function MicroSoldering() {
       </Head>
       <section className="hero" id="hero">
         <div className="hero-body container">
-          <h1 
+          <h1
             className="header-title is-hidden-mobile" 
             style={{ 
               fontWeight: 'bold', 
@@ -103,7 +103,7 @@ export default function MicroSoldering() {
       <TrustedBy />
       <WhyUs />
       <div id="serviceSelector" style={{ backgroundColor: 'gainsboro', display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '2.7em', flexDirection: 'column' }}>
-        <h1 className="heading" style={{ fontSize: '1em', marginBottom: '1em' }}>Select service</h1>
+        <h3 className="heading" style={{ fontSize: '1em', marginBottom: '1em' }}>Select service</h3>
         <div className="is-hidden-mobile">
           <div className="tabs is-toggle" style={{ marginBottom: '4em',  backgroundColor: 'white', borderRadius: '6px' }}>
             <ul>
