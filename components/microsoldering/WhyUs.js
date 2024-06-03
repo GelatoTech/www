@@ -5,7 +5,7 @@ export function WhyUs() {
   return (
     <section className="section" id="why-us">
       <div className="container">
-        <h1 className="title is-size-2">Why us?</h1>
+        <h3 className="title is-size-2">Why us?</h3>
         <div className="columns">
           <div className="column is-two-thirds">
             <div className="why-container" style={{ textAlign: 'left' }}>
