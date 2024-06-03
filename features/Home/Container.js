@@ -44,6 +44,7 @@ export default function Home() {
         <meta name="twitter:image" content="images/iphone-repair.png" />
         <meta name="keywords" content="iPhone Repair, Samsung Repair, iPad Repair, Mobile Device Repair, On-Demand Repair, San Francisco, Screen Replacement, Battery Replacement, Charging Port Repair, Camera Repair, Water Damage Repair, Back Glass Repair, Apple Watch Repair, Google Pixel Repair" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
+        <link rel="canonical" href="https://gelatotech.com/" />
     </Head>
 
       <section className="hero" id="hero" style={{
