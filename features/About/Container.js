@@ -81,7 +81,7 @@ export default function About() {
           <div className="column">
             <figure className="image">
               <div style={{width: '40%', marginLeft: 'auto', marginRight: 'auto', borderRadius: '5px'}}>
-                <Image src="/images/elbert.png" alt="" width="100%" height="100%" layout="responsive" objectFit="contain" />
+                <Image src="/images/elbert.png" alt="Elbert O." width="100%" height="100%" layout="responsive" objectFit="contain" />
               </div>
             </figure>
             <h2 className="subtitle is-3">Elbert O.</h2>
@@ -117,7 +117,7 @@ export default function About() {
     </section>
     {/* get started banner */}
     <div className="section container" id="get-started" style={{ borderRadius: "8px", overflow: 'hidden', marginBottom: '5em' }}>
-      <Image src="/images/iphones-bg.jpeg" layout="fill" objectFit='cover' />
+      <Image src="/images/iphones-bg.jpeg" layout="fill" objectFit='cover' alt="iPhone Repair near Me"/>
       <div style={{ position: 'relative', marginBottom: '29px' }}>
         <h2 className="title is-1">Ready to get started?</h2>
         <h2 className="subtitle is-4">iPhone Screen Repair only takes 15 minutes!</h2>
