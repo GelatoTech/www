@@ -58,7 +58,7 @@ export default function About() {
     {/* our technicians */}
     <section id="technician">
       <div className="container has-text-centered">
-        <h1 className="title is-1">Our Technicians</h1>
+        <h3 className="title is-1">Our Technicians</h3>
         <div className="columns">
           <div className="column">
             <figure className="image">
