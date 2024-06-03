@@ -101,7 +101,7 @@ export default function About() {
     </section>
     <section id="about" style={{ marginBottom: '3em' }}>
       <div className="container about-container">
-        <h1 className="title is-1 has-text-centered" style={{color: 'white'}}>Our Philosophy</h1>
+        <h3 className="title is-1 has-text-centered" style={{color: 'white'}}>Our Philosophy</h3>
         <div className="columns is-vcentered is-center">
           <div className="column">
             <figure className="card-image is-large">
