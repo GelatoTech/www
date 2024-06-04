@@ -7,8 +7,8 @@ export default function FAQ() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title>Legal & Warranty Policy | Gelatotech - Comprehensive Mobile Repair Service in SF</title>
-        <meta name="description" content="Understand your rights and our commitment. Gelatotech's legal and warranty policy page outlines our 90-day warranty for all mobile device repairs, including iPhone, iPad, MacBook, and more." />
+        <title>Terms and Conditions-  Support, and Repair Services</title>
+        <meta name="description" content="Explore our legal policies page to familiarize yourself with our terms of service, privacy policy, and disclaimer and understand the governing conditions." />
         <meta itemProp="name" content="Legal & 90-Day Warranty Policy | Gelatotech - San Francisco's Mobile Repair" />
         <meta itemProp="description" content="Gelatotech offers a 90-day warranty, ensuring quality and satisfaction for all your mobile repair needs. Learn more about our commitment to excellence on our legal page." />
         <meta itemProp="image" content="/images/legal-warranty.jpeg" />
