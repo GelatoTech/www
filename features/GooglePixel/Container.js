@@ -18,9 +18,9 @@ export default function GooglePixel() {
   return(
   <div>
     <Head>
-      <title>On-Site Google Pixel Repair in San Francisco | Screen, Battery, Charging Port | Gelatotech</title>
-      <meta name="description" content="Expert Google Pixel repair at your doorstep in San Francisco. Screen, battery, and charging port replacements in 45-60 mins. Book your same-day repair service today!" />
-      <meta name="keywords" content="Google Pixel Repair, Screen Replacement, Battery Replacement, Charging Port Repair, Mobile Repair Service, San Francisco, Same-Day Repair, On-Demand Repair, Google Pixel, Pixel 3A, Pixel 4XL, Pixel 3XL" />
+      <title>Expert Google Pixel Screen Repair - Trust Us With Your Phone's Screen</title>
+      <meta name="description" content="We offer top-notch services for Google Pixel screen phone repair. Our expert team will come to your location and handle the repair inside our service vehicle. Get in touch with us now!" />
+      <meta name="keywords" content=" Google Pixel Screen Repair, Google Pixel Phone Repair" />
       <meta itemProp="name" content="On-Site Google Pixel Repair | Gelatotech" />
       <meta itemProp="description" content="Need a Google Pixel repair in San Francisco? Our mobile technicians come to you for screen, battery, and charging port replacements. Fast, convenient service guaranteed." />
       <meta itemProp="image" content="/images/google-pixel-repair.jpg" />
