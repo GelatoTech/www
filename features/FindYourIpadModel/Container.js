@@ -14,11 +14,10 @@ export default function FindYourIpadModel() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title>Identify Your iPad Model | Step-by-Step Guide | Gelatotech</title>
+        <title>Discover Your iPad Model Name or Number: The Ultimate Expert Guide</title>
         <meta
           name="description"
-          content="Not sure which iPad model you have? Our easy guide helps you identify your iPad model with simple instructions. Perfect for when you need repairs or just want to know your device better."
-        />
+          content="Learn how to easily identify your iPad model with our complete guide. Find your model number and get expert tips for iPad repairs, maintenance, and upgrades. Read it now and become an iPad model identification pro!"/>
         <meta
           itemProp="name"
           content="Identify Your iPad Model | Gelatotech"
