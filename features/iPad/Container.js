@@ -20,7 +20,7 @@ export default function iPad() {
     <Head>
       <title>On-Site iPad Screen & Charging Port Replacement</title>
       <meta name="description" content="Experience issues with your iPad or iPhone charging port & screen? Our expert technicians will confidently repair the problem at your preferred location." />
-      <meta name="keywords" content=" iPad Charging Port Repair, iPhone Screen Repair" />
+      <meta name="keywords" content="iPad Charging Port Repair, iPhone Screen Repair" />
       <meta itemProp="name" content="Mobile iPad Repair in San Francisco | Quick, Reliable Service" />
       <meta itemProp="description" content="Need your iPad fixed fast? Our mobile technicians offer screen, battery, and charging port replacements directly to your location. Book your same-day iPad repair in San Francisco today!" />
       <meta itemProp="image" content="/images/ipad-repair-service.png" />
