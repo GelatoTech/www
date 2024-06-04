@@ -51,7 +51,7 @@ export default function MicroSoldering() {
           }}>
             iPhone/MacBook Micro Soldering
           </h1>
-          <h1 
+          <h3 
             className="header-title is-hidden-tablet is-hidden-desktop"
             style={{ 
               fontWeight: 'bold', 
@@ -61,8 +61,8 @@ export default function MicroSoldering() {
              }}
           >
             Micro Soldering
-          </h1>
-          <h1 
+          </h3>
+          <h3 
             className="header-title is-hidden-desktop is-hidden-tablet"
             style={{
               marginBottom: '-1em',
@@ -77,7 +77,7 @@ export default function MicroSoldering() {
                 'Data Recovery',
               ]} 
             />
-           </h1>
+           </h3>
           <h2 className="subtitle is-hidden-mobile" style={{ textAlign: 'center' }}>
             Motherboard • Water Damage • Data Recovery
           </h2>
