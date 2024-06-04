@@ -18,9 +18,9 @@ export default function iPad() {
   return(
   <div>
     <Head>
-      <title>On-Demand iPad Repair in San Francisco | Screen, Battery, Charging Port | Gelatotech</title>
-      <meta name="description" content="Expert iPad repair service at your doorstep. We specialize in screen, battery, and charging port replacements for all iPad models. Fast, convenient, and reliable - book your same-day service in San Francisco now!" />
-      <meta name="keywords" content="iPad Repair, iPad Pro, iPad Mini, Screen Replacement, Battery Replacement, Charging Port Repair, On-Demand, Mobile Repair, Fast Service, San Francisco, Bay Area" />
+      <title>On-Site iPad Screen & Charging Port Replacement</title>
+      <meta name="description" content="Experience issues with your iPad or iPhone charging port & screen? Our expert technicians will confidently repair the problem at your preferred location." />
+      <meta name="keywords" content=" iPad Charging Port Repair, iPhone Screen Repair" />
       <meta itemProp="name" content="Mobile iPad Repair in San Francisco | Quick, Reliable Service" />
       <meta itemProp="description" content="Need your iPad fixed fast? Our mobile technicians offer screen, battery, and charging port replacements directly to your location. Book your same-day iPad repair in San Francisco today!" />
       <meta itemProp="image" content="/images/ipad-repair-service.png" />
