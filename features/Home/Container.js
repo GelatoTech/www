@@ -244,7 +244,7 @@ export default function Home() {
       {/* service includes */}
       <section className="section" id="services">
         <div className="container">
-          <h1 className="subtitle is-2">Service Includes</h1>
+          <h3 className="subtitle is-2">Service Includes</h3>
           <p style={{ marginBottom: '2em' }}>
             <small>We specialize in providing top-notch repair services for your cell phone, which is probably your most essential device. Our free diagnostic test can help identify common cell phone problems, and we back up all our repairs with a 90-day warranty. Moreover, we assure you that our prices are unbeatable in the market. You can count on us to deliver dependable repairs for your cell phone.</small>
           </p>
