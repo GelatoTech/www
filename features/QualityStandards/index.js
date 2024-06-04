@@ -13,9 +13,9 @@ export default function QualityStandards() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title>Our Quality Standards for Device Repair | Gelatotech - San Francisco</title>
-        <meta name="description" content="Discover Gelatotech's commitment to quality with our range of parts for iPhone, iPad, MacBook, and more. Learn about our standards for aftermarket and genuine OEM parts." />
-        <meta name="keywords" content="Quality Device Repair, Genuine Parts, Aftermarket Parts, iPhone Repair, MacBook Repair, iPad Repair, Apple Watch Repair, San Francisco Repair Service" />
+        <title>How Much Is an iPad Screen Repair- Quality Standards</title>
+        <meta name="description" content="Wondering how much an iPad screen repair costs? Explore our comprehensive guide on quality standards to gain insights into costs and discover the four distinctive types of screens we offer." />
+        <meta name="keywords" content="Quality Device Repair, Genuine Parts, Aftermarket Parts, iPhone Repair, MacBook Repair, How Much Is an iPad Screen Repair" />
         <meta itemProp="name" content="Gelatotech Quality Standards | Mobile Device Repair in SF" />
         <meta itemProp="description" content="At Gelatotech, we prioritize quality. Explore our selection of genuine OEM and high-quality aftermarket parts for your mobile device repair needs in San Francisco." />
         <meta itemProp="image" content='/images/quality-standards.jpeg' />
