@@ -18,11 +18,11 @@ export default function AppleWatch() {
   return(
   <div>
     <Head>
-      <title>Apple Watch Repair in San Francisco | On-Demand Service | Gelatotech</title>
+      <title>On-Demand Repair for Apple Watch Screens in San Francisco, CA</title>
 
       {/* HTML Meta Tags */}
-      <meta name="description" content="Fast, reliable Apple Watch repair in San Francisco. From cracked screens to battery replacements, our on-demand service brings the fix to you, same day. Book now for expert Apple Watch glass and OLED screen repairs." />
-      <meta name="keywords" content="Apple Watch Repair, Screen Repair, Battery Replacement, On-Demand Repair, San Francisco, Gelatotech, Quick, Professional, Apple Watch Series, OLED Replacement, Glass Repair, Technician, Mobile Service, SF Bay Area" />
+      <meta name="description" content="Our skilled team provides comprehensive Apple Watch screen repair services right at your doorstep in San Francisco, guaranteeing top-notch care for your device. Don't hesitate to give us a call!" />
+      <meta name="keywords" content="Apple Watch Repair, Apple Watch Screen Repair" />
 
       {/* Google / Search Engine Tags */}
       <meta itemProp="name" content="On-Demand Apple Watch Repair in San Francisco | Gelatotech" />
