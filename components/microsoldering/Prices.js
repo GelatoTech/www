@@ -216,9 +216,9 @@ export function Prices() {
                     justifyContent: 'center'
                   }}
                 >
-                  <h1 className="heading">
+                  <h3 className="heading">
                     All other motherboard repairs not listed here please contact me only during business hours for price quote *Fastest response through text or email.
-                  </h1>
+                  </h3>
                 </div>
                 <Accordion>
                   <AccordionSummary
