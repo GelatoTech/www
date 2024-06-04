@@ -72,7 +72,7 @@ export default function MailIn() {
               </h1>
             </div>
             <div className="is-hidden-desktop is-hidden-tablet has-text-centered">
-              <h1 
+              <h3 
                 className="header-title has-text-centered" 
                 style={{ 
                   fontWeight: 'bold', 
@@ -81,7 +81,7 @@ export default function MailIn() {
                   color: 'white',
                 }}>
                   Mail-In Repair
-                </h1>
+                </h3>
                 <h2
                 style={{
                   fontSize: '1.5em',
