@@ -33,8 +33,8 @@ export default function MailIn() {
   return(
     <div>
       <Head>
-        <title>Mail-In Device Repair Service Nationwide | Gelatotech</title>
-        <meta name="description" content="Convenient mail-in repair service for iPhones, iPads, MacBooks, Apple Watches, Samsung, and Google Pixels by Gelatotech. Expert repairs with fast turnaround, no matter where you are in the U.S." />
+        <title>Mail-In Repair for Your Phones, MacBooks and Apple Watch</title>
+        <meta name="description" content="You can conveniently browse and complete the mail-in form to send in your device for repair. Just submit your information and device details. Feel free to fill it out now!" />
         <meta name="keywords" content="Mail-In Repair, iPhone Repair, iPad Repair, MacBook Repair, Apple Watch Repair, Samsung Galaxy Repair, Google Pixel Repair, Nationwide Repair Service, Device Repair, Fast Turnaround" />
         <meta itemProp="name" content="Nationwide Mail-In Repair Service | iPhones, MacBooks & More" />
         <meta itemProp="description" content="Trust Gelatotech for all your device repair needs. Mail-in your iPhone, iPad, MacBook, or other devices from anywhere in the U.S. for quick, expert repairs." />
