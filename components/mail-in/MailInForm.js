@@ -53,7 +53,7 @@ export function MailInForm({ serviceType, repairType }) {
   return(
     <section className="section" id="repair">
       <div className=" form-container container has-text-centered">
-        <i><h1 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">{serviceType === 'onDemand' ? 'Pickup' : 'Mail-In'} Form</h1></i>
+        <i><h3 className="title" style={{ fontSize: '3em' }} data-aos="fade-up">{serviceType === 'onDemand' ? 'Pickup' : 'Mail-In'} Form</h3></i>
         {/* <h2 className="subtitle" data-aos="fade-up">Pick your device model and problem.</h2> */}
         <NetlifyForm formName="mail-in-form" formValues={repairFormValues} postSubmit={postSubmit} id="mail-in-form" name="mail-in-form">
           {/* <input name="form-name" type="hidden" defaultValue="repair-form" /> */}
