@@ -158,7 +158,7 @@ export default function Home() {
       <HowItWorks deviceName="iPhone" />
       <WhyUs />
       <div className="container has-text-centered" id="reviews">
-       <h1 className="subtitle is-4">We value our customers' feedback on the cell phone repair services we provide</h1>
+       <h3 className="subtitle is-4">We value our customers' feedback on the cell phone repair services we provide</h3>
        <p style={{ marginBottom: '1em' }}>
         <small>Whether your experience was great or you believe there's room for improvement, we encourage you to share your thoughts. Your experience matters the most to us at Gelatotech, and we are eager to hear from you!</small></p>
         <a className="button is-dangers is-rounded" style={{ marginBottom: '1em' }} href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?uid=LGLdTFOmQQoTMF7LOnMKmg&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Add a Review</a>
