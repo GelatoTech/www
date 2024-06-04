@@ -53,7 +53,7 @@ export default function BatteryTips() {
           <br />
           <p>Settings&gt;Battery&gt;Battery Health</p>
           <br />
-          <h1 className="title is-3"> 1. Turn off background app refresh </h1>
+          <h3 className="title is-3"> 1. Turn off background app refresh </h3>
           <p>
             Reason background app refresh is on by default is because the iPhone is constantly fetching data from
             all of
@@ -64,7 +64,7 @@ export default function BatteryTips() {
           <br />
           <p> Settings&gt;General&gt;Background app Refresh&gt; Disable Off or select app(s)</p>
           <br />
-          <h1 className="title is-3"> 2. Purchase a battery case instead of portable charger </h1>
+          <h3 className="title is-3"> 2. Purchase a battery case instead of portable charger </h3>
           <p>
             If you find yourself always being at 1% during the middle of the day. Then our portable charger is the
             best
@@ -77,7 +77,7 @@ export default function BatteryTips() {
           <p> Note: If battery health result is 70% or lower, you should consider replacement.</p>
           <p />
           <br />
-          <h1 className="title is-3">3. Stop Motion &amp; Animation</h1>
+          <h3 className="title is-3">3. Stop Motion &amp; Animation</h3>
           <p>
             Using animations when you open apps, unlock phone, and moving icons (parallax effect) are battery
             draining.
