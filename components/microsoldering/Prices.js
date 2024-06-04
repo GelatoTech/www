@@ -180,7 +180,7 @@ export function Prices() {
               {Object.keys(services).map((service, i) => {
                 return (
                   <div style={{ marginBottom: '2em' }} key={i}>
-                    <h1 className="subtitle">{services[service].name}</h1>
+                    <h3 className="subtitle">{services[service].name}</h3>
                     <div className={classes.root}>
                       {services[service].repairTypes.map(({ name, description, price }) => {
                         return (
