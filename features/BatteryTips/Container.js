@@ -34,7 +34,7 @@ export default function BatteryTips() {
       <section id="blog">
         <div className="container blog-container">
           <h1 className="title is-1">Top 3 iPhone Battery Saving Tips 🔋</h1>
-          <Image src='/images/pexels-photo-607812.jpeg' width={1000} height={600} className="blog-img" />
+          <Image src='/images/pexels-photo-607812.jpeg'  width={1000} height={600} className="blog-img" alt="iPhone Repair San Francisco" />
           <style jsx global>{`
             .blog-img {
               border-radius: 10px;
