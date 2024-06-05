@@ -24,9 +24,10 @@ export default function FAQ() {
         <meta name="keywords" content="Legal, Warranty Policy, Mobile Repair Service, iPhone Repair, iPad Repair, MacBook Repair, San Francisco, Customer Satisfaction, Quality Guarantee" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/legal.css" />
+        <link rel="alternate" href="https://gelatotech.com/legal" hreflang="en" />
       </Head>
       <div className="content terms">
-        <h1 className="title is-2" style={{textAlign: 'center'}}>Terms and Conditions</h1>
+        <h1 className="title is-2" style={{ textAlign: 'center' }}>Terms and Conditions</h1>
         <div className="first">
           <p>
             Gelatotech is on a mission to connect consumers with the best possible digital device install, support, and repair
@@ -34,7 +35,7 @@ export default function FAQ() {
             90 day warranty on all parts and labor used for services booked through gelatotech, unless it conflicts with
             the below items.
             Please email us at <a href="mailto:support@gelatotech.com">support@gelatotech.com</a> with any questions.</p>
-            
+
           <p>
             We at Gelatotech appreciate your business and value your trust in us. However, we want to make it clear that we cannot be held responsible for any loss or damage to your device if you leave it with us for more than 30 days.
             As a customer, it is your responsibility to retrieve your device within 30 days of leaving it with us. If you fail to do so, we will not be held responsible for any loss or damage that may occur to your device after that time.
