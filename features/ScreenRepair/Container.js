@@ -27,7 +27,7 @@ export default function ScreenRepair() {
 
       <section id="blog2" className="content">
         <div className="container blog-container pt-4">
-          <Image src='/images/screen-repair-blog.jpg' width={1000} height={600} className="blog-img" />
+          <Image src='/images/screen-repair-blog.jpg' width={1000} height={600} className="blog-img" alt="Water Damaged Phone Repair"/>
           <style jsx global>{`
             .blog-img {
               border-radius: 10px;
