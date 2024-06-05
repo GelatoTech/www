@@ -17,7 +17,7 @@ export default function FindYourIpadModel() {
         <title>Discover Your iPad Model Name or Number: The Ultimate Expert Guide</title>
         <meta
           name="description"
-          content="Learn how to easily identify your iPad model with our complete guide. Find your model number and get expert tips for iPad repairs, maintenance, and upgrades. Read it now and become an iPad model identification pro!"/>
+          content="Learn how to easily identify your iPad model with our complete guide. Find your model number and get expert tips for iPad repairs, maintenance, and upgrades. Read it now and become an iPad model identification pro!" />
         <meta
           itemProp="name"
           content="Identify Your iPad Model | Gelatotech"
@@ -57,6 +57,8 @@ export default function FindYourIpadModel() {
           content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g"
         />
         <link rel="stylesheet" href="/stylesheets/battery.css" />
+        <link rel="alternate" href="https://gelatotech.com/blog/find-your-ipad-model" hreflang="en" />
+
       </Head>
       <section id="blog">
         <div className="container blog-container">
