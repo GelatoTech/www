@@ -14,8 +14,8 @@ export default function FAQ() {
   return (
     <div>
       <Head>
-        <title>Discover the Most Common Questions About Repair Costs and Service Reservations</title>
-        <meta name="description" content="Check out our FAQs page for quick answers to all your questions about repairing and booking services for iPhones, MacBooks, Google Pixels, and Samsung phones!" />
+        <title>Gelatotech FAQ - Answers to Your Questions</title>
+        <meta name="description" content="Discover comprehensive answers to your queries about Gelatotech's services, products, and more in our FAQ section. Get the insights & solutions you need today!" />
         <meta name="keywords" content="FAQ, Mobile Repair, iPhone Screen Repair, Booking Repair, Device Repair Questions, Gelatotech, San Francisco" />
         <meta itemProp="name" content="Gelatotech FAQs: Your Mobile Repair Questions Answered" />
         <meta itemProp="description" content="Looking for quick answers to your mobile repair queries? Check out Gelatotech's FAQ page for all your questions about iPhone and other device repairs." />
