@@ -88,7 +88,7 @@ export default function About() {
               <div className="notification">
                 <center>
                   <div style={{ maxWidth: '200px' }}>
-                    <Image src="/images/Rishabh-P.png" width="100%" height="50%" layout="responsive" objectFit="contain" />
+                    <Image src="/images/Rishabh-P.png" alt="Customer Rishabh P" width="100%" height="50%" layout="responsive" objectFit="contain" />
                   </div>
                 </center>
                 <p>"Very quick and convenient. They came to me Same-Day, they fixed my iPhone in 15 minutes. Thanks to Elbert! ” </p>
