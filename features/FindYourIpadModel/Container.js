@@ -80,6 +80,7 @@ export default function FindYourIpadModel() {
           </p>
           <img
             src="/images/ipad-model-1.jpeg"
+            
             width={800}
             className="blog-img"
           />
