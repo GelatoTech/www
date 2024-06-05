@@ -11,7 +11,7 @@ const ReactRotatingText = require('react-rotating-text');
 // import step3Img from '../../public/images/mail-3.png';
 // import step4Img from '../../public/images/mail-4.png';
 import { TrustedBy } from '../../components';
-import { MailInForm, MailInSteps} from '../../components/mail-in';
+import { MailInForm, MailInSteps } from '../../components/mail-in';
 
 const itemsWeService = [
   "iPhone",
@@ -26,11 +26,11 @@ export default function MailIn() {
 
   const router = useRouter();
 
- useEffect(() => {
+  useEffect(() => {
     AOS.init();
   })
 
-  return(
+  return (
     <div>
       <Head>
         <title>Mail-In Repair for Your Phones, MacBooks and Apple Watch</title>
@@ -50,70 +50,71 @@ export default function MailIn() {
         <meta name="twitter:image" content="/images/mail-in-twitter.jpeg" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/mail-in.css" />
+        <link rel="alternate" href="https://gelatotech.com/mail-in" hreflang="en" />
       </Head>
       <section className="hero" id="hero">
         <div className="hero-body container" style={{ display: 'flex' }}>
           {/* <div className="container"> */}
-            <div className="is-hidden-mobile">
-              <h1 
-              className="header-title" 
-              style={{ 
-                fontWeight: 'bold', 
+          <div className="is-hidden-mobile">
+            <h1
+              className="header-title"
+              style={{
+                fontWeight: 'bold',
                 fontSize: '3em',
-                marginLeft: 0, 
-                paddingLeft: 0 
+                marginLeft: 0,
+                paddingLeft: 0
               }}>
-                Mail-In Repair for  
-                <ReactRotatingText
-                  style={{ marginLeft: '0.2em' }}
-                  items={itemsWeService}
-                  color="#FA2A51"
-                />
-              </h1>
-            </div>
-            <div className="is-hidden-desktop is-hidden-tablet has-text-centered">
-              <h3 
-                className="header-title has-text-centered" 
-                style={{ 
-                  fontWeight: 'bold', 
-                  fontSize: '2em',
-                  marginTop: '-2.5em', 
-                  color: 'white',
-                }}>
-                  Mail-In Repair
-                </h3>
-                <h2
-                style={{
-                  fontSize: '1.5em',
-                  marginTop: '-1.5em',
-                  fontWeight: 'bold',
-                }}
-                >
-                <ReactRotatingText
-                  items={itemsWeService}
-                  color="#FA2A51"
-                />
-              </h2>
-            </div>
+              Mail-In Repair for
+              <ReactRotatingText
+                style={{ marginLeft: '0.2em' }}
+                items={itemsWeService}
+                color="#FA2A51"
+              />
+            </h1>
+          </div>
+          <div className="is-hidden-desktop is-hidden-tablet has-text-centered">
+            <h3
+              className="header-title has-text-centered"
+              style={{
+                fontWeight: 'bold',
+                fontSize: '2em',
+                marginTop: '-2.5em',
+                color: 'white',
+              }}>
+              Mail-In Repair
+            </h3>
+            <h2
+              style={{
+                fontSize: '1.5em',
+                marginTop: '-1.5em',
+                fontWeight: 'bold',
+              }}
+            >
+              <ReactRotatingText
+                items={itemsWeService}
+                color="#FA2A51"
+              />
+            </h2>
+          </div>
           {/* </div> */}
         </div>
         <div className="is-3 has-text-centered" style={{ marginBottom: '1em' }}>
-          <a 
-              className="button is-info is-large" 
-              onClick={()=>{
-                scrollToSection("repair");
-              }}
-            >
-              Get Started
-              <FontAwesomeIcon 
-                icon={faEnvelope} 
-                style={{ height: '60%', marginLeft: '0.3em' }} 
-              />
-            </a>
+          <a
+            className="button is-info is-large"
+            onClick={() => {
+              scrollToSection("repair");
+            }}
+          >
+            Get Started
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              style={{ height: '60%', marginLeft: '0.3em' }}
+            />
+          </a>
         </div>
       </section>
       <TrustedBy />
-      <div style={{marginTop: '3em', overflow: 'scroll'}}>
+      <div style={{ marginTop: '3em', overflow: 'scroll' }}>
         <MailInSteps step={0} />
       </div>
       {/* <section className="section" id="works">
@@ -158,18 +159,18 @@ export default function MailIn() {
           }}
         >
           <div className="container">
-            <h3 className="title is-1" data-aos="fade-right" style={{color: 'white'}}>Book On-Demand Repair</h3>
-            <h3 className="subtitle is-4" data-aos="fade-right" style={{color: 'white'}}>Our technicians drive to you!</h3><br />
-            <a 
-              className="button is-info is-large" 
-              onClick={()=>{
+            <h3 className="title is-1" data-aos="fade-right" style={{ color: 'white' }}>Book On-Demand Repair</h3>
+            <h3 className="subtitle is-4" data-aos="fade-right" style={{ color: 'white' }}>Our technicians drive to you!</h3><br />
+            <a
+              className="button is-info is-large"
+              onClick={() => {
                 router.push('/#repair');
               }}
             >
               Book On-Demand
-              <FontAwesomeIcon 
-                icon={faCar} 
-                style={{ height: '60%', marginLeft: '0.3em' }} 
+              <FontAwesomeIcon
+                icon={faCar}
+                style={{ height: '60%', marginLeft: '0.3em' }}
               />
             </a>
           </div>
