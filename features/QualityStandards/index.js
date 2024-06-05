@@ -36,7 +36,7 @@ export default function QualityStandards() {
           {/* <Image src='/images/logo-square.png' width={80} height={70} /> */}
             <h1 className="title is-1">Quality standards</h1>
           </div>
-            <Image src='/images/parts.jpeg' width={1000} height={400} className="blog-img" />
+            <Image src='/images/parts.jpeg' width={1000} height={400} className="blog-img" alt="iPhone Repair near Me"/>
           <style jsx global>{`
             .blog-img {
               border-radius: 10px;
@@ -129,7 +129,7 @@ export default function QualityStandards() {
             For more information about the parts we provide, feel free to contact us via <a href="mailto:support@gelatotech.com" target="_blank">email</a> or <a href="tel:4156219055">phone</a>. 
           </p>
           <div className="section container" id="get-started" style={{ borderRadius: "8px", overflow: 'hidden', marginBottom: '5em' }}>
-            <Image src="/images/iphones-bg.jpeg" layout="fill" objectFit='cover' />
+            <Image src="/images/iphones-bg.jpeg" layout="fill" objectFit='cover' alt="iPhone Screen Replacement"/>
             <div style={{ position: 'relative', marginBottom: '29px', padding: '2em' }}>
               <h2 className="title is-1" style={{ color: 'white' }}>Ready to get started?</h2>
               <h2 className="subtitle is-4" style={{ color: 'white' }}>iPhone Screen Repair only takes 15 minutes!</h2>
