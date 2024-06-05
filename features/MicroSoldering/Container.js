@@ -62,7 +62,7 @@ export default function MicroSoldering() {
           >
             Micro Soldering
           </h1>
-          <h1 
+          {/* <h1 
             className="header-title is-hidden-desktop is-hidden-tablet"
             style={{
               marginBottom: '-1em',
@@ -77,7 +77,7 @@ export default function MicroSoldering() {
                 'Data Recovery',
               ]} 
             />
-           </h1>
+           </h1> */}
           <h2 className="subtitle is-hidden-mobile" style={{ textAlign: 'center' }}>
             Motherboard • Water Damage • Data Recovery
           </h2>
