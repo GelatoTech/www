@@ -29,12 +29,15 @@ export default function BatteryTips() {
         <meta name="twitter:image" content='/images/pexels-photo-607812.jpeg' />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/battery.css" />
+        <link rel="alternate" href="https://gelatotech.com/blog/battery-tips" hreflang="en" />
+
+
       </Head>
 
       <section id="blog">
         <div className="container blog-container">
           <h1 className="title is-1">Top 3 iPhone Battery Saving Tips 🔋</h1>
-          <Image src='/images/pexels-photo-607812.jpeg'  width={1000} height={600} className="blog-img" alt="iPhone Repair San Francisco" />
+          <Image src='/images/pexels-photo-607812.jpeg' width={1000} height={600} className="blog-img" alt="iPhone Repair San Francisco" />
           <style jsx global>{`
             .blog-img {
               border-radius: 10px;
@@ -46,7 +49,7 @@ export default function BatteryTips() {
             favorite
             battery saving tips. Regardless, of the iOS version, they all apply.
             If you believe none of these tips helped you. Your battery healthy may be in very poor condition. Our
-            service provides iPhone Repair services at your door including battery replacement <a onClick={()=> router.push('/#repair')} target="_blank">starting
+            service provides iPhone Repair services at your door including battery replacement <a onClick={() => router.push('/#repair')} target="_blank">starting
               at $45</a> . If
             battery is 70% or lower, it's in poor condition. To check your battery health do the following steps
           </p>
