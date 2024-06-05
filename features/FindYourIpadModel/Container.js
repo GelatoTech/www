@@ -80,7 +80,7 @@ export default function FindYourIpadModel() {
           </p>
           <img
             src="/images/ipad-model-1.jpeg"
-            
+            alt="iPad Settings app"
             width={800}
             className="blog-img"
           />
@@ -100,6 +100,7 @@ export default function FindYourIpadModel() {
           </p>
           <img
             src="/images/ipad-model-2.gif"
+            alt="iPad Charging Port Repair"
             width={800}
             className="blog-img"
           />
@@ -123,6 +124,7 @@ export default function FindYourIpadModel() {
           </ol>
           <img
             src="/images/ipad-model-3.webp"
+            alt="Fix iPadScreen San Francisco"
             width={800}
             className="blog-img"
           />
