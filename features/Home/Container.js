@@ -26,6 +26,7 @@ export default function Home() {
     <div>
       <Head>
         <title>On-Demand Phone Repairs, including fixing iPhone Screens in San Francisco.</title>
+        <link rel="alternate" href="https://gelatotech.com/" hreflang="en" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta name="description" content="Save time and money on cell phone repairs with our highly skilled team ready to provide on-site services in San Francisco. Whether it's an iPhone screen, a charging port replacement, or any other problem, we've got you covered." />
