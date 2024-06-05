@@ -643,7 +643,7 @@ export function Form({ make, isCarryIn }) {
                           }
                         </select>
                       </div>
-                      {((repairFormValues.deviceMake === 'ipad') && !repairFormValues.deviceModel) && (<p>Not sure how to find your iPad model? <Link href="/blog/find-your-ipad-model">Click here</Link></p>)}
+                      {((repairFormValues.deviceMake === 'ipad') && !repairFormValues.deviceModel) && (<p>Not sure how to find your iPad model? <Link href="/blog/find-your-ipad-model">Press here</Link></p>)}
                     </div>
                   )
                   : ''
