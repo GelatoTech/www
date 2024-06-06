@@ -97,7 +97,7 @@ export default function MicroSoldering() {
           </a>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', color: 'white', fontSize: '0.7em' }}>
-          <a style={{ color: 'white' }} onClick={()=>router.push('/#repair')}>for screen repair and other services, click here</a>
+          <a style={{ color: 'white' }} onClick={()=>router.push('/#repair')}>On-site <a href="/#repair">iPhone screen repair</a> in San Francisco.</a>
         </div>
       </section>
       <TrustedBy />
