@@ -81,7 +81,7 @@ export default function About() {
           <div className="column">
             <figure className="image">
               <div style={{width: '40%', marginLeft: 'auto', marginRight: 'auto', borderRadius: '5px'}}>
-                <Image src="/images/elbert.png" alt="" width="100%" height="100%" layout="responsive" objectFit="contain" />
+                <Image src="/images/elbert.png" alt="Elbert O." width="100%" height="100%" layout="responsive" objectFit="contain" />
               </div>
             </figure>
             <h2 className="subtitle is-3">Elbert O.</h2>
