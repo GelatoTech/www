@@ -13,9 +13,9 @@ export default function QualityStandards() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title>Our Quality Standards for Device Repair | Gelatotech - San Francisco</title>
-        <meta name="description" content="Discover Gelatotech's commitment to quality with our range of parts for iPhone, iPad, MacBook, and more. Learn about our standards for aftermarket and genuine OEM parts." />
-        <meta name="keywords" content="Quality Device Repair, Genuine Parts, Aftermarket Parts, iPhone Repair, MacBook Repair, iPad Repair, Apple Watch Repair, San Francisco Repair Service" />
+        <title>How Much Is an iPad Screen Repair- Quality Standards</title>
+        <meta name="description" content="Wondering how much an iPad screen repair costs? Explore our comprehensive guide on quality standards to gain insights into costs and discover the four distinctive types of screens we offer." />
+        <meta name="keywords" content="Quality Device Repair, Genuine Parts, Aftermarket Parts, iPhone Repair, MacBook Repair, How Much Is an iPad Screen Repair" />
         <meta itemProp="name" content="Gelatotech Quality Standards | Mobile Device Repair in SF" />
         <meta itemProp="description" content="At Gelatotech, we prioritize quality. Explore our selection of genuine OEM and high-quality aftermarket parts for your mobile device repair needs in San Francisco." />
         <meta itemProp="image" content='/images/quality-standards.jpeg' />
@@ -29,6 +29,8 @@ export default function QualityStandards() {
         <meta name="twitter:description" content="Gelatotech ensures the highest quality in device repairs with a selection of the best parts available. Find out about our quality commitment in San Francisco." />
         <meta name="twitter:image" content='/images/quality-standards-twitter.jpeg' />
         <link rel="stylesheet" href="/stylesheets/quality-standards.css" />
+        <link rel="alternate" href="https://gelatotech.com/blog/quality-standards" hreflang="en"/> 
+
       </Head>
       <section id="blog">
         <div className="container blog-container">
@@ -36,7 +38,7 @@ export default function QualityStandards() {
           {/* <Image src='/images/logo-square.png' width={80} height={70} /> */}
             <h1 className="title is-1">Quality standards</h1>
           </div>
-            <Image src='/images/parts.jpeg' width={1000} height={400} className="blog-img" />
+            <Image src='/images/parts.jpeg' width={1000} height={400} className="blog-img" alt="iPhone Repair near Me"/>
           <style jsx global>{`
             .blog-img {
               border-radius: 10px;
@@ -129,7 +131,7 @@ export default function QualityStandards() {
             For more information about the parts we provide, feel free to contact us via <a href="mailto:support@gelatotech.com" target="_blank">email</a> or <a href="tel:4156219055">phone</a>. 
           </p>
           <div className="section container" id="get-started" style={{ borderRadius: "8px", overflow: 'hidden', marginBottom: '5em' }}>
-            <Image src="/images/iphones-bg.jpeg" layout="fill" objectFit='cover' />
+            <Image src="/images/iphones-bg.jpeg" layout="fill" objectFit='cover' alt="iPhone Screen Replacement"/>
             <div style={{ position: 'relative', marginBottom: '29px', padding: '2em' }}>
               <h2 className="title is-1" style={{ color: 'white' }}>Ready to get started?</h2>
               <h2 className="subtitle is-4" style={{ color: 'white' }}>iPhone Screen Repair only takes 15 minutes!</h2>

@@ -6,7 +6,7 @@ export function WhyUs() {
     <>
       <section className="section" id="why-us">
         <div className="container">
-          <h1 className="title is-1 has-text-centered">Why us?</h1>
+          <h3 className="title is-1 has-text-centered">Why us?</h3>
           <div className="columns">
             <div className="column">
               <div className="why-container" style={{ textAlign: 'left' }}>

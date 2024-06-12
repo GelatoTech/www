@@ -8,10 +8,9 @@ export default function ScreenRepair() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title>Comparing iPhone Screen Repair Costs in San Francisco | Gelatotech</title>
-        <meta name="description" content="Unveiling the real cost of iPhone screen repairs in San Francisco. Get insights on AppleCare+ coverage vs. Gelatotech's affordable, high-quality repair services." />
-        <meta name="keywords" content="iPhone Screen Repair, AppleCare+ Costs, San Francisco Screen Repair, Mobile Repair Service, Fast iPhone Fix, Screen Repair Cost, iPhone Repair Options" />
-        <meta itemProp="name" content="iPhone Screen Repair Costs in San Francisco Explained | Gelatotech" />
+        <title>iPhone Screen Repair & Data Recovery Cost near San Francisco</title>
+        <meta name="description" content=" Are you looking for water-damaged iPhone repair near San Francisco? Visit Gelatotech in our latest blog for detailed information on the cost of repairing a water-damaged iPhone screen. Check us out!" />
+        <meta name="keywords" content="iPhone Screen Repair Cost, Water Damaged iPhone Repair, iPhone Repair near Me, iPhone Data Recovery, Fix Water Damaged iPhone Near Me" />
         <meta itemProp="description" content="Explore the cost differences for iPhone screen repairs with or without AppleCare+ in San Francisco. Learn why Gelatotech offers the best value and convenience." />
         <meta itemProp="image" content='/images/screen-repair-comparison.jpeg' />
         <meta property="og:url" content="https://www.gelatotech.com/blog/screen-repair" />
@@ -24,11 +23,12 @@ export default function ScreenRepair() {
         <meta name="twitter:description" content="Facing an iPhone screen crack? Compare repair costs in San Francisco and see how Gelatotech offers the best service at lower prices." />
         <meta name="twitter:image" content='/images/screen-repair-twitter-guide.jpeg' />
         <link rel="stylesheet" href="/stylesheets/screenrepairblog.css" />
+        <link rel="alternate" href="https://gelatotech.com/blog/screen-repair" hreflang="en"/> 
       </Head>
 
       <section id="blog2" className="content">
         <div className="container blog-container pt-4">
-          <Image src='/images/screen-repair-blog.jpg' width={1000} height={600} className="blog-img" />
+          <Image src='/images/screen-repair-blog.jpg' width={1000} height={600} className="blog-img" alt="Water Damaged Phone Repair"/>
           <style jsx global>{`
             .blog-img {
               border-radius: 10px;

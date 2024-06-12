@@ -110,7 +110,7 @@ export function Form({ make, isCarryIn }) {
   return(
     <section className="section">
       <div className="form-container container has-text-centered">
-        <h1 className="title" style={{ fontSize: '1.5em' }} data-aos="fade-up">{isCarryIn ? 'Carry In Repair' : 'Select Your Device to Get Started'}</h1>
+        <h3 className="title" style={{ fontSize: '1.5em' }} data-aos="fade-up">{isCarryIn ? 'Carry In Repair' : 'Select Your Device to Get Started'}</h3>
         {isCarryIn && (<h2 className="subtitle" style={{ fontSize: '1em', marginTop: '1em' }}><strong><a target="_blank" href="https://www.google.com/maps/@37.7735602,-122.391504,3a,29.8y,289.35h,91.65t/data=!3m6!1e1!3m4!1s5b-8jCZm9i_ADTz_DOg5Uw!2e0!7i16384!8i8192">1180 4th St San Francisco, CA</a></strong></h2>)}
         {!repairFormValues.deviceMake && !isCarryIn &&(
           <>
@@ -643,7 +643,7 @@ export function Form({ make, isCarryIn }) {
                           }
                         </select>
                       </div>
-                      {((repairFormValues.deviceMake === 'ipad') && !repairFormValues.deviceModel) && (<p>Not sure how to find your iPad model? <Link href="/blog/find-your-ipad-model">Click here</Link></p>)}
+                      {((repairFormValues.deviceMake === 'ipad') && !repairFormValues.deviceModel) && (<p>Not sure how to find your iPad model? <Link href="/blog/find-your-ipad-model">Press here</Link></p>)}
                     </div>
                   )
                   : ''

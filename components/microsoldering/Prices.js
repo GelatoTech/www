@@ -172,15 +172,15 @@ export function Prices() {
   return (
     <section className="section" id="why-us">
       <div className="container">
-        <h1 className="title is-size-3">Micro Soldering Services</h1>
-        <h1 className="subtitle has-text-grey" style={{ fontSize: '0.8em' }}>Macbook / iPhone Motherboard (Logic Board) repairs vary in price. Please <a href="mailto:support@gelatotech.com">contact us</a> for quote.</h1>
+        <h3 className="title is-size-3">Micro Soldering Services</h3>
+        <h3 className="subtitle has-text-grey" style={{ fontSize: '0.8em' }}>Macbook / iPhone Motherboard (Logic Board) repairs vary in price. Please <a href="mailto:support@gelatotech.com">contact us</a> for quote.</h3>
         <div className="columns">
           <div className="column">
             <div className="why-container">
               {Object.keys(services).map((service, i) => {
                 return (
                   <div style={{ marginBottom: '2em' }} key={i}>
-                    <h1 className="subtitle">{services[service].name}</h1>
+                    <h3 className="subtitle">{services[service].name}</h3>
                     <div className={classes.root}>
                       {services[service].repairTypes.map(({ name, description, price }) => {
                         return (
@@ -216,9 +216,9 @@ export function Prices() {
                     justifyContent: 'center'
                   }}
                 >
-                  <h1 className="heading">
+                  <h3 className="heading">
                     All other motherboard repairs not listed here please contact me only during business hours for price quote *Fastest response through text or email.
-                  </h1>
+                  </h3>
                 </div>
                 <Accordion>
                   <AccordionSummary

@@ -124,7 +124,7 @@
     color: white;
     font-size: 25px !important;
   }
-  .about-container h1{
+  .about-container h3{
     color: white;
     font-size: 45px !important;
   }
@@ -134,7 +134,7 @@
   #hero h2 {
     font-size: 1.5rem !important;
   }
-  #technician h1 {
+  #technician h3 {
     font-size: 2rem !important;
   }
   #technician p {

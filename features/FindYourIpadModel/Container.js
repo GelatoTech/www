@@ -14,11 +14,10 @@ export default function FindYourIpadModel() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <title>Identify Your iPad Model | Step-by-Step Guide | Gelatotech</title>
+        <title>Discover Your iPad Model Name or Number: The Ultimate Expert Guide</title>
         <meta
           name="description"
-          content="Not sure which iPad model you have? Our easy guide helps you identify your iPad model with simple instructions. Perfect for when you need repairs or just want to know your device better."
-        />
+          content="Learn how to easily identify your iPad model with our complete guide. Find your model number and get expert tips for iPad repairs, maintenance, and upgrades. Read it now and become an iPad model identification pro!" />
         <meta
           itemProp="name"
           content="Identify Your iPad Model | Gelatotech"
@@ -58,6 +57,8 @@ export default function FindYourIpadModel() {
           content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g"
         />
         <link rel="stylesheet" href="/stylesheets/battery.css" />
+        <link rel="alternate" href="https://gelatotech.com/blog/find-your-ipad-model" hreflang="en" />
+
       </Head>
       <section id="blog">
         <div className="container blog-container">
@@ -81,6 +82,7 @@ export default function FindYourIpadModel() {
           </p>
           <img
             src="/images/ipad-model-1.jpeg"
+            alt="iPad Settings app"
             width={800}
             className="blog-img"
           />
@@ -100,6 +102,7 @@ export default function FindYourIpadModel() {
           </p>
           <img
             src="/images/ipad-model-2.gif"
+            alt="iPad Charging Port Repair"
             width={800}
             className="blog-img"
           />
@@ -123,6 +126,7 @@ export default function FindYourIpadModel() {
           </ol>
           <img
             src="/images/ipad-model-3.webp"
+            alt="Fix iPadScreen San Francisco"
             width={800}
             className="blog-img"
           />
