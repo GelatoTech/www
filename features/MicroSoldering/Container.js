@@ -63,22 +63,6 @@ export default function MicroSoldering() {
           >
             Micro Soldering
           </h3>
-          <h3
-            className="header-title is-hidden-desktop is-hidden-tablet"
-            style={{
-              marginBottom: '-1em',
-            }}
-          >
-            <ReactRotatingText style={{ fontSize: '2em' }}
-              items={[
-                'iPhone',
-                'MacBook',
-                'Motherboard',
-                'Water Damage',
-                'Data Recovery',
-              ]}
-            />
-          </h3>
           <h2 className="subtitle is-hidden-mobile" style={{ textAlign: 'center' }}>
             Motherboard • Water Damage • Data Recovery
           </h2>
@@ -97,8 +81,10 @@ export default function MicroSoldering() {
             />
           </a>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'center', color: 'white', fontSize: '0.7em' }}>
-          <a style={{ color: 'white' }} onClick={() => router.push('/#repair')}>for screen repair and other services, click here</a>
+         <div style={{ display: 'flex', justifyContent: 'center', color: 'white', fontSize: '0.7em' }}>
+          <a style={{ color: 'white' }} onClick={() => router.push('/#repair')}>
+            for screen repair and other services, click here - On-site <a href="/#repair">iPhone screen repair</a> in San Francisco.
+          </a>
         </div>
       </section>
       <TrustedBy />

@@ -269,7 +269,7 @@ export default function Home() {
         </div>
       </section>
       <div className="section container" id="get-started" style={{ borderRadius: "8px", overflow: 'hidden', padding: '5em', marginBottom: '5em' }}>
-        <Image src="/images/iphones-bg.jpeg" layout="fill" objectFit='cover' alt="iPhone Screen Replacement" />
+        <Image src="/images/iphones-bg.jpeg" layout="fill" objectFit='cover' alt="iPhone Repair near Me" />
         <div style={{ position: 'relative', marginBottom: '29px' }}>
           <h2 data-aos="fade-right" style={{ color: 'white' }} className="title is-2">iPhone Screen Repair only takes 15 minutes!</h2>
           <h2 data-aos="fade-right" style={{ color: 'white' }} className="subtitle is-5">Would you like to get started? Your iPhone screen can be repaired in just 15 minutes!</h2>

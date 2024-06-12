@@ -30,7 +30,7 @@ export function Nav() {
       <header className="is-fixed-top">
         <nav aria-label="main navigation" className="navbar" id='nav' role="navigation">
           <div className="navbar-brand" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <a className="navbar-item">
+            <a className="navbar-item" href="/">
               <img alt="Emblem" width={50} src='/images/logo-square.svg' className={`logo-emblem ${isScrolled ? 'animate-bounce' : ''}`} />
               <img alt="Gelatotech Full Logo" width={150} src='/images/logo.svg' className={`logo-full ${isScrolled ? 'animate-wipe' : ''}`} />
             </a>

@@ -12,7 +12,7 @@ export function BookRepairButton({ text, make }) {
   return (
     <div>
       <a 
-        className="button is-info is-large is-hidden-tablet" 
+        className="button is-info is-large" 
         onClick={()=>{
           router.pathname == '/' 
           ? scrollToSection("repair")
