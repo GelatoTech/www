@@ -92,7 +92,7 @@ export default function AppleWatch() {
             Book Apple Watch Repair
             <FontAwesomeIcon
               icon={faScrewdriver}
-              style={{ height: '60%', margin Left: '0.3em' }}
+              style={{ height: '60%', marginLeft: '0.3em' }}
             />
           </a>
         </div>
