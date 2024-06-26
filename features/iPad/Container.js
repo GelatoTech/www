@@ -30,7 +30,7 @@ export default function iPad() {
         <meta property="og:description" content="Get your iPad repaired quickly with our mobile service. Offering screen, battery, and charging port replacements for all models. Contact us for same-day repairs in San Francisco." />
         <meta property="og:image" content="/images/ipad-repair-og.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Fast and Reliable iPad Repair in San Francisco | Gelatotech" />
+        <meta name="twitter:title" content="On-Site iPad Screen & Charging Port Replacement" />
         <meta name="twitter:description" content="Your iPad can be repaired today! Our technicians come to you for fast screen, battery, and port replacements. Book your iPad repair with Gelatotech now." />
         <meta name="twitter:image" content="/images/ipad-repair-twitter.png" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
