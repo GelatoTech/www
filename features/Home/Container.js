@@ -36,7 +36,7 @@ export default function Home() {
         <meta itemProp="image" content="images/iphone-repair.png" />
         <meta property="og:url" content="https://www.gelatotech.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Fast, On-Demand Mobile Device Repair in SF | Gelatotech" />
+        <meta property="og:title" content=" On-Demand Phone Repairs, including fixing iPhone Screens in San Francisco." />
         <meta property="og:description" content="Need your device fixed fast? Gelatotech provides on-site repairs for smartphones and tablets across SF. Book today for quick, reliable service at your location." />
         <meta property="og:image" content="images/iphone-repair.png" />
         <meta name="twitter:card" content="summary_large_image" />
