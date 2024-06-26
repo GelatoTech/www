@@ -26,11 +26,11 @@ export default function Samsung() {
         <meta itemProp="image" content="/images/samsung-repair-service.jpeg" />
         <meta property="og:url" content="https://www.gelatotech.com/samsung" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Samsung Repair Services in San Francisco | Gelatotech" />
+        <meta property="og:title" content="Experienced Experts for Samsung Phone Battery Replacement" />
         <meta property="og:description" content="Get your Samsung phone fixed today with our mobile repair service. We handle screen, battery, and charging port issues, ensuring quick and reliable repairs." />
         <meta property="og:image" content="/images/samsung-repair-og.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Mobile Samsung Repair in SF | Quick & Reliable | Gelatotech" />
+        <meta name="twitter:title" content="Experienced Experts for Samsung Phone Battery Replacement" />
         <meta name="twitter:description" content="Your Samsung device deserves the best care. Trust Gelatotech for fast, on-site repairs in San Francisco. Contact us for same-day service." />
         <meta name="twitter:image" content="/images/samsung-repair-twitter.jpeg" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
