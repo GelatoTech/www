@@ -31,11 +31,11 @@ export default function MicroSoldering() {
         <meta itemProp="image" content="/images/micro-soldering-service.jpg" />
         <meta property="og:url" content="https://www.gelatotech.com/microsoldering" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Micro Soldering Service for iPhone & MacBook | Gelatotech" />
+        <meta property="og:title" content="Fast and Reliable Macbook Screen Replacement Services near San Franciscoh" />
         <meta property="og:description" content="Need advanced repair for your iPhone or MacBook? Gelatotech's micro soldering service in San Francisco offers high-precision fixes for logic board issues. Schedule now." />
         <meta property="og:image" content="/images/micro-soldering-og.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Professional Micro Soldering - iPhone & MacBook in SF | Gelatotech" />
+        <meta name="twitter:title" content="Fast and Reliable Macbook Screen Replacement Services near San Francisco" />
         <meta name="twitter:description" content="Discover Gelatotech's micro soldering services for advanced iPhone and MacBook repairs in San Francisco. Fast, precise, and reliable logic board repairs." />
         <meta name="twitter:image" content="/images/micro-soldering-twitter.jpg" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
