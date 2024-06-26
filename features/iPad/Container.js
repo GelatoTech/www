@@ -26,7 +26,7 @@ export default function iPad() {
         <meta itemProp="image" content="/images/ipad-repair-service.png" />
         <meta property="og:url" content="https://www.gelatotech.com/ipad" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="iPad Repair Service in San Francisco | Gelatotech" />
+        <meta property="og:title" content="On-Site iPad Screen & Charging Port Replacement" />
         <meta property="og:description" content="Get your iPad repaired quickly with our mobile service. Offering screen, battery, and charging port replacements for all models. Contact us for same-day repairs in San Francisco." />
         <meta property="og:image" content="/images/ipad-repair-og.png" />
         <meta name="twitter:card" content="summary_large_image" />
