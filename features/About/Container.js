@@ -9,7 +9,7 @@ export default function About() {
     <div>
       <Head>
         <title>San Francisco's Go-To Destination for All Phone Repairs, Including iPhones</title>
-        <link rel="alternate" href="https://gelatotech.com/about" hreflang="en" />
+        <link rel="alternate" href="https://gelatotech.com/about" hreflang="en-us" />
 
         {/* HTML Meta Tags */}
         <meta name="description" content="Gelatotech delivers swift solutions for various phone issues, including iPhone charging port, screen, and water damage repair services in the San Francisco area." />
