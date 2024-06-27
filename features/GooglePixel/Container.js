@@ -36,7 +36,7 @@ export default function GooglePixel() {
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/pixel.css" />
         <link rel="stylesheet" href="/stylesheets/device-card.css" />
-        <link rel="alternate" href="https://gelatotech.com/google-pixel" hreflang="en" />
+        <link rel="alternate" href="https://gelatotech.com/google-pixel" hreflang="en-us" />
       </Head>
       <section className="hero" id="hero">
         <div className="hero-body">
