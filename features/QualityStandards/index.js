@@ -17,16 +17,16 @@ export default function QualityStandards() {
         <meta name="description" content="Wondering how much an iPad screen repair costs? Explore our comprehensive guide on quality standards to gain insights into costs and discover the four distinctive types of screens we offer." />
         <meta name="keywords" content="Quality Device Repair, Genuine Parts, Aftermarket Parts, iPhone Repair, MacBook Repair, How Much Is an iPad Screen Repair" />
         <meta itemProp="name" content="Gelatotech Quality Standards | Mobile Device Repair in SF" />
-        <meta itemProp="description" content="At Gelatotech, we prioritize quality. Explore our selection of genuine OEM and high-quality aftermarket parts for your mobile device repair needs in San Francisco." />
+        <meta itemProp="description" content="Looking for the best quality repair for your iPhone? Visit Gelatotech, where we provide you with the best quality materials, batteries, and other services." />
         <meta itemProp="image" content='/images/quality-standards.jpeg' />
         <meta property="og:url" content="https://www.gelatotech.com/blog/quality-standards" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Gelatotech's Commitment to Quality | Device Repair in SF" />
-        <meta property="og:description" content="Learn about Gelatotech's quality standards for mobile device repair, including our use of genuine OEM and premium aftermarket parts." />
+        <meta property="og:description" content="Looking for the best quality repair for your iPhone? Visit Gelatotech, where we provide you with the best quality materials, batteries, and other services." />
         <meta property="og:image" content='/images/quality-standards-og.jpeg' />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Quality Standards at Gelatotech | SF's Premier Device Repair" />
-        <meta name="twitter:description" content="Gelatotech ensures the highest quality in device repairs with a selection of the best parts available. Find out about our quality commitment in San Francisco." />
+        <meta name="twitter:description" content="Looking for the best quality repair for your iPhone? Visit Gelatotech, where we provide you with the best quality materials, batteries, and other services." />
         <meta name="twitter:image" content='/images/quality-standards-twitter.jpeg' />
         <link rel="stylesheet" href="/stylesheets/quality-standards.css" />
         <link rel="alternate" href="https://gelatotech.com/blog/quality-standards" hreflang="en-us" />
