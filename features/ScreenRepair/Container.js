@@ -23,7 +23,7 @@ export default function ScreenRepair() {
         <meta name="twitter:description" content="Facing an iPhone screen crack? Compare repair costs in San Francisco and see how Gelatotech offers the best service at lower prices." />
         <meta name="twitter:image" content='/images/screen-repair-twitter-guide.jpeg' />
         <link rel="stylesheet" href="/stylesheets/screenrepairblog.css" />
-        <link rel="alternate" href="https://gelatotech.com/blog/screen-repair" hreflang="en"/> 
+        <link rel="alternate" href="https://gelatotech.com/blog/screen-repair" hreflang="en-us" />
       </Head>
 
       <section id="blog2" className="content">
