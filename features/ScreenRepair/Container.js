@@ -9,18 +9,18 @@ export default function ScreenRepair() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <title>iPhone Screen Repair & Data Recovery Cost near San Francisco</title>
-        <meta name="description" content=" Are you looking for water-damaged iPhone repair near San Francisco? Visit Gelatotech in our latest blog for detailed information on the cost of repairing a water-damaged iPhone screen. Check us out!" />
+        <meta name="description" content="Learn how to handle screen repairs with our detailed blog, which covers everything from assessing damage to finding the best repair options for your device." />
         <meta name="keywords" content="iPhone Screen Repair Cost, Water Damaged iPhone Repair, iPhone Repair near Me, iPhone Data Recovery, Fix Water Damaged iPhone Near Me" />
         <meta itemProp="description" content="Explore the cost differences for iPhone screen repairs with or without AppleCare+ in San Francisco. Learn why Gelatotech offers the best value and convenience." />
         <meta itemProp="image" content='/images/screen-repair-comparison.jpeg' />
         <meta property="og:url" content="https://www.gelatotech.com/blog/screen-repair" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="iPhone Screen Repair Cost Analysis in SF | Gelatotech" />
-        <meta property="og:description" content="Dive deep into the costs of repairing an iPhone screen in SF with AppleCare+ vs. Gelatotech's service. Discover affordable, quick repair solutions." />
+        <meta property="og:description" content="Learn how to handle screen repairs with our detailed blog, which covers everything from assessing damage to finding the best repair options for your device." />
         <meta property="og:image" content='/images/screen-repair-cost-analysis.jpeg' />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="San Francisco iPhone Screen Repair Cost Guide | Gelatotech" />
-        <meta name="twitter:description" content="Facing an iPhone screen crack? Compare repair costs in San Francisco and see how Gelatotech offers the best service at lower prices." />
+        <meta name="twitter:description" content="Learn how to handle screen repairs with our detailed blog, which covers everything from assessing damage to finding the best repair options for your device." />
         <meta name="twitter:image" content='/images/screen-repair-twitter-guide.jpeg' />
         <link rel="stylesheet" href="/stylesheets/screenrepairblog.css" />
         <link rel="alternate" href="https://gelatotech.com/blog/screen-repair" hreflang="en-us" />
