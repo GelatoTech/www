@@ -36,7 +36,7 @@ export default function Samsung() {
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/samsung.css" />
         <link rel="stylesheet" href="/stylesheets/device-card.css" />
-        <link rel="alternate" href="https://gelatotech.com/samsung" hreflang="en" />
+        <link rel="alternate" href="https://gelatotech.com/samsung" hreflang="en-us" />
       </Head>
 
       <section className="hero" id="hero">
