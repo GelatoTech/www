@@ -47,7 +47,6 @@ export default function Home() {
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         {/* Canonical tag */}
         <link rel="canonical" href="https://gelatotech.com/" />
-
       </Head>
 
       <section className="hero" id="hero" style={{
