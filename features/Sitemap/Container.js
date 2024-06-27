@@ -5,7 +5,7 @@ export default function Sitemap() {
         <div>
             <Head>
                 <meta charSet="UTF-8" />
-                <link rel="alternate" href="https://gelatotech.com/sitemap" hreflang="en" />
+                <link rel="alternate" href="https://gelatotech.com/sitemap" hreflang="en-us" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
                 <title>Sitemap | Gelatotech</title>
