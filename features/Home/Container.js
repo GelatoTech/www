@@ -45,9 +45,9 @@ export default function Home() {
         <meta name="twitter:image" content="images/iphone-repair.png" />
         <meta name="keywords" content="iPhone Screen Replacement, Fix iPhone Screen San Francisco, iPhone Charging Port Replacement" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
-      {/* Canonical tag */}
-      <link rel="canonical" href="https://gelatotech.com/" />
-      
+        {/* Canonical tag */}
+        <link rel="canonical" href="https://gelatotech.com/" />
+
       </Head>
 
       <section className="hero" id="hero" style={{
