@@ -8,11 +8,11 @@ export default function About() {
   return (
     <div>
       <Head>
-        <title>San Francisco's Go-To Destination for All Phone Repairs, Including iPhones</title>
+        <title>A Top-Quality Services and Parts for Phone Repair</title>
         <link rel="alternate" href="https://gelatotech.com/about" hreflang="en-us" />
 
         {/* HTML Meta Tags */}
-        <meta name="description" content="Gelatotech delivers swift solutions for various phone issues, including iPhone charging port, screen, and water damage repair services in the San Francisco area." />
+        <meta name="description" content="At Gelatotech, we offer top-quality phone repair services and parts at your preferred location with our professional technicians. Book our service today!" />
 
         {/* Google / Search Engine Tags */}
         <meta itemProp="name" content="About Gelatotech - Our Story & Mission" />
@@ -22,14 +22,14 @@ export default function About() {
         {/* Facebook Meta Tags */}
         <meta property="og:url" content="https://www.gelatotech.com/about" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="About Gelatotech - Your Trusted Partner in Mobile Device Repair" />
-        <meta property="og:description" content="Meet Gelatotech, your ally in navigating the hassles of device repair. We specialize in quick, reliable repairs, ensuring your life stays uninterrupted. Get to know our story." />
+        <meta property="og:title" content="A Top-Quality Services and Parts for Phone Repair" />
+        <meta property="og:description" content="At Gelatotech, we offer top-quality phone repair services and parts at your preferred location with our professional technicians. Book our service today!" />
         <meta property="og:image" content="images/about-gelatotech.png" />
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Discover Gelatotech - Innovation in Device Repair" />
-        <meta name="twitter:description" content="At Gelatotech, we do more than fix devices; we ensure your day runs smoothly. Find out how our San Francisco-based team makes technology repair convenient and efficient." />
+        <meta name="twitter:title" content="A Top-Quality Services and Parts for Phone Repair" />
+        <meta name="twitter:description" content="At Gelatotech, we offer top-quality phone repair services and parts at your preferred location with our professional technicians. Book our service today!" />
         <meta name="twitter:image" content="images/about-gelatotech.png" />
         <meta name="keywords" content="iPhone Repair San Francisco, iPhone Charging Port Repair, iPhone Screen Repair San Francisco, iPhone Water Damage Repair" />
         <link rel="stylesheet" href="../stylesheets/about.css" />
