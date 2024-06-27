@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>On-Demand Phone Repairs, including fixing iPhone Screens in San Francisco.</title>
+        <title>Save Time & Money with the Best Mobile IPhone Repair Service</title>
         <link rel="alternate" href="https://gelatotech.com/" hreflang="en-us" />
         <link rel="canonical" href="https://gelatotech.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,11 +37,11 @@ export default function Home() {
         <meta itemProp="image" content="images/iphone-repair.png" />
         <meta property="og:url" content="https://www.gelatotech.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content=" On-Demand Phone Repairs, including fixing iPhone Screens in San Francisco." />
+        <meta property="og:title" content="Save Time & Money with the Best Mobile IPhone Repair Service" />
         <meta property="og:description" content="Need your device fixed fast? Gelatotech provides on-site repairs for smartphones and tablets across SF. Book today for quick, reliable service at your location." />
         <meta property="og:image" content="images/iphone-repair.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="On-Demand Mobile Device Repair in San Francisco | Gelatotech" />
+        <meta name="twitter:title" content="Save Time & Money with the Best Mobile IPhone Repair Service" />
         <meta name="twitter:description" content="Gelatotech specializes in on-demand, on-site repairs for iPhones, Samsungs, iPads, and more in SF. Quick, convenient, and reliable service. Book now." />
         <meta name="twitter:image" content="images/iphone-repair.png" />
         <meta name="keywords" content="iPhone Screen Replacement, Fix iPhone Screen San Francisco, iPhone Charging Port Replacement" />
