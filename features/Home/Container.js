@@ -27,6 +27,7 @@ export default function Home() {
       <Head>
         <title>On-Demand Phone Repairs, including fixing iPhone Screens in San Francisco.</title>
         <link rel="alternate" href="https://gelatotech.com/" hreflang="en" />
+        <link rel="canonical" href="https://gelatotech.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta name="description" content="Save time and money on cell phone repairs with our highly skilled team ready to provide on-site services in San Francisco. Whether it's an iPhone screen, a charging port replacement, or any other problem, we've got you covered." />
@@ -45,8 +46,6 @@ export default function Home() {
         <meta name="twitter:image" content="images/iphone-repair.png" />
         <meta name="keywords" content="iPhone Screen Replacement, Fix iPhone Screen San Francisco, iPhone Charging Port Replacement" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
-        {/* Canonical tag */}
-        <link rel="canonical" href="https://gelatotech.com/" />
       </Head>
 
       <section className="hero" id="hero" style={{
