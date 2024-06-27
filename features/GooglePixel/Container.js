@@ -19,7 +19,7 @@ export default function GooglePixel() {
     <div>
       <Head>
         <title>Expert Google Pixel Screen Repair - Trust Us With Your Phone's Screen</title>
-        <meta name="description" content="We offer top-notch services for Google Pixel screen phone repair. Our expert team will come to your location and handle the repair inside our service vehicle. Get in touch with us now!" />
+        <meta name="description" content="Explore our comprehensive repair services for Google Pixel devices. Our expert solutions are designed to restore your Google Pixel to optimal performance." />
         <meta name="keywords" content=" Google Pixel Screen Repair, Google Pixel Phone Repair" />
         <meta itemProp="name" content="On-Site Google Pixel Repair | Gelatotech" />
         <meta itemProp="description" content="Need a Google Pixel repair in San Francisco? Our mobile technicians come to you for screen, battery, and charging port replacements. Fast, convenient service guaranteed." />
@@ -27,10 +27,10 @@ export default function GooglePixel() {
         <meta property="og:url" content="https://www.gelatotech.com/google-pixel" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Expert Google Pixel Screen Repair - Trust Us With Your Phone's Screen" />
-        <meta property="og:description" content="Same-day, on-site Google Pixel repair service in San Francisco. Our experts handle screen, battery, and charging port issues efficiently. Book now for quick repairs." />
+        <meta property="og:description" content="Explore our comprehensive repair services for Google Pixel devices. Our expert solutions are designed to restore your Google Pixel to optimal performance." />
         <meta property="og:image" content="/images/google-pixel-repair-og.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Expert Google Pixel Screen Repair - Trust Us With Your Phone's Screen" />
+        <meta name="twitter:title" content="Explore our comprehensive repair services for Google Pixel devices. Our expert solutions are designed to restore your Google Pixel to optimal performance." />
         <meta name="twitter:description" content="Get your Google Pixel fixed today with our mobile repair service. Screen, battery, and port repairs done at your location in San Francisco. Book online now!" />
         <meta name="twitter:image" content="/images/google-pixel-repair-twitter.jpg" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
