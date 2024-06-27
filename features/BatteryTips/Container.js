@@ -13,7 +13,7 @@ export default function BatteryTips() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <title>Top 3 Expert Tips for Saving Money on Cell Phone Battery Replacement</title>
-        <meta name="description" content=" Check out our newest blog post for expert iPhone battery-saving tips, including information on convenient door-to-door cell phone battery replacement services starting at just $45. Don't miss out - book now!" />
+        <meta name="description" content=" Keep your devices running smoothly with Gelatotech's latest blog about the Top iPhone battery-saving tips for easy maintenance and better performance. Read now!" />
         <meta name="keywords" content="Cell Phone Battery Replacement, Phone Battery Replacement" />
         <meta itemProp="name" content="Extend Your iPhone's Battery Life - Expert Tips by Gelatotech" />
         <meta itemProp="description" content="Maximize your iPhone's battery performance with our expert tips. Facing battery issues? Gelatotech offers on-demand battery replacement services in SF." />
@@ -21,11 +21,11 @@ export default function BatteryTips() {
         <meta property="og:url" content="https://www.gelatotech.com/blog/battery-tips" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="How to Save Your iPhone Battery Life - Learn from Gelatotech" />
-        <meta property="og:description" content="Get the best iPhone battery saving tips from Gelatotech. If tips aren't enough, we provide on-demand iPhone battery replacements in San Francisco." />
+        <meta property="og:description" content="Keep your devices running smoothly with Gelatotech's latest blog about the Top iPhone battery-saving tips for easy maintenance and better performance. Read now!" />
         <meta property="og:image" content='/images/pexels-photo-607812.jpeg' />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Top iPhone Battery Saving Tips | Gelatotech" />
-        <meta name="twitter:description" content="Boost your iPhone's battery life with Gelatotech's expert advice. Need a replacement? We offer quick, on-demand services in SF." />
+        <meta name="twitter:description" content="Keep your devices running smoothly with Gelatotech's latest blog about the Top iPhone battery-saving tips for easy maintenance and better performance. Read now!" />
         <meta name="twitter:image" content='/images/pexels-photo-607812.jpeg' />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/battery.css" />
