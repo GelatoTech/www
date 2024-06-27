@@ -19,7 +19,7 @@ export default function Sitemap() {
                             <ul>
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/about">About</a></li>
-                                <li><a href="/faq">FAQ</a></li>
+                                <li><a href="/faq">Faq</a></li>
                                 <li><a href="/legal">90 Day Warranty</a></li>
                                 <li><a href="/sitemap">Sitemap</a></li>
                             </ul>
