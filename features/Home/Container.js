@@ -30,7 +30,7 @@ export default function Home() {
         <link rel="canonical" href="https://gelatotech.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="description" content="Save time and money on cell phone repairs with our highly skilled team ready to provide on-site services in San Francisco. Whether it's an iPhone screen, a charging port replacement, or any other problem, we've got you covered." />
+        <meta name="description" content="At Gelatotech, we specialize in providing cutting-edge iPhone repairs, battery replacement, and many more services with our skilled professional team. Visit us!" />
         <meta name="robots" content="index, follow" />
         <meta itemProp="name" content="On-Demand Mobile Device Repair in San Francisco | Gelatotech" />
         <meta itemProp="description" content="Fast, expert repair for a wide range of devices including iPhones, iPads, Samsungs, and more. We come to you, providing convenience and quality service anywhere in San Francisco." />
@@ -38,11 +38,11 @@ export default function Home() {
         <meta property="og:url" content="https://www.gelatotech.com" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Save Time & Money with the Best Mobile IPhone Repair Service" />
-        <meta property="og:description" content="Need your device fixed fast? Gelatotech provides on-site repairs for smartphones and tablets across SF. Book today for quick, reliable service at your location." />
+        <meta property="og:description" content="At Gelatotech, we specialize in providing cutting-edge iPhone repairs, battery replacement, and many more services with our skilled professional team. Visit us!" />
         <meta property="og:image" content="images/iphone-repair.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Save Time & Money with the Best Mobile IPhone Repair Service" />
-        <meta name="twitter:description" content="Gelatotech specializes in on-demand, on-site repairs for iPhones, Samsungs, iPads, and more in SF. Quick, convenient, and reliable service. Book now." />
+        <meta name="twitter:description" content="At Gelatotech, we specialize in providing cutting-edge iPhone repairs, battery replacement, and many more services with our skilled professional team. Visit us!" />
         <meta name="twitter:image" content="images/iphone-repair.png" />
         <meta name="keywords" content="iPhone Screen Replacement, Fix iPhone Screen San Francisco, iPhone Charging Port Replacement" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
