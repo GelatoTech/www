@@ -21,7 +21,7 @@ export default function AppleWatch() {
         <title>On-Demand Repair for Apple Watch Screens in San Francisco, CA</title>
         <link rel="alternate" href="https://gelatotech.com/apple-watch" hreflang="en-us" />
         {/* HTML Meta Tags */}
-        <meta name="description" content="Our skilled team provides comprehensive Apple Watch screen repair services right at your doorstep in San Francisco, guaranteeing top-notch care for your device. Don't hesitate to give us a call!" />
+        <meta name="description" content="Discover Gelatotech professional Apple Watch repair; our mechanics are experienced in repairing all Apple Watch models, ensuring that they are in good hands." />
         <meta name="keywords" content="Apple Watch Repair, Apple Watch Screen Repair" />
 
         {/* Google / Search Engine Tags */}
