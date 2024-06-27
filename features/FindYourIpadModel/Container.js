@@ -17,7 +17,7 @@ export default function FindYourIpadModel() {
         <title>Discover Your iPad Model Name or Number: The Ultimate Expert Guide</title>
         <meta
           name="description"
-          content="Learn how to easily identify your iPad model with our complete guide. Find your model number and get expert tips for iPad repairs, maintenance, and upgrades. Read it now and become an iPad model identification pro!" />
+          content="Our comprehensive guide and step-by-step instructions will help you quickly and easily find your iPad's model number and other key details. Check out our blog!" />
         <meta
           itemProp="name"
           content="Identify Your iPad Model | Gelatotech"
@@ -35,7 +35,7 @@ export default function FindYourIpadModel() {
         />
         <meta
           property="og:description"
-          content="Discover your iPad model with our simple guide. Ideal for users needing repair services or wanting to learn more about their device."
+          content="Our comprehensive guide and step-by-step instructions will help you quickly and easily find your iPad's model number and other key details. Check out our blog!"
         />
         <meta property="og:image" content="/images/ipad-model-guide.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -45,7 +45,7 @@ export default function FindYourIpadModel() {
         />
         <meta
           name="twitter:description"
-          content="Identify your iPad model in minutes with our step-by-step instructions. Essential reading for iPad owners seeking repair or information."
+          content="Our comprehensive guide and step-by-step instructions will help you quickly and easily find your iPad's model number and other key details. Check out our blog!"
         />
         <meta name="twitter:image" content="/images/ipad-model-guide.jpeg" />
         <meta
@@ -58,7 +58,7 @@ export default function FindYourIpadModel() {
         />
         <link rel="stylesheet" href="/stylesheets/battery.css" />
         <link rel="alternate" href="https://gelatotech.com/blog/find-your-ipad-model" hreflang="en-us" />
-        
+
       </Head>
       <section id="blog">
         <div className="container blog-container">
