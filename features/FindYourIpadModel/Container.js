@@ -57,7 +57,7 @@ export default function FindYourIpadModel() {
           content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g"
         />
         <link rel="stylesheet" href="/stylesheets/battery.css" />
-        <link rel="alternate" href="https://gelatotech.com/blog/find-your-ipad-model" hreflang="en" />
+        <link rel="alternate" href="https://gelatotech.com/blog/find-your-ipad-model" hreflang="en-us" />
 
       </Head>
       <section id="blog">
