@@ -19,7 +19,7 @@ export default function Samsung() {
     <div>
       <Head>
         <title>Experienced Experts for Samsung Phone Battery Replacement</title>
-        <meta name="description" content="Discover our exceptional services for Samsung phone battery replacement, featuring high-quality parts, conveniently offered at your chosen location. Get in touch with us today!" />
+        <meta name="description" content="Looking for the best Samsung repair service? Our professionals will arrive at your location with fully equipped vehicle to provide you with excellent repair." />
         <meta name="keywords" content="Samsung Phone Battery Replacement" />
         <meta itemProp="name" content="Fast Samsung Device Repair | Gelatotech Comes to You" />
         <meta itemProp="description" content="Need a quick Samsung repair in San Francisco? Our mobile technicians specialize in screen, battery, and port repairs, offering same-day service for all Samsung models." />
@@ -27,11 +27,11 @@ export default function Samsung() {
         <meta property="og:url" content="https://www.gelatotech.com/samsung" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Experienced Experts for Samsung Phone Battery Replacement" />
-        <meta property="og:description" content="Get your Samsung phone fixed today with our mobile repair service. We handle screen, battery, and charging port issues, ensuring quick and reliable repairs." />
+        <meta property="og:description" content="Looking for the best Samsung repair service? Our professionals will arrive at your location with fully equipped vehicle to provide you with excellent repair." />
         <meta property="og:image" content="/images/samsung-repair-og.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Experienced Experts for Samsung Phone Battery Replacement" />
-        <meta name="twitter:description" content="Your Samsung device deserves the best care. Trust Gelatotech for fast, on-site repairs in San Francisco. Contact us for same-day service." />
+        <meta name="twitter:description" content="Looking for the best Samsung repair service? Our professionals will arrive at your location with fully equipped vehicle to provide you with excellent repair." />
         <meta name="twitter:image" content="/images/samsung-repair-twitter.jpeg" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/samsung.css" />
