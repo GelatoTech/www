@@ -8,7 +8,8 @@ export default function Sitemap() {
                 <link rel="alternate" href="https://gelatotech.com/sitemap" hreflang="en-us" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-                <title>Sitemap | Gelatotech</title>
+                <title>Gelatotech's Comprehensive Sitemap for Easy Navigation
+                </title>
                 <meta name="description" content="Explore Gelatotech's comprehensive sitemap, which provides easy navigation so you can quickly and efficiently find all the pages and resources you need." />
             </Head>
             <section style={{ marginTop: '10em', height: '90vh' }}>
