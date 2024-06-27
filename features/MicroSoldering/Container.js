@@ -23,20 +23,20 @@ export default function MicroSoldering() {
   return (
     <div>
       <Head>
-        <title>Fast and Reliable Macbook Screen Replacement Services near San Francisco</title>
-        <meta name="description" content=" If you're looking for Macbook, iPhone data recovery, and water damage phone repair service costs near San Francisco, look no further! Gelatotech has all the details you need on our website." />
+        <title>Expert Microsoldering Service- Precision Repairs & Solutions</title>
+        <meta name="description" content=" With ten years of experience in iPhone and MacBook micro soldering, we are dedicated to providing you with the best service. Book now & save your time with us!" />
         <meta name="keywords" content="Macbook Screen Replacement Near Me, Repair Macbook Near Me, Macbook Repair Near Me, iPhone Data Recovery Service, Water Damaged Phone Repair Cost" />
         <meta itemProp="name" content="Expert Micro Soldering - iPhone & MacBook | Gelatotech San Francisco" />
         <meta itemProp="description" content="Gelatotech offers expert micro soldering services for complex iPhone and MacBook repairs in San Francisco. Trust our technicians for precision logic board fixes." />
         <meta itemProp="image" content="/images/micro-soldering-service.jpg" />
         <meta property="og:url" content="https://www.gelatotech.com/microsoldering" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Fast and Reliable Macbook Screen Replacement Services near San Franciscoh" />
-        <meta property="og:description" content="Need advanced repair for your iPhone or MacBook? Gelatotech's micro soldering service in San Francisco offers high-precision fixes for logic board issues. Schedule now." />
+        <meta property="og:title" content="Expert Microsoldering Service- Precision Repairs & Solutions" />
+        <meta property="og:description" content="With ten years of experience in iPhone and MacBook micro soldering, we are dedicated to providing you with the best service. Book now & save your time with us!" />
         <meta property="og:image" content="/images/micro-soldering-og.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Fast and Reliable Macbook Screen Replacement Services near San Francisco" />
-        <meta name="twitter:description" content="Discover Gelatotech's micro soldering services for advanced iPhone and MacBook repairs in San Francisco. Fast, precise, and reliable logic board repairs." />
+        <meta name="twitter:title" content="Expert Microsoldering Service- Precision Repairs & Solutions" />
+        <meta name="twitter:description" content="With ten years of experience in iPhone and MacBook micro soldering, we are dedicated to providing you with the best service. Book now & save your time with us!" />
         <meta name="twitter:image" content="/images/micro-soldering-twitter.jpg" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/micro-soldering.css" />
