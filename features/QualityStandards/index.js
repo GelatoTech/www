@@ -29,8 +29,7 @@ export default function QualityStandards() {
         <meta name="twitter:description" content="Gelatotech ensures the highest quality in device repairs with a selection of the best parts available. Find out about our quality commitment in San Francisco." />
         <meta name="twitter:image" content='/images/quality-standards-twitter.jpeg' />
         <link rel="stylesheet" href="/stylesheets/quality-standards.css" />
-        <link rel="alternate" href="https://gelatotech.com/blog/quality-standards" hreflang="en"/> 
-
+        <link rel="alternate" href="https://gelatotech.com/blog/quality-standards" hreflang="en-us" />
       </Head>
       <section id="blog">
         <div className="container blog-container">
