@@ -29,7 +29,7 @@ export default function BatteryTips() {
         <meta name="twitter:image" content='/images/pexels-photo-607812.jpeg' />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/battery.css" />
-        <link rel="alternate" href="https://gelatotech.com/blog/battery-tips" hreflang="en" />
+        <link rel="alternate" href="https://gelatotech.com/blog/battery-tips" hreflang="en-us" />
 
 
       </Head>
