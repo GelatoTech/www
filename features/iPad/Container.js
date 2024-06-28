@@ -37,6 +37,7 @@ export default function iPad() {
         <link rel="stylesheet" href="/stylesheets/ipad.css" />
         <link rel="stylesheet" href="/stylesheets/device-card.css" />
         <link rel="alternate" href="https://gelatotech.com/ipad" hreflang="en-us" />
+        <link rel="canonical" href="https://gelatotech.com/ipad"/>
       </Head>
       <section className="hero" id="hero">
         <div className="hero-body">
