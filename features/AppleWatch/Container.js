@@ -29,8 +29,22 @@ export default function AppleWatch() {
         <meta itemProp="description" content="Need your Apple Watch fixed? Gelatotech offers mobile repair services for all models, including screen and battery replacements. We come to you for a hassle-free repair experience." />
         <meta itemProp="image" content="images/apple-watch-repair.jpeg" />
 
+        {/* Twitter card Tag*/}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="On-Demand Repair for Apple Watch Screens in San Francisco, CA" />
+        <meta name="twitter:description" content="Discover Gelatotech professional Apple Watch repair; our mechanics are experienced in repairing all Apple Watch models, ensuring that they are in good hands." />
+        <meta name="twitter:image" content='/images/ ' />
+
+        {/* Open Grap Tag */}
+        <meta property="og:url" content="https://gelatotech.com/apple-watch" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="On-Demand Repair for Apple Watch Screens in San Francisco, CA" />
+        <meta property="og:description" content="Discover Gelatotech professional Apple Watch repair; our mechanics are experienced in repairing all Apple Watch models, ensuring that they are in good hands." />
+        <meta property="og:image" content='/images/logo.svg' />
+
         <link rel="stylesheet" href="../stylesheets/apple-watch.css" />
         <link rel="stylesheet" href="../stylesheets/device-card.css" />
+
       </Head>
 
       <section className="hero" id="hero">
