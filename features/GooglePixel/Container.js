@@ -30,8 +30,8 @@ export default function GooglePixel() {
         <meta property="og:description" content="Explore our comprehensive repair services for Google Pixel devices. Our expert solutions are designed to restore your Google Pixel to optimal performance." />
         <meta property="og:image" content="/images/google-pixel-repair-og.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Explore our comprehensive repair services for Google Pixel devices. Our expert solutions are designed to restore your Google Pixel to optimal performance." />
-        <meta name="twitter:description" content="Get your Google Pixel fixed today with our mobile repair service. Screen, battery, and port repairs done at your location in San Francisco. Book online now!" />
+        <meta name="twitter:title" content="Expert Google Pixel Screen Repair - Trust Us With Your Phone's Screen" />
+        <meta name="twitter:description" content="Explore our comprehensive repair services for Google Pixel devices. Our expert solutions are designed to restore your Google Pixel to optimal performance." />
         <meta name="twitter:image" content="/images/google-pixel-repair-twitter.jpg" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/pixel.css" />
