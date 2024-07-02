@@ -15,7 +15,13 @@ export default function Sitemap() {
                 <meta property="og:type" content="article" />
                 <meta property="og:title" content="Gelatotech's Comprehensive Sitemap for Easy Navigation" />
                 <meta property="og:description" content="Explore Gelatotech's comprehensive sitemap, which provides easy navigation so you can quickly and efficiently find all the pages and resources you need." />
-                <meta property="og:image" content='/images/  '/>
+                <meta property="og:image" content='/images/  ' />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Gelatotech's Comprehensive Sitemap for Easy Navigation" />
+                <meta name="twitter:description" content="Explore Gelatotech's comprehensive sitemap, which provides easy navigation so you can quickly and efficiently find all the pages and resources you need." />
+                <meta name="twitter:image" content='/images/ ' />
+
+
             </Head>
             <section style={{ marginTop: '10em', height: '90vh' }}>
                 <div className="container">
