@@ -24,7 +24,7 @@ export default function Samsung() {
         <meta itemProp="name" content="Fast Samsung Device Repair | Gelatotech Comes to You" />
         <meta itemProp="description" content="Need a quick Samsung repair in San Francisco? Our mobile technicians specialize in screen, battery, and port repairs, offering same-day service for all Samsung models." />
         <meta itemProp="image" content="/images/samsung-repair-service.jpeg" />
-        <meta property="og:url" content="https://www.gelatotech.com/samsung" />
+        <meta property="og:url" content="https://gelatotech.com/samsung"/>
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Experienced Experts for Samsung Phone Battery Replacement" />
         <meta property="og:description" content="Looking for the best Samsung repair service? Our professionals will arrive at your location with fully equipped vehicle to provide you with excellent repair." />
