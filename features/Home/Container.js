@@ -27,7 +27,7 @@ export default function Home() {
       <Head>
         <title>Save Time & Money with the Best Mobile IPhone Repair Service</title>
         <link rel="alternate" href="https://gelatotech.com/" hreflang="en-us" />
-        <link rel="canonical" href="https://gelatotech.com/" />
+        <link rel="canonical" href="https://gelatotech.com"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta name="description" content="At Gelatotech, we specialize in providing cutting-edge iPhone repairs, battery replacement, and many more services with our skilled professional team. Visit us!" />
