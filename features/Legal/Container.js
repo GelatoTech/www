@@ -24,7 +24,7 @@ export default function FAQ() {
         <meta name="keywords" content="Legal, Warranty Policy, Mobile Repair Service, iPhone Repair, iPad Repair, MacBook Repair, San Francisco, Customer Satisfaction, Quality Guarantee" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/legal.css" />
-        <link rel="alternate" href="https://gelatotech.com/legal" hreflang="en" />
+        <link rel="alternate" href="https://gelatotech.com/legal" hreflang="en-us" />
       </Head>
       <div className="content terms">
         <h1 className="title is-2" style={{ textAlign: 'center' }}>Terms and Conditions</h1>

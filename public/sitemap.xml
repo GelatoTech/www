@@ -16,7 +16,7 @@
             </url>
 
             <url>
-              <loc>https://gelatotech.com/FAQ</loc>
+              <loc>https://gelatotech.com/faq</loc>
               <lastmod>2022-01-19T04:17:08.382Z</lastmod>
               <changefreq>monthly</changefreq>
               <priority>1.0</priority>
@@ -77,5 +77,41 @@
               <changefreq>monthly</changefreq>
               <priority>1.0</priority>
             </url>
+
+            <url>
+              <loc>https://gelatotech.com/blog/find-your-ipad-model</loc>
+              <lastmod>2022-01-19T04:17:08.382Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+			
+		      	<url>
+              <loc>https://gelatotech.com/blog/screen-repair</loc>
+              <lastmod>2022-01-19T04:17:08.382Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+			
+		      	<url>
+              <loc>https://gelatotech.com/blog/quality-standards</loc>
+              <lastmod>2022-01-19T04:17:08.382Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+			
+			     <url>
+              <loc>https://gelatotech.com/blog/battery-tips</loc>
+              <lastmod>2022-01-19T04:17:08.382Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+			
+			      <url>
+              <loc>https://gelatotech.com/sitemap</loc>
+              <lastmod>2022-01-19T04:17:08.382Z</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>1.0</priority>
+            </url>
+			
 
     </urlset>
