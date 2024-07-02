@@ -31,7 +31,7 @@ export default function FindYourIpadModel() {
         <meta property="og:type" content="article" />
         <meta
           property="og:title"
-          content="How to Easily Identify Your iPad Model | Gelatotech"
+          content="Discover Your iPad Model Name or Number: The Ultimate Expert Guide"
         />
         <meta
           property="og:description"
@@ -41,7 +41,7 @@ export default function FindYourIpadModel() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Find Your iPad Model with Gelatotech's Easy Guide"
+          content="Discover Your iPad Model Name or Number: The Ultimate Expert Guide"
         />
         <meta
           name="twitter:description"
