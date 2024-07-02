@@ -11,6 +11,11 @@ export default function Sitemap() {
                 <title>Gelatotech's Comprehensive Sitemap for Easy Navigation
                 </title>
                 <meta name="description" content="Explore Gelatotech's comprehensive sitemap, which provides easy navigation so you can quickly and efficiently find all the pages and resources you need." />
+                <meta property="og:url" content="https://gelatotech.com/sitemap" />
+                <meta property="og:type" content="article" />
+                <meta property="og:title" content="Gelatotech's Comprehensive Sitemap for Easy Navigation" />
+                <meta property="og:description" content="Explore Gelatotech's comprehensive sitemap, which provides easy navigation so you can quickly and efficiently find all the pages and resources you need." />
+                <meta property="og:image" content='/images/  '/>
             </Head>
             <section style={{ marginTop: '10em', height: '90vh' }}>
                 <div className="container">
