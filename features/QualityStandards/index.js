@@ -14,7 +14,7 @@ export default function QualityStandards() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <title>How Much Is an iPad Screen Repair- Quality Standards</title>
-        <meta name="description" content="Wondering how much an iPad screen repair costs? Explore our comprehensive guide on quality standards to gain insights into costs and discover the four distinctive types of screens we offer." />
+        <meta name="description" content="At Gelatotech, we maintain the highest quality standards in the industry and our commitment to excellence is reflected in every service we provide. Contact us!" />
         <meta name="keywords" content="Quality Device Repair, Genuine Parts, Aftermarket Parts, iPhone Repair, MacBook Repair, How Much Is an iPad Screen Repair" />
         <meta itemProp="name" content="Gelatotech Quality Standards | Mobile Device Repair in SF" />
         <meta itemProp="description" content="Looking for the best quality repair for your iPhone? Visit Gelatotech, where we provide you with the best quality materials, batteries, and other services." />
@@ -22,11 +22,11 @@ export default function QualityStandards() {
         <meta property="og:url" content="https://www.gelatotech.com/blog/quality-standards" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Gelatotech's Commitment to Quality | Device Repair in SF" />
-        <meta property="og:description" content="Looking for the best quality repair for your iPhone? Visit Gelatotech, where we provide you with the best quality materials, batteries, and other services." />
+        <meta property="og:description" content="At Gelatotech, we maintain the highest quality standards in the industry and our commitment to excellence is reflected in every service we provide. Contact us!" />
         <meta property="og:image" content='/images/quality-standards-og.jpeg' />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Quality Standards at Gelatotech | SF's Premier Device Repair" />
-        <meta name="twitter:description" content="Looking for the best quality repair for your iPhone? Visit Gelatotech, where we provide you with the best quality materials, batteries, and other services." />
+        <meta name="twitter:description" content="At Gelatotech, we maintain the highest quality standards in the industry and our commitment to excellence is reflected in every service we provide. Contact us!" />
         <meta name="twitter:image" content='/images/quality-standards-twitter.jpeg' />
         <link rel="stylesheet" href="/stylesheets/quality-standards.css" />
         <link rel="alternate" href="https://gelatotech.com/blog/quality-standards" hreflang="en-us" />
