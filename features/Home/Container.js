@@ -27,6 +27,7 @@ export default function Home() {
       <Head>
         <title>Save Time & Money with the Best Mobile IPhone Repair Service</title>
         <link rel="alternate" href="https://gelatotech.com/" hreflang="en-us" />
+        <link rel="alternate" href="https://gelatotech.com/" hreflang="x-default"/>
         <link rel="canonical" href="https://gelatotech.com"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
