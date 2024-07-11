@@ -20,6 +20,7 @@ export default function AppleWatch() {
       <Head>
         <title>On-Demand Repair for Apple Watch Screens in San Francisco, CA</title>
         <link rel="alternate" href="https://gelatotech.com/apple-watch" hreflang="en-us" />
+        <link rel="alternate" href="https://gelatotech.com/apple-watch" hreflang="x-default" />
         {/* HTML Meta Tags */}
         <meta name="description" content="Discover Gelatotech professional Apple Watch repair; our mechanics are experienced in repairing all Apple Watch models, ensuring that they are in good hands." />
         <meta name="keywords" content="Apple Watch Repair, Apple Watch Screen Repair" />
