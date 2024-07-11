@@ -24,6 +24,7 @@ export default function ScreenRepair() {
         <meta name="twitter:image" content='/images/screen-repair-twitter-guide.jpeg' />
         <link rel="stylesheet" href="/stylesheets/screenrepairblog.css" />
         <link rel="alternate" href="https://gelatotech.com/blog/screen-repair" hreflang="en-us" />
+        <link rel="alternate" href="https://gelatotech.com/blog/screen-repair" hreflang="x-default" />
       </Head>
 
       <section id="blog2" className="content">
