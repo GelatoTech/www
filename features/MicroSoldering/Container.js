@@ -41,6 +41,7 @@ export default function MicroSoldering() {
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/micro-soldering.css" />
         <link rel="alternate" href="https://gelatotech.com/microsoldering" hreflang="en-us" />
+        <link rel="alternate" href="https://gelatotech.com/microsoldering" hreflang="x-default" />
         </Head>
       <section className="hero" id="hero">
         <div className="hero-body container">
