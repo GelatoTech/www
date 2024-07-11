@@ -10,6 +10,7 @@ export default function About() {
       <Head>
         <title>A Top-Quality Services and Parts for Phone Repair</title>
         <link rel="alternate" href="https://gelatotech.com/about" hreflang="en-us" />
+        <link rel="alternate" href="https://gelatotech.com/about" hreflang="x-default" />
 
         {/* HTML Meta Tags */}
         <meta name="description" content="At Gelatotech, we offer top-quality phone repair services and parts at your preferred location with our professional technicians. Book our service today!" />
@@ -58,48 +59,48 @@ export default function About() {
       <TrustedBy />
       {/* our technicians */}
       <section id="technician">
-  <div className="container has-text-centered">
-    <h3 className="title is-1">Our Technicians</h3>
-    <div className="columns">
-      <div className="column">
-        <figure className="image">
-          <div style={{ width: '40%', marginLeft: 'auto', marginRight: 'auto', borderRadius: '5px' }}>
-            <Image src="/images/junior.png" alt="junior technician" width="100%" height="100%" layout="responsive" objectFit="contain" />
-          </div>
-        </figure>
-        <h2 className="subtitle is-3">Junior S.</h2>
-        <div className="notification">
-          <center>
-            <div style={{ maxWidth: '200px' }}>
-              <Image src="/images/Anna-b.png" alt="customer anna iphone repair" width="100%" height="50%" layout="responsive" objectFit="contain" />
+        <div className="container has-text-centered">
+          <h3 className="title is-1">Our Technicians</h3>
+          <div className="columns">
+            <div className="column">
+              <figure className="image">
+                <div style={{ width: '40%', marginLeft: 'auto', marginRight: 'auto', borderRadius: '5px' }}>
+                  <Image src="/images/junior.png" alt="junior technician" width="100%" height="100%" layout="responsive" objectFit="contain" />
+                </div>
+              </figure>
+              <h2 className="subtitle is-3">Junior S.</h2>
+              <div className="notification">
+                <center>
+                  <div style={{ maxWidth: '200px' }}>
+                    <Image src="/images/Anna-b.png" alt="customer anna iphone repair" width="100%" height="50%" layout="responsive" objectFit="contain" />
+                  </div>
+                </center>
+                <p>"Junior came to my location in just 20 minutes. Super friendly and he fixed my iPhone in 15 minutes.” </p>
+                <br />
+                <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?start=20" target="_blank" className="button is-danger is-rounded">Read on Yelp <FontAwesomeIcon style={{ marginLeft: '10px', width: '1em' }} icon={faYelp} /></a>
+              </div>
             </div>
-          </center>
-          <p>"Junior came to my location in just 20 minutes. Super friendly and he fixed my iPhone in 15 minutes.” </p>
-          <br />
-          <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?start=20" target="_blank" className="button is-danger is-rounded">Read on Yelp <FontAwesomeIcon style={{ marginLeft: '10px', width: '1em' }} icon={faYelp} /></a>
-        </div>
-      </div>
-      <div className="column">
-        <figure className="image">
-          <div style={{ width: '40%', marginLeft: 'auto', marginRight: 'auto', borderRadius: '5px' }}>
-            <Image src="/images/elbert.png" alt="Elbert O." width="100%" height="100%" layout="responsive" objectFit="contain" />
-          </div>
-        </figure>
-        <h2 className="subtitle is-3">Elbert O.</h2>
-        <div className="notification">
-          <center>
-            <div style={{ maxWidth: '200px' }}>
-              <Image src="/images/Rishabh-P.png" alt="Customer Rishabh P" width="100%" height="50%" layout="responsive" objectFit="contain" />
+            <div className="column">
+              <figure className="image">
+                <div style={{ width: '40%', marginLeft: 'auto', marginRight: 'auto', borderRadius: '5px' }}>
+                  <Image src="/images/elbert.png" alt="Elbert O." width="100%" height="100%" layout="responsive" objectFit="contain" />
+                </div>
+              </figure>
+              <h2 className="subtitle is-3">Elbert O.</h2>
+              <div className="notification">
+                <center>
+                  <div style={{ maxWidth: '200px' }}>
+                    <Image src="/images/Rishabh-P.png" alt="Customer Rishabh P" width="100%" height="50%" layout="responsive" objectFit="contain" />
+                  </div>
+                </center>
+                <p>"Very quick and convenient. They came to me Same-Day, they fixed my iPhone in 15 minutes. Thanks to Elbert! ” </p>
+                <br />
+                <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?start=20" target="_blank" className="button is-danger is-rounded">Read on Yelp <FontAwesomeIcon style={{ marginLeft: '5px', width: '1em' }} icon={faYelp} /></a>
+              </div>
             </div>
-          </center>
-          <p>"Very quick and convenient. They came to me Same-Day, they fixed my iPhone in 15 minutes. Thanks to Elbert! ” </p>
-          <br />
-          <a href="https://www.yelp.com/biz/gelatotech-on-demand-iphone-repair-san-francisco-3?start=20" target="_blank" className="button is-danger is-rounded">Read on Yelp <FontAwesomeIcon style={{ marginLeft: '5px', width: '1em' }} icon={faYelp} /></a>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
       <section id="about" style={{ marginBottom: '3em' }}>
         <div className="container about-container">
           <h3 className="title is-1 has-text-centered" style={{ color: 'white' }}>Our Philosophy</h3>
