@@ -37,6 +37,7 @@ export default function FAQ() {
         <link rel="stylesheet" href="/stylesheets/faq.css" />
         <link rel="stylesheet" href="/stylesheets/w3.css" />
         <link rel="alternate" href="https://gelatotech.com/faq" hreflang="en-us" />
+        <link rel="alternate" href="https://gelatotech.com/faq" hreflang="x-default" />
       </Head>
       
       <div className="section">
