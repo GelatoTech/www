@@ -37,6 +37,7 @@ export default function Samsung() {
         <link rel="stylesheet" href="/stylesheets/samsung.css" />
         <link rel="stylesheet" href="/stylesheets/device-card.css" />
         <link rel="alternate" href="https://gelatotech.com/samsung" hreflang="en-us" />
+        <link rel="alternate" href="https://gelatotech.com/samsung" hreflang="x-default" />
         <link rel="canonical" href="https://gelatotech.com/samsung"/>
       </Head>
 
