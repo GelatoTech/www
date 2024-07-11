@@ -37,6 +37,7 @@ export default function GooglePixel() {
         <link rel="stylesheet" href="/stylesheets/pixel.css" />
         <link rel="stylesheet" href="/stylesheets/device-card.css" />
         <link rel="alternate" href="https://gelatotech.com/google-pixel" hreflang="en-us" />
+        <link rel="alternate" href="https://gelatotech.com/google-pixel" hreflang="x-default" />
         <link rel="canonical" href="https://gelatotech.com/google-pixel"/>
       </Head>
       <section className="hero" id="hero">
