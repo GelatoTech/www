@@ -30,6 +30,7 @@ export default function QualityStandards() {
         <meta name="twitter:image" content='/images/quality-standards-twitter.jpeg' />
         <link rel="stylesheet" href="/stylesheets/quality-standards.css" />
         <link rel="alternate" href="https://gelatotech.com/blog/quality-standards" hreflang="en-us" />
+        <link rel="alternate" href="https://gelatotech.com/blog/quality-standards" hreflang="x-default" />
       </Head>
       <section id="blog">
         <div className="container blog-container">
