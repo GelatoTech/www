@@ -51,7 +51,9 @@ export default function MailIn() {
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/mail-in.css" />
         <link rel="alternate" href="https://gelatotech.com/mail-in" hreflang="en-us" />
-        </Head>
+        <link rel="alternate" href="https://gelatotech.com/mail-in" hreflang="x-default" />
+
+      </Head>
       <section className="hero" id="hero">
         <div className="hero-body container" style={{ display: 'flex' }}>
           {/* <div className="container"> */}
