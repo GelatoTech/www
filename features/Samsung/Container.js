@@ -19,7 +19,7 @@ export default function Samsung() {
     <div>
       <Head>
         <title>Experienced Experts for Samsung Phone Battery Replacement</title>
-        <meta name="description" content="Looking for the best Samsung repair service? Our professionals will arrive at your location with fully equipped vehicle to provide you with excellent repair." />
+        <meta name="description" content="Discover our exceptional services for Samsung phone battery replacement, featuring high-quality parts, conveniently offered at your chosen location. Get in touch with us today!" />
         <meta name="keywords" content="Samsung Phone Battery Replacement" />
         <meta itemProp="name" content="Fast Samsung Device Repair | Gelatotech Comes to You" />
         <meta itemProp="description" content="Need a quick Samsung repair in San Francisco? Our mobile technicians specialize in screen, battery, and port repairs, offering same-day service for all Samsung models." />
