@@ -8,12 +8,12 @@ export default function About() {
   return (
     <div>
       <Head>
-        <title>A Top-Quality Services and Parts for Phone Repair</title>
+        <title>San Francisco's Go-To Destination for All Phone Repairs, Including iPhones</title>
         <link rel="alternate" href="https://gelatotech.com/about" hreflang="en-us" />
         <link rel="alternate" href="https://gelatotech.com/about" hreflang="x-default" />
 
         {/* HTML Meta Tags */}
-        <meta name="description" content="At Gelatotech, we offer top-quality phone repair services and parts at your preferred location with our professional technicians. Book our service today!" />
+        <meta name="description" content="Gelatotech delivers swift solutions for various phone issues, including iPhone charging port, screen, and water damage repair services in the San Francisco area." />
 
         {/* Google / Search Engine Tags */}
         <meta itemProp="name" content="About Gelatotech - Our Story & Mission" />
