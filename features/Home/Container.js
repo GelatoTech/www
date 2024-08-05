@@ -25,13 +25,13 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Save Time & Money with the Best Mobile IPhone Repair Service</title>
+        <title>On-Demand Phone Repairs, including fixing iPhone Screens in San Francisco.</title>
         <link rel="alternate" href="https://gelatotech.com/" hreflang="en-us" />
         <link rel="alternate" href="https://gelatotech.com/" hreflang="x-default"/>
         <link rel="canonical" href="https://gelatotech.com"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="description" content="At Gelatotech, we specialize in providing cutting-edge iPhone repairs, battery replacement, and many more services with our skilled professional team. Visit us!" />
+        <meta name="description" content="Save time and money on cell phone repairs with our highly skilled team ready to provide on-site services in San Francisco. Whether it's an iPhone screen, a charging port replacement, or any other problem, we've got you covered." />
         <meta name="robots" content="index, follow" />
         <meta itemProp="name" content="On-Demand Mobile Device Repair in San Francisco | Gelatotech" />
         <meta itemProp="description" content="Fast, expert repair for a wide range of devices including iPhones, iPads, Samsungs, and more. We come to you, providing convenience and quality service anywhere in San Francisco." />
