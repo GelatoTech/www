@@ -11,7 +11,7 @@ export default function ScreenRepair() {
         <title>iPhone Screen Repair & Data Recovery Cost near San Francisco</title>
         <meta name="description" content="Learn how to handle screen repairs with our detailed blog, which covers everything from assessing damage to finding the best repair options for your device." />
         <meta name="keywords" content="iPhone Screen Repair Cost, Water Damaged iPhone Repair, iPhone Repair near Me, iPhone Data Recovery, Fix Water Damaged iPhone Near Me" />
-        <meta itemProp="description" content="Explore the cost differences for iPhone screen repairs with or without AppleCare+ in San Francisco. Learn why Gelatotech offers the best value and convenience." />
+        <meta itemProp="description" content="Are you looking for water-damaged iPhone repair near San Francisco? Visit Gelatotech in our latest blog for detailed information on the cost of repairing a water-damaged iPhone screen. Check us out!" />
         <meta itemProp="image" content='/images/screen-repair-comparison.jpeg' />
         <meta property="og:url" content="https://www.gelatotech.com/blog/screen-repair" />
         <meta property="og:type" content="article" />
