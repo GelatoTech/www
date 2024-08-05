@@ -5,10 +5,24 @@ export default function Sitemap() {
         <div>
             <Head>
                 <meta charSet="UTF-8" />
-                <link rel="alternate" href="https://gelatotech.com/sitemap" hreflang="en" />
+                <link rel="alternate" href="https://gelatotech.com/sitemap" hreflang="en-us" />
+                <link rel="alternate" href="https://gelatotech.com/sitemap" hreflang="x-default" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-                <title>Sitemap | Gelatotech</title>
+                <title>Gelatotech's Comprehensive Sitemap for Easy Navigation
+                </title>
+                <meta name="description" content="Explore Gelatotech's comprehensive sitemap, which provides easy navigation so you can quickly and efficiently find all the pages and resources you need." />
+                <meta property="og:url" content="https://gelatotech.com/sitemap" />
+                <meta property="og:type" content="article" />
+                <meta property="og:title" content="Gelatotech's Comprehensive Sitemap for Easy Navigation" />
+                <meta property="og:description" content="Explore Gelatotech's comprehensive sitemap, which provides easy navigation so you can quickly and efficiently find all the pages and resources you need." />
+                <meta property="og:image" content='/images/  ' />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Gelatotech's Comprehensive Sitemap for Easy Navigation" />
+                <meta name="twitter:description" content="Explore Gelatotech's comprehensive sitemap, which provides easy navigation so you can quickly and efficiently find all the pages and resources you need." />
+                <meta name="twitter:image" content='/images/ ' />
+
+
             </Head>
             <section style={{ marginTop: '10em', height: '90vh' }}>
                 <div className="container">
@@ -19,7 +33,7 @@ export default function Sitemap() {
                             <ul>
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/about">About</a></li>
-                                <li><a href="/faq">FAQ</a></li>
+                                <li><a href="/faq">faq</a></li>
                                 <li><a href="/legal">90 Day Warranty</a></li>
                                 <li><a href="/sitemap">Sitemap</a></li>
                             </ul>
