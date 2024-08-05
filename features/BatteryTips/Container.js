@@ -13,7 +13,7 @@ export default function BatteryTips() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <title>Top 3 Expert Tips for Saving Money on Cell Phone Battery Replacement</title>
-        <meta name="description" content=" Keep your devices running smoothly with Gelatotech's latest blog about the Top iPhone battery-saving tips for easy maintenance and better performance. Read now!" />
+        <meta name="description" content="Check out our newest blog post for expert iPhone battery-saving tips, including information on convenient door-to-door cell phone battery replacement services starting at just $45. Don't miss out - book now!" />
         <meta name="keywords" content="Cell Phone Battery Replacement, Phone Battery Replacement" />
         <meta itemProp="name" content="Extend Your iPhone's Battery Life - Expert Tips by Gelatotech" />
         <meta itemProp="description" content="Maximize your iPhone's battery performance with our expert tips. Facing battery issues? Gelatotech offers on-demand battery replacement services in SF." />
