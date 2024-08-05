@@ -23,11 +23,11 @@ export default function MicroSoldering() {
   return (
     <div>
       <Head>
-        <title>Expert Microsoldering Service- Precision Repairs & Solutions</title>
-        <meta name="description" content="With ten years of experience in iPhone and MacBook micro soldering, we are dedicated to providing you with the best service. Book now & save your time with us!" />
+        <title>Fast and Reliable Macbook Screen Replacement Services near San Francisco</title>
+        <meta name="description" content=": If you're looking for Macbook, iPhone data recovery, and water damage phone repair service costs near San Francisco, look no further! Gelatotech has all the details you need on our website." />
         <meta name="keywords" content="Macbook Screen Replacement Near Me, Repair Macbook Near Me, Macbook Repair Near Me, iPhone Data Recovery Service, Water Damaged Phone Repair Cost" />
         <meta itemProp="name" content="Expert Micro Soldering - iPhone & MacBook | Gelatotech San Francisco" />
-        <meta itemProp="description" content="Gelatotech offers expert micro soldering services for complex iPhone and MacBook repairs in San Francisco. Trust our technicians for precision logic board fixes." />
+        <meta itemProp="description" content="If you're looking for Macbook, iPhone data recovery, and water damage phone repair service costs near San Francisco, look no further! Gelatotech has all the details you need on our website." />
         <meta itemProp="image" content="/images/micro-soldering-service.jpg" />
         <meta property="og:url" content="https://www.gelatotech.com/microsoldering" />
         <meta property="og:type" content="website" />
