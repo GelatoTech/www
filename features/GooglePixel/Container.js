@@ -19,7 +19,7 @@ export default function GooglePixel() {
     <div>
       <Head>
         <title>Expert Google Pixel Screen Repair - Trust Us With Your Phone's Screen</title>
-        <meta name="description" content="Explore our comprehensive repair services for Google Pixel devices. Our expert solutions are designed to restore your Google Pixel to optimal performance." />
+        <meta name="description" content="We offer top-notch services for Google Pixel screen phone repair. Our expert team will come to your location and handle the repair inside our service vehicle. Get in touch with us now!" />
         <meta name="keywords" content=" Google Pixel Screen Repair, Google Pixel Phone Repair" />
         <meta itemProp="name" content="On-Site Google Pixel Repair | Gelatotech" />
         <meta itemProp="description" content="Need a Google Pixel repair in San Francisco? Our mobile technicians come to you for screen, battery, and charging port replacements. Fast, convenient service guaranteed." />
