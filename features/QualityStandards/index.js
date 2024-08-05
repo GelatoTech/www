@@ -14,7 +14,7 @@ export default function QualityStandards() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <title>How Much Is an iPad Screen Repair- Quality Standards</title>
-        <meta name="description" content="At Gelatotech, we maintain the highest quality standards in the industry and our commitment to excellence is reflected in every service we provide. Contact us!" />
+        <meta name="description" content="Wondering how much an iPad screen repair costs? Explore our comprehensive guide on quality standards to gain insights into costs and discover the four distinctive types of screens we offer." />
         <meta name="keywords" content="Quality Device Repair, Genuine Parts, Aftermarket Parts, iPhone Repair, MacBook Repair, How Much Is an iPad Screen Repair" />
         <meta itemProp="name" content="Gelatotech Quality Standards | Mobile Device Repair in SF" />
         <meta itemProp="description" content="Looking for the best quality repair for your iPhone? Visit Gelatotech, where we provide you with the best quality materials, batteries, and other services." />
