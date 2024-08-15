@@ -129,48 +129,7 @@ export function Form({ make, isCarryIn }) {
           )
           : null
         }
-        {
-          (
-            repairFormValues.screenReplacementType ||
-            (repairFormValues.deviceMake) &&
-            repairFormValues.deviceModel &&
-            repairFormValues.deviceIssue &&
-            repairFormValues.deviceIssue !== '' &&
-            getPrice() // if there is a price
-          ) && (
-            <>
-            {(()=> {
-              if(getPrice() === 'call') {
-                return (<p style={{ marginBottom: '2em', fontSize: '1.3em'}}>Call us: <a href="tel:4156219055">(415) 621-9055</a> for price estimate</p>)
-              } else {
-                return (<p id="total-price-text" style={{ fontSize: '1.9em' }}>Estimated {getPrice()} repair</p>)
-              }
-            })()}
-            </>
-            )
-        }
-        {
-          (
-            (repairFormValues.deviceMake) &&
-            repairFormValues.deviceModel &&
-            repairFormValues.deviceIssue &&
-            repairFormValues.deviceIssue !== '' &&
-            devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].warranty
-          )
-          ? (<p id="warranty-text" style={{ fontSize: '1.5em' }}><strong>{devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].warranty}</strong> warranty</p>)
-          : ''
-        }
-        {
-          (
-            (repairFormValues.deviceMake) &&
-            repairFormValues.deviceModel &&
-            repairFormValues.deviceIssue &&
-            repairFormValues.deviceIssue !== '' &&
-            devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].duration
-          )
-          ? (<p id="repairtime-text" style={{ fontSize: '1.2em', marginBottom: '0.5em' }}>Estimated <strong>{devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].duration}</strong> repair time</p>)
-          : ''
-        }
+        
         <NetlifyForm formName="repair-form" formValues={repairFormValues} postSubmit={postSubmit} id="repair-form" name="repair-form">
           <input name="form-name" type="hidden" value="repair-form" />
             <div className="field">
@@ -915,6 +874,52 @@ export function Form({ make, isCarryIn }) {
                 </div>
                 )
             }
+
+
+            {
+          (
+            repairFormValues.screenReplacementType ||
+            (repairFormValues.deviceMake) &&
+            repairFormValues.deviceModel &&
+            repairFormValues.deviceIssue &&
+            repairFormValues.deviceIssue !== '' &&
+            getPrice() // if there is a price
+          ) && (
+            <>
+            {(()=> {
+              if(getPrice() === 'call') {
+                return (<p style={{ marginBottom: '2em', fontSize: '1.3em'}}>Call us: <a href="tel:4156219055">(415) 621-9055</a> for price estimate</p>)
+              } else {
+                return (<p id="total-price-text" style={{ fontSize: '1.9em' }}>Estimated {getPrice()} repair</p>)
+              }
+            })()}
+            </>
+            )
+        }
+        {
+          (
+            (repairFormValues.deviceMake) &&
+            repairFormValues.deviceModel &&
+            repairFormValues.deviceIssue &&
+            repairFormValues.deviceIssue !== '' &&
+            devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].warranty
+          )
+          ? (<p id="warranty-text" style={{ fontSize: '1.5em' }}><strong>{devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].warranty}</strong> warranty</p>)
+          : ''
+        }
+        {
+          (
+            (repairFormValues.deviceMake) &&
+            repairFormValues.deviceModel &&
+            repairFormValues.deviceIssue &&
+            repairFormValues.deviceIssue !== '' &&
+            devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].duration
+          )
+          ? (<p id="repairtime-text" style={{ fontSize: '1.2em', marginBottom: '0.5em' }}>Estimated <strong>{devices[repairFormValues.deviceModel][repairFormValues.deviceIssue].duration}</strong> repair time</p>)
+          : ''
+        }
+
+
           <hr style={{ marginTop: '3em' }} />
           <h2 className="title is-5 has-text-weight-light">Contact info <FontAwesomeIcon icon={faUsers} style={{ height: '1em', marginLeft: '0.3em' }} /></h2>
           <div className="field">

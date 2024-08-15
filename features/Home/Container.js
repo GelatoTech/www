@@ -78,7 +78,7 @@ export default function Home() {
                       <div style={{ backgroundColor: 'white', width: '1.5em', height: '1.5em', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <FontAwesomeIcon icon={faStore} style={{ color: '#4A4A4A', width: '0.8em' }} />
                       </div>
-                      <h2 className="subtitle" style={{ marginLeft: '0.4em' }}>Carry In</h2>
+                      <h2 className="subtitle" style={{ marginLeft: '0.4em' }}>Curbside Pickup</h2>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center' }} onClick={() => router.push('/mail-in')}>
                       <div style={{ backgroundColor: 'white', width: '1.5em', height: '1.5em', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -123,11 +123,11 @@ export default function Home() {
                     <div className="card-content">
                       <div className="media">
                         <div className="media-content">
-                          <p className="subtitle is-4 has-text-centered">Carry In</p>
+                          <p className="subtitle is-4 has-text-centered">Curbside Pickup</p>
                         </div>
                       </div>
                       <div className="content has-text-centered">
-                        Visit our location
+                        Meet us outside of our office location
                       </div>
                     </div>
                   </div>
