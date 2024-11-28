@@ -24,19 +24,21 @@ export default function iPad() {
         <meta itemProp="name" content="Mobile iPad Repair in San Francisco | Quick, Reliable Service" />
         <meta itemProp="description" content="Need your iPad fixed fast? Our mobile technicians offer screen, battery, and charging port replacements directly to your location. Book your same-day iPad repair in San Francisco today!" />
         <meta itemProp="image" content="/images/ipad-repair-service.png" />
-        <meta property="og:url" content="https://www.gelatotech.com/ipad" />
+        <meta property="og:url" content="https://gelatotech.com/ipad"/>
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="iPad Repair Service in San Francisco | Gelatotech" />
-        <meta property="og:description" content="Get your iPad repaired quickly with our mobile service. Offering screen, battery, and charging port replacements for all models. Contact us for same-day repairs in San Francisco." />
+        <meta property="og:title" content="On-Site iPad Screen & Charging Port Replacement" />
+        <meta property="og:description" content="Experience issues with your iPad or iPhone charging port & screen? Our expert technicians will confidently repair the problem at your preferred location." />
         <meta property="og:image" content="/images/ipad-repair-og.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Fast and Reliable iPad Repair in San Francisco | Gelatotech" />
-        <meta name="twitter:description" content="Your iPad can be repaired today! Our technicians come to you for fast screen, battery, and port replacements. Book your iPad repair with Gelatotech now." />
+        <meta name="twitter:title" content="On-Site iPad Screen & Charging Port Replacement" />
+        <meta name="twitter:description" content="Experience issues with your iPad or iPhone charging port & screen? Our expert technicians will confidently repair the problem at your preferred location." />
         <meta name="twitter:image" content="/images/ipad-repair-twitter.png" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/ipad.css" />
         <link rel="stylesheet" href="/stylesheets/device-card.css" />
-        <link rel="alternate" href="https://gelatotech.com/ipad" hreflang="en" />
+        <link rel="alternate" href="https://gelatotech.com/ipad" hreflang="en-us" />
+        <link rel="alternate" href="https://gelatotech.com/ipad" hreflang="x-default" />
+        <link rel="canonical" href="https://gelatotech.com/ipad"/>
       </Head>
       <section className="hero" id="hero">
         <div className="hero-body">

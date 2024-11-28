@@ -24,19 +24,21 @@ export default function Samsung() {
         <meta itemProp="name" content="Fast Samsung Device Repair | Gelatotech Comes to You" />
         <meta itemProp="description" content="Need a quick Samsung repair in San Francisco? Our mobile technicians specialize in screen, battery, and port repairs, offering same-day service for all Samsung models." />
         <meta itemProp="image" content="/images/samsung-repair-service.jpeg" />
-        <meta property="og:url" content="https://www.gelatotech.com/samsung" />
+        <meta property="og:url" content="https://gelatotech.com/samsung"/>
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Samsung Repair Services in San Francisco | Gelatotech" />
-        <meta property="og:description" content="Get your Samsung phone fixed today with our mobile repair service. We handle screen, battery, and charging port issues, ensuring quick and reliable repairs." />
+        <meta property="og:title" content="Experienced Experts for Samsung Phone Battery Replacement" />
+        <meta property="og:description" content="Looking for the best Samsung repair service? Our professionals will arrive at your location with fully equipped vehicle to provide you with excellent repair." />
         <meta property="og:image" content="/images/samsung-repair-og.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Mobile Samsung Repair in SF | Quick & Reliable | Gelatotech" />
-        <meta name="twitter:description" content="Your Samsung device deserves the best care. Trust Gelatotech for fast, on-site repairs in San Francisco. Contact us for same-day service." />
+        <meta name="twitter:title" content="Experienced Experts for Samsung Phone Battery Replacement" />
+        <meta name="twitter:description" content="Looking for the best Samsung repair service? Our professionals will arrive at your location with fully equipped vehicle to provide you with excellent repair." />
         <meta name="twitter:image" content="/images/samsung-repair-twitter.jpeg" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/samsung.css" />
         <link rel="stylesheet" href="/stylesheets/device-card.css" />
-        <link rel="alternate" href="https://gelatotech.com/samsung" hreflang="en" />
+        <link rel="alternate" href="https://gelatotech.com/samsung" hreflang="en-us" />
+        <link rel="alternate" href="https://gelatotech.com/samsung" hreflang="x-default" />
+        <link rel="canonical" href="https://gelatotech.com/samsung"/>
       </Head>
 
       <section className="hero" id="hero">

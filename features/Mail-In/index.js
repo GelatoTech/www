@@ -34,7 +34,7 @@ export default function MailIn() {
     <div>
       <Head>
         <title>Mail-In Repair for Your Phones, MacBooks and Apple Watch</title>
-        <meta name="description" content="You can conveniently browse and complete the mail-in form to send in your device for repair. Just submit your information and device details. Feel free to fill it out now!" />
+        <meta name="description" content="Send in your damaged hard drives for expert repair at Gelatotech, where we provide top-notch mail-in service to restore your data on any device. Book now!" />
         <meta name="keywords" content="Mail-In Repair, iPhone Repair, iPad Repair, MacBook Repair, Apple Watch Repair, Samsung Galaxy Repair, Google Pixel Repair, Nationwide Repair Service, Device Repair, Fast Turnaround" />
         <meta itemProp="name" content="Nationwide Mail-In Repair Service | iPhones, MacBooks & More" />
         <meta itemProp="description" content="Trust Gelatotech for all your device repair needs. Mail-in your iPhone, iPad, MacBook, or other devices from anywhere in the U.S. for quick, expert repairs." />
@@ -42,15 +42,17 @@ export default function MailIn() {
         <meta property="og:url" content="https://www.gelatotech.com/mail-in" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Mail-In Repair Service for All Devices | Gelatotech" />
-        <meta property="og:description" content="Expert mail-in repair service available nationwide for iPhones, iPads, MacBooks, and more. Fast, reliable repairs by Gelatotech, wherever you are." />
+        <meta property="og:description" content="Send in your damaged hard drives for expert repair at Gelatotech, where we provide top-notch mail-in service to restore your data on any device. Book now!" />
         <meta property="og:image" content="/images/mail-in-og.jpeg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Convenient Mail-In Device Repair | Nationwide Service by Gelatotech" />
-        <meta name="twitter:description" content="Need device repair? Mail-in your iPhone, iPad, or MacBook from anywhere in the U.S. for fast, expert service by Gelatotech." />
+        <meta name="twitter:description" content="Send in your damaged hard drives for expert repair at Gelatotech, where we provide top-notch mail-in service to restore your data on any device. Book now!" />
         <meta name="twitter:image" content="/images/mail-in-twitter.jpeg" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/mail-in.css" />
-        <link rel="alternate" href="https://gelatotech.com/mail-in" hreflang="en" />
+        <link rel="alternate" href="https://gelatotech.com/mail-in" hreflang="en-us" />
+        <link rel="alternate" href="https://gelatotech.com/mail-in" hreflang="x-default" />
+
       </Head>
       <section className="hero" id="hero">
         <div className="hero-body container" style={{ display: 'flex' }}>

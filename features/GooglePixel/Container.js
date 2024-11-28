@@ -26,17 +26,19 @@ export default function GooglePixel() {
         <meta itemProp="image" content="/images/google-pixel-repair.jpg" />
         <meta property="og:url" content="https://www.gelatotech.com/google-pixel" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Google Pixel Repair in San Francisco | Screen, Battery, Port | Gelatotech" />
-        <meta property="og:description" content="Same-day, on-site Google Pixel repair service in San Francisco. Our experts handle screen, battery, and charging port issues efficiently. Book now for quick repairs." />
+        <meta property="og:title" content="Expert Google Pixel Screen Repair - Trust Us With Your Phone's Screen" />
+        <meta property="og:description" content="Explore our comprehensive repair services for Google Pixel devices. Our expert solutions are designed to restore your Google Pixel to optimal performance." />
         <meta property="og:image" content="/images/google-pixel-repair-og.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Fast Google Pixel Repair in SF | Gelatotech" />
-        <meta name="twitter:description" content="Get your Google Pixel fixed today with our mobile repair service. Screen, battery, and port repairs done at your location in San Francisco. Book online now!" />
+        <meta name="twitter:title" content="Expert Google Pixel Screen Repair - Trust Us With Your Phone's Screen" />
+        <meta name="twitter:description" content="Explore our comprehensive repair services for Google Pixel devices. Our expert solutions are designed to restore your Google Pixel to optimal performance." />
         <meta name="twitter:image" content="/images/google-pixel-repair-twitter.jpg" />
         <meta name="google-site-verification" content="otWUpfaXKjZHurqJg8KCSsabxvEJ9380Jprvwzazg8g" />
         <link rel="stylesheet" href="/stylesheets/pixel.css" />
         <link rel="stylesheet" href="/stylesheets/device-card.css" />
-        <link rel="alternate" href="https://gelatotech.com/google-pixel" hreflang="en" />
+        <link rel="alternate" href="https://gelatotech.com/google-pixel" hreflang="en-us" />
+        <link rel="alternate" href="https://gelatotech.com/google-pixel" hreflang="x-default" />
+        <link rel="canonical" href="https://gelatotech.com/google-pixel"/>
       </Head>
       <section className="hero" id="hero">
         <div className="hero-body">

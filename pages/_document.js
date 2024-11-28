@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en-US">
         <Head>
           {/* Google Analytics */}
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZP2H3CZF3"></script>
