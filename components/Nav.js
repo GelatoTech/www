@@ -154,7 +154,7 @@ export function Nav() {
                 <a className="navbar-item"
                   onClick={() => { 
                     setBurger(false);
-                    router.push('/FAQ') 
+                    router.push('/faq') 
                   }} 
                 >FAQ</a> 
                 <a className="navbar-item" 
